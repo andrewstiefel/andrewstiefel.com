@@ -22,8 +22,8 @@ social:
 #THEME SETTINGS
 
 navigation: # Navigation links
-  - {name: 'Home', link: '/'}
   - {name: 'About', link: '/about'}
+  - {name: 'About', link: '/blog'}
   - {name: 'Contact', link: '/contact'}
   
 email: andrew@andrewstiefel.com

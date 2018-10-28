@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: default
 title: About
 summary: Hi, I'm Andrew!
-featured-img: 
+featured-img: sleek.jpg
 permalink: /about/
 ---
 

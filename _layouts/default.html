@@ -35,10 +35,14 @@ layout: compress
             <section class="single">
                 
                 {% if page.featured-img %}
-                    <div class="image-wrap"><img src="/images/posts/"></div>
+                    <div class="image-wrap"><img src="/assets/img/posts/{{ page.featured-img }}"></div>
                 {% endif %}
+                
+                <div class="container">
             
     		      {{ content }}
+                    
+                </div>
                      
             </section>
             
