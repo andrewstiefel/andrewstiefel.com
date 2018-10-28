@@ -23,7 +23,7 @@ social:
 
 navigation: # Navigation links
   - {name: 'About', link: '/about'}
-  - {name: 'About', link: '/blog'}
+  - {name: 'Blog', link: '/blog'}
   - {name: 'Contact', link: '/contact'}
   
 email: andrew@andrewstiefel.com
