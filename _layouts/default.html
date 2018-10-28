@@ -6,11 +6,54 @@ layout: compress
 <html lang="en">
     
     {% include head.html %}
+	
+	<body>
         
-    {% include header.html %}
+        {% if site.google_tag_manager %}
 
-    {{ content }}
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
 
-    {% include footer.html %}
+        {% endif %}
+        
+        {% include header.html %}
+
+		<main>
+            
+            <section class="intro">
+                
+                <div class="container">
+                    
+                    <h1>{{ page.title }}</h1>
+                    <p>{{ page.summary }}</p>
+                    
+                </div>
+                
+            </section>
+            
+            <section class="single">
+                
+                {% if page.featured-img %}
+                    <div class="image-wrap"><img src="../assets/img/posts/{{ page.featured-img }}"></div>
+                {% endif %}
+                
+                <div class="container">
+            
+    		      {{ content }}
+                    
+                </div>
+                     
+            </section>
+            
+        </main>
+        
+        {% include footer.html %}
+	
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </body>
     
 </html>
