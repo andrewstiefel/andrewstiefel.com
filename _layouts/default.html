@@ -6,50 +6,11 @@ layout: compress
 <html lang="en">
     
     {% include head.html %}
-	
-	<body>
         
-        {% if site.google_tag_manager %}
+    {% include header.html %}
 
-            <!-- Google Tag Manager (noscript) -->
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            <!-- End Google Tag Manager (noscript) -->
+    {{ content }}
 
-        {% endif %}
-        
-        {% include header.html %}
-
-		<main>
-            
-            <section class="intro">
-                
-                <div class="container">
-                    
-                    <h1>{{ page.title }}</h1>
-                    <p>{{ page.summary }}</p>
-                    
-                </div>
-                
-            </section>
-            
-            <section class="single">
-                
-                {% if page.featured-img %}
-                    <div class="image-wrap"><img src="../assets/img/posts/{{ page.featured-img }}"></div>
-                {% endif %}
-                
-                <div class="container">
-            
-    		      {{ content }}
-                    
-                </div>
-                     
-            </section>
-            
-        </main>
-        
-        {% include footer.html %}
-    
-    </body>
+    {% include footer.html %}
     
 </html>
