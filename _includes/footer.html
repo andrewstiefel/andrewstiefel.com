@@ -1,0 +1,16 @@
+<footer class="footer">
+    <div class="container">
+        <nav class="social">
+            {% if site.twitter_username %}
+                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/{{ site.twitter_username }}">Twitter</a>
+            {% endif %}
+            {% if site.facebook_username %}
+                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/{{ site.facebook_username }}">Facebook</a>
+            {% endif %}
+            {% if site.instagram_username %}
+                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/{{ site.instagram_username }}">Instagram</a>
+            {% endif %}
+        </nav>
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</span>
+    </div>
+</footer>
