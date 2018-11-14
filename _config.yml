@@ -1,8 +1,9 @@
 #SITE CONFIGURATION
 
 title: Andrew Stiefel
-description: 
-baseurl:
+description: Andrew Stiefel is a composer and sound artist living in Seattle, Washington.
+repository: "andrewstiefel/andrewstiefel.github.io"
+baseurl: 
 url: "http://andrewstiefel.com"
 
 google_tag_manager: GTM-P7PZFVP
