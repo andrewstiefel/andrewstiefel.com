@@ -21,7 +21,7 @@ layout: compress
 
 		<main>
             
-            <section class="jumbotron">
+            <section class="jumbotron bg-white">
                 
                 <div class="container">
                     
@@ -34,11 +34,11 @@ layout: compress
             
             <section class="single">
                 
-                {% if page.featured-img %}
-                    <div class="image-wrap"><img src="../assets/img/posts/{{ page.featured-img }}"></div>
-                {% endif %}
-                
                 <div class="container">
+                
+                    {% if page.featured-img %}
+                        <img src="../assets/img/posts/{{ page.featured-img }}" class="img-fluid" alt="Responsive image">
+                    {% endif %}
             
     		      {{ content }}
                     
