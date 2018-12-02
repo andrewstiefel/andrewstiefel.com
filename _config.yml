@@ -23,8 +23,8 @@ social:
 #THEME SETTINGS
 
 navigation: # Navigation links
-  - {name: 'About', link: '/about'}
-  - {name: 'Blog', link: '/blog'}
+  - {name: 'Music', link: '/music'}
+  - {name: 'Recordings', link: '/recordings'}
   - {name: 'Contact', link: '/contact'}
   
 email: andrew@andrewstiefel.com
