@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: About
+summary: Andrew Stiefel is a composer and sound artist whose music explores the intersections between written and recorded sound.
 featured-img: andrew-stiefel-viola.jpg
 permalink: /
 ---

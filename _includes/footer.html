@@ -1,16 +1,16 @@
-<footer class="footer">
-    <div class="container">
-        <nav class="social">
+<footer class="footer my-5">
+    <div class="container text-center">
+        <nav class="social mb-2">
             {% if site.twitter_username %}
-                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/{{ site.twitter_username }}">Twitter</a>
+                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a>
             {% endif %}
             {% if site.facebook_username %}
-                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/{{ site.facebook_username }}">Facebook</a>
+                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="fab fa-facebook-f"></i></a>
             {% endif %}
             {% if site.instagram_username %}
-                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/{{ site.instagram_username }}">Instagram</a>
+                <a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="fab fa-instagram"></i></a>
             {% endif %}
         </nav>
-        <span>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</span>
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}</span>
     </div>
 </footer>

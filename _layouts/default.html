@@ -21,23 +21,29 @@ layout: compress
 
 		<main>
             
-            <section class="jumbotron bg-white">
+            <section class="intro mt-5">
                 
                 <div class="container">
                     
-                    <h1>{{ page.title }}</h1>
-                    <p class="lead">{{ page.summary }}</p>
+                    <div class="wrap">
+                    
+                        <h1>{{ page.title }}</h1>
+                        <p class="lead">{{ page.summary }}</p>
+                        
+                    </div>
                     
                 </div>
                 
             </section>
             
-            <section class="single">
+            <section class="single mt-5">
                 
                 <div class="container">
                 
                     {% if page.featured-img %}
-                        <img src="../assets/img/posts/{{ page.featured-img }}" class="img-fluid" alt="Responsive image">
+                        <figure class="figure">
+                            <img src="../assets/img/posts/{{ page.featured-img }}" class="figure-img img-fluid" alt="Responsive image">
+                        </figure>
                     {% endif %}
             
     		      {{ content }}

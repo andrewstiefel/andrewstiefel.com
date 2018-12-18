@@ -1,45 +1,78 @@
-/*
-
 body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-family: Muli,sans-serif;
+    font-size: 1.075rem;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+body a {
+    color: red;
 }
 
-ul.posts li {
-    list-style: none;
+body a:hover {
+    color: #000;
+}
+
+.h1, .h2, h1, h2 {
+    margin: 1.5rem 0;
+    font-weight: 750;
+    letter-spacing: -.02em;
+}
+
+.h3, h3 {
+    font-weight: 600;
+    letter-spacing: -.02em;
+}
+
+.wrap {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -.02em;
+}
+
+.nav-link span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 0 3px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link span:active {
+    border-color: red;
+}
+
+/* Default Layout */
+
+.single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single ol, .single p, .single ul, .single hr {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+/* Social Media Buttons */
+
+.social__link {
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border-radius: 50%;
+    background: #000;
+    display: inline-block;
+    line-height: 1;
+    color: #fff;
+    margin: 0 3px;
+}
+
+.social .svg-inline--fa {
+    height: 24px;
 }
