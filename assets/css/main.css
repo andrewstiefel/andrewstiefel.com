@@ -1,6 +1,7 @@
 body {
-    font-family: Muli,sans-serif;
-    font-size: 1.075rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #212121;
+    font-size: 0.95rem; 
 }
 
 body a {
@@ -8,6 +9,11 @@ body a {
 }
 
 body a:hover {
+    color: #000;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Muli', sans-serif;
     color: #000;
 }
 
@@ -30,20 +36,16 @@ body a:hover {
 /* Header */
 
 .navbar-brand {
+    font-family: 'Muli', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -.02em;
 }
 
 .nav-link span {
-    font-size: 1.1rem;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.05rem;
     font-weight: 600;
-    padding: 0 0 3px;
-    border-bottom: 2px solid transparent;
-}
-
-.nav-link span:active {
-    border-color: red;
 }
 
 /* Default Layout */
@@ -71,6 +73,10 @@ body a:hover {
     line-height: 1;
     color: #fff;
     margin: 0 3px;
+}
+
+.social__link:hover {
+    color: #fff;
 }
 
 .social .svg-inline--fa {

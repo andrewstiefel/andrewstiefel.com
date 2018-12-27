@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: page
 title: Recordings
-summary: 
+summary: Listen and purchase recordings of my music.
 featured-img: 
 permalink: /recordings/
 ---

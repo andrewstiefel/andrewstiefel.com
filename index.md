@@ -1,6 +1,7 @@
 ---
 layout: default
-title: About
+headline: About
+description: Andrew Stiefel is a composer, performer, and writer whose work explores the intersections between written and recorded sound.
 summary: Andrew Stiefel is a composer and sound artist whose music explores the intersections between written and recorded sound.
 featured-img: andrew-stiefel-viola.jpg
 permalink: /

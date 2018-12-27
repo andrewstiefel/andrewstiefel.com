@@ -1,13 +1,10 @@
 ---
-layout: default
+layout: page
 title: Music
-summary: 
+description: Perusal scores and sample recordings of my works are available by request. Please contact me if you would like to perform something listed here.
+summary: Perusal scores and sample recordings are available by request. Please contact me if you would like to perform something listed here.
 featured-img: 
 permalink: /music/
----
-
-Perusal scores and sample recordings are [available by request](/contact).
-
 ---
 
 ## Large Ensemble
