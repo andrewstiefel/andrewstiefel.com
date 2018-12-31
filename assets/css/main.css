@@ -539,8 +539,12 @@ a.pagination-item:hover {
 
 /* Custom */
 
-.theme-base-custom h1, h2 {
+.theme-base-custom h1, h2, h3 {
     font-weight: 700;
+}
+
+.theme-base-custom .masthead-title a {
+    color: #303030;
 }
 
 .theme-base-custom hr {
