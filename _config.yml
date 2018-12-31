@@ -4,7 +4,7 @@ title: Andrew Stiefel
 tagline: '@andrewstiefel'
 description: 'This is a description'
 url: 
-baseurl: 
+baseurl: https://andrewstiefel.github.io/
 paginate: 5
 
 # PERMALINKS
