@@ -9,7 +9,7 @@ paginate: 5
 
 # PERMALINKS
 
-permalink:           pretty
+permalink: /blog/:title
 
 # CONTACT
 
