@@ -10,7 +10,6 @@ paginate: 5
 # PERMALINKS
 
 permalink:           pretty
-relative_permalinks: true
 
 # CONTACT
 
