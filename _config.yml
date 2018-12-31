@@ -1,8 +1,8 @@
 #SITE CONFIGURATION
 
 title: Andrew Stiefel
-tagline: @andrewstiefel
-description: 
+tagline: '@andrewstiefel'
+description: 'This is a description'
 url: 
 baseurl: 
 paginate: 5
