@@ -555,6 +555,10 @@ a.pagination-item:hover {
     border: 0;
 }
 
+.theme-base-custom .qna {
+    text-align: center;
+}
+
 /*
  * Overlay sidebar
  *
