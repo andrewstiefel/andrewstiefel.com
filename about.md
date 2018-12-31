@@ -13,4 +13,4 @@ In addition to my work for the Seattle Symphony, I've created social media strat
 
 Living in Seattle, I love to wander the stunning landscapes of the Pacific Northwest whenever I can escape the city. And when I can't get out of town, you'll often find me at a coffee shop, reading or [working on a side projects](https://andrewstiefel.net).
 
-You can find me online at @andrewstiefel. Send me an [email](mailto:andrew@andrewstiefel.com) or ping me on [Twitter](https://twitter.com/andrewstiefel). I'm also on [Github](https://github.com/andrewstiefel) and [Linkedin](https://www.linkedin.com/in/andrewstiefel)] if you're into that sort of thing.
+You can find me online at @andrewstiefel. Send me an [email](mailto:andrew@andrewstiefel.com) or ping me on [Twitter](https://twitter.com/andrewstiefel). I'm also on [Github](https://github.com/andrewstiefel) and [Linkedin](https://www.linkedin.com/in/andrewstiefel), if you're into that sort of thing.
