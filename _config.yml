@@ -1,0 +1,23 @@
+#SITE CONFIGURATION
+
+title: Andrew Stiefel
+tagline: @andrewstiefel
+description: 
+url: 
+baseurl: 
+paginate: 5
+
+# PERMALINKS
+
+permalink:           pretty
+relative_permalinks: true
+
+# CONTACT
+
+author:
+  name: Andrew Stiefel
+  url: https://www.andrewstiefel.com
+  email: andrew@andrewstiefel.com
+  twitter: https://twitter.com/andrewstiefel
+  linkedin: https://www.linkedin.com/in/andrewstiefel
+  github: https://github.com/andrewstiefel
