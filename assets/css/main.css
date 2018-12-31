@@ -539,11 +539,7 @@ a.pagination-item:hover {
 
 /* Custom */
 
-.theme-base-custom {
-    background-color: #fafafa;
-}
-
-h1.theme-base-custom, h2.theme-base-custom, h3.theme-base-custom, h4.theme-base-custom, h5.theme-base-custom, h6.theme-base-custom {
+.theme-base-custom h1, h2 {
     font-weight: 700;
 }
 
