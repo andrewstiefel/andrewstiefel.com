@@ -537,6 +537,23 @@ a.pagination-item:hover {
   color: #8f5536;
 }
 
+/* Custom */
+
+.theme-base-custom {
+    background-color: #fafafa;
+}
+
+h1.theme-base-custom, h2.theme-base-custom, h3.theme-base-custom, h4.theme-base-custom, h5.theme-base-custom, h6.theme-base-custom {
+    font-weight: 700;
+}
+
+.theme-base-custom hr {
+    width: 100px;
+    height: 1px;
+    margin: 2rem auto;
+    background-color: #ddd;
+    border: 0;
+}
 
 /*
  * Overlay sidebar
