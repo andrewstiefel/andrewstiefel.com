@@ -5,7 +5,7 @@ title: About
 
 <p class="lead">Social Media & Content Manager at Seattle Symphony. [Other credit here]. Previously at University of Oregon. [Fun fact here].</p>
 
-Hello, I’m Andrew. I help organizations and creative individuals reach, engage, and mobilize their audiences. For the last seven years I’ve worked for nonprofits and universities with a focus on social media strategy and digital marketing. 
+I help organizations and creative individuals reach, engage, and mobilize their audiences. For the last seven years I’ve worked for nonprofits and universities with a focus on social media strategy and digital marketing. 
 
 Currently I’m at the Seattle Symphony, where I connect the orchestra to its audience through creative storytelling, live broadcasts, and other projects.
 
