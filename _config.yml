@@ -6,6 +6,7 @@ description: 'This is a description'
 url: 
 baseurl: https://andrewstiefel.github.io
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 # PERMALINKS
 
