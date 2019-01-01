@@ -9,7 +9,7 @@ I help organizations and creative individuals reach, engage, and mobilize their 
 
 Currently I’m at the Seattle Symphony, where I connect the orchestra to its audience through creative storytelling, live broadcasts, and other projects.
 
-In addition to my work for the Seattle Symphony, I've created social media strategies for political campaigns and nonprofits. I write sometimes. Previously I covered science, technology, and entrepreneurship for the University of Oregon, including a column published in _The Register Guard_. 
+In addition to my work for the Seattle Symphony, I've created social media strategies for political campaigns and nonprofits. I write sometimes. Previously I covered science and entrepreneurship for the University of Oregon and wrote a bi-weekly column about startups and technology for the _The Register Guard_. 
 
 I love to wander the stunning landscapes of the Pacific Northwest whenever I can escape Seattle. And when I can't get out of town, you'll often find me at a coffee shop, reading, writing, or [working on side projects](https://andrewstiefel.net).
 
