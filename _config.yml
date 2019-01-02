@@ -3,7 +3,7 @@
 title: Andrew Stiefel
 tagline: '@andrewstiefel'
 description: 'Hello, I&#39;m Andrew. I&#39;m a social media and content strategist living and working in Seattle.'
-url: 
+url: "https://andrewstiefel.com"
 baseurl: https://andrewstiefel.github.io
 paginate: 5
 paginate_path: "/blog/page:num/"
