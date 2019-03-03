@@ -9,4 +9,4 @@ Below is my contact info on social networks in the order that I check them. If t
 
 [Twitter](https://twitter.com/andrewstiefel) / [Facebook](https://www.facebook.com/andrewstiefel) / [LinkedIn](https://www.linkedin.com/in/andrewstiefel/)
 
-% include form.html %
+{% include form.html %}
