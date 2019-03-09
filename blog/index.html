@@ -12,7 +12,7 @@ title: Blog
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ page.date | date_to_string }} &middot; {{ content | reading_time_as_i }} </span>
 
     {{ post.content }}
   </div>
