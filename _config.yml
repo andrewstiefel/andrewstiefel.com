@@ -5,7 +5,14 @@ tagline: '@andrewstiefel'
 description: 'Hello, I&#39;m Andrew. I&#39;m a social media and content strategist living and working in Seattle.'
 url: https://andrewstiefel.com
 baseurl: ""
+
+plugins:
+  - jekyll-paginate
+
+#Paginate
+
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 # PERMALINKS
 
