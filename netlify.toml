@@ -2,3 +2,14 @@
 # Added automatically by the Netlify CLI. It has no effect during normal 
 # Git-backed deploys.
 ID = "andrewstiefel.netlify.com"
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "script-src andrewstiefel.com local.forestry.io cdn.logrocket.io use.fortawesome.com use.fonticons.com"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
