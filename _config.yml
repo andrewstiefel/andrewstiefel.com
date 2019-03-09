@@ -6,11 +6,11 @@ description: 'Hello, I&#39;m Andrew. I&#39;m a social media and content strategi
 url: https://andrewstiefel.com
 baseurl: ""
 paginate: 5
-paginate_path: "/page:num/"
 
 # PERMALINKS
 
-permalink: /blog/:title
+permalink:           /blog/:title
+relative_permalinks: true
 
 # CONTACT
 
