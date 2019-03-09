@@ -1,8 +1,15 @@
+[Settings]
+# Added automatically by the Netlify CLI. It has no effect during normal 
+# Git-backed deploys.
+ID = "andrewstiefel.netlify.com"
+
 [[headers]]
+  # Define which paths this specific [[headers]] block will cover.
   for = "/*"
+
   [headers.values]
-    Content-Security-Policy: script-src 'self';
-	  X-Frame-Options: "DENY"
+    Content-Security-Policy: script-src 'self'
+    X-Frame-Options: "DENY"
     X-XSS-Protection: "1; mode=block"
     X-Content-Type-Options: nosniff
     Referrer-Policy: strict-origin-when-cross-origin
