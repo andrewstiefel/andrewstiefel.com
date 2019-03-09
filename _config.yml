@@ -6,9 +6,6 @@ description: 'Hello, I&#39;m Andrew. I&#39;m a social media and content strategi
 url: https://andrewstiefel.com
 baseurl: ""
 
-plugins:
-  - jekyll-paginate
-
 #Paginate
 
 paginate: 5
