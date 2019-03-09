@@ -9,6 +9,7 @@ baseurl: ""
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-time-to-read
 
 #PAGINATE
 
