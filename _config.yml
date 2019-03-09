@@ -9,8 +9,7 @@ paginate: 5
 
 # PERMALINKS
 
-permalink:           /blog/:title
-relative_permalinks: true
+permalink: /blog/:title
 
 # CONTACT
 
