@@ -1,17 +1,3 @@
----
-layout: nil
----
-
-/* INCLUDED CSS */
-
-{% include poole.css %}
-{% include syntax.css %}
-{% include lanyon.css %}
-
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/poole.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/lanyon.css">
-
 /* GENERAL TWEAKS */
 
 body {
