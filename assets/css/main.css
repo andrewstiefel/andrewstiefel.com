@@ -6,6 +6,14 @@
 *
 */
 
+.theme-base-custom {
+    background-color: #f9f9f9;
+}
+
+.theme-base-custom .sidebar-toggle {
+    background-color: #f9f9f9;    
+}
+
 .theme-base-custom h1, h2, h3 {
     font-weight: 700;
 }
@@ -24,4 +32,20 @@
 
 .theme-base-custom .qna {
     text-align: center;
+}
+
+.post-date {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.post-meta {
+    display: block;
+    margin-top: -.5rem;
+    margin-bottom: 0rem;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #9a9a9a;
 }
