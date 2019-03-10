@@ -1,9 +1,12 @@
 ideas
     name: Ideas
     color: "#5DD39E"
+    slug: ideas
 personal
     name: Personal
     color: "#468189"
+    slug: personal
 tips
     name: Tips & Tools
     color: "#5DD39E"
+    slug: tips-tools
