@@ -5,7 +5,7 @@ layout: default
 <div class="post">
     
     <div class="post-categories">
-      {% assign categories = site.data.category.[post.categories] %}
+      {% assign category = site.data.category.[post.category] %}
       <span class="post-category" style="background-color: {{ category.color }};"><a href="{{site.baseurl}}/blog/{{ category.slug }}">{{ category.name }}</a></span>
     </div>
     

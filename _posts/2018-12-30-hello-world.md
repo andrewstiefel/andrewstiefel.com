@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-categories: ideas
+category: ideas
 
 ---
 This is an example blog post that I'm writing to, well, show what a blog post might look like on this new website. If you're wondering, it's built on Jekyll and the Poole/Lanyon theme by @mdo. Poole is a Jekyll "butler" that provides the basic pages and includes for the framework to function. Handy, but not really necessary.
