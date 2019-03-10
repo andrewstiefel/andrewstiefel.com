@@ -11,7 +11,7 @@ layout: default
         {% assign categories = page.categories %}
       {% endif %}
       {% for category in categories %}
-      <a href="{{site.baseurl}}/blog/{{category|slugize}}">{{category}}</a>
+      <span class="post-category" style="background-color: {{ site.data.categories[categoryname].color }};"><a href="{{site.baseurl}}/blog/{{category|slugize}}">{{site.data.categories[categoryname].name}}</a></span>
       {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
     </div>

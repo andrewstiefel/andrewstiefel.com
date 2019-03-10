@@ -1,0 +1,12 @@
+ideas:
+  name: "Ideas"
+  description: 
+  color: "#5DD39E"
+personal:
+  name: "Personal"
+  description: 
+  color: "#468189"
+tips:
+  name: "Tips & Tools"
+  description: 
+  color: "#FB5607"
