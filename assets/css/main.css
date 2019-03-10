@@ -8,12 +8,12 @@
 
 /* GENERAL TWEAKS */
 
-html {
+body {
     font-family: Georgia,Times,serif;
-}
-
-html, body {
     color: #3c484e;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
 }
 
 h1, h2, h3, h4, h5, h6 {
