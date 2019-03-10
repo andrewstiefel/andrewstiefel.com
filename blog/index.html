@@ -6,7 +6,7 @@ title: Blog
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <span class="post-date">{{ post.date | date_to_string }} &middot; {{ post.content | reading_time_as_i }}</span>
+    <span class="post-date">{{ post.date | date_to_string }} &middot; {{ post.content | reading_time }}</span>
     <h3 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
