@@ -13,6 +13,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #15171a;
 }
 
+blockquote {
+    color: #3c484e;
+    border-left: .25rem solid #268bd2;
+    font-style: italic;
+}
+
 /* CUSTOM THEME */
 
 .theme-base-custom h1, h2, h3 {
