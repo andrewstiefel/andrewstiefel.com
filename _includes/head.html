@@ -13,13 +13,18 @@
             {{ page.title }} &middot; {{ site.title }}
         {% endif %}
     </title>
+    
+    <style>
+
+    {% include poole.css %}
+    {% include syntax.css %}
+    {% include lanyon.css %}
+        
+    </style>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/poole.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/lanyon.css">
+    
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400,700">
 
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-precomposed.png">

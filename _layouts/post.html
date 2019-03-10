@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="post-date">{{ page.date | date: "%-d %B %Y" }} &middot; {{ content | reading_time }}</span>
   {{ content }}
 </div>
 
@@ -12,7 +12,7 @@ layout: default
 
 <div class="qna">
     <h2>Questions?</h2>
-    <p>Have a question about this post or anything else? <br />Ask away on <a href="https://twitter.com/andrewstiefel" target="blank">Twitter</a> or <a href="mailto:andrew@andrewstiefel.com" target="blank">send me an email.</a></p>
+    <p>Ask me on <a href="https://twitter.com/andrewstiefel" target="blank">Twitter</a> or <a href="mailto:andrew@andrewstiefel.com" target="blank">send me an email.</a></p>
 </div>
 
 <hr>

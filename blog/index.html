@@ -3,18 +3,17 @@ layout: default
 title: Blog
 ---
 
+<h1 class="page-title">Blog</h1>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <h1 class="post-title">
+    <span class="post-meta">{{ post.date | date_to_string }} &middot; {{ post.content | reading_time }}</span>
+    <h2 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+    </h2>
   </div>
   {% endfor %}
 </div>
