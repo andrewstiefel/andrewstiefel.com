@@ -3,6 +3,19 @@ layout: default
 ---
 
 <div class="post">
+    
+    <div class="post-categories">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+      <a href="{{site.baseurl}}/blog/{{category|slugize}}">{{category}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+    
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date: "%-d %B %Y" }} &middot; {{ content | reading_time }}</span>
   {{ content }}
