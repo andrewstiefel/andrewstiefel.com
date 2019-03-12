@@ -1,13 +1,4 @@
 categories:
   - title: ideas
-    subfolderitems:
-      - color: "#5DD39E"
-      - display: Ideas
   - title: personal
-    subfolderitems: 
-      - color: "#468189"
-      - display: Personal
-  - title: tips-tools
-    subfolderitems: 
-      - color: "#5DD39E"
-      - display: Tips & Tools
+  - title: tips=tools
