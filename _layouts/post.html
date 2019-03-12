@@ -4,21 +4,24 @@ layout: default
 
 <div class="post">
     
-    <div class="post-categories">
-      {% assign category = site.data.category.[post.category] %}
-      <span class="post-category" style="background-color: {{ category.color }};"><a href="{{site.baseurl}}/blog/{{ category.slug }}">{{ category.name }}</a></span>
-    </div>
+    {% include categories.html %}
     
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date: "%-d %B %Y" }} &middot; {{ content | reading_time }}</span>
-  {{ content }}
+    <h1 class="post-title">{{ page.title }}</h1>
+    
+    <span class="post-date">{{ page.date | date: "%-d %B %Y" }} &middot; {{ content | reading_time }}</span>
+  
+    {{ content }}
+
 </div>
 
 <hr>
 
 <div class="qna">
+    
     <h2>Questions?</h2>
+    
     <p>Ask me on <a href="https://twitter.com/andrewstiefel" target="blank">Twitter</a> or <a href="mailto:andrew@andrewstiefel.com" target="blank">send me an email.</a></p>
+
 </div>
 
 <hr>
