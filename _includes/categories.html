@@ -6,16 +6,12 @@
         {% assign post_cat-name = 'post_cat' | downcase %}
 <!--   Loop through all categories that you've made in your 'categories' collection -->
             {% for site_cat in site.data.taxonomies.categories %}
-<!-- assign a variable that capture the color from each category on your site   -->
-                {% assign color = 'site_cat.color' %}
-<!-- assign a variable that capture the display name from each category on your site   -->
-                {% assign display = 'site_cat.display' %}
 <!--   assign a variable that captures the title of each category on your site and makes it lowercase -->
-                    {% assign site_cat-name = 'site_cat.title' | downcase %}
+                {% assign site_cat-name = 'site_cat' | downcase %}
 <!--   compare the category titles from your site vs the post. If they match, display the content -->  
-                        {% if site_cat-name == post_cat-name  %}
-                            <li><span class="post-category" style="background-color: {{ color | default 'blue' }};"><a href="{{ site.baseurl }}/blog/{{ site_cat-name }}">{{ display }}</a></span></li>
-                        {% endif %}
+                    {% if site_cat-name == post_cat-name  %}
+                            <span class="post-category" style="background-color: {{ color | default 'blue' }};"><a href="{{ site.baseurl }}/blog/{{ site_cat-name }}">{{ display }}</a></span>
+                    {% endif %}
             {% endfor %}
     {% endfor %}
 
