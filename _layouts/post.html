@@ -6,25 +6,9 @@ layout: default
     
     <div class="cat-links">
     
-    {% assign categories = post.categories %}
-    {% for category in categories %}
-        <a href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
+    {% for category in post.categories %}
+        <a href="{{ site.baseurl }}/blog/category/{{ category }}">{{ category }}</a>
     {% endfor %}
-
-    <!--  Loop through the categories selected by the editor in the post -->
-        {% for category in categories %}
-    <!--   assign a variable that captures the title of each category and makes it lowercase -->
-            {% assign post-cat-name = category | downcase %}
-        {% endfor %}
-    <!--   Loop through all categories in the _data directory -->
-        {% for site-cat in site.data.taxonomies.categories %}
-    <!--   assign a variable that captures the title of each category in the director and makes it lowercase -->
-            {% assign site-cat-name = site-cat | downcase %}
-        {% endfor %}
-    <!--   compare the category titles from your site vs the post. If they match, display the content -->  
-        {% if site-cat-name == post-cat-name  %}
-            <span class="post-category" style="background-color: red;"><a href="{{ site.baseurl }}/blog/{{ post-cat-name }}">{{ post-cat-name }}</a></span>
-        {% endif %}
 
     </div>
     
