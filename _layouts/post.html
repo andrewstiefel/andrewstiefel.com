@@ -8,11 +8,7 @@ layout: default
     
     {% for category in post.categories %}
     
-        {% if site.data.taxonomies.categories contains category %}
-    
             <a class="post-cat" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
-    
-        {% endif %}
     
     {% endfor %}
 
