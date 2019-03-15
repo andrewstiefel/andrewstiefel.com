@@ -6,21 +6,15 @@ layout: default
     
     <div class="cat-links">
     
-    {% if post.categories != null %}
+    {% for category in post.categories %}
     
-        {% assign postcats = site.data.taxonomies.categories %}
+        {% if site.data.taxonomies.categories contains "category" %}
     
-        {% for category in post.categories %}
-    
-        {% if postcats contains category %}
-    
-        <a class="post-cat" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
+            <a class="post-cat" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
     
         {% endif %}
     
-        {% endfor %}
-    
-    {% endif %}
+    {% endfor %}
 
     </div>
     
