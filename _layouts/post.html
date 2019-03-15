@@ -18,17 +18,9 @@ layout: default
         
     {% for category in categories %}
     
-            <a class="post-cat" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
+            <a class="post-cat" style="background-color: site.taxonomy.globalcats[{{category}}].color;" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
         
     {% endfor %}
-        
-    <ul>    
-        
-    {% for item in site.data.samplelist.bikes %}
-        <li>{{item.title}}</li>
-    {% endfor %}
-        
-    </ul>
 
     </div>
     

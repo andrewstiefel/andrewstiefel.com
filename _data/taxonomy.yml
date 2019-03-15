@@ -1,0 +1,7 @@
+globalcats:
+  - title: ideas
+    color: red
+  - title: personal
+  - title: tips
+globaltags:
+  - title: social media
