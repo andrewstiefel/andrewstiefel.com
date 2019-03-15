@@ -15,12 +15,12 @@ layout: default
         {% assign categories = page.categories %}
   
     {% endif %}
-  
+        
     {% for category in categories %}
         
-        {% if site.data.categories contains category %}
+        {% if site.data.cats contains category %}
     
-            <a class="post-cat" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
+            <a class="post-cat" href="{{site.baseurl}}/blog/category/{{ title.cat }}">{{ title.cat }}</a>
     
         {% endif %}
         
