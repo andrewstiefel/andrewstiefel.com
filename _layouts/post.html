@@ -17,14 +17,18 @@ layout: default
     {% endif %}
         
     {% for category in categories %}
-        
-        {% if site.data.cats contains category %}
     
-            <a class="post-cat" href="{{site.baseurl}}/blog/category/{{ title.cat }}">{{ title.cat }}</a>
-    
-        {% endif %}
+            <a class="post-cat" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
         
     {% endfor %}
+        
+    <ul>    
+        
+    {% for item in site.data.samplelist.bikes %}
+        <li>{{item.title}}</li>
+    {% endfor %}
+        
+    </ul>
 
     </div>
     
