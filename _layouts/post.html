@@ -6,15 +6,21 @@ layout: default
     
     <div class="cat-links">
     
-    {% if post %}
-        {% assign categories = post.categories %}
-    {% else %}
-        {% assign categories = page.categories %}
+    {% if post.categories != null %}
+    
+        {% assign postcats = site.data.taxonomies.categories %}
+    
+        {% for category in post.categories %}
+    
+        {% if postcats contains category %}
+    
+        <a class="post-cat" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
+    
+        {% endif %}
+    
+        {% endfor %}
+    
     {% endif %}
-    {% for category in categories %}
-        <a class="post-cat cat-{{category}}" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %}
-    {% endfor %}
 
     </div>
     
