@@ -18,7 +18,7 @@ layout: default
   
     {% for category in categories %}
         
-        {% if site.data.taxonomies.categories contains "category" %}
+        {% if site.data.categories contains category %}
     
             <a class="post-cat" href="{{site.baseurl}}/blog/category/{{category|slugize}}">{{category}}</a>
     
