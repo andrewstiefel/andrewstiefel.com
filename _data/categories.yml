@@ -1,0 +1,8 @@
+ideas:
+  name: "Ideas"
+  description: "Foo is the best kind of bar around"
+  color: "Purple"
+tips:
+  name: "Tips & Tools"
+  description: "There's no doubt that bar is the original kind of bar"
+  color: "Orange"
