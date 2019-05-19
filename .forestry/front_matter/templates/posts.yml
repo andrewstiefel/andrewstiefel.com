@@ -2,6 +2,13 @@
 label: Posts
 hide_body: false
 fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  hidden: true
+  description: post
 - name: title
   type: text
   config:
