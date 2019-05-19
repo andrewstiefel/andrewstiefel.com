@@ -1,4 +1,16 @@
 ---
 label: Posts
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title for the post
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
+  description: Upload a featured image for the post
