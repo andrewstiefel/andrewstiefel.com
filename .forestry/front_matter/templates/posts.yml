@@ -15,4 +15,4 @@ fields:
   label: Image
   description: Upload a featured image for the post
 pages:
-- _posts/hello-world.md
+- _posts/2019-05-19-hello-world.md
