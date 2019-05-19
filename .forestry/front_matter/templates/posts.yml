@@ -14,3 +14,5 @@ fields:
     maxSize: 250
   label: Image
   description: Upload a featured image for the post
+pages:
+- _posts/hello-world.md
