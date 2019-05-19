@@ -12,3 +12,5 @@ fields:
 - type: text
   name: title
   label: title
+pages:
+- _posts/front-matter-test.md
