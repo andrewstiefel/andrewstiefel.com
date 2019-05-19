@@ -8,7 +8,7 @@ fields:
     required: false
   label: layout
   hidden: true
-  description: post
+  default: post
 - name: title
   type: text
   config:
