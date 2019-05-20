@@ -7,15 +7,20 @@ Although I spend a lot of time working on social media, the best way to reach me
 
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
+<style>
+    #checkout-button-sku_F6CwBbwMqnq9GM {
+        background-color: #6772E5; 
+        color: #FFF; 
+        padding: 8px 12px; 
+        border:0; 
+        border-radius: 4px; 
+        font-size: 1em;
+    }
+</style>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-sku_F6CwBbwMqnq9GM"
-  role="link"
->
-  Checkout
-</button>
+
+<button id="checkout-button-sku_F6CwBbwMqnq9GM" role="link">Checkout</button>
 
 <div id="error-message"></div>
 
