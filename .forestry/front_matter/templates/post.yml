@@ -13,4 +13,5 @@ fields:
   name: title
   label: title
 pages:
+- _posts/ulysses-test.md
 - _posts/2019-05-19-front-matter-test.md
