@@ -1,9 +1,24 @@
 ---
 layout: page
 title: Writing
+description:
+permalink: /writing/
 ---
 
+This page is an archive of everything I’ve written. If you’re looking for a quick introduction, I suggest starting with the following articles:
+
+* [Reflections on Service: Veterans Put Experiences to Music](https://seattlesymphony.org/watch-listen/beyondthestage/veterans)
+* [Inside the Astonishing World of Michael Curry’s Persephone](https://seattlesymphony.org/watch-listen/beyondthestage/persephone)
+* [Gabriel Prokofiev: Classical Mixologist](https://seattlesymphony.org/watch-listen/beyondthestage/classicalmixologist)
+
+I also wrote a short column about startups and entreprenuership for _The Register Guard_, the paper of record in Eugene, Oregon. Here is an example:
+
+* [Startup Connects With Your Favorite Food Truck](http://projects.registerguard.com/rg/business/33323873-63/eugene-startup-opensign.io-connects-you-to-your-favorite-food-truck.csp)
+
 ## Essays
+
+[Listening with Composer George Walker, An American Master](https://seattlesymphony.org/watch-listen/beyondthestage/george-walker)  
+Seattle Symphony (2 April 2019)
 
 [Berlioz's Bargain: A Relentless Pursuit of Passion](https://seattlesymphony.org/watch-listen/beyondthestage/berlioz)  
 Seattle Symphony (12 October 2017)
@@ -14,7 +29,37 @@ Seattle Symphony (5 January 2017)
 [Berio, the Beatles, and the Summer of 1968](https://seattlesymphony.org/watch-listen/beyondthestage/beriobeatles1968)  
 Seattle Symphony (3 February 2016)
 
-## Interviews & Profiles
+## Profiles & Interviews
+
+[Meet the Musicians: Sayaka Kokubo](https://seattlesymphony.org/watch-listen/beyondthestage/sayaka-kokubo)  
+Seattle Symphony (19 September 2019)
+
+[Meet the Musicians: Mary Lynch](https://seattlesymphony.org/watch-listen/beyondthestage/mary-lynch)  
+Seattle Symphony (6 June 2019)
+
+[Catching Sparks: In Conversation with Composer Hannah Kendall](https://seattlesymphony.org/watch-listen/beyondthestage/hannah-kendall)  
+Seattle Symphony (3 June 2019)
+
+[Steve Hackman Remixes Beethoven and Beyoncé with Seattle Symphony](https://seattlesymphony.org/watch-listen/beyondthestage/steve-hackman)  
+Seattle Symphony (20 May 2019)
+
+[Meet the Musicians: Michael Myers](https://seattlesymphony.org/watch-listen/beyondthestage/mike-myers)  
+Seattle Symphony (2 May 2019)
+
+[Meet the Musicians: Ko-ichiro Yamamoto](https://seattlesymphony.org/watch-listen/beyondthestage/ko-ichiro-yamamoto)  
+Seattle Symphony (3 April 2019)
+
+[Meet the Musicians: Gennady Filimonov](https://seattlesymphony.org/watch-listen/beyondthestage/gennady-filimonov)  
+Seattle Symphony (7 March 2019)
+
+[Meet the Musicians: Eric Han](https://seattlesymphony.org/watch-listen/beyondthestage/eric-han)  
+Seattle Symphony (15 February 2019)
+
+[Meet Thomas Dausgaard, the Seattle Symphony’s New Music Director](https://seattlesymphony.org/watch-listen/beyondthestage/meet-thomas-dausgaard)  
+Seattle Symphony (21 February 2019)
+
+[Meet the Musicians: Jeannie Wells Yablonsky](https://seattlesymphony.org/watch-listen/beyondthestage/jeannie-wells-yablonsky)  
+Seattle Symphony (18 January 2019)
 
 [Spirit and Inspiration: In Conversation with Conductor Shiyeon Sung](https://seattlesymphony.org/watch-listen/beyondthestage/shiyeon-sung)  
 Seattle Symphony (27 December 2018)
@@ -106,7 +151,22 @@ Seattle Symphony (11 August 2016)
 [Ludovic Morlot: Musical Pairings](https://seattlesymphony.org/watch-listen/beyondthestage/musicalpairings)  
 Seattle Symphony (9 March 2016)
 
-## Articles
+## Articles & Features
+
+[Reflections on Service: Veterans Put Experiences to Music](https://seattlesymphony.org/watch-listen/beyondthestage/veterans)  
+Seattle Symphony (24 May 2019)
+
+[Listening Guide: Till Eulenspiegel’s Merry Pranks by Richard Strauss](https://seattlesymphony.org/watch-listen/beyondthestage/till-eulenspiegel)  
+Edited for Seattle Symphony (23 May 2019)
+
+[The Hidden Passion of Brahms' Concertos](https://seattlesymphony.org/watch-listen/beyondthestage/brahms-concertos)  
+Seattle Symphony (3 May 2019)
+
+[Seattle Symphony Recording Wins Two Grammy Awards](https://seattlesymphony.org/watch-listen/beyondthestage/grammy-awards-2019)  
+Seattle Symphony (10 February 2019)
+
+[New Year, New Sounds: What You Played to Welcome 2019](https://seattlesymphony.org/watch-listen/beyondthestage/new-year-new-sounds)  
+Seattle Symphony (4 January 2019)
 
 [Five Facts You Probably Didn’t Know About Beethoven](https://medium.com/@seattlesymphony/five-facts-you-probably-dont-know-about-beethoven-2d01b41b2d1b)  
 Medium (15 November 2018)

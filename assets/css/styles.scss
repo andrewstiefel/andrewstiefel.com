@@ -1,0 +1,93 @@
+---
+---
+
+// Designed, built, and released under MIT license by @andrewstiefel. Learn more at https://github.com/andrewstiefel.
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+@import "bulma.scss";
+
+.main {
+  flex: 1 0 auto;
+}
+
+.top-ribbon {
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(0, 82, 212), rgb(101, 199, 247), rgb(156, 236, 251)) repeat scroll 0% 0%;
+  height: 0.5rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-menu.is-active {
+  height: calc(100% - 8px);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #fff;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  font-size: 2rem;
+  top: 8px;
+ }
+
+.navbar-brand .navbar-item {
+ z-index: 100;
+}
+
+.navbar-burger {
+  z-index: 100;
+}
+
+.navbar-burger:hover {
+ background-color: transparent;
+}
+
+.breadcrumbs {
+  padding-top: 3rem;
+}
+
+.card .media:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9*/
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@include mobile {
+
+  .navbar-end {
+    padding-top: 33%;
+  }
+
+
+  a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+    background-color: transparent;
+  }
+}

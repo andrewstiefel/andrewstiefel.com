@@ -1,0 +1,36 @@
+/*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
+
+// Disable the widescreen breakpoint
+$widescreen-enabled: false;
+
+// Disable the fullhd breakpoint
+$fullhd-enabled: false;
+
+@import "utilities/_all";
+@import "base/_all";
+@import "elements/_all";
+@import "form/_all";
+@import "components/_all";
+@import "grid/_all";
+
+$section-padding-small: 2rem 1.5rem !default;
+
+.section {
+
+  // Responsiveness
+  @include desktop {
+    // Sizes
+    &.is-small {
+      padding: $section-padding-small;
+    }
+  }
+}
+
+$footer-background-color: $light !default;
+$footer-padding: 2rem 1.5rem !default;
+
+@import "layout/_all";
+
+.footer {
+  flex-shrink: 0;
+}

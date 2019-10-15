@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<article class="project">
+  <section class="section">
+    <div class="container">
+        <div class="columns">
+          <div class="column is-offset-2 is-8 has-text-centered">
+            <h1 class="title is-2">{{ page.title }}</h1>
+            <p class="subtitle">{{ page.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      {% if page.video %}
+        <div class="video-container">
+          <iframe width="1280" height="690" src="https://www.youtube.com/embed/{{ page.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      {% elsif page.image %}
+        <figure class="image is-16by9">
+          <img src="{{ page.image }}">
+        </figure>
+      {% endif %}
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-offset-2 is-8">
+            <div class="content">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</article>

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="title is-2">{{ page.title }}</h1>
+    <p class="subtitle is-4">This is my subtitle</p>
+    <div class="posts">
+      {% for post in site.posts %}
+      <div class="post">
+        <h2 class="title is-4">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="subtitle is-size-7 is-uppercase">{{ post.date | date: "%d %b %Y" }} &#47; {{ post.content | reading_time }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -2,17 +2,42 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date: "%-d %B %Y" }} &middot; {{ content | reading_time }}</span>
-  {{ content }}
-</div>
-
-<hr>
-
-<div class="qna">
-    <h2>Questions?</h2>
-    <p>Ask me on <a href="https://twitter.com/andrewstiefel" target="blank">Twitter</a> or <a href="mailto:andrew@andrewstiefel.com" target="blank">send me an email.</a></p>
-</div>
-
-<hr>
+<article class="post">
+  <section class="section">
+    <div class="container">
+        <div class="columns">
+          <div class="column is-offset-2 is-8 has-text-centered">
+            <h1 class="title is-2">{{ page.title }}</h1>
+            <p class="subtitle is-6 is-uppercase has-text-link">
+              <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %B %Y" }}</time> &#47;
+              {% if post %}
+                {% assign categories = post.categories %}
+              {% else %}
+                {% assign categories = page.categories %}
+              {% endif %}
+              {% for category in categories %}
+                <a href="{{site.baseurl}}/categories/{{category|slugize}}">{{category}}</a>
+                {% unless forloop.last %}&nbsp;{% endunless %}
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="container">
+        <figure class="image is-16by9">
+          <img src="{{ page.image }}">
+        </figure>
+      </div>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-offset-2 is-8">
+            <div class="content">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</article>

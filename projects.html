@@ -1,0 +1,48 @@
+---
+layout: default
+title: Projects
+description: Hand-picked collection of campaigns created for email, social media, websites, and video.
+---
+
+<section class="section" style="padding-bottom: 0px;">
+  <div class="container has-text-centered">
+    <div class="column is-6 is-offset-3">
+      <h1 class="title is-2">{{ page.title }}</h1>
+      <p class="subtitle is-5">{{ page.description }}</p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+
+      {% assign items = site.projects | sort: 'order' %}
+      {% for item in items %}
+
+        <div class="column is-6">
+          <a href="{{ item.url }}">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="{{ item.image }}" alt="{{ item.title }}">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">{{ item.title }}</p>
+                  </div>
+                </div>
+              <div class="content">
+                  {{ item.description }}
+              </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

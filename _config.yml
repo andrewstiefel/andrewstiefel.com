@@ -2,29 +2,59 @@
 
 title: Andrew Stiefel
 tagline: '@andrewstiefel'
-description: 'Hello, I&#39;m Andrew. I&#39;m a social media and content strategist living and working in Seattle.'
-url: https://andrewstiefel.com
+description: 'Digital media strategist in Seattle, Washington'
+url: "https://andrewstiefel.com"
 baseurl: ""
 
+# BUILD SETTINGS
+
+markdown: kramdown
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
 
-#PAGINATE
+sass:
+  sass_dir: _sass
+  style: compressed
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+    sort_by: order
+
+breadcrumbs:
+  root:
+    hide: true
+    image: false
 
 paginate: 5
 paginate_path: "/blog/page:num/"
 
-# PERMALINKS
+permalink: /blog/:title/
 
-permalink: /blog/:title
+# SEO SETTINGS
+
+social:
+  name: Andrew Stiefel
+  links:
+    - https://twitter.com/andrewstiefel
+    - https://www.linkedin.com/in/andrewstiefel
+    - https://github.com/andrewstiefel
+
+twitter:
+  username: andrewstiefel
+  card: summary_large_image
 
 # CONTACT
 
 author:
   name: Andrew Stiefel
-  url: https://www.andrewstiefel.com
+  url: https://andrewstiefel.com
   email: andrew@andrewstiefel.com
-  twitter: https://twitter.com/andrewstiefel
-  linkedin: https://www.linkedin.com/in/andrewstiefel
-  github: https://github.com/andrewstiefel
+  twitter: andrewstiefel
+  linkedin: andrewstiefel
+  github: andrewstiefel

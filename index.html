@@ -1,22 +1,32 @@
 ---
 layout: default
-title: Home
-
+crumbtitle: Home
 ---
-<div class="page">
-  
-    <h1 class="page-title">About</h1>
-    
-    <p class="lead">Social Media &amp; Content Manager at Seattle Symphony. Previously at University of Oregon.</p>
-    
-    <p>I help organizations and creative individuals reach, engage, and  mobilize their audiences. For the past seven years I’ve worked for mission-driven organizations with a focus on social media strategy and public relations.</p>
 
-    <p>Currently I work for the Seattle Symphony. I help the orchestra engage new audiences and grow its global reputation through social media, live broadcasts, and storytelling.</p>
-
-    <p>In addition to my work for the Seattle Symphony, I’ve created social media strategy for political campaigns and nonprofits. I write sometimes. Previously I covered science and entrepreneurship for the University of Oregon. I also wrote a column about startups and technology for <em>The Register Guard</em>.</p>
-
-    <p>I love to wander the stunning landscapes of the Pacific Northwest whenever I can escape the city. When I can’t get out of town, you’ll often find me at a coffee shop reading, writing, or working on side projects.</p>
-
-    <p>Want to say hello? Send me an <a href="mailto:andrew@andrewstiefel.com">email</a> or ping me on <a href="https://twitter.com/andrewstiefel">Twitter</a>.
-
-</div>
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2">
+        {{ site.title }}
+      </h1>
+      <h2 class="subtitle is-4">
+        Content Marketing Manager in Seattle, Washington
+      </h2>
+      <a href="https://twitter.com/{{ site.author.twitter }}">
+        <span class="icon is-medium">
+          <i class="fab fa-lg fa-twitter"></i>
+        </span>
+      </a>
+      <a href="https://github.com/{{ site.author.github }}"
+      <span class="icon is-medium">
+        <i class="fab fa-lg fa-github"></i>
+      </span>
+      </a>
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+      <span class="icon is-medium">
+        <i class="fab fa-lg fa-linkedin"></i>
+      </span>
+      </a>
+    </div>
+  </div>
+</section>

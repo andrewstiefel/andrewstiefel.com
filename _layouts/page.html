@@ -2,7 +2,15 @@
 layout: default
 ---
 
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
-</div>
+<section class="section single">
+  <div class="container">
+    <div class="columns is-gapless">
+      <div class="column is-8">
+        <h1 class="title is-2">{{ page.title }}</h1>
+        <div class="content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
