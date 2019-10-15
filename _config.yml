@@ -14,7 +14,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
 
 sass:
   sass_dir: _sass
