@@ -10,6 +10,8 @@ The Seattle Symphony was among seven other international ensembles nominated for
 
 Working with the musicians and the public relations and marketing teams, I created a campaign for email and social media to get out the vote.
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fseattlesymphony%2Fvideos%2F10156664063839434%2F&width=600&show_text=true&height=447&appId" width="600" height="447" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+<div class="facebook-container">
+  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fseattlesymphony%2Fvideos%2F10156664063839434%2F&width=600&show_text=true&height=447&appId" width="600" height="447" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+</div>
 
 The Seattle Symphony won the award in a landslide and the social media campaign was recognized during the award ceremony in London.
