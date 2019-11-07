@@ -5,7 +5,7 @@ description:
 permalink: /about/
 ---
 
-**Hello, my name is Andrew Stiefel.** I’m a content marketing manager with experience establishing and scaling programs for arts and technology companies.
+**Hello, my name is Andrew Stiefel.** I’m a digital media strategist in Seattle, Washington.
 
 I trained as a classical musician for 18 years. It was hard work, but practicing came easy. Marketing concerts did not. Along the way I discovered that I really enjoyed the new creative challenge.
 
