@@ -5,7 +5,7 @@ description:
 permalink: /about/
 ---
 
-**Hello, my name is Andrew Stiefel.** I’m a digital media strategist in Seattle, Washington.
+**Hello, my name is Andrew Stiefel.** I am a digital content and social media strategist living in Seattle, Washington.
 
 I trained as a classical musician for 18 years. It was hard work, but practicing came easy. Marketing concerts did not. Along the way I discovered that I really enjoyed the new creative challenge.
 
