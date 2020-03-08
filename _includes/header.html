@@ -1,6 +1,5 @@
 <header>
-  <div class="top-ribbon"></div>
-  <nav id="navbar" class="navbar is-spaced is-transparent is-light" role="navigation" aria-label="main navigation">
+  <nav id="navbar" class="navbar is-spaced is-light is-transparent" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
@@ -12,14 +11,24 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navMenu" class="navbar-menu">
-        <div class="navbar-start">
-          <!-- navbar items -->
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item" href="/projects/">Projects</a>
-          <a class="navbar-item" href="/writing/">Writing</a>
-          <a class="navbar-item" href="/about/">About</a>
+      <div class="navbar-start">
+      </div>
+      <div class="navbar-end">
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+            {% include menu.html %}
+          </div>
+          <div class="navbar-item">
+            {% if page.title == "Home" %}
+            <div class="buttons">
+              <button class="button is-primary is-inverted is-outlined is-rounded modal-button" data-target="modal" aria-haspopup="true">Subscribe</button>
+            </div>
+            {% else %}
+            <div class="buttons">
+              <button class="button is-primary is-rounded is-outlined modal-button" data-target="modal" aria-haspopup="true">Subscribe</button>
+            </div>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>

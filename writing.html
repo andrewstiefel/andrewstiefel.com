@@ -1,0 +1,49 @@
+---
+layout: default
+title: Writing
+---
+
+{% include header.html %}
+
+<main class="main">
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <h1 class="title is-spaced">{{ page.title }}</h1>
+          <p class="subtitle">Coming soon!</p>
+          <div class="posts">
+            <div class="content">
+
+              <p>I'm starting a weekly newsletter with thoughts and tips about social media and marketing. If you'd like to follow along, subscribe below:</p>
+
+              <div class="subscribe-writing">
+	               {% include form.html %}
+              </div>
+
+               <p>This is where I'm hoping to devote most of my time in the coming months. If you have questions about marketing and digital media for classical music — or whatever you might be working on — please reach out to <a href="mailto:hello@andrew.st">hello@andrew.st</a>. I'd love to help and possibly share what we learn together.</p>
+
+              {% for post in site.posts %}
+                {% assign currentdate = post.date | date: "%Y" %}
+                {% if currentdate != date %}
+                  <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+                {% assign date = currentdate %}
+                {% endif %}
+                  <h4 class="post-loop-title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                  </h4>
+                  <p>{{ post.description }}</p>
+
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% include footer.html %}

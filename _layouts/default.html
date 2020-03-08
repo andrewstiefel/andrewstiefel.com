@@ -3,14 +3,31 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="animate-in">
 
-        {{ content }}
+    <div class="wrap">
 
-    <!-- Javascript-->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      {{ content }}
 
-    <script defer src="/assets/js/menu.js"></script>
+    </div>
+
+    <div class="sidebar is-dark">
+
+      {% include sidebar.html %}
+
+    </div>
+
+    <!-- Subscribe modal -->
+
+    {% include modal.html %}
+
+    <!-- Scripts-->
+    <script> </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script defer src="/assets/js/main.js"></script>
+    {% if page.title == "Home" %}
+    <script src="/assets/js/particles.min.js"></script>
+    {% endif %}
 
   </body>
 

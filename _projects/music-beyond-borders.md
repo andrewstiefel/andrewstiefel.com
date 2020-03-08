@@ -1,21 +1,30 @@
 ---
 layout: project
 title: Music Beyond Borders
-description: Live concert broadcast in support of immigration following the first executive travel ban in 2017.
+description:
 image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
 order: 1
 ---
 
-The Seattle Symphony organized a free, live concert in response to the first executive order banning travel from seven countries. Approximately a third of the orchestra's musicians are immigrants, so it was an important moment for the organization to stand for its values of inclusivity and respect.
+The Seattle Symphony organized a free concert in response to the first executive order banning travel from seven predominately Islamic countries. Approximately a third of the orchestra’s musicians are immigrants, so it was an important moment for the organization to stand for its values of inclusivity and respect.
 
-With less than five days to produce the concert, I partnered with Twitter to broadcast the concert on Periscope as well as on Facebook Live and YouTube. I also recruited a team of community managers to shape the online conversation and worked with photographers and a video team to produce content during the live broadcast.
+## Strategy
 
-<figure class="figure">
-  <img src="/assets/images/music-beyond-borders-facebook.jpg">
-</figure>
+To maximize the impact concert, we pursued live broadcast technology to increase the orchestra’s global reach. I reach out to a contact at Twitter/Periscope to partner and push the concert across their platforms.
 
-The concert reached over 1.5 million people online and was watched by over 300,000 people around the world. It was covered by _CNN_, _HuffPost_, and _The Seattle Times_ and rebroadcast by KING 5 in Seattle.
+Over the 1–2 weeks of the campaign, we converted the orchestra’s social media platforms to stories about music’s power to unite with content about composers, artists, and musicians from the seven impact country’s.
 
-<div class="facebook-container">
-  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fseattlesymphony%2Fvideos%2F10155084976554434%2F&show_text=1&width=560" width="560" height="472" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-</div>
+I recruited volunteers to assist with social media management so we could shape the online conversation during the event. I drafted scripts and worked with two photographers to express process images for social media for live coverage on Twitter, Facebook, and Instagram.
+
+## Campaign Elements
+
+* Live concert broadcast on Facebook, YouTube, and Twitter/Periscope
+* Social media campaign
+* Email campaign
+* Web content
+
+## Results
+
+The campaign delivered more than 5 million impressions across channels and over 1.9 million on Facebook. Over the campaign, engagement increased by 182% across channels and the concert was watched by more than 350,000 people around the world.
+
+The concert was covered by _CNN_, _HuffPost_, _The Seattle Times_, _Seattle Met_,  _KNKX Radio_, and other media outlets. The video broadcast was picked up by Q4 Fox and KIRO 7 in Seattle and #MusicBeyondBorders trended on Twitter with over 6,200 mentions during the concert.

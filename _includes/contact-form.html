@@ -1,28 +1,31 @@
 <form name="contact" method="POST" data-netlify="true">
   <div class="field">
-    <p class="control has-icons-left">
-      <input class="input" type="email" placeholder="Email">
+    <label class="label">Email</label>
+    <div class="control has-icons-left">
+      <input class="input" type="email" placeholder="your-email@example.com">
       <span class="icon is-small is-left">
         <i class="fas fa-envelope"></i>
       </span>
-    </p>
+    </div>
   </div>
   <div class="field">
-    <p class="control has-icons-left">
-      <input class="input" type="text" placeholder="Name">
+    <label class="label">Name</label>
+    <div class="control has-icons-left">
+      <input class="input" type="text" placeholder="Your Name">
       <span class="icon is-small is-left">
         <i class="fas fa-user"></i>
       </span>
-    </p>
+    </div>
   </div>
   <div class="field">
-    <p class="control has-icons-left">
+    <label class="label">Message</label>
+    <div class="control">
       <textarea class="textarea" placeholder="Your Message"></textarea>
-    </p>
+    </div>
   </div>
   <div class="field">
     <div class="control">
-      <button class="button is-link" type="submit">Send Message</button>
+      <button type="submit" class="button is-primary">Submit</button>
     </div>
   </div>
 </form>

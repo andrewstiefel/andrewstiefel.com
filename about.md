@@ -5,28 +5,35 @@ description:
 permalink: /about/
 ---
 
-**Hello, my name is Andrew Stiefel.** I am a digital content and social media strategist living in Seattle, Washington.
+Hi, I’m Andrew Stiefel. A classical musician by training, I combine a passion for creativity and a fascination with data to build emotional connections between brands and people they serve.
 
-I trained as a classical musician for 18 years. It was hard work, but practicing came easy. Marketing concerts did not. Along the way I discovered that I really enjoyed the new creative challenge.
+For the past seven years I’ve developed and executed strategic campaigns for partnerships with national and local brands, including Apple Music, Bank of America, Delta Air Lines, Mary’s Place, Seattle Cancer Care Alliance, and Virginia Mason Medical Center, among others.
 
-Over the past eight years I’ve worked with arts organizations, universities, and technology companies with a focus on content strategy for marketing and public relations. These days I’m working with the Seattle Symphony. Previously I worked with scientists and technology entrepreneurs at the University of Oregon.
+I started my career at the University of Oregon, collaborating with scientists and entrepreneurs to bring their ideas and products to the world. Today I keep the Seattle Symphony, a brand with over 100 years of history, at the forefront of creative storytelling.
 
-In my spare time I enjoy reading, cooking, learning to code, and exploring the Pacific Northwest on foot or in a sea kayak.
+When I’m not working, you can find me at a coffee shop reading, out in the forests bird watching, at home learning to code, or exploring the Pacific Northwest in a sea kayak.
 
-You can reach me at [hello@andrewstiefel.com](mailto:hello@andrewstiefel.com) or my encrypted email account at [agstiefel@pm.me](mailto:agstiefel@pm.me) for sensitive topics.
+Want to chat about your latest project? I love brainstorming ideas and sharing what I’ve learned, so drop me a note at [hello@andrew.st](mailto:hello@andrew.st). Nothing makes me happier than helping people out.
 
-## etc
+### How do you say last your name?
 
-You can find me online at a variety of websites where my username is `andrewstiefel`.
+My last name is pronounced STEE-full (emphasis on the “STEE” at the beginning). It’s German.
 
-* [Twitter](https://twitter.com/andrewstiefel) – say hello
+### etc
+
+You can find me at a variety of websites online. My username is always `andrewstiefel`:
+
+* [Twitter](https://twitter.com/andrewstiefel/) – say hello
 * [LinkedIn](https://www.linkedin.com/in/andrewstiefel/) – professional stuff
-* [GitHub](https://github.com/andrewstiefel) – code
+* [Medium](https://medium.com/@andrewstiefel/) – words
+* [GitHub](https://github.com/andrewstiefel/) – code
 
-If you’re wondering, this site is:
+This domain has been my online home for many years, manifesting at times as a blog or portfolio. Today it's a space for organizing my professional life.
+
+In case you were wondering, this site is:
 
 * Coded with [Atom](https://atom.io/)
-* Built on [Jekyll](https://jekyllrb.com/)
-* Deployed with [Netlify](https://www.netlify.com/)
+* Built with [Jekyll](http://jekyllrb.com/) + [Bulma](https://bulma.io/)
+* Deployed with [Netlify](https://www.netlify.com)
 
-The source code is available on Github under the MIT License.
+The source code is [available on Github](https://github.com/andrewstiefel/andrewstiefel.com/) under the MIT License.

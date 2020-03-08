@@ -2,7 +2,7 @@
 
 title: Andrew Stiefel
 tagline: '@andrewstiefel'
-description: 'Digital Content & Social Strategist'
+description: 'Digital & Social Media Strategist'
 url: "https://andrewstiefel.com"
 baseurl: ""
 
@@ -13,7 +13,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-archives
 
 sass:
   sass_dir: _sass
@@ -25,28 +25,24 @@ collections:
     permalink: /projects/:title/
     sort_by: order
 
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: taxonomy
+  permalinks:
+    tag: '/writing/tag/:name/'
+    category: '/writing/category/:name/'
+
 breadcrumbs:
   root:
     hide: true
     image: false
 
-paginate: 5
-paginate_path: "/blog/page:num/"
+paginate: 10
+paginate_path: "/writing/page:num/"
 
-permalink: /blog/:title/
-
-# SEO SETTINGS
-
-social:
-  name: Andrew Stiefel
-  links:
-    - https://twitter.com/andrewstiefel
-    - https://www.linkedin.com/in/andrewstiefel
-    - https://github.com/andrewstiefel
-
-twitter:
-  username: andrewstiefel
-  card: summary_large_image
+permalink: /writing/:title/
 
 # CONTACT
 
@@ -56,4 +52,5 @@ author:
   email: andrew@andrewstiefel.com
   twitter: andrewstiefel
   linkedin: andrewstiefel
+  medium: andrewstiefel
   github: andrewstiefel

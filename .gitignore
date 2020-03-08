@@ -3,3 +3,5 @@
 _site
 # Local Netlify folder
 .netlify
+.bundle
+vendor

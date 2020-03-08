@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-description: Hand-picked collection of campaigns created for email, social media, websites, and video.
+description: I value work that builds emotional connection and trust between people and the brands they choose to be part of their lives.
 ---
 
 {% include header.html %}
@@ -10,9 +10,9 @@ description: Hand-picked collection of campaigns created for email, social media
 
   <section class="section" style="padding-bottom: 0px;">
     <div class="container has-text-centered">
-      <div class="column is-6 is-offset-3">
-        <h1 class="title is-2">{{ page.title }}</h1>
-        <p class="subtitle is-5">{{ page.description }}</p>
+      <div class="column is-8 is-offset-2">
+        <h1 class="title is-spaced">{{ page.title }}</h1>
+        <p class="subtitle">{{ page.description }}</p>
       </div>
     </div>
   </section>
@@ -28,13 +28,13 @@ description: Hand-picked collection of campaigns created for email, social media
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-16by9">
-                    <img src="{{ item.image }}?nf_resize=fit&w=468&h=263" alt="{{ item.title }}">
+                    <img src="{{ item.image }}?nf_resize=fit&w=468" alt="{{ item.title }}">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class="title is-4">{{ item.title }}</p>
+                      <p class="title is-5">{{ item.title }}</p>
                     </div>
                   </div>
                 <div class="content">
@@ -51,3 +51,5 @@ description: Hand-picked collection of campaigns created for email, social media
     </div>
   </section>
 </main>
+
+{% include footer.html %}

@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  Welcome to Jekyll
-description: This is a short description of the article.
-image: "/assets/images/1280x960.png"
+description: This is a short description of the article. It can and probably should be a little longer so it's interesting to people who would like to read it.
+image:
 date:   2019-08-02 15:14:00 -0700
-categories: ['getting started']
+categories: jekyll
 tags:
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

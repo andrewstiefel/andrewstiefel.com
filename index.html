@@ -1,36 +1,29 @@
 ---
 layout: default
+title: Home
 description: Andrew Stiefel is a digital content and social media strategist living in Seattle, Washington.
-crumbtitle: Home
 ---
 
-<section class="hero is-fullheight">
+<div id="particles-js"></div>
 
-{% include header.html %}
+<section class="hero is-fullheight landing">
+
+  {% include header.html %}
 
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">
-        {{ site.description }}
-      </h2>
-      <a href="https://twitter.com/{{ site.author.twitter }}">
-        <span class="icon is-medium">
-          <i class="fab fa-lg fa-twitter"></i>
-        </span>
-      </a>
-      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
-      <span class="icon is-medium">
-        <i class="fab fa-lg fa-linkedin"></i>
-      </span>
-      </a>
-      <a href="https://github.com/{{ site.author.github }}">
-      <span class="icon is-medium">
-        <i class="fab fa-lg fa-github"></i>
-      </span>
-      </a>
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <p class="is-size-2">
+            <strong>Hi, I'm Andrew.</strong>
+          </p>
+          <p class="is-size-4">
+            I’m an experienced marketer with a passion for creativity and data who drives meaningful change for brands and nonprofits.
+          </p>
+          <a class="button is-primary is-rounded" href="/about/">Say Hello 👋</a>
+        </div>
+      </div>
     </div>
   </div>
-
-{% include footer.html %}
 
 </section>
