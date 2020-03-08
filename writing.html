@@ -16,14 +16,6 @@ title: Writing
           <div class="posts">
             <div class="content">
 
-              <p>I'm starting a weekly newsletter with thoughts and tips about social media and marketing. If you'd like to follow along, subscribe below:</p>
-
-              <div class="subscribe-writing">
-	               {% include form.html %}
-              </div>
-
-               <p>This is where I'm hoping to devote most of my time in the coming months. If you have questions about marketing and digital media for classical music — or whatever you might be working on — please reach out to <a href="mailto:hello@andrew.st">hello@andrew.st</a>. I'd love to help and possibly share what we learn together.</p>
-
               {% for post in site.posts %}
                 {% assign currentdate = post.date | date: "%Y" %}
                 {% if currentdate != date %}
