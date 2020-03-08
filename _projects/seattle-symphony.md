@@ -2,7 +2,7 @@
 layout: project
 title: Seattle Symphony
 description:
-image: /assets/images/1819_Misc_Shaw-Biss-Shafii_JamesHolt-001.jpg
+image: /assets/images/1617_aerial-berlioz-tchaikovsky-masterworks_0004-lores.jpg
 order: 2
 ---
 
