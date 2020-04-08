@@ -3,6 +3,10 @@ layout: project
 title: Music Beyond Borders
 description:
 image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
+carousel:
+  - image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
+  - image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
+  - image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
 order: 1
 ---
 
@@ -22,6 +26,10 @@ I recruited volunteers to assist with social media management so we could shape 
 * Social media campaign
 * Email campaign
 * Web content
+
+## Creative
+
+{% include carousel.html %}
 
 ## Results
 
