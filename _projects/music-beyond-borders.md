@@ -14,9 +14,9 @@ The Seattle Symphony organized a free concert in response to the first executive
 
 ## Strategy
 
-To maximize the impact concert, we pursued live broadcast technology to increase the orchestra’s global reach. I reach out to a contact at Twitter/Periscope to partner and push the concert across their platforms.
+To maximize the impact of the concert, we pursued live broadcast technology to increase the orchestra’s global reach. I reached out to a contact at Twitter/Periscope to partner and push the concert across their platforms.
 
-Over the 1–2 weeks of the campaign, we converted the orchestra’s social media platforms to stories about music’s power to unite with content about composers, artists, and musicians from the seven impact country’s.
+Over the 1–2 weeks of the campaign, we converted the orchestra’s social media platforms to stories about music’s power to unite with content about composers, artists, and musicians from the seven impacted countries.
 
 I recruited volunteers to assist with social media management so we could shape the online conversation during the event. I drafted scripts and worked with two photographers to express process images for social media for live coverage on Twitter, Facebook, and Instagram.
 
@@ -26,10 +26,6 @@ I recruited volunteers to assist with social media management so we could shape 
 * Social media campaign
 * Email campaign
 * Web content
-
-## Creative
-
-{% include carousel.html %}
 
 ## Results
 
