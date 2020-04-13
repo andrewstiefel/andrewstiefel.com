@@ -5,11 +5,9 @@ description:
 permalink: /about/
 ---
 
-Hi, I’m Andrew Stiefel. A classical musician by training, I combine a passion for creativity and a fascination with data to build emotional connections between brands and people they serve.
+Hi, I’m Andrew Stiefel. Originally a classical musician by training, I combine a passion for creativity and a fascination with data to build trust between brands and the people they serve.
 
-For the past seven years I’ve developed and executed strategic campaigns for partnerships with national and local brands, including Apple Music, Bank of America, Delta Air Lines, Mary’s Place, Seattle Cancer Care Alliance, and Virginia Mason Medical Center, among others.
-
-I started my career at the University of Oregon, collaborating with scientists and entrepreneurs to bring their ideas and products to the world. Today I keep the Seattle Symphony, a brand with over 100 years of history, at the forefront of creative storytelling.
+I started my career at the University of Oregon, collaborating with scientists and entrepreneurs to bring their ideas and products to the world. Today I keep the Seattle Symphony, a brand with over 100 years of history, at the forefront of creative digital storytelling.
 
 When I’m not working, you can find me at a coffee shop reading, out in the forests bird watching, at home learning to code, or exploring the Pacific Northwest in a sea kayak.
 
