@@ -9,29 +9,33 @@ layout: default
   <article class="post">
     <section class="section">
       <div class="container has-text-centered">
-        <p class="is-capitalized post-category">
-          <span class="tag is-primary">
-            {% if post %}
-              {% assign categories = post.categories %}
-            {% else %}
-              {% assign categories = page.categories %}
-            {% endif %}
-            {% for category in categories %}
-              <a href="{{site.baseurl}}/category/{{category|slugize}}">{{category}}</a>
-              {% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
-          </span>
-        </p>
-        <h1 class="title post-title">{{ page.title }}</h1>
-        <p class="has-text-grey-dark is-subtitle">
-          <span class="post-time">
-            <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
-          </span>
-          <span class="meta-divider">•</span>
-          <span class="read-time">
-            {% include reading-time.html %}
-          </span>
-        </p>
+        <div class="columns">
+          <div class="column is-offset-2 is-8">
+            <p class="is-capitalized post-category">
+              <span class="tag is-primary">
+                {% if post %}
+                  {% assign categories = post.categories %}
+                {% else %}
+                  {% assign categories = page.categories %}
+                {% endif %}
+                {% for category in categories %}
+                  <a href="{{site.baseurl}}/writing/category/{{category|slugize}}">{{category}}</a>
+                  {% unless forloop.last %}&nbsp;{% endunless %}
+                {% endfor %}
+              </span>
+            </p>
+            <h1 class="title post-title">{{ page.title }}</h1>
+            <p class="has-text-grey-dark is-subtitle">
+              <span class="post-time">
+                <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
+              </span>
+              <span class="meta-divider">•</span>
+              <span class="read-time">
+                {% include reading-time.html %}
+              </span>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
       {% if page.image %}
@@ -51,7 +55,7 @@ layout: default
             <div class="tags post-tags">
               {% for tag in page.tags %}
                 <span class="tag is-capitalized">
-                  <a href="{{site.baseurl}}/tag/{{tag|slugize}}">{{tag}}</a>
+                  <a href="{{site.baseurl}}/writing/tag/{{tag|slugize}}">{{tag}}</a>
                 </span>
               {% endfor %}
             </div>
@@ -71,7 +75,7 @@ layout: default
   </div>
 </section>
 
-<section class="section is-medium">
+<!---section class="section is-medium">
   <div class="container">
     <div class="columns">
       <div class="column is-offset-2 is-8">
@@ -79,7 +83,7 @@ layout: default
       </div>
     </div>
   </div>
-</section>
+</section--->
 
 </main>
 

@@ -12,9 +12,8 @@ title: Writing
       <div class="columns">
         <div class="column is-8 is-offset-2">
           <h1 class="title is-spaced">{{ page.title }}</h1>
-          <p class="subtitle">Coming soon!</p>
-          <div class="posts">
-            <div class="content">
+          <div class="content">
+            <div class="posts">
 
               {% for post in site.posts %}
                 {% assign currentdate = post.date | date: "%Y" %}
@@ -25,10 +24,14 @@ title: Writing
                   <h4 class="post-loop-title">
                     <a href="{{ post.url }}">{{ post.title }}</a>
                   </h4>
-                  <p>{{ post.description }}</p>
-
+                  <p class="is-size-6">{{ post.description }}</p>
               {% endfor %}
 
+            </div>
+            <div class="archive">
+              <h2>Archive</h2>
+              <p>I've collected all the feature articles and interviews I've written into one list, mainly for my personal satisfaction, but also for anyone curious about what else I've been writing.</p>
+              <a class="button is-rounded is-primary" href="/writing/archive/">View the Archive</a>
             </div>
           </div>
         </div>

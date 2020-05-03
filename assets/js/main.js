@@ -14,6 +14,9 @@ $(document).ready(function() {
 
   });
 
+  // Carousel
+
+
   // Modals
 
   // Open the modal

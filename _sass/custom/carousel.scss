@@ -1,0 +1,73 @@
+.carousel {
+  min-height: 4rem;
+  position: relative;
+}
+
+.carousel-items {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.carousel-arrow {
+  transition: .15s ease-out;
+}
+
+.carousel-arrow.is-hovered {
+  opacity: 0;
+}
+
+.carousel-arrow .icon.has-icons-left {
+  left: 1.5rem;
+}
+
+.carousel-arrow .icon.has-icons-right {
+  right: 1.5rem;
+}
+
+.carousel-arrow .icon.has-icons-left, .carousel-arrow .icon.has-icons-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.carousel-arrow .icon {
+  background: $white;
+  color: $black;
+  cursor: pointer;
+  border: 1px solid $white;
+  border-radius: 290486px;
+  outline: 0;
+  opacity: 50%;
+}
+
+.carousel-thumbs-wrapper {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.carousel .carousel-thumbs {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.carousel .carousel-thumbs a.thumb-item {
+  flex: 1 0 10%;
+}
+
+.carousel .carousel-thumbs .thumb-item:not(:last-child) {
+  margin-right: .5rem;
+}

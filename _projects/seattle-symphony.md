@@ -3,7 +3,7 @@ layout: project
 title: Seattle Symphony
 description:
 image: /assets/images/1617_aerial-berlioz-tchaikovsky-masterworks_0004-lores.jpg
-order: 2
+order: 4
 ---
 
 Seattle was one of the fastest growing cities in the United States in 2016, with most of the growth happening in the downtown core as companies like Adobe, Amazon, Expedia, Google, Microsoft, Starbucks, and Twitter opened new offices in South Lake Union. The Seattle Symphony wanted to expand its audiences by connecting with these new arrivals.

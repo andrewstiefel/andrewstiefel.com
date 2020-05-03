@@ -1,13 +1,9 @@
 ---
 layout: project
-title: Music Beyond Borders
+title: '#MusicBeyondBorders'
 description:
 image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
-carousel:
-  - image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
-  - image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
-  - image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
-order: 1
+order: 3
 ---
 
 The Seattle Symphony organized a free concert in response to the first executive order banning travel from seven predominately Islamic countries. Approximately a third of the orchestra’s musicians are immigrants, so it was an important moment for the organization to stand for its values of inclusivity and respect.
