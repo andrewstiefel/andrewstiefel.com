@@ -1,9 +1,9 @@
 #SITE CONFIGURATION
 
-title: "Andrew Stiefel"
-tagline: ""@andrewstiefel"
-description: "I'm a digital strategist and creative copywriter who builds trust and connection between brands and the people they serve.""
-url: "https://andrewstiefel.com"
+title: Andrew Stiefel
+tagline: @andrewstiefel
+description: I'm a digital strategist and creative copywriter who builds trust and connection between brands and the people they serve.
+url: https://andrewstiefel.com
 baseurl: ""
 
 # BUILD SETTINGS
@@ -31,8 +31,8 @@ jekyll-archives:
     - tags
   layout: taxonomy
   permalinks:
-    tag: '/writing/tag/:name/'
-    category: '/writing/category/:name/'
+    tag: /writing/tag/:name/
+    category: /writing/category/:name/
 
 breadcrumbs:
   root:
@@ -40,7 +40,7 @@ breadcrumbs:
     image: false
 
 paginate: 10
-paginate_path: "/writing/page:num/"
+paginate_path: /writing/page:num/
 
 permalink: /writing/:title/
 
