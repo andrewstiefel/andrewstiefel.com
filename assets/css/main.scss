@@ -438,58 +438,12 @@ $footer-padding: 4rem 1.5rem !default;
 }
 
 .footer-social-icons {
-  padding: 0 0 20px;
+  margin-top: 22px;
 }
 
-/* Particles JS */
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-#particles-js {
-  background-size: cover;
-  background-position: top;
-  position : absolute;
-  width:100%;
-  height:100%;
-  z-index:-1;
-}
-
-canvas {
-  background: linear-gradient(180deg, #03a595 0%, #091225 80%);
-  opacity: 0.8;
-}
-
-/* Landing Page */
-
-.landing .title, .landing .subtitle, .landing p, .landing strong {
-  color: $grey-lighter;
-}
-
-.landing p {
-  margin-bottom: 1rem;
-}
-
-.landing a {
-  color: $grey-lighter !important;
-}
-
-.landing a:hover {
-  color: $white !important;
-}
-
-.landing .navbar-dropdown a {
-  color: $grey-darker !important;
-}
-
-.landing .navbar-dropdown a:hover {
-  color: $black !important;
-}
-
-.landing .hero-body .button {
-  margin-top: 1em;
+.footer-privacy:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
 }
 
 /* Subscribe Flow */

@@ -1,22 +1,29 @@
 <footer class="footer is-dark">
-  <div class="container has-text-centered">
-    <p class="footer-social-icons">
-      <a target="_blank" href="https://twitter.com/{{ site.author.twitter }}">
-        <span class="icon">
-          <i class="fab fa-twitter"></i>
-        </span>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
-      <span class="icon">
-        <i class="fab fa-linkedin-in"></i>
-      </span>
-      </a>
-      <a target="_blank" href="https://medium.com/@{{ site.author.medium }}">
-      <span class="icon">
-        <i class="fab fa-medium-m"></i>
-      </span>
-      </a>
-    </p>
-    <p class="is-size-7">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Made with<span class="icon"><i class="fas fa-heart has-text-danger"></i></span>in Seattle.</p>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-half">
+        <p class="is-size-6">Made with<span class="icon"><i class="fas fa-heart has-text-danger"></i></span>in Seattle.</p>
+        <p class="is-size-7">&copy; {{ site.time | date: '%Y' }} {{ site.title }} &middot; <a href="https://usefathom.com/ref/FBJDFZ"><span class="footer-privacy">This website isn't tracking your personal data.</span></a></p>
+      </div>
+      <div class="column is-half has-text-right">
+        <p class="footer-social-icons">
+          <a target="_blank" href="https://twitter.com/{{ site.author.twitter }}">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
+          <span class="icon">
+            <i class="fab fa-linkedin-in"></i>
+          </span>
+          </a>
+          <a target="_blank" href="https://medium.com/@{{ site.author.medium }}">
+          <span class="icon">
+            <i class="fab fa-medium-m"></i>
+          </span>
+          </a>
+        </p>
+      </div>
+    </div>
   </div>
 </footer>
