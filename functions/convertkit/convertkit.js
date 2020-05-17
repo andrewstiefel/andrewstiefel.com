@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
   }
 
   const params = querystring.parse(event.body);
-  const email = event.queryStringParameters.email
+  const email = event.queryStringParameters.email;
   let errorMessage = null;
 
   if (!email) {
