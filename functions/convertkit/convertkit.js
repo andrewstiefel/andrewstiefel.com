@@ -1,5 +1,3 @@
-const apiKey = process.env.CONVERTKIT_API_KEY;
-
 exports.handler = async (event, context) => {
   const formData = JSON.parse(event.body);
   const email = formData.email;
@@ -18,7 +16,7 @@ exports.handler = async (event, context) => {
   }
 
   const data = {
-    api_key: apiKey,
+    api_key: hQIOi5G6xVzZBQ0hRZTfKg,
     email: email,
     tags: [newsletter],
   };
