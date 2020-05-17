@@ -1,13 +1,13 @@
-exports.handler = async (event, context) => {
-  const formData = JSON.parse(event.body);
-  const email = formData.email;
-  let errorMessage = null;
+import querystring from "querystring";
 
-  if (!formData) {
-    errorMessage = "No form data supplied";
-    console.log(errorMessage);
-    callback(errorMessage);
+exports.handler = async (event, context) => {
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" };
   }
+
+  const params = querystring.parse(event.body);
+  const email = event.queryStringParameters.email
+  let errorMessage = null;
 
   if (!email) {
     errorMessage = "No EMAIL supplied";
