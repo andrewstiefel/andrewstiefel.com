@@ -1,35 +1,46 @@
-import querystring from "querystring";
+import { parse } from 'querystring'
+const apiKey = process.env.CONVERTKIT_API_KEY;
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  const params = querystring.parse(event.body);
-  const email = event.queryStringParameters.email;
-  let errorMessage = null;
+  let body = {}
+  console.log(event)
+  try {
+    body = JSON.parse(event.body)
+  } catch (e) {
+    body = parse(event.body)
+  }
 
-  if (!email) {
-    errorMessage = "No EMAIL supplied";
-    console.log(errorMessage);
-    callback(errorMessage);
+  if (!body.email) {
+    console.log('mission email')
+    return callback(null, {
+      statusCode: 400,
+      body: JSON.stringify({
+        error: 'missing email'
+      })
+    })
   }
 
   const data = {
-    api_key: hQIOi5G6xVzZBQ0hRZTfKg,
-    email: email,
+    api_key: apiKey,
+    email: body.email,
     tags: [newsletter],
   };
 
   const subscriber = JSON.stringify(data);
   console.log("Sending data to convertkit", subscriber);
 
-  request({
-    method: "POST",
-    url: "https://api.convertkit.com/v3/forms/d9d0c34d5f/subscribe",
+  // Subscribe an email
+
+  var request = require('request');
+  request.post({
+    headers: {'Content-Type': 'application/json; charset=utf-8'},
+    url: 'https://api.convertkit.com/v3/forms/d9d0c34d5f/subscribe',
     body: subscriber,
-    headers: {
-      "Content-Type": "application/json; charset=utf-8",
-    },
-  });
+    }, function(error, response, body){
+      console.log(body);
+    });
 };
