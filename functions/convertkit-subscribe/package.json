@@ -1,0 +1,14 @@
+{
+  "name": "convertkit-subscribe",
+  "version": "1.0.0",
+  "description": "subscribes user to converkit form",
+  "main": "convertkit-subscribe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Stiefel",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
