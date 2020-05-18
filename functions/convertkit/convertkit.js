@@ -1,4 +1,3 @@
-import { parse } from 'querystring'
 const apiKey = process.env.CONVERTKIT_API_KEY;
 
 exports.handler = async (event, context) => {
