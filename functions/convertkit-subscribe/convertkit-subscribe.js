@@ -1,4 +1,3 @@
-import { parse } from 'querystring'
 const apiKey = process.env.CONVERTKIT_API_KEY;
 
 exports.handler = async (event, context) => {
@@ -6,27 +5,11 @@ exports.handler = async (event, context) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  let body = {}
-  console.log(event)
-  try {
-    body = JSON.parse(event.body)
-  } catch (e) {
-    body = parse(event.body)
-  }
-
-  if (!body.email) {
-    console.log('missing email')
-    return callback(null, {
-      statusCode: 400,
-      body: JSON.stringify({
-        error: 'missing email'
-      })
-    })
-  }
+  const email = event.queryStringParameters.email ||
 
   const data = {
     api_key: apiKey,
-    email: body.email,
+    email: email,
     tags: [newsletter],
   };
 
