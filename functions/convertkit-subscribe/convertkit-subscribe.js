@@ -5,6 +5,8 @@ exports.handler = async (event, context) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
+  const params = event.queryStringParameters || {};
+
   let body = {}
   console.log(event)
   try {
@@ -14,7 +16,7 @@ exports.handler = async (event, context) => {
   }
 
   if (!body.email) {
-    console.log('mission email')
+    console.log('missing email')
     return callback(null, {
       statusCode: 400,
       body: JSON.stringify({
