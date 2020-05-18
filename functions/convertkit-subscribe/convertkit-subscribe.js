@@ -1,11 +1,10 @@
+import { parse } from 'querystring'
 const apiKey = process.env.CONVERTKIT_API_KEY;
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
-
-  const params = event.queryStringParameters || {};
 
   let body = {}
   console.log(event)
