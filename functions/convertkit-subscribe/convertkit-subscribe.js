@@ -5,7 +5,17 @@ exports.handler = async (event, context) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  const email = event.queryStringParameters.email ||
+  const email = event.queryStringParameters.email || '';
+
+  if (!email) {
+    console.log('missing email')
+    return callback(null, {
+      statusCode: 400,
+      body: JSON.stringify({
+        error: 'missing email'
+      })
+    })
+  }
 
   const data = {
     api_key: apiKey,
