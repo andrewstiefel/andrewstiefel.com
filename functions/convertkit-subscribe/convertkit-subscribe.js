@@ -4,9 +4,7 @@ exports.handler = async (event, context) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  // Find email
-  const params = querystring.parse(event.body);
-  const email = params.email || "Oops, no email received";
+  const email = event.queryStringParameters.email || 'Oops, no email';
 
   // Subscribe an email
 
