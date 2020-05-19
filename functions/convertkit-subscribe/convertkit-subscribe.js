@@ -16,5 +16,10 @@ exports.handler = async (event, context) => {
         headers: { 'Content-Type': 'application/json; charset=utf-8' },
     })
     .then(res => res.json())
-    .then(json => console.log(json));
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+  console.error('Error:', error);
+  });
 };
