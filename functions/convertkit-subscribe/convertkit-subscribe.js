@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
 
   // Find email
   const params = querystring.parse(event.body);
-  const email = params.email || "";
+  const email = params.email || "Oops, no email received";
 
   // Subscribe an email
 
