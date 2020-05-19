@@ -17,6 +17,8 @@ exports.handler = async (event, context) => {
     method: "POST",
     url: 'https://api.convertkit.com/v3/forms/d9d0c34d5f/subscribe',
     body: subscriber,
-    headers: 'Content-Type': 'application/json; charset=utf-8',
+    headers: {
+      "Content-Type": "application/json; charset=utf-8"
+    }
   };
 };
