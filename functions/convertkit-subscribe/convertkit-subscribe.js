@@ -1,3 +1,5 @@
+import querystring from "querystring";
+
 exports.handler = async (event, context) => {
   // Only allow POST
   if (event.httpMethod !== "POST") {
