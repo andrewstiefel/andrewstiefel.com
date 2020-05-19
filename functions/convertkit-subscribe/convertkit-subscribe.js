@@ -1,4 +1,4 @@
-const request = require("request");
+const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
 
@@ -10,8 +10,11 @@ exports.handler = async (event, context) => {
 
   const subscriber = JSON.stringify(data);
 
-  return {
-    statusCode: 200,
-    body: `${subscriber}`
-  };
+  fetch('https://api.convertkit.com/v3/forms/d9d0c34d5f/subscribe', {
+        method: 'post',
+        body:    subscriber,
+        headers: { 'Content-Type': 'application/json' },
+    })
+    .then(res => res.json())
+    .then(json => console.log(json));
 };
