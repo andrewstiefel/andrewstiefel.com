@@ -10,10 +10,10 @@ exports.handler = async (event, context) => {
 
   const subscriber = JSON.stringify(data);
 
-  fetch('https://api.convertkit.com/v3/forms/d9d0c34d5f/subscribe', {
+  return fetch('https://api.convertkit.com/v3/forms/d9d0c34d5f/subscribe', {
         method: 'post',
         body:    subscriber,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json; charset=utf-8' },
     })
     .then(res => res.json())
     .then(json => console.log(json));
