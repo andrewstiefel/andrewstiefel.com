@@ -2,7 +2,7 @@ exports.handler = async (event, context) => {
   const email = event.queryStringParameters.email || '';
 
   const data = {
-    api_key: hQIOi5G6xVzZBQ0hRZTfKg,
+    api_key: 'hQIOi5G6xVzZBQ0hRZTfKg',
     email: email,
     tags: [ 'Newsletter' ],
   };
