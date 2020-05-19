@@ -1,14 +1,8 @@
-const apiKey = process.env.CONVERTKIT_API_KEY;
-
 exports.handler = async (event, context) => {
-  if (event.httpMethod !== "POST") {
-    return { statusCode: 405, body: "Method Not Allowed" };
-  }
-
   const email = event.queryStringParameters.email || '';
 
   const data = {
-    api_key: apiKey,
+    api_key: hQIOi5G6xVzZBQ0hRZTfKg,
     email: email,
     tags: [ 'Newsletter' ],
   };
