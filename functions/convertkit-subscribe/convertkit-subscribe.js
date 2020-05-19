@@ -1,14 +1,14 @@
+import querystring from "querystring";
+
 exports.handler = async (event, context) => {
-  const email = event.queryStringParameters.email || '';
+  // Only allow POST
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" };
+  }
 
-  const data = {
-    api_key: 'hQIOi5G6xVzZBQ0hRZTfKg',
-    email: email,
-    tags: [ 'Newsletter' ],
-  };
-
-  const subscriber = JSON.stringify(data);
-  console.log("Sending data to convertkit", subscriber);
+  // Find email
+  const params = querystring.parse(event.body);
+  const email = params.email || "";
 
   // Subscribe an email
 
@@ -16,7 +16,11 @@ exports.handler = async (event, context) => {
   request.post({
     headers: {'Content-Type': 'application/json; charset=utf-8'},
     url: 'https://api.convertkit.com/v3/forms/d9d0c34d5f/subscribe',
-    body: subscriber,
+    body: {
+      api_key: 'hQIOi5G6xVzZBQ0hRZTfKg',
+      email: '${email}',
+      tags: [ 'Newsletter' ]
+      },
     }, function(error, response, body){
       console.log(body);
     });
