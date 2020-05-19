@@ -5,7 +5,7 @@ exports.handler = async (event, context) => {
   const email = event.queryStringParameters.email || 'Oops, no email';
   const data = {
     api_key: 'hQIOi5G6xVzZBQ0hRZTfKg',
-    email: '${email}',
+    email: ${email},
   };
 
   const subscriber = JSON.stringify(data);
