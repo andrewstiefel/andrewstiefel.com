@@ -9,16 +9,9 @@ exports.handler = async (event, context) => {
   };
 
   const subscriber = JSON.stringify(data);
-  console.log("Sending data to convertkit", subscriber);
 
-  // Subscribe an email
-
-  request({
-    method: "POST",
-    url: 'https://api.convertkit.com/v3/forms/d9d0c34d5f/subscribe',
-    body: subscriber,
-    headers: {
-      "Content-Type": "application/json; charset=utf-8"
-    }
+  return {
+    statusCode: 200,
+    body: `${subscriber}`
   };
 };
