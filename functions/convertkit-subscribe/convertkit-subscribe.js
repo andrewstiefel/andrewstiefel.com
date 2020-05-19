@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
   const data = {
     api_key: apiKey,
     email: email,
-    tags: [newsletter],
+    tags: [Newsletter],
   };
 
   const subscriber = JSON.stringify(data);
