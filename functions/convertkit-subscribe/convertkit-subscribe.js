@@ -14,13 +14,15 @@ exports.handler = async (event, context) => {
         method: 'post',
         body:    subscriber,
         headers: { 'Content-Type': 'application/json; charset=utf-8' },
-        redirect: 'follow',
     })
     .then(res => res.json())
     .then(data => {
       console.log('Success:', data);
     })
+    .then(
+      window.location.replace("/almost");
+    )
     .catch((error) => {
-  console.error('Error:', error);
+      console.error('Error:', error);
   });
 };
