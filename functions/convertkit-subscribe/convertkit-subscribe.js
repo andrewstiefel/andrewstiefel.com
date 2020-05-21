@@ -1,6 +1,10 @@
 const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
+  // Only allow POST
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" };
+  }
 
   const email = event.queryStringParameters.email || 'Oops, no email';
   const data = {
@@ -9,6 +13,8 @@ exports.handler = async (event, context) => {
   };
 
   const subscriber = JSON.stringify(data);
+
+  // Subscribe the user
 
   return fetch('https://api.convertkit.com/v3/forms/1369284/subscribe', {
         method: 'post',
@@ -19,9 +25,6 @@ exports.handler = async (event, context) => {
     .then(data => {
       console.log('Success:', data);
     })
-    .then(
-      window.location.replace("/almost");
-    )
     .catch((error) => {
       console.error('Error:', error);
   });
