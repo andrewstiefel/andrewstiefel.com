@@ -25,6 +25,9 @@ exports.handler = async (event, context) => {
     .then(data => {
       console.log('Success:', data);
     })
+    .then() => {
+      window.location.replace("new target URL");
+    }
     .catch((error) => {
       console.error('Error:', error);
   });
