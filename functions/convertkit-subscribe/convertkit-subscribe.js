@@ -14,20 +14,26 @@ exports.handler = async (event, context) => {
 
   const subscriber = JSON.stringify(data);
 
-  // Subscribe the user
+  // Subscribe an email
 
   return fetch('https://api.convertkit.com/v3/forms/1369284/subscribe', {
         method: 'post',
         body:    subscriber,
         headers: { 'Content-Type': 'application/json; charset=utf-8' },
     })
-    .then(res => res.json())
+    .then(res => res.json()
+      if (response.ok) {
+        return callback(null, {
+        statusCode: 302,
+        headers: {
+          Location: '/almost',
+          'Cache-Control': 'no-cache',
+        }
+      })
+    })
     .then(data => {
       console.log('Success:', data);
     })
-    .then() => {
-      window.location.replace("new target URL");
-    }
     .catch((error) => {
       console.error('Error:', error);
   });
