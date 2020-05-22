@@ -21,7 +21,7 @@ exports.handler = async (event, context) => {
 
   // Subscribe an email
 
-  return fetch("https://api.convertkit.com/v3/forms/1369284/subscribe", {
+  fetch("https://api.convertkit.com/v3/forms/1369284/subscribe", {
     method: "post",
     body: subscriber,
     headers: { "Content-Type": "application/json; charset=utf-8" },
@@ -33,5 +33,7 @@ exports.handler = async (event, context) => {
     .catch((error) => {
       console.error("Error:", error);
     });
+
+   return response;
 
 };
