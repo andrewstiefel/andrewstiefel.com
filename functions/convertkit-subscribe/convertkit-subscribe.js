@@ -1,7 +1,6 @@
 const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
-
   const email = event.queryStringParameters.email || "Oops, no email";
   const data = {
     api_key: "hQIOi5G6xVzZBQ0hRZTfKg",
@@ -26,12 +25,6 @@ exports.handler = async (event, context) => {
     });
 
   if (response.ok) {
-    return callback(null, {
-      statusCode: 302,
-      headers: {
-        Location: "/almost",
-        "Cache-Control": "no-cache",
-      },
-    });
+    window.location = "/almost";
   }
 };
