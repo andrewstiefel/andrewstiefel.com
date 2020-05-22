@@ -1,6 +1,18 @@
 const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
+
+  // Redirect the page
+
+  const response = {
+    statusCode: 301,
+    headers: {
+      Location: "/almost",
+    },
+  };
+
+  return response;
+
   const email = event.queryStringParameters.email || "Oops, no email";
   const data = {
     api_key: "hQIOi5G6xVzZBQ0hRZTfKg",
@@ -24,14 +36,4 @@ exports.handler = async (event, context) => {
       console.error("Error:", error);
     });
 
-  // Redirect the page
-
-  const response = {
-    statusCode: 301,
-    headers: {
-      Location: "https://google.com",
-    },
-  };
-
-  return response;
 };
