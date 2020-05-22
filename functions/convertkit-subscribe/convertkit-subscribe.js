@@ -24,7 +24,12 @@ exports.handler = async (event, context) => {
       console.error("Error:", error);
     });
 
-  if (response.ok) {
-    window.location = "/almost";
-  }
+  // Redirect the page
+
+  const response = {
+    statusCode: 301,
+    headers: {
+      Location: "https://google.com",
+    },
+  };
 };
