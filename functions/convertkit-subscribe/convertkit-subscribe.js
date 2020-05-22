@@ -32,4 +32,6 @@ exports.handler = async (event, context) => {
       Location: "https://google.com",
     },
   };
+
+  return response;
 };
