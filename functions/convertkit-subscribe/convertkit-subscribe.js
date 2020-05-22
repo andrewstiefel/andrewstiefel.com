@@ -6,9 +6,9 @@ exports.handler = async (event, context) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  const email = event.queryStringParameters.email || 'Oops, no email';
+  const email = event.queryStringParameters.email || "Oops, no email";
   const data = {
-    api_key: 'hQIOi5G6xVzZBQ0hRZTfKg',
+    api_key: "hQIOi5G6xVzZBQ0hRZTfKg",
     email: email,
   };
 
@@ -16,25 +16,26 @@ exports.handler = async (event, context) => {
 
   // Subscribe an email
 
-  return fetch('https://api.convertkit.com/v3/forms/1369284/subscribe', {
-        method: 'post',
-        body:    subscriber,
-        headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    })
-    .then(res => res.json()
-      if (response.ok) {
-        return callback(null, {
-        statusCode: 302,
-        headers: {
-          Location: '/almost',
-          'Cache-Control': 'no-cache',
-        }
-      })
-    })
-    .then(data => {
-      console.log('Success:', data);
+  return fetch("https://api.convertkit.com/v3/forms/1369284/subscribe", {
+    method: "post",
+    body: subscriber,
+    headers: { "Content-Type": "application/json; charset=utf-8" },
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log("Success:", data);
     })
     .catch((error) => {
-      console.error('Error:', error);
-  });
+      console.error("Error:", error);
+    });
+
+  if (response.ok) {
+    return callback(null, {
+      statusCode: 302,
+      headers: {
+        Location: "/almost",
+        "Cache-Control": "no-cache",
+      },
+    });
+  }
 };
