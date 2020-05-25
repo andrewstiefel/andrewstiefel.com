@@ -5,7 +5,7 @@ const apiFormURL = process.env.CONVERTKIT_NEWSLETTER_FORM;
 exports.handler = async (event, context) => {
   const email = event.queryStringParameters.email || "Oops, no email";
   const data = {
-    api_key: "$(apiKey)",
+    api_key: apiKey,
     email: email,
   };
 
@@ -13,7 +13,7 @@ exports.handler = async (event, context) => {
 
   // Subscribe an email
 
-  return fetch("$(apiFormURL)", {
+  return fetch( apiFormURL, {
     method: "post",
     body: subscriber,
     headers: { "Content-Type": "application/json; charset=utf-8" },
