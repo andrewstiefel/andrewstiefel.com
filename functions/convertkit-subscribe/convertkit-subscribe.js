@@ -1,9 +1,11 @@
 const fetch = require("node-fetch");
+const apiKey = process.env.CONVERTKIT_API_KEY;
+const apiFormURL = process.env.CONVERTKIT_NEWSLETTER_FORM;
 
 exports.handler = async (event, context) => {
   const email = event.queryStringParameters.email || "Oops, no email";
   const data = {
-    api_key: "hQIOi5G6xVzZBQ0hRZTfKg",
+    api_key: "$(apiKey)",
     email: email,
   };
 
@@ -11,7 +13,7 @@ exports.handler = async (event, context) => {
 
   // Subscribe an email
 
-  return fetch("https://api.convertkit.com/v3/forms/1369284/subscribe", {
+  return fetch("$(apiFormURL)", {
     method: "post",
     body: subscriber,
     headers: { "Content-Type": "application/json; charset=utf-8" },
