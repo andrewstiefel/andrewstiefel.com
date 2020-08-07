@@ -8,32 +8,25 @@ layout: default
 
   <article class="post">
     <section class="section">
-      <div class="container has-text-centered">
+      <div class="container">
         <div class="columns">
           <div class="column is-offset-2 is-8">
-            <p class="is-capitalized post-category">
-              <span class="tag is-primary">
-                {% if post %}
-                  {% assign categories = post.categories %}
-                {% else %}
-                  {% assign categories = page.categories %}
-                {% endif %}
-                {% for category in categories %}
-                  <a href="{{site.baseurl}}/writing/category/{{category|slugize}}">{{category}}</a>
-                  {% unless forloop.last %}&nbsp;{% endunless %}
-                {% endfor %}
-              </span>
-            </p>
-            <h1 class="title post-title">{{ page.title }}</h1>
-            <p class="has-text-grey-dark is-subtitle">
-              <span class="post-time">
-                <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
-              </span>
-              <span class="meta-divider">•</span>
-              <span class="read-time">
-                {% include reading-time.html %}
-              </span>
-            </p>
+            <div class="content">
+              <h1 class="title">{{ page.title }}</h1>
+              <h6>
+                <span class="post-time">
+                  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
+                </span>
+                <span class="meta-divider">•</span>
+                <span class="read-time">
+                  {% include reading-time.html %}
+                </span>
+              </h6>
+              <hr class="hr-post-header">
+              <p class="intro">
+                {{ page.subtitle }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -59,31 +52,26 @@ layout: default
                 </span>
               {% endfor %}
             </div>
+            <div class="notification author-box">
+              <div class="columns">
+                <div class="column is-3 has-text-centered">
+                  <figure class="image is-1x1">
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/480x480.png">
+                  </figure>
+                </div>
+                <div class="column is-9">
+                  <div class="content">
+                    <h5>About {{ site.author.name }}</h5>
+                    <p>Andrew Stiefel is a designer and writer who creates unique brand experiences.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
   </section>
 </article>
-
-<section class="section is-medium has-background-grey-lighter">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-5">
-        {% include subscribe.html %}
-      </div>
-    </div>
-  </div>
-</section>
-
-<!---section class="section is-medium">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-offset-2 is-8">
-        {% include bio.html %}
-      </div>
-    </div>
-  </div>
-</section--->
 
 </main>
 

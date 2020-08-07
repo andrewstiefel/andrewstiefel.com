@@ -1,4 +1,4 @@
-$body-background-color: $light !default;
+$body-background-color: $scheme-main !default;
 $body-size: 16px !default;
 $body-min-width: 300px !default;
 $body-rendering: optimizeLegibility !default;
@@ -160,7 +160,7 @@ table {
     vertical-align: top;
 
     &:not([align]) {
-      text-align: left;
+      text-align: inherit;
     }
   }
 
