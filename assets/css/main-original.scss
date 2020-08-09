@@ -312,6 +312,10 @@ $footer-padding: 3rem 1.5rem !default;
  }
 }
 
+.two_column {
+  column-count: 2;
+}
+
 // Sidebar //
 
 .sidebar {
