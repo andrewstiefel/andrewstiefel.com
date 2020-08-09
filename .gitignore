@@ -6,3 +6,4 @@ node_modules
 .netlify
 .bundle
 vendor
+.jekyll-cache
