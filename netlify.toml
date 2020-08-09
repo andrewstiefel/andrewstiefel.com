@@ -13,3 +13,6 @@ ID = "andrewstiefel.netlify.com"
     Content-Security-Policy = "default-src: https:"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[plugins]]
+    package = "@netlify/plugin-functions-install-core"
