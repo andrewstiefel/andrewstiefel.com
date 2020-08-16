@@ -7,19 +7,24 @@ permalink: /about/
 
 # About
 
-<p class="intro">I help brands and creators build relationships with their audiences so they can do the work they love.</p>
+<p class="intro">My name is Andrew Stiefel. I have a passion for telling stories and building mission-driven brands.</p>
 
-By day I work as Senior Communications Manager at the Seattle Symphony, and on the side I create weekly articles on my blog, sharing insights into ???. Previously I collaborated with scientists and entrepreneurs at the University of Oregon to bring their ideas and products to the world.
+I have the privilege of working at the Seattle Symphony as Senior Communications Manager. I work with an amazing team to produce original journalism, films, podcasts, and educational content.
 
-In the past, I’ve worked with artists like Yo-Yo Ma and John Williams and entrepreneurs like NAME and NAME. My work has been featured in The New York Times, CNN, and Vogue, among other outlets. In the past, I’ve worked with artists like Yo-Yo Ma and John Williams and entrepreneurs like NAME.
+Through my work for the Symphony, I’ve been fortunate to interview and film some fascinating people, including Stephen Spielberg, John Williams, Caroline Shaw, Yo-Yo Ma, and even the Seahawk’s Russel Wilson.
 
-I write a weekly newsletter called NAME where I share articles about creativity, marketing, and social media with more than 2,000 creative professionals:
+Previously, I collaborated with scientists and entrepreneurs at the University of Oregon to bring their ideas and products to the world. I’ve also volunteered with political action campaigns supporting equal access to education in Oregon and Washington.
 
-When I’m not working, you can find me at a coffee shop reading, at home learning to code, or exploring the Pacific Northwest by foot or in a sea kayak. When I’m not working, you can find me at a coffee shop reading, at home learning to code, or exploring the Pacific Northwest by foot or in a sea kayak.
+A teacher at heart, I’m passionate about sharing what I’ve learned. Through my blog and courses, I help independent creators learn how to build an audience and tell their story so they can make a living doing what they love.
 
-#### About This Site
+I love the outdoors and I'm a lifelong birder and hiker. When I’m not working, you can find me at a coffee shop reading or exploring the Pacific Northwest by foot or in a sea kayak.
 
-This domain has been my online home for many years, manifesting at times as a blog or a portfolio. In case you were wondering, this site is:
+
+#### About this website
+
+This domain has been my online home for many years, manifesting at times as a blog or a catalogue of my music. Now it's a home for my portfolio and a place to share my resources.
+
+I enjoy teaching myself how to code and I designed this website myself. In case you were wondering, this site is:
 
 * Coded with [Atom](https://atom.io/)
 * Built with [Jekyll](http://jekyllrb.com/) + [Bulma](https://bulma.io/)

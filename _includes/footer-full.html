@@ -1,0 +1,86 @@
+<footer class="footer has-background-white">
+  <div class="container">
+    <div class="columns is-vcentered py-5">
+      <div class="column is-6">
+        <div class="content">
+          <h4 class="mb-0">Call to Action Here</h4>
+          <p class="is-family-secondary">Get instant access to this amazing weekly newsletter with tips and tricks.</p>
+        </div>
+      </div>
+      <div class="column is-6">
+        {% include forms/form-newsletter-footer.html %}
+      </div>
+    </div>
+    <div class="columns pb-5">
+      <div class="column is-3">
+        <ul>
+          <li>
+            <h6>Services</h6>
+          </li>
+          <li>
+            <a href="/services/content-creation/">Content Creation</a>
+          </li>
+          <li>
+            <a href="/services/digital-marketing/">Digital Marketing</a>
+          </li>
+          <li>
+            <a href="/services/social-media">Social Media Strategy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column is-3">
+        <ul>
+          <li>
+            <h6>Free Training</h6>
+          </li>
+          <li>
+            <a href="/courses/audience-building/">Audience Building</a>
+          </li>
+          <li>
+            <a href="/courses/personal-branding/">Personal Branding</a>
+          </li>
+          <li>
+            <a href="/courses/write-online">Writing Online</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column is-3">
+        <ul>
+          <li>
+            <h6>Resources</h6>
+          </li>
+          <li>
+            <a href="/newsletter/">Newsletter</a>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+          <li>
+            <a href="/tools/">Tools</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column is-3">
+        <ul>
+          <li>
+            <h6>Info</h6>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/about/press/">Press</a>
+          </li>
+          <li>
+            <a href="about/contact/">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright has-text-centered">
+      <p class="is-size-7">
+        &copy; {{ site.time | date: '%Y' }} {{ site.title }} &middot; <a href="https://usefathom.com/ref/FBJDFZ"><span class="footer-privacy">This website isn't tracking you</span></a>
+      </p>
+    </div>
+  </div>
+</footer>

@@ -5,7 +5,7 @@ description:
 permalink: /about/contact/
 ---
 
-# Get in Touch
+# Getting in Touch
 
 **Do you need help with a project?**  
 I’d love to learn more! Send a quick note to andrew@andrewstiefel.com with a brief outline of what you need and how I can help.
@@ -15,7 +15,3 @@ If you send me a short, well-formatted email with one or two questions, there's 
 
 **Just want to chat?**  
 I spend way too much time on Twitter, so you can usually find me there. Follow me @andrewstiefel and send me a tweet.
-
-#### Contact Form
-
-{% include forms/form-contact.html %}
