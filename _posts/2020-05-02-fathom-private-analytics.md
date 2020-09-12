@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Host Your Own Website Analytics with Fathom and DigitalOcean
+title: How to Host Your Own Private Website Analytics
 description: Create a simple, self-hosted website analytics solution with Fathom and DigitalOcean.
-subtitle:
+subtitle: Create a simple, self-hosted website analytics solution with Fathom Analytics and DigitalOcean.
 image: /assets/images/custom-website-analytics.jpg
 date: 2020-05-02 15:00:00 -0700
 category: code
-tags: 
+tags:
 ---
 
 I’ve been searching for an alternative to Google Analytics for some time. Although Google provides a great, feel tool for understanding how users interact with your website, their near-monopoly — and presence on the majority of the open web — feels a little like an invasion of privacy.

@@ -10,7 +10,6 @@ baseurl: ""
 
 markdown: kramdown
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-archives
@@ -25,6 +24,8 @@ collections:
     permalink: '/portfolio/:title/'
     sort_by: order
 
+permalink: '/blog/:title/'
+
 jekyll-archives:
   enabled:
     - categories
@@ -33,16 +34,6 @@ jekyll-archives:
   permalinks:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
-
-breadcrumbs:
-  root:
-    hide: true
-    image: false
-
-paginate: 10
-paginate_path: '/blog/page:num/'
-
-permalink: '/blog/:title/'
 
 # CONTACT
 

@@ -5,7 +5,9 @@ description:
 permalink: /about/contact/
 ---
 
-# Getting in Touch
+<h1 class="is-size-1-tablet">Contact</h1>
+
+<p class="intro is-size-5-tablet">Interested in working together? Here's how to get in touch.</p>
 
 **Do you need help with a project?**  
 I’d love to learn more! Send a quick note to andrew@andrewstiefel.com with a brief outline of what you need and how I can help.

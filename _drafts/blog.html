@@ -9,6 +9,25 @@ title: Blog
 
   <section class="section">
     <div class="container">
+      <div class="columns">
+        <div class="column is-8">
+          <div class="content">
+            <h1>{{ page.title }}</h1>
+            <p class="intro">Thoughts on audience building and brand storytelling from the intersection of culture, technology, and social impact.</p>
+            <a class="button is-small is-primary is-outlined" href="/atom.xml">
+              <span class="icon">
+                <i class="fas fa-rss"></i>
+              </span>
+              <span>Subscribe</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
       <div class="columns is-multiline">
         {% for post in site.posts %}
         <div class="column is-6">
@@ -30,6 +49,9 @@ title: Blog
           </div>
         </div>
         {% endfor %}
+      </div>
+    </div>
+  </section>
 
 </main>
 
