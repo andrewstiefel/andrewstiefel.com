@@ -167,6 +167,11 @@ a {
   border-bottom: 1px solid;
 }
 
+.tag a {
+  border-bottom: none;
+  color: $text;
+}
+
 .navbar a {
   border-bottom: none;
 }

@@ -48,7 +48,7 @@ layout: default
             <div class="tags post-tags">
               {% for tag in page.tags %}
                 <span class="tag is-capitalized">
-                  <a href="{{site.baseurl}}/blog/tag/{{tag|slugize}}">{{tag}}</a>
+                  <a href="{{site.baseurl}}/blog/tag/{{ tag | replace: " ","-" }}">{{tag}}</a>
                 </span>
               {% endfor %}
             </div>
