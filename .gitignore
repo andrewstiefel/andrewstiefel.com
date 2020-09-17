@@ -1,8 +1,10 @@
 .DS_Store
 .sass-cache
 _site
+node_modules
 # Local Netlify folder
 .netlify
 .bundle
 vendor
 .jekyll-cache
+.Ulysses-Group.plist

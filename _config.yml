@@ -10,7 +10,6 @@ baseurl: ""
 
 markdown: kramdown
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-archives
@@ -20,10 +19,12 @@ sass:
   style: compressed
 
 collections:
-  projects:
+  portfolio:
     output: true
-    permalink: '/projects/:title/'
+    permalink: '/portfolio/:title/'
     sort_by: order
+
+permalink: '/blog/:title/'
 
 jekyll-archives:
   enabled:
@@ -31,18 +32,8 @@ jekyll-archives:
     - tags
   layout: taxonomy
   permalinks:
-    tag: '/writing/tag/:name/'
-    category: '/writing/category/:name/'
-
-breadcrumbs:
-  root:
-    hide: true
-    image: false
-
-paginate: 10
-paginate_path: '/writing/page:num/'
-
-permalink: '/writing/:title/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
 
 # CONTACT
 
@@ -54,3 +45,4 @@ author:
   linkedin: andrewstiefel
   medium: andrewstiefel
   github: andrewstiefel
+  instagram: andrewstiefel

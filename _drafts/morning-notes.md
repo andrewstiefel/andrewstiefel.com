@@ -1,7 +1,7 @@
 ---
-layout: project
+layout: portfolio
 title: '#MorningNotes'
-description:
-image: /assets/images/1617_aerial-berlioz-tchaikovsky-masterworks_0004-lores.jpg
-order: 1
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+image: /assets/images/1617_Concerts_Music_Beyond_Borders_Brandon_Patoc_0007.jpg
+order: 2
 ---

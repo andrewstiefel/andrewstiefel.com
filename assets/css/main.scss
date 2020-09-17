@@ -1,163 +1,104 @@
 ---
 ---
 
-// Designed, built, and released under MIT license by @andrewstiefel. Learn more at https://github.com/andrewstiefel.
+// Import Custom Fonts
+@import "fonts/inter.scss";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Martel:wght@200;900&display=swap";
 
-///// IMPORT AND CUSTOMIZE BULMA FRAMEWORK /////
 
-//* Import utilities *//
+//Import and Configure Font Awesome
+$fa-font-path: "/assets/fonts/fontawesome";
+@import "vendors/fontawesome/fontawesome.scss";
+@import "vendors/fontawesome/brands.scss";
+@import "vendors/fontawesome/solid.scss";
 
-// Colors
+// Set Brand Colors
 
-$black: hsl(220, 100%, 0%) !default;
-$black-bis: hsl(220, 100%, 4%) !default;
-$black-ter: hsl(220, 60%, 9%) !default;
+$brand-green: hsl(180, 100%, 25%) !default;
+$brand-salmon: hsl(0, 100%, 68%) !default;
+$brand-dark: hsl(176, 45%, 13%) !default;
+$brand-dark-grey: hsl(0, 0%, 86%) !default;
+$brand-light-grey: hsl(0, 0%, 93%) !default;
 
-$grey-darker: hsl(220.5, 49%, 15%) !default;
-$grey-dark: hsl(220, 27%, 32%) !default;
-$grey: hsl(220, 27%, 68%) !default;
-$grey-light: hsl(220, 25%, 81%) !default;
-$grey-lighter: hsl(221.3, 26%, 88%) !default;
-
-$white-ter: hsl(220, 38%, 94%) !default;
-$white-bis: hsl(220, 27%, 98%) !default;
-$white: hsl(220, 0%, 100%) !default;
-
-$orange: hsl(14, 96%, 50%) !default;
-$yellow: hsl(51.1, 100%, 50%) !default;
-$green: hsl(141, 96%, 33%) !default;
-$turquoise: hsl(174.1, 96%, 33%) !default;
-$cyan: hsl(203.9, 96%, 33%) !default;
-$blue: hsl(216.8, 96%, 33%) !default;
-$purple: hsl(221.4, 96%, 18%) !default;
-$red: hsl(353.7, 96%, 33%) !default;
+$primary: $brand-green !default;
 
 // Typography
+$family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default;
+$family-serif: "Martel", serif !default;
+$family-headline: "Roboto Condensed", sans-serif !default;
 
-$family-serif: Georgia, Times, Times New Roman, serif  !default;
+$family-primary: $family-sans-serif !default;
+$family-secondary: $family-serif !default;
 
-// Responsiveness
+$size-1: 4rem !default;
+$size-2: 2.75rem !default;
+$size-3: 2.222rem !default;
+$size-4: 2rem !default;
+$size-5: 1.333rem !default;
+$size-6: 1rem !default;
+$size-7: 0.75rem !default;
 
-$gap: 32px !default;
-$widescreen: 1100px + 2 * $gap !default;
 $fullhd-enabled: false;
 
+$body-size: 18px !default;
+$body-line-height: 2 !default;
+$text: $brand-dark !default;
+$text-strong: $brand-dark !default;
+$link: $primary !default;
+$radius: 2px !default;
+
+$hero-body-padding-medium: 6rem 1.5rem !default;
+$hero-body-padding-large: 9rem 1.5rem !default;
+
+$section-padding-medium: 6rem 1.5rem !default;
+$section-padding-large: 9rem 1.5rem !default;
+
+$footer-padding: 3rem 1.5rem !default;
+
+$input-color: $text-strong !default;
+$input-placeholder-color: bulmaRgba($input-color, 0.3) !default;
+$input-hover-border-color: none !default;
+$input-shadow: none !default;
+$input-focus-box-shadow-color: none !default;
+
+// Import Bulma
 @import "utilities/initial-variables.scss";
 @import "utilities/functions.scss";
-
-// Derived colors
-
-$light: $white-bis !default;
-
-// Text Colors
-
-$text: $grey-darker !default;
-$text-light: $grey !default;
-$text-strong: $black-ter !default;
-
-// Code colors
-
-$code: $black !default;
-$code-background: $grey-lighter !default;
-
-$pre: $white !default;
-$pre-background: $purple !default;
-
 @import "utilities/derived-variables.scss";
 @import "utilities/animations.scss";
 @import "utilities/mixins.scss";
 @import "utilities/controls.scss";
 
-//* Import base *//
+$content-heading-weight: $weight-bold !default;
+$content-heading-line-height: 1.2 !default;
+
 @import "base/minireset.scss";
-
-// Body
-
-$body-size: 17px !default;
-$body-line-height: 1.75 !default;
-
-// Horizontal rule
-
-$hr-background-color: transparent !default;
-
-hr {
-  text-align: center;
-  letter-spacing: 1em;
-    height: 35px !important;
-}
-
-hr::before {
-  content: '...';
-  display: inline-block;
-  font-weight: bold;
-}
-
 @import "base/generic.scss";
-@import "base/helpers.scss";
-
-//* Import elements *//
-
-$box-padding: 3rem !default;
 
 @import "elements/box.scss";
 @import "elements/button.scss";
 @import "elements/container.scss";
-
-$content-heading-weight: $weight-bold !default;
-
-$content-blockquote-background-color: $light !default;
-$content-blockquote-border-left: 5px solid $black-ter !default;
-
-.content {
-  p,
-  dl,
-  ol,
-  ul,
-  blockquote,
-  pre,
-  table {
-    font-family: $family-serif;
-  }
-}
-
-.content .button {
-  font-family: $family-sans-serif !important;
-}
-
-.content figure.highlight {
-  text-align: left !important;
-  border-radius: 1em !important;
-}
-
-.content .highlight pre {
-  border-radius: 1em !important;
-  margin-bottom: 1em !important;
-}
-
-blockquote {
-  font-size: $size-4 !important;
-  color: $black-ter !important;
-  font-weight: bold !important;
-}
-
-.twitter-tweet {
-  font-size: $size-6 !important;
-}
-
 @import "elements/content.scss";
 @import "elements/icon.scss";
 @import "elements/image.scss";
-/* @import "elements/notification.scss"; */
+@import "elements/notification.scss";
 /* @import "elements/progress.scss"; */
-@import "elements/table.scss";
+/* @import "elements/table.scss"; */
 @import "elements/tag.scss";
 
+$title-family: $family-headline !default;
+$title-size: $size-1 !default;
 $title-weight: $weight-bold !default;
+
+$subtitle-family: $family-secondary !default;
+$subtitle-size: $size-5 !default;
+$subtitle-weight: 200 !default;
+$subtitle-line-height: 1.5 !default;
 
 @import "elements/title.scss";
 @import "elements/other.scss";
 
-//* Import form *//
 @import "form/shared.scss";
 @import "form/input-textarea.scss";
 /* @import "form/checkbox-radio.scss"; */
@@ -165,138 +106,143 @@ $title-weight: $weight-bold !default;
 /* @import "form/file.scss"; */
 @import "form/tools.scss";
 
-//* Import components *//
 /* @import "components/breadcrumb.scss"; */
 @import "components/card.scss";
 /* @import "components/dropdown.scss"; */
 @import "components/level.scss";
 @import "components/list.scss";
-@import "components/media.scss";
-@import "components/menu.scss";
+/* @import "components/media.scss"; */
+/* @import "components/menu.scss"; */
 /* @import "components/message.scss"; */
-
-$modal-background-background-color: rgba($black, 0.75) !default;
-$modal-content-width: 600px !default;
-$modal-close-right: -16px !default;
-$modal-close-top: -16px !default;
-
-.modal-content,
-.modal-card {
-  overflow: initial !important;
-}
-
-.modal-close {
-  @extend %delete;
-
-  background: $black-bis !important;
-  position: absolute !important;
-}
-
 @import "components/modal.scss";
-
-$transition-duration: .5s;
-
-.modal {
-    visibility: hidden;
-    display: flex;
-
-    .modal-background {
-        opacity: 0;
-    }
-
-    .modal-content {
-      opacity: 0;
-    }
-
-    &.is-active {
-        visibility: visible;
-
-        .modal-background {
-            transition: all $transition-duration;
-            opacity: 1;
-        }
-
-        .modal-content {
-          transition: all $transition-duration;
-          opacity: 1;
-    }
-  }
-}
-
 @import "components/navbar.scss";
-@import "components/pagination.scss";
+/* @import "components/pagination.scss"; */
 /* @import "components/panel.scss"; */
 /* @import "components/tabs.scss"; */
 
-//* Import grid *//
 @import "grid/columns.scss";
 @import "grid/tiles.scss";
 
-//* Import layout *//
+@import "helpers/color.scss";
+@import "helpers/float.scss";
+@import "helpers/other.scss";
+@import "helpers/overflow.scss";
+@import "helpers/position.scss";
+@import "helpers/spacing.scss";
+@import "helpers/typography.scss";
+@import "helpers/visibility.scss";
+
 @import "layout/hero.scss";
-
-$section-padding-small: 2rem 1.5rem !default;
-$section-padding: 3rem 1.5rem !default;
-$section-padding-medium: 6rem 1.5rem !default;
-$section-padding-large: 9rem 1.5rem !default;
-
-.section {
-
-  // Responsiveness
-  @include desktop {
-    // Sizes
-    &.is-small {
-      padding: $section-padding-small;
-    }
-  }
-}
-
 @import "layout/section.scss";
-
-$footer-background-color: $black-ter !default;
-$footer-padding: 4rem 1.5rem !default;
-
 @import "layout/footer.scss";
 
-///// Import additional css templates /////
-
-@import "custom/carousel.scss";
+// Import Custom Components
 @import "monokai.css";
 
-///// ADD CUSTOM CLASSES /////
+// Configure Overrides
 
-.main {
-  flex: 1 0 auto;
+$background: $white !default;
+
+html {
+  scroll-behavior: smooth;
 }
 
-.animate-in {
-  animation:fadeIn 300ms ease-in;
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $family-headline;
 }
 
-.animate-out {
-  transition:opacity 300ms;
-  opacity:0
+h2 {
+  font-family: $family-serif;
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0
+body {
+  letter-spacing: -0.014em;
+}
+
+a {
+  border-bottom: 1px solid;
+}
+
+.tag a {
+  border-bottom: none;
+  color: $text;
+}
+
+.navbar a {
+  border-bottom: none;
+}
+
+.content {
+  @extend %block;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $content-heading-color;
+    font-weight: $content-heading-weight;
+    line-height: $content-heading-line-height;
   }
- to {
-  opacity: 1
- }
+
+  h1 {
+    // font-size: $size-1;
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+
+  h2 {
+    // font-size: $size-3;
+    font-family: $family-serif;
+    font-weight: 200;
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+
+  h3 {
+    // font-size: $size-2;
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+
+  h4 {
+    // font-size: $size-4;
+  }
+
+  h5 {
+    // font-size: $size-5;
+  }
+
+  h6 {
+    // font-size: $size-7;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0
- }
- to {
-  opacity: 1
- }
+.navbar-menu {
+    font-size: $size-7;
+    text-transform: uppercase;
 }
 
-/* Sidebar */
+.button {
+  min-width: 150px;
+}
+
+// Sidebar //
 
 .sidebar {
   position: fixed;
@@ -305,7 +251,7 @@ $footer-padding: 4rem 1.5rem !default;
   right: -14rem;
   visibility: hidden;
   overflow-y: auto;
-  background-color: #091225;
+  background-color: $dark;
   width: 14rem;
 }
 
@@ -339,179 +285,92 @@ $footer-padding: 4rem 1.5rem !default;
   width: 100%;
 }
 
-/* Subscribe form mobile */
+// Floating images
 
-@include mobile {
-  .field.is-grouped {
-    display: block;
-  }
-  .field.is-grouped > .control:not(:last-child) {
-    margin-right: 0px;
-    margin-bottom: 1rem;
-  }
-  .modal .modal-content {
-    width: calc(100vw - 3rem);
-  }
-  .modal .box {
-    padding: 1.5rem;
-  }
-}
-
-/* Customize card */
-
-.card .media:not(:last-child) {
-  margin-bottom: 0.75rem;
-}
-
-/* Post classes */
-
-.posts {
-  margin-bottom: 1.5rem !important;
-}
-
-.post-loop-title {
-  margin-bottom: 0.2em !important;
-}
-
-.post-title {
-  margin-bottom: 1.1rem !important;
-}
-
-.post-category {
-  margin-bottom: 1.1rem !important;
-}
-
-.post-category a {
-  color: $white !important;
-}
-
-.post-image {
-  margin-bottom: 3rem !important;
-}
-
-.post-content {
-  padding: 0 1.5rem 3rem !important;
-}
-
-.post-tags .label {
-  font-weight: bold;
-  margin-right: 0.5rem;
-}
-
-.post-tags a {
-  color: $dark !important;
-}
-
-.author-bio p {
-  margin-bottom: 1em;
-}
-
-/* Responsive video container */
-
-.video-container {
+.side-media {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   position: relative;
-  padding-bottom: 56.25%; /*16:9*/
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
 }
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
+.side-media-left .side-media-back {
+  grid-column: 1 / 9;
+  grid-row: 1;
+  margin-right: 2%;
+}
+
+.side-media-left .side-media-front {
+  grid-column: 4 / span 8;
+  grid-row: 1;
+  padding-top: 28%;
+  z-index: 1;
+}
+
+.side-media-right .side-media-back {
+  grid-column: 5 / -1;
+  grid-row: 1;
+  margin-left: 2%;
+}
+
+.side-media-right .side-media-front {
+  grid-column: 2 / span 8;
+  grid-row: 1;
+  padding-top: 28%;
+  z-index: 1;
+}
+
+// Custom Classes
+
+p.intro {
+  // font-size: $size-5;
+  font-family: $family-serif;
+  font-weight: 200;
+}
+
+p.site-title {
+  font-family: $family-serif;
+  font-weight: 900;
+  font-size: $size-5;
+}
+
+a.site-title:hover {
+  color: #12302e;
+}
+
+.two_column {
+  column-count: 2;
+}
+
+.hr-post-header {
+  background: none;
+  margin: 2rem 0;
+}
+
+hr.hr-post-header::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 2.5em;
+  border-top: 2px solid $primary;
 }
 
-/* Footer customizations */
+.post-card a {
+  color: initial;
+}
+
+.post-card:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
+}
 
 .footer {
-  flex-shrink: 0;
-  color: #fff;
+  border-top: 1px solid $brand-light-grey;
 }
 
-.footer a {
-  color: #fff;
+::-moz-selection {
+  background-color: $primary;
+  color: #ffffff;
 }
 
-.footer-social-icons {
-  padding: 0 0 20px;
-}
-
-/* Particles JS */
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-#particles-js {
-  background-size: cover;
-  background-position: top;
-  position : absolute;
-  width:100%;
-  height:100%;
-  z-index:-1;
-}
-
-canvas {
-  background: linear-gradient(180deg, #03a595 0%, #091225 80%);
-  opacity: 0.8;
-}
-
-/* Landing Page */
-
-.landing .title, .landing .subtitle, .landing p, .landing strong {
-  color: $grey-lighter;
-}
-
-.landing p {
-  margin-bottom: 1rem;
-}
-
-.landing a {
-  color: $grey-lighter !important;
-}
-
-.landing a:hover {
-  color: $white !important;
-}
-
-.landing .navbar-dropdown a {
-  color: $grey-darker !important;
-}
-
-.landing .navbar-dropdown a:hover {
-  color: $black !important;
-}
-
-.landing .hero-body .button {
-  margin-top: 1em;
-}
-
-/* Subscribe Flow */
-
-.subscribe .hero-body {
-  align-items: start !important;
-}
-
-.subscribe-writing {
-  max-width: 25rem;
-  margin-bottom: 1rem;
-}
-
-/* Mobile classes */
-
-@include mobile {
-
-  a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
-    background-color: transparent;
-  }
-
-  .navbar-burger:hover {
-    background-color: transparent;
-  }
+::selection {
+  background-color: $primary;
+  color: #ffffff;
 }

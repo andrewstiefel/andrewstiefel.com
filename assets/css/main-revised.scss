@@ -1,0 +1,574 @@
+---
+---
+
+// Import Custom Fonts
+@import "fonts/inter.scss";
+@import "fonts/merriweather.scss";
+
+//Import and Configure Font Awesome
+$fa-font-path: "/assets/fonts/fontawesome";
+@import "vendors/fontawesome/fontawesome.scss";
+@import "vendors/fontawesome/brands.scss";
+@import "vendors/fontawesome/solid.scss";
+
+// Set Brand Colors
+
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-lightest: hsl(0, 0%, 93%) !default;
+
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: hsl(48, 100%, 67%) !default;
+$green: hsl(141, 53%, 53%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(204, 71%, 53%) !default;
+$blue: hsl(217, 71%, 53%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$red: hsl(348, 86%, 61%) !default;
+
+// Configure Global Variables
+
+// Typography
+$body-size: 18px !default;
+
+$family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default;
+$family-serif: "Merriweather", serif !default;
+
+$size-1: 3rem !default;
+$size-2: 2.5rem !default;
+$size-3: 2rem !default;
+$size-4: 1.5rem !default;
+$size-5: 1.25rem !default;
+$size-6: 1rem !default;
+$size-7: 0.8rem !default;
+
+$fullhd-enabled: false;
+
+// $fullhd-enabled: false;
+
+// Code colors
+
+$code: $black !default;
+$code-background: $grey-lighter !default;
+
+$pre: $white !default;
+$pre-background: $purple !default;
+
+// Typography
+$family-secondary: $family-serif !default;
+
+// Configure Component variables
+$hr-background-color: transparent !default;
+
+$content-blockquote-border-left: 5px solid $black !default;
+
+$input-border-color: $grey-lighter;
+$input-shadow: none;
+
+$input-hover-border-color: none;
+
+$modal-background-background-color: rgba($black, 0.75) !default;
+$modal-content-width: 720px !default;
+$modal-close-right: 0px !default;
+$modal-close-top: 0px !default;
+
+$transition-duration: .5s;
+
+$hero-body-padding-small: 2rem 1.5rem !default;
+$hero-body-padding: 3rem 1.5rem !default;
+$hero-body-padding-medium: 9rem 1.5rem !default;
+$hero-body-padding-large: 12rem 1.5rem !default;
+
+$section-padding-small: 2rem 1.5rem !default;
+$section-padding: 3rem 1.5rem !default;
+$section-padding-medium: 6rem 1.5rem !default;
+$section-padding-large: 9rem 1.5rem !default;
+
+$footer-background-color: $black-ter !default;
+$footer-padding: 3rem 1.5rem !default;
+
+// Import Bulma
+@import "utilities/initial-variables.scss";
+@import "utilities/functions.scss";
+@import "utilities/derived-variables.scss";
+@import "utilities/animations.scss";
+@import "utilities/mixins.scss";
+@import "utilities/controls.scss";
+
+@import "base/minireset.scss";
+@import "base/generic.scss";
+
+@import "elements/box.scss";
+@import "elements/button.scss";
+@import "elements/container.scss";
+@import "elements/content.scss";
+@import "elements/icon.scss";
+@import "elements/image.scss";
+@import "elements/notification.scss";
+/* @import "elements/progress.scss"; */
+/* @import "elements/table.scss"; */
+@import "elements/tag.scss";
+@import "elements/title.scss";
+@import "elements/other.scss";
+
+$input-placeholder-color: bulmaRgba($black, 1) !default;
+
+$input-focus-border-color: $primary !default;
+$input-focus-box-shadow-color: bulmaRgba($primary, 0.25) !default;
+
+@import "form/shared.scss";
+@import "form/input-textarea.scss";
+/* @import "form/checkbox-radio.scss"; */
+/* @import "form/select.scss"; */
+/* @import "form/file.scss"; */
+@import "form/tools.scss";
+
+/* @import "components/breadcrumb.scss"; */
+@import "components/card.scss";
+/* @import "components/dropdown.scss"; */
+@import "components/level.scss";
+@import "components/list.scss";
+/* @import "components/media.scss"; */
+/* @import "components/menu.scss"; */
+/* @import "components/message.scss"; */
+@import "components/modal.scss";
+@import "components/navbar.scss";
+/* @import "components/pagination.scss"; */
+/* @import "components/panel.scss"; */
+/* @import "components/tabs.scss"; */
+
+@import "grid/columns.scss";
+@import "grid/tiles.scss";
+
+@import "helpers/color.scss";
+@import "helpers/float.scss";
+@import "helpers/other.scss";
+@import "helpers/overflow.scss";
+@import "helpers/position.scss";
+@import "helpers/spacing.scss";
+@import "helpers/typography.scss";
+@import "helpers/visibility.scss";
+
+@import "layout/hero.scss";
+@import "layout/section.scss";
+@import "layout/footer.scss";
+
+// Import Custom Components
+@import "monokai.css";
+
+// Configure Overrides
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $family-secondary;
+}
+
+body {
+  letter-spacing: -0.014em;
+}
+
+hr {
+  text-align: center;
+  letter-spacing: 1em;
+  height: 35px !important;
+}
+
+hr::before {
+  content: '...';
+  display: inline-block;
+  font-weight: bold;
+}
+
+.content figure.highlight {
+  text-align: left !important;
+  border-radius: 1em !important;
+}
+
+.content .highlight pre {
+  border-radius: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+blockquote {
+  font-size: $size-4 !important;
+  color: $black-ter !important;
+  font-weight: bold !important;
+}
+
+.twitter-tweet {
+  font-size: $size-6 !important;
+}
+
+.modal-content,
+.modal-card {
+  overflow: initial !important;
+}
+
+.modal-close {
+  @extend %delete;
+
+  background: $black-ter !important;
+  position: absolute !important;
+}
+
+.modal {
+    visibility: hidden;
+    display: flex;
+
+    .modal-background {
+        opacity: 0;
+    }
+
+    .modal-content {
+      opacity: 0;
+    }
+
+    &.is-active {
+        visibility: visible;
+
+        .modal-background {
+            transition: all $transition-duration;
+            opacity: 1;
+        }
+
+        .modal-content {
+          transition: all $transition-duration;
+          opacity: 1;
+    }
+  }
+}
+
+.section {
+
+  // Responsiveness
+  @include desktop {
+    // Sizes
+    &.is-small {
+      padding: $section-padding-small;
+    }
+  }
+}
+
+///// ADD CUSTOM CLASSES /////
+
+.main {
+  flex: 1 0 auto;
+}
+
+.animate-in {
+  animation: fadeIn 300ms ease-in;
+}
+
+.animate-out {
+  animation: fadeOut 300ms ease-out;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+ to {
+  opacity: 1
+ }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+ }
+ to {
+  opacity: 1
+ }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1
+  }
+ to {
+  opacity: 0
+ }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1
+ }
+ to {
+  opacity: 0
+ }
+}
+
+// Mouse Scoll animation
+
+.scroll{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    cursor: pointer;
+    margin-top: -25px;
+    margin-left: -15px;
+    margin-bottom: 16px;
+}
+
+.scroll .mouse{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.scroll .wheel{
+    width: 4px;
+    height: 4px;
+    top: 10px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    margin-left: -2px;
+    animation-name: scroll-wheel;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll-wheel{
+    from{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to{
+        transform: translate3d(0, 10px, 0);
+        opacity: 0;
+    }
+}
+
+// Sidebar //
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  background-color: #091225;
+  width: 14rem;
+}
+
+.sidebar a {
+  color: $white;
+}
+
+.sidebar .navbar {
+  padding: 0.5rem 0.75rem;
+}
+
+.sidebar .buttons {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar, .wrap {
+    transition: all 0.5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.wrap.is-active, .sidebar.is-active {
+  transform: translateX(-14rem);
+}
+
+.sidebar.is-active {
+  visibility: visible;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+// Floating images
+
+.side-media {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.side-media-left .side-media-back {
+  grid-column: 1 / 9;
+  grid-row: 1;
+  margin-right: 2%;
+}
+
+.side-media-left .side-media-front {
+  grid-column: 4 / span 8;
+  grid-row: 1;
+  padding-top: 28%;
+  z-index: 1;
+}
+
+.side-media-right .side-media-back {
+  grid-column: 5 / -1;
+  grid-row: 1;
+  margin-left: 2%;
+}
+
+.side-media-right .side-media-front {
+  grid-column: 2 / span 8;
+  grid-row: 1;
+  padding-top: 28%;
+  z-index: 1;
+}
+
+/* Subscribe form mobile */
+
+@include mobile {
+  .field.is-grouped {
+    display: block;
+  }
+  .field.is-grouped > .control:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 1rem;
+  }
+  .modal .modal-content {
+    width: calc(100vw - 3rem);
+  }
+  .modal .box {
+    padding: 1.5rem;
+  }
+}
+
+/* Customize card */
+
+.card .media:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+/* Post classes */
+
+.posts {
+  margin-bottom: 1.5rem !important;
+}
+
+.post-loop-title {
+  margin-bottom: 0.2em !important;
+}
+
+.post-title {
+  margin-bottom: 1.1rem !important;
+}
+
+.post-category {
+  margin-bottom: 1.1rem !important;
+}
+
+.post-category a {
+  color: $white !important;
+}
+
+.post-image {
+  margin-bottom: 3rem !important;
+}
+
+.post-content {
+  padding: 0 1.5rem 3rem !important;
+}
+
+.post-tags .label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.post-tags a {
+  color: $dark !important;
+}
+
+/* Responsive video container */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9*/
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer customizations */
+
+.footer {
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer-social-icons {
+  margin-top: 22px;
+}
+
+.footer-privacy:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
+}
+
+/* Subscribe Flow */
+
+.subscribe .hero-body {
+  align-items: start !important;
+}
+
+.subscribe-writing {
+  max-width: 25rem;
+  margin-bottom: 1rem;
+}
+
+/* Mobile classes */
+
+@include mobile {
+
+  a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+    background-color: transparent;
+  }
+
+  .navbar-burger:hover {
+    background-color: transparent;
+  }
+}

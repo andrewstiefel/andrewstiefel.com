@@ -1,0 +1,60 @@
+---
+layout: default
+title: Portfolio
+description: I value work that builds trust and emotional connection between people and the brands they choose to be part of their lives.
+---
+
+{% include header.html %}
+
+<main class="main">
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8">
+          <div class="content">
+            <h1>{{ page.title }}</h1>
+            <p class="intro">{{ page.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+
+        {% assign items = site.portfolio | sort: 'order' %}
+        {% for item in items %}
+
+          <div class="column is-6">
+            <a href="{{ item.url }}">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="{{ item.image }}?nf_resize=fit&w=468" alt="{{ item.title }}">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-5">{{ item.title }}</p>
+                    </div>
+                  </div>
+                <div class="content">
+                    {{ item.description }}
+                </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include footer.html %}

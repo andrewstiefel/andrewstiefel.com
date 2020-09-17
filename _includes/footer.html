@@ -1,22 +1,10 @@
-<footer class="footer is-dark">
-  <div class="container has-text-centered">
-    <p class="footer-social-icons">
-      <a target="_blank" href="https://twitter.com/{{ site.author.twitter }}">
-        <span class="icon">
-          <i class="fab fa-twitter"></i>
-        </span>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
-      <span class="icon">
-        <i class="fab fa-linkedin-in"></i>
-      </span>
-      </a>
-      <a target="_blank" href="https://medium.com/@{{ site.author.medium }}">
-      <span class="icon">
-        <i class="fab fa-medium-m"></i>
-      </span>
-      </a>
-    </p>
-    <p class="is-size-7">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Made with<span class="icon"><i class="fas fa-heart has-text-danger"></i></span>in Seattle.</p>
+<footer class="footer has-background-white">
+  <div class="container">
+    <div class="copyright has-text-centered">
+      <p class="is-size-7">
+        &copy; {{ site.time | date: '%Y' }} {{ site.title }} &middot; Made with<span class="icon has-text-danger"><i class="fas fa-heart"></i></span>in Seattle<br />
+        <a href="https://usefathom.com/ref/FBJDFZ"><span class="footer-privacy">This website isn't tracking you</span></a>
+      </p>
+    </div>
   </div>
 </footer>

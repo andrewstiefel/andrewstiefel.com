@@ -8,32 +8,25 @@ layout: default
 
   <article class="post">
     <section class="section">
-      <div class="container has-text-centered">
+      <div class="container">
         <div class="columns">
           <div class="column is-offset-2 is-8">
-            <p class="is-capitalized post-category">
-              <span class="tag is-primary">
-                {% if post %}
-                  {% assign categories = post.categories %}
-                {% else %}
-                  {% assign categories = page.categories %}
-                {% endif %}
-                {% for category in categories %}
-                  <a href="{{site.baseurl}}/writing/category/{{category|slugize}}">{{category}}</a>
-                  {% unless forloop.last %}&nbsp;{% endunless %}
-                {% endfor %}
-              </span>
-            </p>
-            <h1 class="title post-title">{{ page.title }}</h1>
-            <p class="has-text-grey-dark is-subtitle">
-              <span class="post-time">
-                <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
-              </span>
-              <span class="meta-divider">•</span>
-              <span class="read-time">
-                {% include reading-time.html %}
-              </span>
-            </p>
+            <div class="content">
+              <h1 class="title is-size-1-tablet">{{ page.title }}</h1>
+              <h6 class="is-size-7">
+                <span class="post-time">
+                  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
+                </span>
+                <span class="meta-divider">•</span>
+                <span class="read-time">
+                  {% include reading-time.html %}
+                </span>
+              </h6>
+              <hr class="hr-post-header">
+              <p class="intro is-size-5-tablet">
+                {{ page.subtitle }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -55,7 +48,7 @@ layout: default
             <div class="tags post-tags">
               {% for tag in page.tags %}
                 <span class="tag is-capitalized">
-                  <a href="{{site.baseurl}}/writing/tag/{{tag|slugize}}">{{tag}}</a>
+                  <a href="{{site.baseurl}}/blog/tag/{{ tag | replace: " ","-" }}">{{tag}}</a>
                 </span>
               {% endfor %}
             </div>
@@ -64,26 +57,6 @@ layout: default
       </div>
   </section>
 </article>
-
-<section class="section is-medium has-background-grey-lighter">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-5">
-        {% include subscribe.html %}
-      </div>
-    </div>
-  </div>
-</section>
-
-<!---section class="section is-medium">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-offset-2 is-8">
-        {% include bio.html %}
-      </div>
-    </div>
-  </div>
-</section--->
 
 </main>
 

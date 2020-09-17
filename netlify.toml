@@ -3,6 +3,13 @@
 # Git-backed deploys.
 ID = "andrewstiefel.netlify.com"
 
+[[redirects]]
+# Redirect domain aliases to primary domain
+https://andrew.st/* https://andrewstiefel.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://andrewstiefel.netlify.com/* https://andrewstiefel.com/:splat 301!
+
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
