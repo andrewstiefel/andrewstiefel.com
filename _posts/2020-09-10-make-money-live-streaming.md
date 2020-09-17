@@ -13,20 +13,24 @@ Live video is more popular than ever. According to a recent survey conducted by 
 
 Live streaming to a worldwide audience can bring in real revenue for your business. With so many options available, it can feel daunting to find the right strategy. Let’s take a look at the different methods.
 
-## Five Methods to Make Money with Live Streaming
+<div class="notification">
 
-- Ask for Tips or Donations
-- Sell Tickets (Pay Per View)
-- Sell Subscriptions
-- Play Ads
-- Get Sponsorships
+<h3>Five Methods to Make Money with Live Streaming</h3>
+
+<ul>
+  <li>Ask for Tips or Donations</li>
+  <li>Sell Tickets (Pay Per View)</li>
+  <li>Sell Subscriptions</li>
+  <li>Play Ads</li>
+  <li>Get Sponsorships</li>
+</ul>
+
+</div>
 
 ## Why You Should Monetize Your Live Videos
 Streaming video accounts for two-thirds of the world’s internet traffic, and by 2021 it will account for [over $70 billion in global revenue][2]. The coronavirus pandemic has accelerated adoption as we all look to live video as a way to stay connected. Successful brands and creators are seizing this opportunity, diving head-first into the [live video streaming gold rush][3].
 
 But does it make sense for your business objectives? That should be your guiding question throughout. For many creators, live streaming can be a lucrative way to add to their income. For others, it might be a marketing channel to build awareness of other products and services you’re selling.
-
-**Download my complete guide to monetizing live video to learn the methods, tactics, and tech setup you’ll need to make money from live streaming.**
 
 ## Ask for Tips or Donations
 Online tips and donations are quickly becoming a considerable source of revenue for content creators. It’s also one of the easiest ways to start making money from your live streams right away.
