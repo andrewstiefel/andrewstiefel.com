@@ -1,7 +1,7 @@
 [Settings]
 # Added automatically by the Netlify CLI. It has no effect during normal
 # Git-backed deploys.
-ID = "andrewstiefel.netlify.com"
+ID = "andrewstiefel.netlify.app"
 
 [[redirects]]
 # Redirect domain aliases to primary domain
