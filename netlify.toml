@@ -1,8 +1,3 @@
-[Settings]
-# Added automatically by the Netlify CLI. It has no effect during normal
-# Git-backed deploys.
-ID = "andrewstiefel.netlify.app"
-
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
