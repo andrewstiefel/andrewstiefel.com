@@ -1,8 +1,9 @@
 ---
-layout: portfolio
+layout: portfolio-item
 title: Seattle Symphony
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: /assets/images/1617_aerial-berlioz-tchaikovsky-masterworks_0004-lores.jpg
+category: social media
 order: 6
 ---
 

@@ -6,41 +6,52 @@ layout: default
 
 <main class="main">
 
-  <article class="portfolio">
-    <section class="section">
-      <div class="container">
-          <div class="columns">
-            <div class="column is-offset-2 is-8 has-text-centered">
-              <h1 class="title">{{ page.title }}</h1>
-            </div>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8">
+          <div class="content">
+            <h1 class="title is-size-1-tablet">{{ page.title }}</h1>
+            <p class="intro is-size-5-tablet">This is an example of copy and more stuff here.</p>
           </div>
         </div>
-      </section>
-      <div class="container">
-        {% if page.video %}
-          <div class="video-container">
-            <iframe width="1280" height="690" src="https://www.youtube.com/embed/{{ page.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        {% elsif page.carousel %}
-          {% include carousel.html %}
-        {% elsif page.image %}
-          <figure class="image is-16by9">
-            <img src="{{ page.image }}?nf_resize=fit&w=1280">
-          </figure>
-        {% endif %}
       </div>
-      <section class="section">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-offset-2 is-8">
-              <div class="content">
-                {{ content }}
+    </div>
+  </section>
+
+  <section class="section pt-0">
+
+    <div class="container">
+      <div class="controls pb-6">
+        <a class="is-size-7 is-uppercase" data-filter="all">All</a>
+        <a class="is-size-7 is-uppercase" data-filter=".cat-brand-strategy">Brand Strategy</a>
+        <a class="is-size-7 is-uppercase" data-filter=".cat-content-strategy">Content Strategy</a>
+        <a class="is-size-7 is-uppercase" data-filter=".cat-social-media">Social Media Strategy</a>
+      </div>
+
+    <div class="targets columns">
+      {% assign items = site.portfolio %}
+      {% for item in items %}
+        <div class="mix cat-{{ item.category | replace: " ","-" }} column is-4">
+          <div class="portfolio-item">
+            <a href="{{ item.url }}">
+              <div class="portfolio-image">
+                <figure class="image is-4by3">
+                  <img src="{{ item.image }}">
+                </figure>
               </div>
-            </div>
+              <div class="portfolio-header has-text-centered">
+                <h5 class="is-size-5">{{ item.title }}</h5>
+              </div>
+            </a>
           </div>
         </div>
-    </section>
-  </article>
+      {% endfor %}
+    </div>
+
+    </div>
+
+  </section>
 
 </main>
 

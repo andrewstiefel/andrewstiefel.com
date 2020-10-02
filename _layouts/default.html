@@ -19,9 +19,16 @@
 
     <!-- Scripts-->
     <script> </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script defer src="/assets/js/main.js"></script>
-    
+    {% if page.title == "Portfolio" %}<script src="/assets/js/mixitup.min.js"></script>
+
+    <script>
+      var containerEl = document.querySelector('.targets');
+
+      var mixer = mixitup(containerEl);
+    </script>{% endif %}
+
   </body>
 
 </html>
