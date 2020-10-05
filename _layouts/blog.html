@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Blog
 ---
 
 {% include header.html %}
@@ -12,9 +11,9 @@ title: Blog
       <div class="columns">
         <div class="column is-8">
           <div class="content">
-            <h1>{{ page.title }}</h1>
-            <p class="intro">Thoughts on audience building and brand storytelling from the intersection of culture, technology, and social impact.</p>
-            <a class="button is-small is-primary is-outlined" href="/atom.xml">
+            <h1 class="title is-size-1-tablet">{{ page.title }}</h1>
+            <p class="intro is-size-5-tablet">{{ page.description }}</p>
+            <a class="button is-primary is-outlined" href="/atom.xml">
               <span class="icon">
                 <i class="fas fa-rss"></i>
               </span>
@@ -41,7 +40,6 @@ title: Blog
               <div class="card-content">
                 <div class="content">
                   <h4>{{ post.title }}</h4>
-                  <p class="is-family-secondary">{{ post.description }}</p>
                   <h6>{{ post.date | date: "%-d %b %Y" }} • {{ post.categories }}</h6>
                 </div>
               </div>

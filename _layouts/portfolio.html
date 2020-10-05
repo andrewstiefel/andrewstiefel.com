@@ -12,7 +12,7 @@ layout: default
         <div class="column is-8">
           <div class="content">
             <h1 class="title is-size-1-tablet">{{ page.title }}</h1>
-            <p class="intro is-size-5-tablet">This is an example of copy and more stuff here.</p>
+            <p class="intro is-size-5-tablet">{{ page.description }}</p>
           </div>
         </div>
       </div>
@@ -20,7 +20,6 @@ layout: default
   </section>
 
   <section class="section pt-0">
-
     <div class="container">
       <div class="controls pb-6">
         <a class="is-size-7 is-uppercase" data-filter="all">All</a>
@@ -28,29 +27,26 @@ layout: default
         <a class="is-size-7 is-uppercase" data-filter=".cat-content-strategy">Content Strategy</a>
         <a class="is-size-7 is-uppercase" data-filter=".cat-social-media">Social Media Strategy</a>
       </div>
-
-    <div class="targets columns">
-      {% assign items = site.portfolio %}
-      {% for item in items %}
-        <div class="mix cat-{{ item.category | replace: " ","-" }} column is-4">
-          <div class="portfolio-item">
-            <a href="{{ item.url }}">
-              <div class="portfolio-image">
-                <figure class="image is-4by3">
-                  <img src="{{ item.image }}">
-                </figure>
-              </div>
-              <div class="portfolio-header has-text-centered">
-                <h5 class="is-size-5">{{ item.title }}</h5>
-              </div>
-            </a>
+      <div class="targets columns">
+        {% assign items = site.portfolio %}
+        {% for item in items %}
+          <div class="mix cat-{{ item.category | replace: " ","-" }} column is-4">
+            <div class="portfolio-item">
+              <a href="{{ item.url }}">
+                <div class="portfolio-image">
+                  <figure class="image is-4by3">
+                    <img src="{{ item.image }}">
+                  </figure>
+                </div>
+                <div class="portfolio-header has-text-centered">
+                  <h5 class="is-size-5">{{ item.title }}</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-
-    </div>
-
   </section>
 
 </main>
