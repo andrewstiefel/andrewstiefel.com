@@ -7,12 +7,13 @@ layout: default
 <main class="main">
 
   <article class="post">
-    <section class="section">
+    <section class="section pb-4">
       <div class="container">
         <div class="columns">
           <div class="column is-offset-2 is-8">
             <div class="content">
-              <h1 class="title is-size-1-tablet">{{ page.title }}</h1>
+              {% include content/category-snippet.html %}
+              <h1 class="title is-size-1-tablet mt-4">{{ page.title }}</h1>
               <h6 class="is-size-7">
                 <span class="post-time">
                   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
@@ -31,32 +32,71 @@ layout: default
         </div>
       </div>
     </section>
-      {% if page.image %}
-        <div class="container">
+  {% if page.image %}
+        <div class="container pt-5">
           <figure class="image is-16by9 post-image">
             <img src="{{ page.image }}?nf_resize=fit&w=1280">
           </figure>
         </div>
-      {% endif %}
     <section class="section post-content">
+  {% else %}
+    <section class="section post-content pt-0">
+  {% endif %}
       <div class="container">
         <div class="columns">
           <div class="column is-offset-2 is-8">
             <div class="content">
               {{ content }}
+              <hr class="hr-post-footer">
             </div>
-            <div class="tags post-tags">
-              {% for tag in page.tags %}
-                <span class="tag is-capitalized">
-                  <a href="{{site.baseurl}}/blog/tag/{{ tag | replace: " ","-" }}">{{tag}}</a>
-                </span>
-              {% endfor %}
+            <div class="columns py-4">
+                {% if page.tags != empty %}
+                <div class="column">
+                  <div class="is-flex">
+                    <div class="is-flex">Tags:&nbsp;</div>
+                    <div class="tags post-tags">
+                      {% for tag in page.tags %}
+                        <span class="tag is-capitalized">
+                          <a href="{{site.baseurl}}/blog/tag/{{ tag | replace: " ","-" }}">{{tag}}</a>
+                        </span>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+                {% endif %}
+              <div class="column is-6">
+                {% include share.html %}
+              </div>
+            </div>
+            <div>
+              {% include content/cta-newsletter.html %}
             </div>
           </div>
         </div>
       </div>
-  </section>
+  </section
 </article>
+
+<!---section class="section">
+  <div class="columns">
+    {% if page.previous.url %}
+    <a class="previous" href="{{page.previous.url}}">
+      <div class="column">
+        <span>Previous article</span>
+        <h2>{{page.previous.title}}</h2>
+      </div>
+    </a>
+    {% endif %}
+    {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">
+      <div class="column">
+        <span>Next article</span><br>
+        <h2>{{page.next.title}}</h2>
+      </div>
+    </a>
+    {% endif %}
+  </div>
+</section--->
 
 </main>
 

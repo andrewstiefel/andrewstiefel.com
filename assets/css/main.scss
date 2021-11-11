@@ -2,9 +2,9 @@
 ---
 
 // Import Custom Fonts
-@import "fonts/inter.scss";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Martel:wght@200;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap";
 
 
 //Import and Configure Font Awesome
@@ -15,7 +15,8 @@ $fa-font-path: "/assets/fonts/fontawesome";
 
 // Set Brand Colors
 
-$brand-green: hsl(180, 100%, 25%) !default;
+$brand-green: hsl(161.2, 100%, 33%) !default;
+// $brand-green: hsl(180, 100%, 25%) !default;
 $brand-salmon: hsl(0, 100%, 68%) !default;
 $brand-dark: hsl(176, 45%, 13%) !default;
 $brand-dark-grey: hsl(0, 0%, 86%) !default;
@@ -31,22 +32,30 @@ $family-headline: "Roboto Condensed", sans-serif !default;
 $family-primary: $family-sans-serif !default;
 $family-secondary: $family-serif !default;
 
-$size-1: 4rem !default;
+// $size-1: 3rem !default;
+// $size-2: 2.5rem !default;
+// $size-3: 2rem !default;
+// $size-4: 1.5rem !default;
+// $size-5: 1.25rem !default;
+// $size-6: 1rem !default;
+// $size-7: 0.8rem !default;
+
+$size-1: 3.5rem !default;
 $size-2: 2.75rem !default;
-$size-3: 2.222rem !default;
-$size-4: 2rem !default;
-$size-5: 1.333rem !default;
+$size-3: 2.2rem !default;
+$size-4: 1.66rem !default;
+$size-5: 1.33rem !default;
 $size-6: 1rem !default;
-$size-7: 0.75rem !default;
+$size-7: 0.8rem !default;
 
 $fullhd-enabled: false;
 
-$body-size: 18px !default;
-$body-line-height: 2 !default;
-$text: $brand-dark !default;
+$body-size: 16px !default;
+$body-line-height: 1.75 !default;
+$text: hsl(0, 0%, 29%) !default;
 $text-strong: $brand-dark !default;
 $link: $primary !default;
-$radius: 2px !default;
+$radius: 6px !default;
 
 $hero-body-padding-medium: 6rem 1.5rem !default;
 $hero-body-padding-large: 9rem 1.5rem !default;
@@ -93,7 +102,7 @@ $title-weight: $weight-bold !default;
 
 $subtitle-family: $family-secondary !default;
 $subtitle-size: $size-5 !default;
-$subtitle-weight: 200 !default;
+$subtitle-weight: 400 !default;
 $subtitle-line-height: 1.5 !default;
 
 @import "elements/title.scss";
@@ -159,12 +168,12 @@ h2 {
   font-family: $family-serif;
 }
 
-body {
-  letter-spacing: -0.014em;
-}
-
 a {
   border-bottom: 1px solid;
+}
+
+a.ghost {
+  border-bottom: none;
 }
 
 .tag a {
@@ -201,7 +210,7 @@ a {
   h2 {
     // font-size: $size-3;
     font-family: $family-serif;
-    font-weight: 200;
+    font-weight: 700;
 
     &:not(:first-child) {
       margin-top: 1em;
@@ -236,10 +245,6 @@ a {
 .navbar-menu {
     font-size: $size-7;
     text-transform: uppercase;
-}
-
-.button {
-  min-width: 150px;
 }
 
 // Sidebar //
@@ -324,7 +329,7 @@ a {
 p.intro {
   // font-size: $size-5;
   font-family: $family-serif;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 p.site-title {
@@ -373,4 +378,31 @@ hr.hr-post-header::after {
 ::selection {
   background-color: $primary;
   color: #ffffff;
+}
+
+.copy-button {
+  &::before {
+    content: "Copy";
+  }
+
+  // This class will be toggled via JavaScript
+  &.copied {
+    &::before {
+      content: "Copied!";
+    }
+  }
+}
+
+.formkit-powered-by-convertkit {
+  display: none !important;
+}
+
+.post-cta {
+  max-width: none !important;
+}
+
+.hr-post-footer {
+  max-width: 150px;
+  margin: 3rem auto;
+  background-color: $grey-lighter;
 }
