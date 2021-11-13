@@ -78,12 +78,14 @@ $input-focus-box-shadow-color: none !default;
 @import "utilities/animations.scss";
 @import "utilities/mixins.scss";
 @import "utilities/controls.scss";
+@import "utilities/extends.scss";
 
 $content-heading-weight: $weight-bold !default;
 $content-heading-line-height: 1.2 !default;
 
 @import "base/minireset.scss";
 @import "base/generic.scss";
+@import "base/animations.scss";
 
 @import "elements/box.scss";
 @import "elements/button.scss";
@@ -133,6 +135,7 @@ $subtitle-line-height: 1.5 !default;
 @import "grid/tiles.scss";
 
 @import "helpers/color.scss";
+@import "helpsers/flexbox.scss";
 @import "helpers/float.scss";
 @import "helpers/other.scss";
 @import "helpers/overflow.scss";

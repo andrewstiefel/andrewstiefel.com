@@ -1,3 +1,6 @@
+@import "../utilities/controls";
+@import "../utilities/mixins";
+
 $button-color: $text-strong !default;
 $button-background-color: $scheme-main !default;
 $button-family: false !default;
@@ -24,6 +27,13 @@ $button-text-decoration: underline !default;
 $button-text-hover-background-color: $background !default;
 $button-text-hover-color: $text-strong !default;
 
+$button-ghost-background: none !default;
+$button-ghost-border-color: transparent !default;
+$button-ghost-color: $link !default;
+$button-ghost-decoration: none !default;
+$button-ghost-hover-color: $link !default;
+$button-ghost-hover-decoration: underline !default;
+
 $button-disabled-background-color: $scheme-main !default;
 $button-disabled-border-color: $border !default;
 $button-disabled-shadow: none !default;
@@ -33,9 +43,14 @@ $button-static-color: $text-light !default;
 $button-static-background-color: $scheme-main-ter !default;
 $button-static-border-color: $border !default;
 
+$button-colors: $colors !default;
+
 // The button sizes use mixins so they can be used at different breakpoints
 @mixin button-small {
-  border-radius: $radius-small;
+  &:not(.is-rounded) {
+    border-radius: $radius-small;
+  }
+
   font-size: $size-small;
 }
 
@@ -88,18 +103,18 @@ $button-static-border-color: $border !default;
     }
 
     &:first-child:not(:last-child) {
-      @include ltr-property("margin", calc(#{-1 / 2 * $button-padding-horizontal} - #{$button-border-width}), false);
-      @include ltr-property("margin", $button-padding-horizontal / 4);
+      @include ltr-property("margin", calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width}), false);
+      @include ltr-property("margin", $button-padding-horizontal * 0.25);
     }
 
     &:last-child:not(:first-child) {
-      @include ltr-property("margin", $button-padding-horizontal / 4, false);
-      @include ltr-property("margin", calc(#{-1 / 2 * $button-padding-horizontal} - #{$button-border-width}));
+      @include ltr-property("margin", $button-padding-horizontal * 0.25, false);
+      @include ltr-property("margin", calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width}));
     }
 
     &:first-child:last-child {
-      margin-left: calc(#{-1 / 2 * $button-padding-horizontal} - #{$button-border-width});
-      margin-right: calc(#{-1 / 2 * $button-padding-horizontal} - #{$button-border-width});
+      margin-left: calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width});
+      margin-right: calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width});
     }
   }
 
@@ -155,7 +170,20 @@ $button-static-border-color: $border !default;
     }
   }
 
-  @each $name, $pair in $colors {
+  &.is-ghost {
+    background: $button-ghost-background;
+    border-color: $button-ghost-border-color;
+    color: $button-ghost-color;
+    text-decoration: $button-ghost-decoration;
+
+    &:hover,
+    &.is-hovered {
+      color: $button-ghost-hover-color;
+      text-decoration: $button-ghost-hover-decoration;
+    }
+  }
+
+  @each $name, $pair in $button-colors {
     $color: nth($pair, 1);
     $color-invert: nth($pair, 2);
 
