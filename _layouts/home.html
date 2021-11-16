@@ -9,11 +9,17 @@ title: Home
 
   <section class="section">
     <div class="container">
-      <div class="columns">
-        <div class="column is-9">
-          <div class="content">
-            <h3 class="is-size-2-tablet">Brand Storyteller & Creative Project Leader</h3>
-            <p class="intro is-size-5-tablet">My name is Andrew Stiefel. I’m on a mission to teach independent creators and entrepreneurs how to build an audience for their work.</p>
+      <div class="column is-offset-2 is-8">
+        <div class="columns is-vcentered">
+          <div class="column is-2">
+            <figure class="image is-square">
+              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+            </figure>
+          </div>
+          <div class="column is-10">
+            <div class="content">
+              <p class="is-size-5-tablet"><span class="has-text-weight-bold">Hey, I'm Andrew Stiefel.</span>&nbsp;<span class="has-text-grey">I write about creativity and strategy. I also publish a semi-weekly newsletter called Margin Notes.</span></p>
+            </div>
           </div>
         </div>
       </div>
@@ -24,23 +30,26 @@ title: Home
     <div class="container">
       <div class="columns">
         <div class="column is-offset-2 is-8">
-          <h3>Recent Posts</h3>
+          <div class="columns is-vcentered">
+            <div class="column is-2 pb-0">
+              <h3 class="is-size-5 has-text-weight-bold">Recent Posts</h3>
+            </div>
+            <div class="column pb-0">
+              <span class="title-bar-divider"></span>
+            </div>
+          </div>
           {% for post in site.posts %}
-            <article class="is-flex">
-              <div class="is-flex">
-                {{ post.date | date: "%-d %b %Y" }}
+            <article class="post-card py-4 is-relative">
+              <div class="columns py-4 mb-0">
+                <div class="column is-2 has-text-grey-light py-1">
+                  <p>{{ post.date | date: "%d %b %Y" }}</p>
+                </div>
+                <div class="column py-1">
+                  <h3 class="is-size-5 has-text-weight-bold" style="line-height: 1.33;">{{ post.title }}</h3>
+                  {{ post.description }}
+                </div>
               </div>
-              <div class="is-flex">
-                {{ post.title }}
-              </div>
-              <div class="is-flex is-align-content-flex-end">
-                {% assign words = post.content | number_of_words %}
-                {% if words < 360 %}
-                  1 min read
-                {% else %}
-                  {{ words | divided_by:180 }} min
-                {% endif %}
-              </div>
+              <a class="u-permalink" href="{{ post.url }}"></a>
             </article>
           {% endfor %}
         </div>
