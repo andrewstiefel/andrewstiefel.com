@@ -1,0 +1,12 @@
+<article class="post-card py-4 is-relative">
+  <div class="columns py-4 mb-0">
+    <div class="column is-2 has-text-grey py-1">
+      <p>{{ post.date | date: "%d %b %Y" }}</p>
+    </div>
+    <div class="column py-1">
+      <h3 class="is-size-5 has-text-weight-bold" style="line-height: 1.33;">{{ post.title }}</h3>
+      {{ post.description }}
+    </div>
+  </div>
+  <a class="u-permalink" href="{{ post.url }}"></a>
+</article>

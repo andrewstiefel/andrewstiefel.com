@@ -9,16 +9,18 @@ title: Home
 
   <section class="section">
     <div class="container">
-      <div class="column is-offset-2 is-8">
-        <div class="columns is-vcentered">
-          <div class="column is-2">
-            <figure class="image is-square">
-              <img class="is-rounded" src="/assets/images/andrew-stiefel.png">
-            </figure>
-          </div>
-          <div class="column is-10">
-            <div class="content">
-              <p class="is-size-5-tablet"><span class="has-text-weight-bold">Hey, I'm Andrew Stiefel.</span>&nbsp;<span class="has-text-grey">I write about creativity and strategy. I also publish a semi-weekly newsletter called Margin Notes.</span></p>
+      <div class="columns">
+        <div class="column is-offset-2 is-8">
+          <div class="columns is-vcentered">
+            <div class="column is-2 is-hidden-mobile">
+              <figure class="image is-square">
+                <img class="is-rounded" src="/assets/images/andrew-stiefel.png">
+              </figure>
+            </div>
+            <div class="column is-10">
+              <div class="content">
+                <p class="is-size-5"><span class="has-text-weight-bold">Hey, I'm Andrew Stiefel.</span>&nbsp;<span class="has-text-grey">I write about creativity and strategy and publish a semi-weekly newsletter called Margin Notes.</span></p>
+              </div>
             </div>
           </div>
         </div>
@@ -39,18 +41,7 @@ title: Home
             </div>
           </div>
           {% for post in site.posts %}
-            <article class="post-card py-4 is-relative">
-              <div class="columns py-4 mb-0">
-                <div class="column is-2 has-text-grey py-1">
-                  <p>{{ post.date | date: "%d %b %Y" }}</p>
-                </div>
-                <div class="column py-1">
-                  <h3 class="is-size-5 has-text-weight-bold" style="line-height: 1.33;">{{ post.title }}</h3>
-                  {{ post.description }}
-                </div>
-              </div>
-              <a class="u-permalink" href="{{ post.url }}"></a>
-            </article>
+            {% include loop.html %}
           {% endfor %}
         </div>
       </div>

@@ -3,7 +3,7 @@ layout: post
 title: "How to Make Money Live Streaming: The Essential Guide for Creators"
 description: You’ve got your equipment ready and you’ve planned your first broadcast — but how do you make money with live streaming?
 subtitle: You've planned out your live broadcasts and built an audience. But how do you turn livestreaming into a revenue stream?
-image: /assets/uploads/sam-mcghee-KieCLNzKoBo-unsplash.jpg
+image: 
 date: 2020-09-10 15:00:00 -0700
 category: marketing
 tags: [social media, livestreaming]

@@ -3,7 +3,7 @@ layout: post
 title: How to Host Your Own Analytics with Fathom and Digital Ocean
 description: Create a simple, self-hosted website analytics solution with Fathom and DigitalOcean.
 subtitle: Create a simple, self-hosted website analytics solution with Fathom Analytics and DigitalOcean.
-image: /assets/images/custom-website-analytics.jpg
+image: 
 date: 2020-05-02 15:00:00 -0700
 category: code
 tags:

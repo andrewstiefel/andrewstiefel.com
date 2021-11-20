@@ -9,11 +9,11 @@ layout: default
   <section class="section">
     <div class="container">
       <div class="columns">
-        <div class="column is-8">
+        <div class="column is-8 is-offset-2">
           <div class="content">
             <h1 class="title is-size-1-tablet">{{ page.title }}</h1>
             <p class="intro is-size-5-tablet">{{ page.description }}</p>
-            <a class="button is-primary is-outlined" href="/atom.xml">
+            <a class="button is-primary is-outlined" href="/feed.xml">
               <span class="icon">
                 <i class="fas fa-rss"></i>
               </span>
@@ -27,26 +27,14 @@ layout: default
 
   <section class="section">
     <div class="container">
-      <div class="columns is-multiline">
-        {% for post in site.posts %}
-        <div class="column is-6">
-          <div class="card post-card">
-            <a href="{{ post.url }}">
-              <div class="card-image">
-                <figure class="image is-5by3">
-                  <img src="{{ post.image }}">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <h4>{{ post.title }}</h4>
-                  <h6>{{ post.date | date: "%-d %b %Y" }} • {{ post.categories }}</h6>
-                </div>
-              </div>
-            </a>
+      <div class="columns">
+        <div class="column is-offset-2 is-8">
+          <div>
+            {% for post in site.posts %}
+              {% include loop.html %}
+            {% endfor %}
           </div>
         </div>
-        {% endfor %}
       </div>
     </div>
   </section>

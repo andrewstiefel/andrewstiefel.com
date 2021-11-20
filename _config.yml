@@ -2,7 +2,7 @@
 
 title: Andrew Stiefel
 tagline: '@andrewstiefel'
-description: Writes about thing, thing, and thing.
+description: Hey, I'm Andrew Stiefel. I write about creativity and strategy and publish a semi-weekly newsletter called Margin Notes.
 url: 'https://andrewstiefel.com'
 baseurl: ""
 
@@ -18,7 +18,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
-permalink: '/:title/'
+permalink: '/blog/:title/'
 
 jekyll-archives:
   enabled:
@@ -26,8 +26,8 @@ jekyll-archives:
     - tags
   layout: taxonomy
   permalinks:
-    tag: '/tag/:name/'
-    category: '/category/:name/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
 
 # CONTACT
 
