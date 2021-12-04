@@ -415,3 +415,9 @@ hr.hr-post-header::after {
   background-color: $grey-dark;
   width: 100%;
 }
+
+@media screen and(max-width: 768px) {
+  .pb-0-m {
+    padding-bottom: 0px;
+  }
+}

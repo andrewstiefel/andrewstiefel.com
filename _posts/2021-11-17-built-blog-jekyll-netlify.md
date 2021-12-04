@@ -9,29 +9,47 @@ category: code
 tags: blogging writing jekyll netlify
 ---
 
-Over the years I’ve built and discarded dozens of interactions of my personal blog. At times I’ve used Blogger, Wordpress, and most recently, a Jamstack website built with Jekyll.
+I’ve been blogging and hosting my website since 2006, but I was always unhappy with the themes available for technologies like WordPress or the cookie-cutter style of services like Squarespace. (Squarespace was a brief and short-lived experiment for me; I scrapped the entire website within a few months, but that’s a blog post for another day.)
 
-## Background
+At first, I experimented with developing child themes for WordPress. If you’re not familiar with WordPress, I basically overwrote the CSS stylesheets and built some of my own page and post templates using PHP. I even got good enough that I had clients who would hire me to make changes to their WordPress themes and installations.
 
-Wordpress was ok for awhile, but I was never satisfied with the limitations of a pre-built theme. As I dug further into custom development
+All of the tweaks and changes felt cobbled together. In a real sense, I was building Frankenstein sites with dozens of overrides, plugins, and hacks to get what I wanted.
 
-## Moving to the JAMstack
+## Deciding on a tech stack
 
-Jekyll — what I liked and what I didn’t
+To come
 
-## The need for a CMS
+Ultimately, I decided to forgo Ghost as a CMS, at least for now. Personally, I feel safer knowing 
 
-Picking between Ghost, Wordpress, and Git-based options
+## Gathering inspiration
 
-## Implementing
+To come
 
-Background
+## Getting set up
 
-## Inspiration
+I won’t go into too much detail on the development process here, but I will link to the tutorials that I found the most helpful while building things out.
 
-Here
+* A
+* B
+* C
+* D
+* E
 
-## Future
+As one of the original static website generators, Jekyll benefits from a large community of open-source contributors and users who have documented their techniques and solutions. If you get stuck, there is most likely a tutorial with the answers you need.
 
-Tailwind CSS
-Ghost or Gatsby or Gridsome for PWA
+## What’s next
+
+Overall I’m pretty happy with the results of the project. I learned a lot along the way and ended up with a website that doesn’t look to bad and is unique to me. 
+
+While I don’t need to make any changes in order to write, there are a few areas I might explore in the coming months:
+
+**Implement Tailwind CSS to replace Bulma**
+Tailwind CSS is the next logical step from frameworks like Bulma and Bootstrap and would enable more custom design
+
+**Rebuild the site with Gatsby**
+???
+
+**Integrate Ghost as a CMS, or move the posts into a standalone repository **
+I would prefer to separate my content from the front-end framework
+
+I hope you have a similar positive experience, and please reach out if you have any questions about building your website with Jekyll and Netlify.
