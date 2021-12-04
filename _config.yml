@@ -18,7 +18,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
-permalink: '/blog/:title/'
+permalink: '/:title/'
 
 jekyll-archives:
   enabled:
@@ -26,8 +26,8 @@ jekyll-archives:
     - tags
   layout: taxonomy
   permalinks:
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 # CONTACT
 
