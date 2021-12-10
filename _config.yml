@@ -34,6 +34,11 @@ jekyll-archives:
     tag: '/topic/:name/'
     category: '/:name/'
 
+feed:
+  categories:
+    - essays
+    - notes
+
 twitter:
   username: andrewstiefel
   card: summary_large_image
