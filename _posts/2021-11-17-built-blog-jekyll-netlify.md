@@ -1,11 +1,10 @@
 ---
 layout: post
-title: How I Built My Blog with Jekyll and Netlify
-description: Create a simple blogging and writing stack with Jekyll and Netlify
-subtitle: Create a simple blogging and writing stack with Jekyll and Netlify
-image: 
+title: How I Built My Digital Garden with Jekyll and Netlify
+description: Create a simple place to tend your notes
+subtitle: 
 date: 2021-11-17 12:00:00 -0700
-category: code
+category: note
 tags: blogging writing jekyll netlify
 ---
 
@@ -19,7 +18,7 @@ All of the tweaks and changes felt cobbled together. In a real sense, I was buil
 
 To come
 
-Ultimately, I decided to forgo Ghost as a CMS, at least for now. Personally, I feel safer knowing 
+Ultimately, I decided to forgo Ghost as a CMS, at least for now. Personally, I feel safer knowing
 
 ## Gathering inspiration
 
@@ -39,7 +38,7 @@ As one of the original static website generators, Jekyll benefits from a large c
 
 ## What’s next
 
-Overall I’m pretty happy with the results of the project. I learned a lot along the way and ended up with a website that doesn’t look to bad and is unique to me. 
+Overall I’m pretty happy with the results of the project. I learned a lot along the way and ended up with a website that doesn’t look to bad and is unique to me.
 
 While I don’t need to make any changes in order to write, there are a few areas I might explore in the coming months:
 

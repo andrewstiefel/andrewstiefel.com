@@ -8,11 +8,15 @@ baseurl: ""
 
 # BUILD SETTINGS
 
+include: [_pages]
 markdown: kramdown
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-tidy
 
 sass:
   sass_dir: _sass
@@ -26,8 +30,19 @@ jekyll-archives:
     - tags
   layout: taxonomy
   permalinks:
-    tag: '/tag/:name/'
-    category: '/category/:name/'
+    tag: '/topic/:name/'
+    category: '/:name/'
+
+twitter:
+  username: andrewstiefel
+  card: summary_large_image
+
+social:
+  name: Andrew Stiefel
+  links:
+    - https://twitter.com/andrewstiefel
+    - https://www.linkedin.com/in/andrewstiefel
+    - https://github.com/andrewstiefel
 
 # CONTACT
 

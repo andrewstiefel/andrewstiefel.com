@@ -23,9 +23,9 @@ layout: default
                 </span>
               </h6>
               <hr class="hr-post-header">
-              <!---p class="intro is-size-5-tablet">
+              <p class="intro is-size-5-tablet">
                 {{ page.subtitle }}
-              </p--->
+              </p>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ layout: default
                     <div class="tags post-tags">
                       {% for tag in page.tags %}
                         <span class="tag is-capitalized">
-                          <a href="{{site.baseurl}}/blog/tag/{{ tag | replace: " ","-" }}">{{tag}}</a>
+                          <a href="{{site.baseurl}}/topic/{{ tag | replace: " ","-" }}">{{tag}}</a>
                         </span>
                       {% endfor %}
                     </div>
@@ -67,35 +67,11 @@ layout: default
                 {% include share.html %}
               </div>
             </div>
-            <div>
-              {% include content/cta-newsletter.html %}
-            </div>
           </div>
         </div>
       </div>
   </section
 </article>
-
-<!---section class="section">
-  <div class="columns">
-    {% if page.previous.url %}
-    <a class="previous" href="{{page.previous.url}}">
-      <div class="column">
-        <span>Previous article</span>
-        <h2>{{page.previous.title}}</h2>
-      </div>
-    </a>
-    {% endif %}
-    {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">
-      <div class="column">
-        <span>Next article</span><br>
-        <h2>{{page.next.title}}</h2>
-      </div>
-    </a>
-    {% endif %}
-  </div>
-</section--->
 
 </main>
 
