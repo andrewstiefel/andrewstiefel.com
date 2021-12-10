@@ -1,33 +1,30 @@
 ---
 layout: page
-title: About
+title: About Andrew Stiefel
 description:
 permalink: /about/
 ---
 
-<h1 class="is-size-1-tablet">About</h1>
+<h1 class="is-size-1-tablet">About Me</h1>
 
-<p class="intro is-size-5-tablet">My name is Andrew Stiefel. I have a passion for telling stories and building mission-driven brands.</p>
+<p class="intro is-size-5-tablet">This is the main thing you should read about me.</p>
 
-I have the privilege of working at the Seattle Symphony as Senior Communications Manager. I work with an amazing team to produce original broadcasts, films, journalism, podcasts, and educational content.
+More about me will go here, obviously.
 
-Through my work for the Symphony, I’ve been fortunate to film and interview some fascinating people, including Stephen Spielberg, John Williams, Caroline Shaw, Yo-Yo Ma, and the Seahawk’s Russel Wilson.
+Get in touch: andrew@andrewstiefel.com / @andrewstiefel
 
-Previously, I collaborated with scientists and entrepreneurs at the University of Oregon to bring their ideas and products to the world. I’ve also volunteered with political action campaigns supporting equal access to education in Oregon and Washington.
+### How I Got Here
 
-A teacher at heart, I’m passionate about sharing what I’ve learned. Through my blog and newsletter, I help independent creators and entrepreneurs learn how to build an audience and tell their story so they can make a living doing what they love.
+That will obviosuly go here when I'm ready
 
-I love the outdoors and I'm a lifelong birder and hiker. When I’m not working, you can find me at a coffee shop reading or exploring the Pacific Northwest by foot or in a sea kayak.
+### Get in touch
 
+I'm always happy to meet interesting people for coffee. You can email me at andrew@andrewstiefel.com.
 
-### About this website
+### Colophon
 
-This domain has been my online home for many years, manifesting at times as a blog or a catalogue of my music. Now it's a home for my portfolio and a place to share my resources.
+A _colophon_ is a fancy designer word for "how this site was made."
 
-I enjoy teaching myself how to code and I designed this website myself. In case you were wondering, this site is:
+I built this website using [Jekyll](http://jekyllrb.com/). It is deployed with [Netlify](https://www.netlify.com). My CMS is just a bunch of markdown files saved in folders. All pixels were designed by me with support from the Bulma CSS framework.
 
-* Coded with [Atom](https://atom.io/)
-* Built with [Jekyll](http://jekyllrb.com/) + [Bulma](https://bulma.io/)
-* Deployed with [Netlify](https://www.netlify.com)
-
-The source code is [available on Github](https://github.com/andrewstiefel/andrewstiefel.com/) under the MIT License.
+Everything is open source and [published on Github](https://github.com/andrewstiefel/andrewstiefel.com/) under the MIT License.

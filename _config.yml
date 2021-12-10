@@ -16,6 +16,7 @@ plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-seo-tag
+  - jekyll-last-modified-at
   - jekyll-tidy
 
 sass:
@@ -43,6 +44,9 @@ social:
     - https://twitter.com/andrewstiefel
     - https://www.linkedin.com/in/andrewstiefel
     - https://github.com/andrewstiefel
+
+last-modified-at:
+    date-format: '%-d %b %Y'
 
 # CONTACT
 

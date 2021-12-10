@@ -12,20 +12,39 @@ layout: default
         <div class="columns">
           <div class="column is-offset-2 is-8">
             <div class="content">
+              <p class="is-uppercase">
+                <span class="has-text-primary"><a style="border-bottom: none;" href="{{site.baseurl}}/{{ page.category | replace: " ","-" }}">{{ page.category }}</a></span>
+                <span class="icon-text" style="vertical-align: inherit !important;">
+                  {% if page.stage == "seedling" %}
+                  <span class="icon">
+                    <i class="fas fa-seedling"></i>
+                  </span>
+                  {% elsif page.stage == 'budding' %}
+                  <span class="icon">
+                    <i class="fas fa-leaf"></i>
+                  </span>
+                  {% elsif page.stage == 'evergreen' %}
+                  <span class="icon">
+                    <i class="fas fa-tree"></i>
+                  </span>
+                  {% endif %}
+                  <span>{{ page.stage }}</span>
+                </span>
+              </p>
               <h1 class="title is-size-1-tablet mt-4">{{ page.title }}</h1>
-              <h6 class="is-size-7">
-                <span class="post-time">
-                  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
-                </span>
-                <span class="meta-divider">•</span>
-                <span class="read-time">
-                  {% include reading-time.html %}
-                </span>
-              </h6>
-              <hr class="hr-post-header">
               <p class="intro is-size-5-tablet">
                 {{ page.subtitle }}
               </p>
+              <h6 class="is-size-7">
+                <span class="published-time">
+                  Planted <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
+                </span>
+                <span class="meta-divider">•</span>
+                <span class="modified-time">
+                  Last tended <time class="post-modified-date">{% last_modified_at %}</time>
+                </span>
+              </h6>
+              <hr class="hr-post-header">
             </div>
           </div>
         </div>
@@ -52,7 +71,6 @@ layout: default
                 {% if page.tags != empty %}
                 <div class="column">
                   <div class="is-flex">
-                    <div class="is-flex">Tags:&nbsp;</div>
                     <div class="tags post-tags">
                       {% for tag in page.tags %}
                         <span class="tag is-capitalized">
