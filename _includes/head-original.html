@@ -1,0 +1,69 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page Info -->
+
+    {% if page.title == "Home" %}<title>{{ site.title }} &middot; {{ site.tagline }}</title>{% else %}<title>{{ page.title }} &middot; {{ site.title }}</title>{% endif %}
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="{{ site.author.name }}">
+    <link rel="canonical" href='{{ site.url }}{{ page.url }}'>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="{{ page.image }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ site.twitter }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="{{ page.image }}">
+
+    <!-- Favicons -->
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon.png">
+    <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.ico">
+
+    <!-- RSS -->
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <!-- JSON Data -->
+
+    <script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "person",
+        "name": "Andrew Stiefel",
+        "jobTitle": "Brand and Social Media Strategist",
+        "url": "https://andrewstiefel.com",
+        "sameAs": [
+           "https://twitter.com/andrewstiefel"
+           "https://www.linkedin.com/in/andrewstiefel"
+           "https://github.com/andrewstiefel"
+           "https://medium.com/@andrewstiefel"
+        ],
+        "address": {
+           "@type": "PostalAddress",
+           "addressLocality": "Seattle",
+           "addressRegion": "Washington",
+           "addressCountry": "United States",
+        }
+      }
+    </script>
+
+    <!-- Fathom Analytics -->
+    <script src="https://mouse.andrewstiefel.com/script.js" data-site="BKYGCADM" defer></script>
+
+  </head>

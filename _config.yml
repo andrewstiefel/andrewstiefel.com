@@ -1,4 +1,4 @@
-#SITE CONFIGURATION
+### SITE CONFIGURATION
 
 title: Andrew Stiefel
 tagline: '@andrewstiefel'
@@ -6,7 +6,7 @@ description: Hey, I'm Andrew Stiefel. Welcome to my digital garden, a slowly gro
 url: 'https://andrewstiefel.com'
 baseurl: ""
 
-# BUILD SETTINGS
+### BUILD SETTINGS
 
 include: [_pages]
 markdown: kramdown
@@ -25,6 +25,8 @@ sass:
 
 permalink: '/:title/'
 
+### JEKYLL ARCHIVE SETTINGS
+
 jekyll-archives:
   enabled:
     - categories
@@ -34,10 +36,14 @@ jekyll-archives:
     tag: '/topic/:name/'
     category: '/:name/'
 
+### JEKYLL FEED SETTINGS
+
 feed:
   categories:
     - essays
     - notes
+
+### JEKYLL SEO SETTINGS
 
 twitter:
   username: andrewstiefel
@@ -50,10 +56,12 @@ social:
     - https://www.linkedin.com/in/andrewstiefel
     - https://github.com/andrewstiefel
 
+### JEKYLL LAST MODIFIED SETTINGS
+
 last-modified-at:
     date-format: '%-d %b %Y'
 
-# CONTACT
+### SITE AUTHOR
 
 author:
   name: Andrew Stiefel
@@ -63,3 +71,14 @@ author:
   linkedin: andrewstiefel
   medium: andrewstiefel
   github: andrewstiefel
+
+
+### DEFAULTS
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts

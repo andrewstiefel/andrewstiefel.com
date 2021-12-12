@@ -1,0 +1,106 @@
+<!-- Page Info -->
+
+{% if page.title == "Home" %}<title>{{ site.title }} &middot; {{ site.tagline }}</title>{% else %}<title>{{ page.title }} &middot; {{ site.title }}</title>{% endif %}
+<meta name="description" content="{{ page.description }}" />
+<meta name="author" content="{{ site.author.name }}" />
+<link rel="canonical" href='{{ site.url }}{{ page.url }}' />
+{% if page.is_post %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}" />
+<meta property="article:author" content="{{ site.author.name }}" />
+{% for tag in page.tags %}
+<meta property="article:tag" content="{{ tag }}" />
+{% endfor %}
+{% endif %}
+
+<!-- Open Graph -->
+
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:locale" content="en_US" />
+{% if page.is_post %}
+<meta property="og:type" content="article" />
+{% else %}
+<meta property="og:type" content="website" />
+{% endif %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:image" content="{{ page.image }}" />
+
+<!-- Twitter -->
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:description" content="{{ page.description }}" />
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+<meta name="twitter:image" content="{{ page.image }}" />
+{% if page.is_post %}
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="{{ site.author.name }}" />
+<meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+{% endif %}
+<meta name="twitter:site" content="@{{ site.author.twitter }}" />
+
+<!--Schema.org-->
+
+{% if page.is_post %}
+<script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "author": {
+          "@type": "Person",
+          "name": "{{ site.author.name }}",
+          "url": "{{ site.url }}",
+          "sameAs": [
+              "https://twitter.com/{{ site.author.twitter }}",
+              "https://www.linkedin.com/in/{{ site.author.linkedin }}"
+              "https://github.com/{{ site.author.github }}"
+          ]
+      },
+      "headline": "{{ page.title }}",
+      "url": "{{ site.url }}{{ page.url }}",
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
+      "image": {
+          "@type": "ImageObject",
+          "url": "{{ page.image }}",
+          "width": 1920,
+          "height": 1080,
+      },
+      "description": "{{ page.description }}",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ site.url }}"
+      }
+  }
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Person",
+        "name": "{{ site.author.name }}",
+        "url": "{{ site.url }}",
+        "sameAs": [
+          "https://twitter.com/{{ site.author.twitter }}",
+          "https://www.linkedin.com/in/{{ site.author.linkedin }}"
+          "https://github.com/{{ site.author.github }}"
+        ]
+    },
+    "url": "{{ page.url }}",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description }}"
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}"
+    },
+}
+</script>
+{% endif %}
+
+<!-- RSS -->
+
+<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
