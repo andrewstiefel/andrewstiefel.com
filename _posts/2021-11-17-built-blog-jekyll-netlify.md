@@ -4,9 +4,9 @@ title: How I Built My Digital Garden with Jekyll and Netlify
 description: We've crammed the most important information to help you get started with Ghost into this one post. It's your shortcut to advanced features
 subtitle: We've crammed the most important information to help you get started with Ghost into this one post. It's your shortcut to advanced features.
 date: 2021-11-17 12:00:00 -0700
-category: notes
-stage: seedling
-tags: [writing, coding, digital gardening]
+category: Notes
+stage: Seedling
+tags: [Writing, Coding, Digital Gardening]
 ---
 
 I’ve been blogging and hosting my website since 2006, but I was always unhappy with the themes available for technologies like WordPress or the cookie-cutter style of services like Squarespace. (Squarespace was a brief and short-lived experiment for me; I scrapped the entire website within a few months, but that’s a blog post for another day.)
