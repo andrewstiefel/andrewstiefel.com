@@ -35,7 +35,7 @@ layout: default
               <p class="intro is-size-5-tablet">
                 {{ page.subtitle }}
               </p>
-              <h6 class="is-size-7">
+              <p class="is-size-7 is-uppercase">
                 <span class="published-time">
                   Planted <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
                 </span>
@@ -43,7 +43,7 @@ layout: default
                 <span class="modified-time">
                   Last tended <time class="post-modified-date">{% last_modified_at %}</time>
                 </span>
-              </h6>
+              </p>
               <hr class="hr-post-header">
             </div>
           </div>
