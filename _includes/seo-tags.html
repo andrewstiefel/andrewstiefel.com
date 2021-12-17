@@ -90,13 +90,13 @@
           "https://github.com/{{ site.author.github }}"
         ]
     },
-    "url": "{{ page.url }}",
+    "url": "{{ site.url }}{{ page.url }}",
     "headline": "{{ page.title }}",
-    "description": "{{ page.description }}"
+    "description": "{{ page.description }}",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "{{ site.url }}"
-    },
+    }
 }
 </script>
 {% endif %}
