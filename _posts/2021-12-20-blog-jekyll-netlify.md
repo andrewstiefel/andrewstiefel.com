@@ -1,23 +1,23 @@
 ---
 layout: post
 title: How I Built My Blog with Jekyll and Netlify
-description: Frustrated with Wordpress, I turned to Jekyll and Netlify to build a truly custom personal website and blog.
-subtitle: I turned to Jekyll and Netlify to build a truly custom personal website and blog without the limitations of Wordpress and Squarespace.
+description: Frustrated with WordPress, I turned to Jekyll and Netlify to build a truly custom personal website and blog.
+subtitle: I turned to Jekyll and Netlify to build a truly custom personal website and blog without the limitations of WordPress and Squarespace.
 date: 2021-12-20 12:00:00 -0700
 category: Essays
 stage: Budding
 tags: [Coding, Blogging, Jekyll, Netlify]
 ---
 
-I’ve been blogging and hosting my website since 2006, but I’ve always unhappy with the themes available for technologies like Blogger, WordPress, or Squarespace. I usually had a vision for what I wanted to create and would spend hours scoring marketplaces to find something that came close.
+I’ve been blogging and hosting my website since 2006, but I’ve always been unhappy with the themes available for technologies like Blogger, WordPress, or Squarespace. I usually had a vision for what I wanted to create and would spend hours scouring marketplaces to find something that came close.
 
-At first, I experimented with developing child themes for WordPress. If you’re not familiar with WordPress, I basically overwrote the CSS stylesheets and built some of my own page and post templates using PHP. I even got good enough that I had clients who would hire me to make changes to their WordPress themes and installations.
+At first, I experimented with developing child themes for WordPress. If you’re not familiar with WordPress, I basically overwrote the CSS stylesheets and built my own page and post templates using PHP. I even got good enough that I had clients who would hire me to make changes to their WordPress themes and installations.
 
-Still, all of the tweaks and changes felt cobbled together. They _were_ cobbled together. I was building Frankenstein sites with dozens of overrides, plugins, and hacks that could break any moment.
+Still, all of the tweaks and changes felt cobbled together. They _were_ cobbled together. I was building Frankenstein sites with dozens of overrides, plugins, and hacks that could break at any moment.
 
 ## Searching for something better
 
-I wanted to escape the bloat of platforms like Wordpress, or the restricted design options available with a platform like Squarespace. **I wanted to go back to static HTML and CSS and I wanted to code it myself.**
+I wanted to escape the bloat of platforms like WordPress, or the restricted design options available with a platform like Squarespace. **I wanted to go back to static HTML and CSS and I wanted to code it myself.**
 
 After reading online, I came across [Jekyll][1]. It’s an open-source [static site generator][2]. That means it complies basic text files into static HTML so you don’t have to code every page by hand.
 
@@ -27,21 +27,21 @@ Jekyll may not be the sleekest option — there are good reasons to pick somethi
 
 ## To use a CMS or not?
 
-I built a few starter websites with Jekyll. One of the things I missed at first was the integration with my writing tool of choice ([Ulysses][5]). I also wanted some of the benefits of a CMS, like scheduling posts. Ulysses integrates with Wordpress and [Ghost][6] so you can publish from mobile and desktop, and I briefly have Ghost a try.
+I built a few starter websites with Jekyll. One of the things I missed at first was the integration with my writing tool of choice ([Ulysses][5]). I also wanted some of the benefits of a CMS, like scheduling posts. Ulysses integrates with WordPress and [Ghost][6] so you can publish from mobile and desktop. I decided to give Ghost a try.
 
-As a CMS, I did love Ghost. It’s simple and focused on the writing experience. They have even embraced the [Jamstack][7] (Javascript, APIs, and markup) movement driving static websites and support headless designs. I also liked the idea of keeping my content separate from the frontend framework.
+As a CMS, I did love Ghost. It’s simple and focused on the writing experience. They have even embraced the [Jamstack][7] (Javascript, APIs, and markup) movement driving static websites and supporting headless designs. I also liked the idea of keeping my content separate from the frontend framework.
 
-I worked with Ghost for awhile, but kept getting frustrated with the server upkeep that it invariable entailed. At first I paid for a monthly subscription, but the functionality is limited unless you spend $30/mo. At that level, you can either create your own theme to host with them, or use their API to support a frontend framework built with Jekyll, Gatsby, or another tool. That was more than I was willing to spend for the convenience of scheduling posts.
+I worked with Ghost for a while but kept getting frustrated with the server upkeep that it invariable entailed. At first, I paid for a monthly subscription, but the functionality at the basic level is limited unless you spend $30/mo. At that level, you can either create your own theme to host with them or use their API to support a frontend framework built with Jekyll, Gatsby, or another tool. The cost is about the same as a good WordPress hosting provider, but that was more than I was willing to spend for the convenience of scheduling posts within a CMS.
 
-I should note that Ghost also offers an option to self-host ([starting at $5/mo through Digital Ocean][8]) but I didn’t want to maintain the server myself. I already have enough reasons to not write without throwing in server updates…which were one of the reasons I wanted to leave Wordpress.
+I should note that Ghost also offers an option to self-host ([starting at $5/mo through Digital Ocean][8]) but I didn’t want to maintain the server myself. I already have enough reasons to not write without throwing in server updates…which were one of the reasons I wanted to leave WordPress.
 
 Ultimately, I decided to forgo the CMS and focus on Jekyll. I’ll write more about this in the future, but Jekyll fits into my growing philosophy around working with markdown for personal knowledge management and publishing.
 
 ## Publishing with Netlify
 
-My first Jekyll website was published on using Github pages. While I loved the option to publish a free project website directly from my repo, it was definitely more difficult to manage and came with a host of limitations.
+My first Jekyll website was published using Github pages. While I loved the option to publish a free project website directly from my repo, it was definitely more difficult to manage and came with a host of limitations.
 
-Ultimately, I went with Netlify. They are a fantastic organization that makes it easy to build, deploy, and scale web projects. Using Jekyll, I can generate a website from my repo on Github and Netlify deploys it to edge servers across it’s network. Since I’m only serving static HTML files, this makes my websites incredibly fast for readers. And there is no server (on my end) to worry about securing, protecting, etc. Netlify handles the build, deploys the static files, and they are almost instantly available across the edge.
+Ultimately, I went with Netlify. They are a fantastic organization that makes it easy to build, deploy, and scale web projects. Using Jekyll, I can generate a website from my repo on Github and Netlify deploys it to edge servers across its network. Since I’m only serving static HTML files, this makes my websites incredibly fast for readers. And there is no server (on my end) to worry about securing, protecting, etc. Netlify handles the build and deploys the static files acrss the edge.
 
 ## Getting set up
 
@@ -58,12 +58,12 @@ As one of the original static website generators, Jekyll benefits from a large c
 
 ## What’s next
 
-Overall I’m pretty happy with the results of the project. I learned a lot along the way and ended up with a website that doesn’t look too bad and is unique to me. While I don’t need to make any changes in order to start writing, there are a few areas I plan to explore in the coming months:
+Overall I’m pretty happy with the results of the project. I learned a lot along the way and ended up with a website that doesn’t look too bad and is unique to me. While I don’t need to make any changes to start writing, there are a few areas I plan to explore in the coming months:
 
 **Implement Tailwind CSS to replace Bulma**
-I used the [Bulma CSS Framework][15] to scaffold development of this project. Previously, I used Bootstrap for a few starter projects. Bulma is great, but I’ve been wanting something that is easier to customize and runs with a smaller profile. Enter [Tailwind CSS][16], which is a just-in-time, atomic framework for creating CSS. I can build and design the website, all within HTML. Then, I can filter out any unused classes, resulting in a very small file.
+I used the [Bulma CSS Framework][15] to scaffold the development of this project. Previously, I used Bootstrap for a few starter projects. Bulma is great, but I’ve been wanting something easier to customize. Enter [Tailwind CSS][16], which is a just-in-time, atomic framework for creating CSS. I can build and design the website, all within HTML. Then, I can filter out any unused classes, resulting in a very small file.
 
-**Build out functionality for my digital garden**
+**Buildout functionality for my digital garden**
 I expect to write about this more in the coming months, but I’m planning to treat this blog more like [a digital garden][17]. There are some core functionalities I want to add, like sides notes, bi-directional links, and search, to make the reading experience more rich and interconnected.
 
 **Rebuild the site with Gatsby, Next, or another framework**
