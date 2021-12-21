@@ -1,10 +1,9 @@
 ---
 layout: post
 title: How I Built My Blog with Jekyll and Netlify
-description: We've crammed the most important information to help you get started with Ghost into this one post. It's your shortcut to advanced features
-subtitle: We've crammed the most important information to help you get started with Ghost into this one post. It's your shortcut to advanced features.
+description: Frustrated with Wordpress, I turned to Jekyll and Netlify to build a truly custom personal website and blog.
 date: 2021-12-20 12:00:00 -0700
-category: Notes
+category: Essays
 stage: Budding
 tags: [Coding, Blogging, Jekyll, Netlify]
 ---
