@@ -2,6 +2,7 @@
 layout: post
 title: How I Built My Blog with Jekyll and Netlify
 description: Frustrated with Wordpress, I turned to Jekyll and Netlify to build a truly custom personal website and blog.
+subtitle: I turned to Jekyll and Netlify to build a truly custom personal website and blog without the limitations of Wordpress and Squarespace.
 date: 2021-12-20 12:00:00 -0700
 category: Essays
 stage: Budding
@@ -20,7 +21,7 @@ I wanted to escape the bloat of platforms like Wordpress, or the restricted desi
 
 After reading online, I came across [Jekyll][1]. It’s an open-source [static site generator][2]. That means it complies basic text files into static HTML so you don’t have to code every page by hand.
 
-I built a few starter projects with Jekyll and quickly fell in love with it. While there are a variety of open-source static site generators available now, I still enjoy the relative simplicity of Jekyll for getting started. The liquid templating language is easy to understand and your HTML/CSS/JS work cleanly together. 
+I built a few starter projects with Jekyll and quickly fell in love with it. While there are a variety of open-source static site generators available now, I still enjoy the relative simplicity of Jekyll for getting started. The liquid templating language is easy to understand and your HTML/CSS/JS work cleanly together.
 
 Jekyll may not be the sleekest option — there are good reasons to pick something like [Gatsby][3] or [Next.js][4] if you work with javascript and react — I still think it is the most approachable option for beginners (like me).
 
