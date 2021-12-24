@@ -13,11 +13,9 @@ markdown: kramdown
 
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
   - jekyll-archives
   - jekyll-seo-tag
   - jekyll-last-modified-at
-  - jekyll-tidy
 
 sass:
   sass_dir: _sass
@@ -35,13 +33,6 @@ jekyll-archives:
   permalinks:
     tag: '/topic/:name/'
     category: '/:name/'
-
-### JEKYLL FEED SETTINGS
-
-feed:
-  categories:
-    - essays
-    - notes
 
 ### JEKYLL SEO SETTINGS
 
