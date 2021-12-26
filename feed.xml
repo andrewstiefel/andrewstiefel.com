@@ -2,13 +2,12 @@
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="/assets/css/pretty-feed-v3.xsl" type="text/xsl"?>
+<?xml-stylesheet href="/assets/css/feed.xsl" type="text/xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
-
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link href="{{ site.url }}"/>
+    <title>{{ site.title }}</title>
+    <description>{{ site.description }}</description>
+    <link href="{{ site.url }}{{ base.url }}" rel="alternate"/>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>{{ site.url }}</id>
@@ -27,5 +26,4 @@
    </item>
     {% endfor %}
   </channel>
-
 </rss>
