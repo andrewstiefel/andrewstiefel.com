@@ -42,7 +42,10 @@
             </h1>
             <h2><xsl:value-of select="/rss/channel/title"/></h2>
             <p><xsl:value-of select="/rss/channel/description"/></p>
-            <a class="head_link" target="_blank" href="https://andrewstiefel.com">
+            <a class="head_link" target="_blank">
+              <xsl:attribute name="href">
+                <xsl:value-of select="/rss/channel/link"/>
+              </xsl:attribute>
               Visit Website &#x2192;
             </a>
           </header>
