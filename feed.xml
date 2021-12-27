@@ -3,27 +3,29 @@
 
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/assets/css/feed.xsl" type="text/xsl"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>{{ site.title }}</title>
-    <description>{{ site.description }}</description>
-    <link>{{ site.url }}</link>>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
-    <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}</id>
-    <author>
-     <name>{{ site.author.name }}</name>
-     <email>{{ site.author.email }}</email>
-    </author>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-    {% for post in site.posts %}
-    <item>
-     <title>{{ post.title }}</title>
-     <link>{{ site.url }}{{ post.url }}</link>
-     <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-     <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
-     <content type="html">{{ post.content | xml_escape }}</content>
-   </item>
-    {% endfor %}
-  </channel>
-</rss>
+ <title>{{ site.title }}</title>
+ <link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self"/>
+ <link href="{{ site.url }}{{ site.baseurl }}/" rel="alternate"/>
+ <subtitle>{{ site.description }}</subtitle>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.url }}</id>
+ <author>
+   <name>{{ site.author.name }}</name>
+   <email>{{ site.author.email }}</email>
+ </author>
+ <rights type="text">Copyright © {{ site.time | date: "%Y" }} {{ site.author }}. All rights reserved.</rights>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link rel="alternate" href="{{ site.url }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
+   <summary>{{ post.description }}</summary>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
