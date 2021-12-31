@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-2 is-8">
+        <div>
+          <h1 class="title is-size-1-tablet is-capitalized">{{ page.title }}</h1>
+          {% assign meta = site.data.metatag[page.title] %}
+          <p class="intro is-size-5-tablet">{{ meta.description }}</p>
+          <hr />
+          {% for post in page.posts %}
+            {% include loop.html %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}

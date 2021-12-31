@@ -15,15 +15,15 @@ layout: default
               <p class="is-uppercase">
                 <span class="has-text-primary"><a style="border-bottom: none;" href="{{site.baseurl}}/{{ page.category | replace: " ","-" }}">{{ page.category }}</a></span>
                 <span class="icon-text" style="vertical-align: inherit !important;">
-                  {% if page.stage == "Seedling" %}
+                  {% if page.stage == "seedling" %}
                   <span class="icon">
                     <i class="fas fa-seedling"></i>
                   </span>
-                  {% elsif page.stage == 'Budding' %}
+                  {% elsif page.stage == 'budding' %}
                   <span class="icon">
                     <i class="fas fa-leaf"></i>
                   </span>
-                  {% elsif page.stage == 'Evergreen' %}
+                  {% elsif page.stage == 'evergreen' %}
                   <span class="icon">
                     <i class="fas fa-tree"></i>
                   </span>

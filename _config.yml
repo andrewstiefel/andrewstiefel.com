@@ -14,8 +14,8 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-archives
-  - jekyll-seo-tag
   - jekyll-last-modified-at
+  - jekyll-tidy
 
 sass:
   sass_dir: _sass
@@ -29,28 +29,22 @@ jekyll-archives:
   enabled:
     - categories
     - tags
-  layout: taxonomy
+  layouts:
+    category: category-archive
+    tag: tag-archive
   permalinks:
     tag: '/topic/:name/'
     category: '/:name/'
-
-### JEKYLL SEO SETTINGS
-
-twitter:
-  username: andrewstiefel
-  card: summary_large_image
-
-social:
-  name: Andrew Stiefel
-  links:
-    - https://twitter.com/andrewstiefel
-    - https://www.linkedin.com/in/andrewstiefel
-    - https://github.com/andrewstiefel
 
 ### JEKYLL LAST MODIFIED SETTINGS
 
 last-modified-at:
     date-format: '%-d %b %Y'
+
+### JEKYLL TIDY SETTINGS
+
+jekyll_tidy:
+  exclude: ["feed.xml"]
 
 ### SITE AUTHOR
 
@@ -62,7 +56,6 @@ author:
   linkedin: andrewstiefel
   medium: andrewstiefel
   github: andrewstiefel
-
 
 ### DEFAULTS
 
