@@ -1,40 +1,23 @@
-// JQuery
+var html = document.documentElement;
+var body = document.body;
 
-$(document).ready(function() {
+burger();
 
-  // Toggles
+function burger() {
+    'use strict';
+    document.querySelector('.navbar-burger').addEventListener('click', function () {
+        if (!body.classList.contains('menu-opened')) {
+            body.classList.add('menu-opened');
+        } else {
+            body.classList.remove('menu-opened');
+        }
+    });
+}
 
-  // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function() {
-
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".sidebar").toggleClass("is-active");
-      $(".wrap").toggleClass("is-active");
-
-  });
-
-  // Modals
-
-  // Open the modal
-  $(".modal-button").click(function() {
-
-    $(".modal").addClass("is-active");
-
-  });
-
-  // Close the modal
-
-  $(".modal-close").click(function() {
-
-    $(".modal").removeClass("is-active");
-
-  });
-
-  $(".modal-background").click(function() {
-
-    $(".modal").removeClass("is-active");
-
-  });
-
+var hamburger = document.querySelector(".navbar-burger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
 });
