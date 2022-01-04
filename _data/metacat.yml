@@ -1,9 +1,10 @@
 essays:
-  description: Opionionated, long-form narrative writing with an agenda.
+  description: |
+    Opionionated, long-form narrative writing with an agenda.
 
 notes:
   description: |
-    Loose observations and explorations of a topic.
+    Mostly objective, short-form writing exploring a single topic or idea.
 
 library:
-  description: Book notes and highlights from my reading.
+  description: Books I've read, and books I like the idea of having read.

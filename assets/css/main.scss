@@ -42,7 +42,7 @@ $size-7: 0.8rem !default;
 
 $fullhd-enabled: false;
 
-$body-size: 16px !default;
+$body-size: 17px !default;
 $body-line-height: 1.75 !default;
 $text: hsl(0, 0%, 29%) !default;
 $text-strong: $brand-dark !default;
@@ -140,7 +140,7 @@ $subtitle-line-height: 1.5 !default;
 @import "layout/footer.scss";
 
 // Import Custom Components
-@import "monokai.css";
+@import "colorful.css";
 
 // Configure Overrides
 
@@ -241,83 +241,6 @@ a.ghost {
     text-transform: uppercase;
 }
 
-// Sidebar //
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: -14rem;
-  visibility: hidden;
-  overflow-y: auto;
-  background-color: $dark;
-  width: 14rem;
-}
-
-.sidebar a {
-  color: $white;
-}
-
-.sidebar .navbar {
-  padding: 0.5rem 0.75rem;
-}
-
-.sidebar .buttons {
-  margin-bottom: 1.5rem;
-}
-
-.sidebar, .wrap {
-    transition: all 0.5s ease-in-out;
-    backface-visibility: hidden;
-}
-
-.wrap.is-active, .sidebar.is-active {
-  transform: translateX(-14rem);
-}
-
-.sidebar.is-active {
-  visibility: visible;
-}
-
-.wrap {
-  position: relative;
-  width: 100%;
-}
-
-// Floating images
-
-.side-media {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  position: relative;
-}
-
-.side-media-left .side-media-back {
-  grid-column: 1 / 9;
-  grid-row: 1;
-  margin-right: 2%;
-}
-
-.side-media-left .side-media-front {
-  grid-column: 4 / span 8;
-  grid-row: 1;
-  padding-top: 28%;
-  z-index: 1;
-}
-
-.side-media-right .side-media-back {
-  grid-column: 5 / -1;
-  grid-row: 1;
-  margin-left: 2%;
-}
-
-.side-media-right .side-media-front {
-  grid-column: 2 / span 8;
-  grid-row: 1;
-  padding-top: 28%;
-  z-index: 1;
-}
-
 // Custom Classes
 
 p.intro {
@@ -348,8 +271,8 @@ a.site-title:hover {
 hr.hr-post-header::after {
   content: "";
   position: absolute;
-  width: 2.5em;
-  border-top: 2px solid $primary;
+  width: 5em;
+  border-top: 3px solid $primary;
 }
 
 .footer {
@@ -419,4 +342,53 @@ hr.hr-post-header::after {
   .pb-0-m {
     padding-bottom: 0px;
   }
+}
+
+.menu-opened {
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+}
+
+.menu-opened #navbar {
+  -webkit-overflow-scrolling: touch;
+  background-color: $white;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 90;
+  transition: 0.5s;
+}
+
+.menu-opened #navbar .navbar-menu {
+  display: inherit;
+  text-align: center;
+  font-size: $size-5;
+}
+
+.navbar-menu {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.menu-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-opened .menu-actions {
+  position: fixed;
+  bottom: 2rem;
+  width: 100%;
+}
+
+.menu-opened #navbar .navbar-end {
+  margin: 100px auto;
+}
+
+pre {
+ white-space: pre-wrap !important;
 }

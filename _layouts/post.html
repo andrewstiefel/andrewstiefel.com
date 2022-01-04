@@ -7,7 +7,7 @@ layout: default
 <main class="main">
 
   <article class="post">
-    <section class="section pb-4">
+    <section class="section pb-0">
       <div class="container">
         <div class="columns">
           <div class="column is-offset-2 is-8">
@@ -37,12 +37,16 @@ layout: default
               </p>
               <p class="is-size-7 is-uppercase">
                 <span class="published-time">
-                  Planted <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
+                  Planted <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
                 </span>
+                {% assign dateModified = page.last_modified_at | date: "%-d %b %Y" %}
+                {% assign datePublished = page.date | date: "%-d %b %Y" %}
+                {% if datePublished != dateModified %}
                 <span class="meta-divider">•</span>
                 <span class="modified-time">
-                  Last tended <time class="post-modified-date">{% last_modified_at %}</time>
+                  Last tended <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified" class="post-modified-date">{{ page.last_modified_at | date: "%-d %b %Y" }}</time>
                 </span>
+                {% endif %}
               </p>
               <hr class="hr-post-header">
             </div>
@@ -62,7 +66,7 @@ layout: default
   {% endif %}
       <div class="container">
         <div class="columns">
-          <div class="column is-offset-2 is-8">
+          <div class="column is-offset-2 is-8 pt-0">
             <div class="content">
               {{ content }}
               <hr class="hr-post-footer">
@@ -86,7 +90,7 @@ layout: default
               </div>
             </div>
             <div>
-              {% include content/post-cta.html %}
+              {% include content/post-subscribe-cta.html %}
             </div>
           </div>
         </div>

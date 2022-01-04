@@ -12,15 +12,15 @@ title: Home
       <div class="columns">
         <div class="column is-offset-2 is-8">
           <div class="columns is-vcentered">
-            <div class="column is-3 p-5 is-hidden-mobile">
+            <div class="column is-3 is-hidden-mobile">
               <figure class="image is-square">
                 <img class="is-rounded" alt="Andrew Stiefel" src="/assets/images/andrew-stiefel.png">
               </figure>
             </div>
             <div class="column is-9">
               <div class="content">
-                <p class="is-size-5"><span class="has-text-weight-bold">Hey, I'm Andrew Stiefel —</span><br >Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays.</p>
-                <a class="button is-rounded" onclick="fathom.trackGoal('YKQ6ZLVM', 0);" href="/feed.xml">
+                <p><span class="has-text-weight-bold is-size-5">Hey, I'm Andrew Stiefel —</span><br >Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays.</p>
+                <a class="button is-rounded" onclick="fathom.trackGoal('YKQ6ZLVM', 0);" target="_blank" href="/feed.xml">
                   <span class="icon">
                     <i class="fas fa-rss"></i>
                   </span>
@@ -46,7 +46,7 @@ title: Home
               <span class="title-bar-divider"></span>
             </div>
           </div>
-          {% for post in site.posts %}
+          {% for post in site.categories.notes %}
             {% include loop.html %}
           {% endfor %}
         </div>

@@ -1,0 +1,7 @@
+<div class="tags">
+  {% for tag in site.tags %}
+    <span class="tag is-capitalized">
+      <a href="/topic/{{ tag | first | replace: " ","-" }}">{{ tag | first }}</a>
+    </span>
+  {% endfor %}
+</div>

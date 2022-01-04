@@ -47,8 +47,11 @@
 
     <h2>What is an RSS feed?</h2>
     <p>An RSS feed is a data format that contains the latest content from a website, blog, or podcast. You can use feeds to <strong>subscribe</strong> to websites and get the <strong>latest content in one place</strong>.</p>
-    <p><strong>Feeds put you in control.</strong> Unlike social media apps, there is no algorithm deciding whether or not you see new content from your favorite creators.</p>
-    <p><strong>Feeds are spam-proof.</strong> Had enough? Easy, just unsubscribe from the feed.</p>
+    <ul>
+    	<li><strong>Feeds put you in control.</strong> Unlike social media apps, there is no algorithm deciding what you see or read. You always get the latest content from the creators you care about.</li>
+    	<li><strong>Feed are private by design.</strong> No one owns web feeds, so no one is harvesting your personal information and profiting by selling it to advertisers.</li>
+    	<li><strong>Feeds are spam-proof.</strong> Had enough? Easy, just unsubscribe from the feed.</li>
+    </ul>
     <p>All you need to do to get started is to add the URL (web address) for this feed to a special app called a newsreader. Visit <a href="https://aboutfeeds.com/">About Feeds</a> to get started with newsreaders and subscribing. It’s free. </p>
   </xsl:template>
 
