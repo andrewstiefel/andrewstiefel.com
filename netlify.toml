@@ -13,4 +13,3 @@
   from = "https://andrew.st/*"
   to = "https://andrewstiefel.com/:splat"
   status = 301
-  force = false
