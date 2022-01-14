@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Andrew Stiefel
+title: About
 description:
 permalink: /about/
 ---
@@ -11,20 +11,18 @@ permalink: /about/
 
 More about me will go here, obviously.
 
-Get in touch: andrew@andrewstiefel.com / @andrewstiefel
-
-### How I Got Here
-
-That will obviosuly go here when I'm ready
-
-### Get in touch
-
 I'm always happy to meet interesting people for coffee. You can email me at andrew@andrewstiefel.com.
 
-### Colophon
+### About the site
+This URL has been my online home for many years, manifesting at times as a blog or a portfolio. I designed the current, single-column version of this site to collect my writing in the form of working notes and essays.
 
-A _colophon_ is a fancy designer word for "how this site was made."
+In case you were wondering, this site is:
 
-I built this website using [Jekyll](http://jekyllrb.com/). It is deployed with [Netlify](https://www.netlify.com). My CMS is just a bunch of markdown files saved in folders. All pixels were designed by me with support from the Bulma CSS framework.
+- Coded with Atom
+- Built on Jekyll, the open-source static site generator
+- Deployed with Netlfiy
 
-Everything is open source and [published on Github](https://github.com/andrewstiefel/andrewstiefel.com/) under the MIT License.
+Everything is open-source and [published on Github][1] under the MIT License.
+
+
+[1]:	https://github.com/andrewstiefel/andrewstiefel.com/
