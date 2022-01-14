@@ -8,3 +8,8 @@
     Content-Security-Policy = "default-src: 'self';"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "https://andrew.st/*"
+  to = "https://andrewstiefel.com/:splat"
+  status = 301

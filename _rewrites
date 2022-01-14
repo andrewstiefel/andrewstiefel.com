@@ -1,0 +1,2 @@
+# Redirect andrew.st to primary domain
+https://andrew.st/* https://andrewstiefel.com/:splat 301!
