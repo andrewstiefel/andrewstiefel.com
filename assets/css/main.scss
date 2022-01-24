@@ -392,3 +392,10 @@ hr.hr-post-header::after {
 pre {
  white-space: pre-wrap !important;
 }
+
+.highlight, pre.highlight {
+  border-radius: 1rem !important;
+}
+.highlight {
+  margin-bottom: 1rem;
+}
