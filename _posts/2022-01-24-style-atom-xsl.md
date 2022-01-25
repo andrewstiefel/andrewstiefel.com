@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to style an atom feed with XSLT
-description: Create a seamless user experience for your web feed with Atom and XLST stylesheets.
-subtitle: Create a seamless user experience for your web feed with Atom and XLST stylesheets.
+title: How to Style an Atom Feed with XSLT
+description: Create a seamless user experience for your Atom or RSS feed with XLST stylesheets.
+subtitle: Create a seamless user experience for your Atom or RSS feed with XLST stylesheets.
 image:
 date: 2022-01-24 10:00:00 -0700
 category: notes

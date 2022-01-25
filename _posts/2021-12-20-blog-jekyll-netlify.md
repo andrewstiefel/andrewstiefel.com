@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How I built my blog with Jekyll and Netlify
-description: Frustrated with WordPress, I turned to Jekyll and Netlify to build a truly custom personal website and blog.
-subtitle: I turned to Jekyll and Netlify to build a truly custom personal website and blog without the limitations of WordPress and Squarespace.
+title: How I Built My Blog with Jekyll and Netlify
+description: I used Jekyll and Netlify to build a custom personal website and blog.
+subtitle: I used Jekyll and Netlify to build a fully custom personal website and blog.
 date: 2021-12-20 12:00:00 -0700
 category: essays
 stage: budding
