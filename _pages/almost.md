@@ -2,6 +2,7 @@
 layout: page
 title: Almost
 permalink: /almost/
+sitemap: false
 ---
 
 # Almost there...

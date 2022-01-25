@@ -3,6 +3,7 @@ layout: page
 title: Thanks
 description: Thank you for subscribing to my blog
 permalink: /thanks/
+sitemap: false
 ---
 
 # Thank you
