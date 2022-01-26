@@ -80,11 +80,13 @@ I chose to create my own template so I could incorporate some additional markup.
 
 **Note on YAML Front Matter block:** It’s important to leave the dashes at the top of the file. This is necessary because Jekyll will not process a page with Liquid unless there is a YAML block at the top of the file.
 
-**Enable auto-discovery:**Make sure you add the appropriate meta tag to support automated discovery of your feed. Simply place the following code somewhere in your template's `<head>` section to output the necessary metadata:
+**Enable auto-discovery:** Make sure you add the appropriate meta tag to support automated discovery of your feed. Place the following code somewhere in your template's `<head>` section to output the necessary metadata:
 
+{% raw %}
 ```html
 <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
 ```
+{% endraw %}
 
 ## Create the XSL file to style the feed
 
