@@ -306,7 +306,8 @@ hr.hr-post-header::after {
 }
 
 .post-cta {
-  max-width: none !important;
+  border: 1px solid #ddd;
+  border-top: 5px solid #00754a;
 }
 
 .hr-post-footer {
