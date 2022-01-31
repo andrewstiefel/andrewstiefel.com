@@ -13,8 +13,8 @@ layout: default
           <div class="column is-offset-2 is-8">
             <div class="content">
               <p class="is-uppercase">
-                <span class="has-text-primary"><a style="border-bottom: none;" href="{{site.baseurl}}/{{ page.category | replace: " ","-" }}">{{ page.category }}</a></span>
-                <span class="icon-text" style="vertical-align: inherit !important;">
+                <span class="has-text-primary"><a class="no-link-style" href="{{site.baseurl}}/{{ page.category | replace: " ","-" }}">{{ page.category }}</a></span>
+                <span class="icon-text vertical-align-inherit">
                   {% if page.stage == "seedling" %}
                   <span class="icon">
                     <i class="fas fa-seedling"></i>

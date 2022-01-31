@@ -38,7 +38,7 @@ Specifically, I wanted the following:
 
 _If you’re using a different tech stack to create your website, you can [skip this section][1] and jump ahead to the part about creating an XSLT stylesheet._
 
-You can either use the excellent [Jekyll Feed plugin][2]{:target="\_blank"}, or create your own template using liquid tags and save it in your project as `feed.xml`.
+You can either use the excellent [Jekyll Feed plugin][2]{:target="_blank" rel="noopener noreferrer"}, or create your own template using liquid tags and save it in your project as `feed.xml`.
 
 I chose to create my own template so I could incorporate some additional markup. You can see my version below:
 
@@ -90,7 +90,7 @@ I chose to create my own template so I could incorporate some additional markup.
 
 ## Create the XSL file to style the feed
 
-[We can use XSLT to style our XML][3]{:target="\_blank"}. This makes our feeds more human-readable while supporting bots, aggregators, and search engines.
+[We can use XSLT to style our XML][3]{:target="_blank" rel="noopener noreferrer"}. This makes our feeds more human-readable while supporting bots, aggregators, and search engines.
 
 You’ll notice some similarities to HTML and CSS in the example below, but with a few semantic changes and special attributes.
 
@@ -194,10 +194,10 @@ I made my own XML template and XSLT stylesheet based on the examples above. You 
 Thanks for reading!
 
 ## Additional Reading
-* [How would I improve RSS? Three ideas (Interconnected by Matt Webb)][7]{:target="\_blank"}
-* [How to style an RSS feed (Just Lepture)][8]{:target="\_blank"}
-* [Styling an RSS Feed with XSLT (Nat Clark)][9]{:target="\_blank"}
-* [About Feeds][10]{:target="\_blank"}
+* [How would I improve RSS? Three ideas (Interconnected by Matt Webb)][7]{:target="_blank" rel="noopener noreferrer"}
+* [How to style an RSS feed (Just Lepture)][8]{:target="_blank" rel="noopener noreferrer"}
+* [Styling an RSS Feed with XSLT (Nat Clark)][9]{:target="_blank" rel="noopener noreferrer"}
+* [About Feeds][10]{:target="_blank" rel="noopener noreferrer"}
 
 [1]:	#create-the-xsl-file-to-style-the-feed
 [2]:	https://github.com/jekyll/jekyll-feed "Jekyll Feed"
