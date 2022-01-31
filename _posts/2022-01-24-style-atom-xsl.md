@@ -189,7 +189,7 @@ Save your file as `feed.xsl` and add the tag below to your XML file. Make sure t
 
 With a little extra care and attention, we can improve the experience of using RSS and Atom feeds across the web. Now when you visit my feed, you are greeted with an explanation of how to get started and a formatted recap of my latest posts.
 
-I made my own XML template and XSLT stylesheet based on the examples above. You can [see it in action here][5]{:target="_blank"} or [download a version][6]{:target="_blank"} to adapt for your website.
+I made my own XML template and XSLT stylesheet based on the examples above. You can [see it in action here][5]{:target="_blank"} or [download a version][6]{:target="_blank" rel="noopener noreferrer"} to adapt for your website.
 
 Thanks for reading!
 
