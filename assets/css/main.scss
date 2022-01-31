@@ -2,10 +2,9 @@
 ---
 
 // Import Custom Fonts
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap";
-
+@import "fonts/inter.scss";
+@import "fonts/roboto-condensed.scss";
+@import "fonts/martel.scss";
 
 //Import and Configure Font Awesome
 $fa-font-path: "/assets/fonts/fontawesome";
