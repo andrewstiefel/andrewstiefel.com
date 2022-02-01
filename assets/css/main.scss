@@ -63,30 +63,30 @@ $input-shadow: none !default;
 $input-focus-box-shadow-color: none !default;
 
 // Import Bulma
-@import "utilities/initial-variables.scss";
-@import "utilities/functions.scss";
-@import "utilities/derived-variables.scss";
-@import "utilities/mixins.scss";
-@import "utilities/controls.scss";
-@import "utilities/extends.scss";
+@import "utilities/_initial-variables.scss";
+@import "utilities/_functions.scss";
+@import "utilities/_derived-variables.scss";
+@import "utilities/_mixins.scss";
+@import "utilities/_controls.scss";
+@import "utilities/_extends.scss";
 
 $content-heading-weight: $weight-bold !default;
 $content-heading-line-height: 1.2 !default;
 
-@import "base/minireset.scss";
-@import "base/generic.scss";
-@import "base/animations.scss";
+@import "base/_minireset.scss";
+@import "base/_generic.scss";
+@import "base/_animations.scss";
 
-@import "elements/box.scss";
-@import "elements/button.scss";
-@import "elements/container.scss";
-@import "elements/content.scss";
-@import "elements/icon.scss";
-@import "elements/image.scss";
-@import "elements/notification.scss";
+@import "elements/_box.scss";
+@import "elements/_button.scss";
+@import "elements/_container.scss";
+@import "elements/_content.scss";
+@import "elements/_icon.scss";
+@import "elements/_image.scss";
+@import "elements/_notification.scss";
 /* @import "elements/progress.scss"; */
 /* @import "elements/table.scss"; */
-@import "elements/tag.scss";
+@import "elements/_tag.scss";
 
 $title-family: $family-headline !default;
 $title-size: $size-1 !default;
@@ -97,49 +97,49 @@ $subtitle-size: $size-5 !default;
 $subtitle-weight: 400 !default;
 $subtitle-line-height: 1.5 !default;
 
-@import "elements/title.scss";
-@import "elements/other.scss";
+@import "elements/_title.scss";
+@import "elements/_other.scss";
 
-@import "form/shared.scss";
-@import "form/input-textarea.scss";
+@import "form/_shared.scss";
+@import "form/_input-textarea.scss";
 /* @import "form/checkbox-radio.scss"; */
 /* @import "form/select.scss"; */
 /* @import "form/file.scss"; */
-@import "form/tools.scss";
+@import "form/_tools.scss";
 
 /* @import "components/breadcrumb.scss"; */
-@import "components/card.scss";
+@import "components/_card.scss";
 /* @import "components/dropdown.scss"; */
-@import "components/level.scss";
-@import "components/list.scss";
+@import "components/_level.scss";
+@import "components/_list.scss";
 /* @import "components/media.scss"; */
 /* @import "components/menu.scss"; */
 /* @import "components/message.scss"; */
-@import "components/modal.scss";
-@import "components/navbar.scss";
+/* @import "components/modal.scss"; */
+@import "components/_navbar.scss";
 /* @import "components/pagination.scss"; */
 /* @import "components/panel.scss"; */
 /* @import "components/tabs.scss"; */
 
-@import "grid/columns.scss";
-@import "grid/tiles.scss";
+@import "grid/_columns.scss";
+@import "grid/_tiles.scss";
 
-@import "helpers/color.scss";
-@import "helpers/flexbox.scss";
-@import "helpers/float.scss";
-@import "helpers/other.scss";
-@import "helpers/overflow.scss";
-@import "helpers/position.scss";
-@import "helpers/spacing.scss";
-@import "helpers/typography.scss";
-@import "helpers/visibility.scss";
+@import "helpers/_color.scss";
+@import "helpers/_flexbox.scss";
+@import "helpers/_float.scss";
+@import "helpers/_other.scss";
+@import "helpers/_overflow.scss";
+@import "helpers/_position.scss";
+@import "helpers/_spacing.scss";
+@import "helpers/_typography.scss";
+@import "helpers/_visibility.scss";
 
-@import "layout/hero.scss";
-@import "layout/section.scss";
-@import "layout/footer.scss";
+@import "layout/_hero.scss";
+@import "layout/_section.scss";
+@import "layout/_footer.scss";
 
 // Import Custom Components
-@import "one-dark.css";
+@import "solarized-dark.css";
 
 // Configure Overrides
 
@@ -341,6 +341,10 @@ hr.hr-post-header::after {
 @media screen and(max-width: 768px) {
   .pb-0-m {
     padding-bottom: 0px;
+  }
+
+  .field.is-grouped>.control:not(:last-child) {
+    margin-right: 0px !important;
   }
 }
 
