@@ -1,3 +1,5 @@
+// Navbar mobile menu
+
 var html = document.documentElement;
 var body = document.body;
 
@@ -22,7 +24,9 @@ var hamburger = document.querySelector(".navbar-burger");
     // Do something else, like open/close menu
 });
 
-function copyURL() {
+// Copy url to share
+document.getElementById("copyURL").onclick = function() {
+
   /* Get the text field */
   var copyText = document.getElementById("postURL");
   var copySuccess = document.getElementById("copyURL");
@@ -41,3 +45,17 @@ function copyURL() {
     copySuccess.classList.remove('copied');
   }, 2000);
 };
+
+// Subscribe to newsletter
+window.addEventListener('load', (event) => {
+    document.getElementById('subForm').addEventListener('submit', () => {
+        fathom.trackGoal('UFIQJWTI', 0);
+    });
+});
+
+// Subscribe to RSS
+window.addEventListener('load', (event) => {
+    document.getElementById('subRSS').addEventListener('click', () => {
+        fathom.trackGoal('YKQ6ZLVM', 0);
+    });
+});
