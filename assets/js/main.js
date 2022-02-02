@@ -66,7 +66,7 @@ window.addEventListener('load', (event) => {
 window.addEventListener('load', (event) => {
   if(document.getElementById('subRSS')) {
     subRSS.addEventListener('click', () => {
-      athom.trackGoal('YKQ6ZLVM', 0);
+      fathom.trackGoal('YKQ6ZLVM', 0);
     });
   } else {
     console.log()
