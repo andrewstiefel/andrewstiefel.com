@@ -301,6 +301,10 @@ hr.hr-post-header::after {
   }
 }
 
+.button-is-120 {
+  min-width: 120px;
+}
+
 .formkit-powered-by-convertkit {
   display: none !important;
 }
@@ -312,7 +316,7 @@ hr.hr-post-header::after {
 
 .hr-post-footer {
   max-width: 150px;
-  margin: 3rem auto;
+  margin: 2rem auto;
   background-color: $grey-lighter;
 }
 
@@ -343,7 +347,7 @@ hr.hr-post-header::after {
     padding-bottom: 0px;
   }
 
-  .field.is-grouped>.control:not(:last-child) {
+  .cta-control {
     margin-right: 0px !important;
   }
 }

@@ -69,52 +69,33 @@ layout: default
           <div class="column is-offset-2 is-8 pt-0">
             <div class="content">
               {{ content }}
+              <hr class="hr-post-footer">
             </div>
-            {% if page.tags != empty %}
-            <div class="tags post-tags py-4 mb-0">
-            {% for tag in page.tags %}
-                <span class="tag is-capitalized">
-                  <a href="{{site.baseurl}}/topic/{{ tag | replace: " ","-" }}">{{tag}}</a>
-                </span>
-            {% endfor %}
+            <div class="columns py-4">
+                {% if page.tags != empty %}
+                <div class="column">
+                  <div class="is-flex">
+                    <div class="tags post-tags">
+                      {% for tag in page.tags %}
+                        <span class="tag is-capitalized">
+                          <a href="{{site.baseurl}}/topic/{{ tag | replace: " ","-" }}">{{tag}}</a>
+                        </span>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+                {% endif %}
+              <div class="column is-6">
+                {% include share.html %}
+              </div>
             </div>
-            {% endif %}
-            <hr class="hr-post-footer">
-            <div class="py-4">
-            {% include share.html %}
-            </div>
-            <div class="py-4">
-            {% include content/post-subscribe-cta.html %}
+            <div>
+              {% include content/post-subscribe-cta.html %}
             </div>
           </div>
         </div>
       </div>
-  </section>
-  <section class="section py-0">
-    <div class="post-nav py-6">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            {% if page.previous.url %}
-            <p>Previous post</p>
-            <a href="{{page.previous.url}}">
-              <h3 class="is-size-5 has-text-weight-bold">{{page.previous.title}}</h3>
-            </a>
-            {% endif %}
-          </div>
-          <div class="column has-text-right">
-            {% if page.next.url %}
-            <p>Next post</p>
-            <a href="{{page.next.url}}">
-              <h3 class="is-size-5 has-text-weight-bold">{{page.next.title}}</h3>
-            </a>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  </section
 </article>
 
 </main>

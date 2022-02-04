@@ -30,7 +30,7 @@ window.addEventListener('load', (event) => {
     copyURL.addEventListener('click', () => {
       /* Get the text field */
       var copyText = document.getElementById("postURL");
-      var copySuccess = document.getElementById("copyURL");
+      var copySuccess = document.getElementById("shareText");
 
       /* Select the text field */
       copyText.select();
@@ -49,7 +49,7 @@ window.addEventListener('load', (event) => {
       } else {
           console.log()
       }
-    });
+});
 
 // Subscribe to newsletter
 window.addEventListener('load', (event) => {

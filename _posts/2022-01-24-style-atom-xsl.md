@@ -8,6 +8,7 @@ date: 2022-01-24 10:00:00 -0700
 category: notes
 stage: evergreen
 tags: [coding, jekyll]
+pdf: assets/pdf/andrewstiefel.com-How to Style an Atom Feed with XSLT.pdf
 ---
 
 Maybe it’s nostalgia for the early web, but I love web feeds as a tool for following and reading content. Feeds are privacy-first and put the reader in control: you can opt-out any time, choose your tool for reading, and organize them in any way you want.

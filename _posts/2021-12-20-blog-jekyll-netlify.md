@@ -7,6 +7,7 @@ date: 2021-12-20 12:00:00 -0700
 category: essays
 stage: budding
 tags: [coding, blogging, jekyll, netlify]
+pdf: assets/pdf/andrewstiefel.com-How I Built My Blog with Jekyll and Netlify.pdf
 ---
 
 I’ve been blogging and hosting my website since 2006, but I’ve always been unhappy with the themes available for technologies like Blogger, WordPress, or Squarespace. I usually had a vision for what I wanted to create and would spend hours scouring marketplaces to find something that came close.
