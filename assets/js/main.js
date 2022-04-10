@@ -72,3 +72,14 @@ window.addEventListener('load', (event) => {
     console.log()
   }
 });
+
+// Click affiliate link
+window.addEventListener('load', (event) => {
+  if(document.getElementById('clickAff')) {
+    subRSS.addEventListener('click', () => {
+      fathom.trackGoal('N9ZM2BUT', 0);
+    });
+  } else {
+    console.log()
+  }
+});
