@@ -1,10 +1,10 @@
-essays:
+Essays:
   description: |
-    Opionionated, long-form narrative writing with an agenda.
+    Long-form, narrative writing with a distinct point of view
 
-notes:
+Notes:
   description: |
-    Mostly objective, short-form writing exploring a single topic or idea.
+    Short-form, mostly objective writing exploring a single topic or idea
 
-library:
-  description: Books I've read, and books I like the idea of having read.
+Library:
+  description: Books I've read, and books I like the idea of having read

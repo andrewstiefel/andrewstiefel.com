@@ -1,2 +1,3 @@
-jekyll:
-  description: Jekyll is a simple, blog-aware, static site generator. Think of it like a file-based CMS, without all the complexity. 
+Jekyll:
+  description: |
+    Jekyll is a simple, blog-aware, static site generator. Think of it like a file-based CMS, without all the complexity.

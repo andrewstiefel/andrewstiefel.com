@@ -4,56 +4,39 @@ title: Home
 ---
 
 {% include header.html %}
-
-<main class="main">
-
-  <section class="section pb-0-m">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-offset-2 is-8">
-          <div class="columns is-vcentered">
-            <div class="column is-3 is-hidden-mobile">
-              <figure class="image is-square">
-                <img class="is-rounded" alt="Andrew Stiefel" src="/assets/images/andrew-stiefel.png">
-              </figure>
-            </div>
-            <div class="column is-9">
-              <div class="content">
-                <p><span class="has-text-weight-bold is-size-5">Hey, I'm Andrew Stiefel —</span><br >Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays.</p>
-                <a class="button is-rounded" id="subRSS" target="_blank" href="/feed.xml">
-                  <span class="icon">
-                    <i class="fas fa-rss"></i>
-                  </span>
-                  <span>Subscribe via RSS Feed</span>
-                </a>
-              </div>
-            </div>
-          </div>
+<main class="mb-auto">
+  <section class="pb-6">
+    <div class="grid grid-cols-2 grid-flow-col bg-gray-100 dark:bg-gray-700 rounded">
+      <div class="col-span-full md:col-span-1 md:col-start-2">
+        <img class="rounded-t sm:rounded-r" alt="Andrew Stiefel" src="https://www.iainbroome.com/content/images/size/w1080/2021/05/IMG_1080-bw.png">
+      </div>
+      <div class="col-span-full md:col-span-1 md:col-start-1 py-12 px-6 md:px-8">
+        <div class="text-2xl font-bold leading-8 mb-4">Hey, I'm Andrew Stiefel</div>
+        <div class="prose dark:prose-invert">
+          <p>Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays.</p>
+        </div>
+        <div class="pt-6">
+          {% include content/embedded-form.html %}
         </div>
       </div>
     </div>
   </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-offset-2 is-8">
-          <div class="columns is-vcentered">
-            <div class="column is-3 pb-0">
-              <h3 class="is-size-5 has-text-weight-bold">Recent Posts</h3>
-            </div>
-            <div class="column pb-0">
-              <span class="title-bar-divider"></span>
-            </div>
-          </div>
-          {% for post in site.posts %}
-            {% include loop.html %}
-          {% endfor %}
+  <section class="grid grid-cols-6 py-6">
+    <div class="col-span-full lg:col-span-4 lg:col-start-2">
+      <div class="grid grid-cols-4 content-center">
+        <div class="text-xl font-bold col-span-2 md:col-span-1">Recent Posts</div>
+        <div class="col-span-2 md:col-span-3">
+          <span class="inline-block w-full h-0.5 bg-gray-900 dark:bg-gray-500"></span>
         </div>
       </div>
+      <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+        {% for post in site.posts limit:5 %}
+        <li class="py-12">
+        {% include loop.html %}
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
-
 </main>
-
 {% include footer.html %}
