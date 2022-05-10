@@ -5,9 +5,9 @@ description: This website is proudly cookie and tracker free.
 permalink: /privacy/
 ---
 
-<h1 id="youre-being-watched" class="title is-size-1-tablet">You’re being watched.</h1>
+<h1>You’re being watched.</h1>
 
-<p class="intro is-size-5-tablet">Imagine if every time you walked into a physical store, someone scanned a barcode on your body to learn who you are.</p>
+<p>Imagine if every time you walked into a physical store, someone scanned a barcode on your body to learn who you are.</p>
 
 Then, they followed you around the store and took notes about everything you picked up, put back, or purchased. When you finally leave, they send that information to a central agency. Now, people follow you around — to your home, your work — suggesting similar products to you.
 
