@@ -1,35 +1,36 @@
 <header>
-  <nav id="navbar" class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
-    <div class="container px-3">
-      <div class="navbar-brand">
-        <a class="navbar-item site-title" href="/">
-          <p class="site-title">{{ site.title }}</p>
-        </a>
-        <a role="button is-hidden" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div id="navMenu" class="navbar-menu">
-        <div class="navbar-start">
-
-        </div>
-        <div class="navbar-end">
-          <div class="menu-actions">
-            <a class="navbar-item is-size-6 pr-2" target="_blank" rel="noreferrer" title="twitter" href="https://twitter.com/{{ site.author.twitter }}">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
-            </a>
-            <a class="navbar-item is-size-6 pl-2" target="_blank" rel="noreferrer" title="linkedin" href="https://www.linkedin.com/in/{{ site.author.twitter }}">
-              <span class="icon">
-                <i class="fab fa-linkedin-in"></i>
-              </span>
-            </a>
+  <nav class="py-8" role="navigation" aria-label="main navigation">
+    <div class="flex items-center justify-between">
+      <div id="logo" class="z-20">
+        <a href="/" aria-label="{{ site.title }}">
+          <div class="text-2xl font-bold lg:block">
+            {{ site.title }}
           </div>
-        </div>
+        </a>
       </div>
+      <div id="nav-wrap" class="hidden lg:block">
+        <ul class="flex items-center justify-between">
+          {% include menu.html %}
+        </ul>
+      </div>
+      <div id="menu-button" class="z-20 lg:hidden">
+        <button type="button" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden">
+          <span class="sr-only">Open main menu</span>
+          <!--Icon when menu is closed-->
+          <svg id="burder" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!--Icon when menu is open-->
+          <svg id="close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="menu" class="hidden min-w-full h-screen flex items-center justify-between z-10 fixed bg-gray-100 dark:bg-gray-500 top-0 left-0 overflow-hidden transition-all">
+      <ul class="px-8 space-y-4 w-full text-center text-xl">
+        {% include menu.html %}
+      </ul>
     </div>
   </nav>
 </header>

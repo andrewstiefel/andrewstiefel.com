@@ -3,120 +3,27 @@ layout: default
 ---
 
 {% include header.html %}
-
-<main class="main">
-
-  <article class="post">
-    <section class="section pb-0">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-offset-2 is-8">
-            <div class="content">
-              <p class="is-uppercase">
-                <span class="has-text-primary"><a class="no-link-style" href="{{site.baseurl}}/{{ page.category | replace: " ","-" }}">{{ page.category }}</a></span>
-                <span class="icon-text vertical-align-inherit">
-                  {% if page.stage == "seedling" %}
-                  <span class="icon">
-                    <i class="fas fa-seedling"></i>
-                  </span>
-                  {% elsif page.stage == 'budding' %}
-                  <span class="icon">
-                    <i class="fas fa-leaf"></i>
-                  </span>
-                  {% elsif page.stage == 'evergreen' %}
-                  <span class="icon">
-                    <i class="fas fa-tree"></i>
-                  </span>
-                  {% endif %}
-                  <span>{{ page.stage }}</span>
-                </span>
-              </p>
-              <h1 class="title is-size-1-tablet mt-4">{{ page.title }}</h1>
-              <p class="intro is-size-5-tablet">
-                {{ page.subtitle }}
-              </p>
-              <p class="is-size-7 is-uppercase">
-                <span class="published-time">
-                  Planted <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time>
-                </span>
-                {% assign dateModified = page.last_modified_at | date: "%-d %b %Y" %}
-                {% assign datePublished = page.date | date: "%-d %b %Y" %}
-                {% if datePublished != dateModified %}
-                <span class="meta-divider">•</span>
-                <span class="modified-time">
-                  Last tended <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified" class="post-modified-date">{{ page.last_modified_at | date: "%-d %b %Y" }}</time>
-                </span>
-                {% endif %}
-              </p>
-              <hr class="hr-post-header">
-            </div>
-          </div>
-        </div>
-      </div>
+<main class="mb-auto">
+  <article class="prose dark:prose-invert mx-auto prose-pre:whitespace-pre-wrap prose-a:text-teal-500">
+    <section>
+      <a class="text-sm capitalize text-teal-500 font-semibold no-underline" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
+      <h1 class="mb-3 mt-2">{{ page.title }}</h1>
+      <p class="lead text-gray-500 dark:text-gray-400 my-2">{{ page.description }}</p>
+      <span class="text-sm text-gray-500 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include reading-time.html %}</span>
     </section>
-  {% if page.post-image %}
-        <div class="container pt-5">
-          <figure class="image is-16by9 post-image">
-            <img src="{{ page.post-image }}?nf_resize=fit&w=1280">
-          </figure>
+    <section>
+      {{ content}}
+    </section>
+    <section class="my-8">
+    {% if page.tags != empty %}
+      <div class="flex flex-wrap">
+      {% for tag in page.tags %}
+        <div class="not-prose text-sm capitalize bg-gray-200 dark:bg-gray-600 rounded mr-3 px-2 py-1">
+          <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | downcase | replace: " ","-" }}">{{tag}}</a>
         </div>
-    <section class="section post-content">
-  {% else %}
-    <section class="section post-content pt-0">
-  {% endif %}
-      <div class="container">
-        <div class="columns">
-          <div class="column is-offset-2 is-8 pt-0">
-            <div class="content">
-              {{ content }}
-            </div>
-            {% if page.tags != empty %}
-            <div class="tags post-tags py-4 mb-0">
-            {% for tag in page.tags %}
-                <span class="tag is-capitalized">
-                  <a href="{{site.baseurl}}/topic/{{ tag | replace: " ","-" }}">{{tag}}</a>
-                </span>
-            {% endfor %}
-            </div>
-            {% endif %}
-            <hr class="hr-post-footer">
-            <div class="py-4">
-            {% include share.html %}
-            </div>
-            <div class="py-4">
-            {% include content/post-subscribe-cta.html %}
-            </div>
-          </div>
-        </div>
+      {% endfor %}
       </div>
-  </section>
-  <section class="section py-0">
-    <div class="post-nav py-6">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            {% if page.previous.url %}
-            <p>Previous post</p>
-            <a href="{{page.previous.url}}">
-              <h3 class="is-size-5 has-text-weight-bold">{{page.previous.title}}</h3>
-            </a>
-            {% endif %}
-          </div>
-          <div class="column has-text-right">
-            {% if page.next.url %}
-            <p>Next post</p>
-            <a href="{{page.next.url}}">
-              <h3 class="is-size-5 has-text-weight-bold">{{page.next.title}}</h3>
-            </a>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</article>
-
+    {% endif %}
+  </article>
 </main>
-
 {% include footer.html %}

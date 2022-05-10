@@ -1,54 +1,15 @@
 // Navbar mobile menu
 
-var html = document.documentElement;
 var body = document.body;
+const button = document.querySelector('#menu-button'); // Hamburger Icon
+const menu = document.querySelector('#menu'); // Menu
+const close = document.querySelector('#close');
 
-burger();
-
-function burger() {
-    'use strict';
-    document.querySelector('.navbar-burger').addEventListener('click', function () {
-        if (!body.classList.contains('menu-opened')) {
-            body.classList.add('menu-opened');
-        } else {
-            body.classList.remove('menu-opened');
-        }
-    });
-}
-
-var hamburger = document.querySelector(".navbar-burger");
-  // On click
-  hamburger.addEventListener("click", function() {
-    // Toggle class "is-active"
-    hamburger.classList.toggle("is-active");
-    // Do something else, like open/close menu
-});
-
-// New Copy URL to share
-window.addEventListener('load', (event) => {
-  if(document.getElementById('copyURL')) {
-    copyURL.addEventListener('click', () => {
-      /* Get the text field */
-      var copyText = document.getElementById("postURL");
-      var copySuccess = document.getElementById("shareText");
-
-      /* Select the text field */
-      copyText.select();
-      copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-      /* Copy the text inside the text field */
-      navigator.clipboard.writeText(copyText.value);
-
-      /* Alert the copied text */
-      copySuccess.classList.add('copied');
-
-      setTimeout(() => {
-        copySuccess.classList.remove('copied');
-      }, 2000);
-    });
-      } else {
-          console.log()
-      }
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+  burder.classList.toggle('hidden');
+  close.classList.toggle('hidden');
+  body.classList.toggle('overflow-hidden');
 });
 
 // Subscribe to newsletter

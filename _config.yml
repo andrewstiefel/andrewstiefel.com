@@ -1,27 +1,14 @@
-### SITE CONFIGURATION
-
 title: Andrew Stiefel
 tagline: '@andrewstiefel'
 description: Hey, I'm Andrew Stiefel. Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays.
-url: 'https://andrewstiefel.com'
-baseurl: ""
-
-### BUILD SETTINGS
 
 include: [_pages]
-markdown: kramdown
+permalink: '/:title/'
 
 plugins:
-  - jekyll-sitemap
   - jekyll-archives
-  - jekyll-last-modified-at
+  - jekyll-sitemap
   - jekyll-tidy
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-permalink: '/:title/'
 
 ### JEKYLL ARCHIVE SETTINGS
 
@@ -30,39 +17,26 @@ jekyll-archives:
     - categories
     - tags
   layouts:
-    category: category-archive
-    tag: tag-archive
+    category: archive-category
+    tag: archive-tag
   permalinks:
-    tag: '/topic/:name/'
     category: '/:name/'
-
-### JEKYLL LAST MODIFIED SETTINGS
-
-last-modified-at:
-    date-format: '%-d %b %Y'
+    tag: '/tag/:name/'
 
 ### JEKYLL TIDY SETTINGS
 
 jekyll_tidy:
   exclude: ["feed.xml"]
 
-### SITE AUTHOR
-
-author:
-  name: Andrew Stiefel
-  url: 'https://andrewstiefel.com'
-  email: andrew@andrewstiefel.com
-  twitter: andrewstiefel
-  linkedin: andrewstiefel
-  medium: andrewstiefel
-  github: andrewstiefel
-
-### DEFAULTS
-
-defaults:
-  -
-    scope:
-      path: ""      # empty string for all files
-      type: posts   # limit to posts
-    values:
-      is_post: true # automatically set is_post=true for all posts
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js
+  - netlify.toml
