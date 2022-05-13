@@ -3,11 +3,11 @@
 var body = document.body;
 const button = document.querySelector('#menu-button'); // Hamburger Icon
 const menu = document.querySelector('#menu'); // Menu
-const close = document.querySelector('#close');
+const close = document.querySelector('#close'); // close
 
 button.addEventListener('click', () => {
   menu.classList.toggle('hidden');
-  burder.classList.toggle('hidden');
+  burger.classList.toggle('hidden');
   close.classList.toggle('hidden');
   body.classList.toggle('overflow-hidden');
 });
