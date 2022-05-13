@@ -1,9 +1,10 @@
 // Navbar mobile menu
 
 var body = document.body;
-const button = document.querySelector('#menu-button'); // Hamburger Icon
-const menu = document.querySelector('#menu'); // Menu
-const close = document.querySelector('#close'); // close
+const button = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
+const menu = document.querySelector('#burger');
+const close = document.querySelector('#close');
 
 button.addEventListener('click', () => {
   menu.classList.toggle('hidden');
