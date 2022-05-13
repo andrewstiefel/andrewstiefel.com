@@ -13,22 +13,17 @@ button.addEventListener('click', () => {
   body.classList.toggle('overflow-hidden');
 });
 
+window.addEventListener('load', (event) => {
+  document.getElementById('subRSS').addEventListener('click', () => {
+    fathom.trackGoal('YKQ6ZLVM', 0);
+  });
+});
+
 // Subscribe to newsletter
 window.addEventListener('load', (event) => {
   if(document.getElementById('subForm')) {
     subForm.addEventListener('submit', () => {
         fathom.trackGoal('UFIQJWTI', 0);
-    });
-  } else {
-    console.log()
-  }
-});
-
-// Subscribe to RSS
-window.addEventListener('load', (event) => {
-  if(document.getElementById('subRSS')) {
-    subRSS.addEventListener('click', () => {
-      fathom.trackGoal('YKQ6ZLVM', 0);
     });
   } else {
     console.log()
