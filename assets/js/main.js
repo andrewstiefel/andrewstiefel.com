@@ -13,10 +13,15 @@ button.addEventListener('click', () => {
   body.classList.toggle('overflow-hidden');
 });
 
+// Subscribe to RSS
 window.addEventListener('load', (event) => {
-  document.getElementById('subRSS').addEventListener('click', () => {
-    fathom.trackGoal('YKQ6ZLVM', 0);
-  });
+  if(document.getElementById('subRSS')) {
+    subRSS.addEventListener('click', () => {
+      fathom.trackGoal('YKQ6ZLVM', 0);
+    });
+  } else {
+    console.log()
+  }
 });
 
 // Subscribe to newsletter
@@ -33,7 +38,7 @@ window.addEventListener('load', (event) => {
 // Click affiliate link
 window.addEventListener('load', (event) => {
   if(document.getElementById('clickAff')) {
-    subRSS.addEventListener('click', () => {
+    clickAff.addEventListener('click', () => {
       fathom.trackGoal('N9ZM2BUT', 0);
     });
   } else {
