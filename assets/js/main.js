@@ -3,7 +3,7 @@
 var body = document.body;
 const button = document.querySelector('#menu-button');
 const menu = document.querySelector('#menu');
-const menu = document.querySelector('#burger');
+const burger = document.querySelector('#burger');
 const close = document.querySelector('#close');
 
 button.addEventListener('click', () => {
