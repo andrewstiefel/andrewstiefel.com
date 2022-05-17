@@ -18,12 +18,13 @@ layout: default
     {% if page.tags != empty %}
       <div class="flex flex-wrap">
       {% for tag in page.tags %}
-        <div class="not-prose text-sm capitalize bg-gray-200 dark:bg-gray-600 rounded mr-3 px-2 py-1">
+        <div class="not-prose text-sm capitalize bg-gray-100 dark:bg-gray-700 rounded mr-3 px-2 py-1">
           <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | downcase | replace: " ","-" }}">{{tag}}</a>
         </div>
       {% endfor %}
       </div>
     {% endif %}
+    {% include content/newsletter-box.html %}
   </article>
 </main>
 {% include footer.html %}

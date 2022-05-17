@@ -3,6 +3,8 @@ tagline: '@andrewstiefel'
 description: Hey, I'm Andrew Stiefel. Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays.
 url: "https://andrewstiefel.com"
 
+### BUILD SETTINGS
+
 include: [_pages]
 permalink: '/:title/'
 
@@ -29,6 +31,17 @@ jekyll-archives:
 
 jekyll_tidy:
   exclude: ["feed.xml"]
+
+### SITE AUTHOR
+
+author:
+  name: Andrew Stiefel
+  url: 'https://andrewstiefel.com'
+  email: andrew@andrewstiefel.com
+  twitter: andrewstiefel
+  linkedin: andrewstiefel
+  medium: andrewstiefel
+  github: andrewstiefel
 
 exclude:
   - Gemfile
