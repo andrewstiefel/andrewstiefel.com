@@ -29,11 +29,11 @@ I use LinkedIn before scheduling meetings with people I haven’t met yet, or du
 
 Here are some tips on how to optimize your LinkedIn profile:
 
-- Write an engaging introduction section that explains your career path, professional interests, and scope of responsibilities
-- Update your profile regularly so that it reflects your current role at the company, key successes and projects, and relevant skills
-- Make a great first impression with your LinkedIn headshot — it doesn’t need to be fancy but make sure your face is clearly visible
+- **Write an engaging introduction section** that explains your career path, professional interests, and scope of responsibilities
+- **Update your profile regularly** so that it reflects your current role at the company, key successes and projects, and relevant skills
+- **Make a great first impression** with your LinkedIn headshot — it doesn’t need to be fancy but make sure your face is clearly visible
 
-If you’re looking for more tips, I suggest browsing this [comprehensive LinkedIn profile writing guide] from the team at Jobscan.
+If you’re looking for more tips, I suggest browsing this [comprehensive LinkedIn profile writing guide](https://www.jobscan.co/linkedin-profile-writing-guide) from the team at Jobscan.
 
 ## Schedule virtual coffee meetings
 When you first join a company, schedule 1:1 meetings with various stakeholders. I treat these like informal coffee chats and use them as an opportunity to learn about what people are working on, what their priorities are, and how I might work with them on shared goals.
@@ -51,7 +51,7 @@ One of the best things you can do is recognize when someone else is doing someth
 ## Engage with professional communities
 The rise of professional communities on Slack, Teams, Discord, and other platforms has created many opportunities to connect with other professionals.
 
-Find out where your colleagues hang out online and join their communities. Personally, I use the [Product Marketing Alliance (PMA) Slack group] as a way to read about product marketing topics, ask questions, and connect with other professionals by answering questions when I can.
+Find out where your colleagues hang out online and join their communities. Personally, I use the [Product Marketing Alliance (PMA) Slack group](https://www.productmarketingalliance.com/join-slack/) as a way to read about product marketing topics, ask questions, and connect with other professionals by answering questions when I can.
 
 Seek opportunities to attend or present at conferences. These are great opportunities to meet other professionals face-to-face and share experiences. They can even be a great way to network with your team or other people at your company if you can attend as a group.
 
