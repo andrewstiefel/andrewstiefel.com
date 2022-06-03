@@ -14,9 +14,14 @@ Regardless of the reason, you are now tasked with building relationships with co
 
 I had to onboard remotely twice during the pandemic. It was a much more challenging experience than starting in person. The first weeks can feel lonely, and it takes time to build the visibility and trust you need to drive projects forward.
 
-Networking is a challenge in any environment, but it's even more critical for success in a remote or hybrid workplace. Building strong relationships with your remote colleagues is invaluable when you're relying on them to complete key tasks and communicate on important issues.
+That said, I love working remotely. And I've learned a few things along the way.
 
-That said, I love working remotely. And I've learned a few things along the way. Here are a few tips on how to build connections with your colleagues when you start work in a remote or hybrid environment.
+Here's how you can network effectively in an era of remote and hybrid work:
+
+1. [Polish your LinkedIn profile](#polish-your-linkedin-profile)
+2. [Schedule virtual coffee meettings](#schedule-virtual-coffee-meetings)
+3. [Engage with professional communities](#engage-with-professional-communities)
+4. [Share what your learn](#share-what-you-learn)
 
 ## Polish your LinkedIn profile
 Your LinkedIn profile isn’t just for finding a job — it’s also your first impression when meeting and networking with colleagues at your new company.
