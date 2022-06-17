@@ -12,8 +12,3 @@
     Content-Security-Policy = "default-src 'self'; style-src 'self' 'sha256-Zl99KYhhJUDeutbr19+Ei3dreVseBbhjo77oPnNcJjc='; script-src 'self' equal-equal.andrewstiefel.com; img-src 'self' equal-equal.andrewstiefel.com; connect-src 'self' equal-equal.andrewstiefel.com; object-src 'self';"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-
-[[redirects]]
-  from = "https://andrew.st/*"
-  to = "https://andrewstiefel.com/:splat"
-  status = 301
