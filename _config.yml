@@ -5,7 +5,7 @@ url: "https://andrewstiefel.com"
 
 ### BUILD SETTINGS
 
-include: [_pages]
+include: [_pages, _redirects]
 permalink: '/:title/'
 
 plugins:
