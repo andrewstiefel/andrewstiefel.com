@@ -9,6 +9,6 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self' *.vimeo.com *.vimeocdn.com; style-src 'self' 'sha256-Zl99KYhhJUDeutbr19+Ei3dreVseBbhjo77oPnNcJjc=' *.vimeo.com *.vimeocdn.com; script-src 'self' equal-equal.andrewstiefel.com *.vimeo.com *.vimeocdn.com; img-src 'self' equal-equal.andrewstiefel.com *.vimeo.com *.vimeocdn.com; connect-src 'self' equal-equal.andrewstiefel.com; object-src 'self'; child-src 'self' *.vimeo.com *.vimeocdn.com;"
+    Content-Security-Policy = "default-src 'self' *.vimeo.com *.vimeocdn.com; style-src 'self' 'sha256-Zl99KYhhJUDeutbr19+Ei3dreVseBbhjo77oPnNcJjc=' *.vimeo.com *.vimeocdn.com; script-src 'self' equal-equal.andrewstiefel.com *.vimeo.com *.vimeocdn.com; img-src 'self' equal-equal.andrewstiefel.com *.vimeo.com *.vimeocdn.com; connect-src 'self' equal-equal.andrewstiefel.com *.vimeo.com *.vimeocdn.com; object-src 'self'; child-src 'self' *.vimeo.com *.vimeocdn.com; media-src 'self' *.vimeo.com *.vimeocdn.com;"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
