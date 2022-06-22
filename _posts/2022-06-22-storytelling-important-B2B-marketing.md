@@ -16,7 +16,7 @@ When I think about storytelling in marketing, emotional, high-production ads fro
 
 You’ve probably seen examples, especially around the Super Bowl or other significant events. For instance, in this 2015 advertisement, Apple uses Robin Williams’ speech from _Dead Poets Society_  to sell the iPad Air.
 
-{% raw % }
+{% raw %}
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/112042156?h=c9de6161d7&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
