@@ -3,7 +3,7 @@ layout: post
 title: How to Differentiate Your Product When You Aren’t (Really) Different
 description: Differentiation is about setting your product apart from your competition. But what if your product isn't really different?
 image:
-date: 2022-06-21 21:53:00 -0700
+date: 2022-06-21
 category: Notes
 tags: [Product Marketing, Positioning & Messaging]
 ---

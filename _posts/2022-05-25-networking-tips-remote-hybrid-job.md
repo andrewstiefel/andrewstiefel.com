@@ -3,7 +3,7 @@ layout: post
 title: Networking Tips for Remote and Hybird Work
 description: Networking is always a challenge when starting a new job. It's even more critical for success in a remote or hybrid workplace.
 image:
-date: 2022-05-25 17:00:00 -0700
+date: 2022-05-25
 category: Notes
 tags: [Career Growth]
 ---
