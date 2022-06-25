@@ -6,14 +6,15 @@ title: Home
 {% include header.html %}
 <main class="mb-auto">
   <section class="pb-6">
-    <div class="flex grid items-center lg:grid-cols-4 lg:gap-8 bg-gray-50 dark:bg-gray-700">
-      <div class="col-span-full lg:col-span-2 flex justify-center">
-        <img src="assets/images/andrew-stiefel-1024x1024.png?nf_resize=fit&w=528&h=528" alt="Andrew Stiefel" width="528" height="528">
+    <div class="flex grid items-center lg:grid-cols-12 lg:gap-8 bg-gray-50 dark:bg-gray-700">
+      <div class="col-span-full lg:col-span-5 h-full">
+        <img src="assets/images/andrew-stiefel-1024x1024.png" class="w-full h-full object-cover object-center">
       </div>
-      <div class="col-span-full lg:col-span-2 lg:py-6 lg:pl-6 p-4 prose dark:prose-invert lg:order-first">
-        {{ content }}
-        {% include content/embedded-form.html %}
-      </div>
+      <div class="col-span-full lg:col-span-7 lg:py-12 lg:pl-12 p-4 lg:order-first">
+        <div class="prose dark:prose-invert mb-6">
+          {{ content }}
+        </div>
+        <script async data-uid="e4c9ff2253" src="https://andrewstiefel.ck.page/e4c9ff2253/index.js"></script>
     </div>
   </section>
   <section class="grid grid-cols-6 py-6">
