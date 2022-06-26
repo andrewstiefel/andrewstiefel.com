@@ -26,8 +26,8 @@ window.addEventListener('load', (event) => {
 
 // Subscribe to newsletter
 window.addEventListener('load', (event) => {
-  if(document.getElementsByClassName('formkit-submit')) {
-    obj.[formkit-submit].addEventListener('submit', () => {
+  if(document.getElementById('subForm')) {
+    subForm.addEventListener('submit', () => {
         fathom.trackGoal('UFIQJWTI', 0);
     });
   } else {
