@@ -3,7 +3,7 @@ layout: post
 title: Just Start
 description: How long have you been working on a project with nothing to show?
 image:
-date: 2022-06-21
+date: 2022-06-28
 category: Essays
 tags: [Writing, Productivity]
 ---
