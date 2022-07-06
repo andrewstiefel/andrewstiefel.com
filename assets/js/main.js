@@ -35,6 +35,13 @@ window.addEventListener('load', (event) => {
   }
 });
 
+// Subscribe to Convertkit form
+document.querySelectorAll('.formkit-submit').forEach(item => {
+    item.addEventListener('click', event => {
+        fathom.trackGoal('UFIQJWTI', 0);
+    });
+});
+
 // Click affiliate link
 window.addEventListener('load', (event) => {
   if(document.getElementById('clickAff')) {
