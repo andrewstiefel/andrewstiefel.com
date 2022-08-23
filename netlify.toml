@@ -7,4 +7,3 @@
 
   [plugins.inputs]
   cloudName = "andrew-stiefel"
-  imagesPath = "/assets/images"
