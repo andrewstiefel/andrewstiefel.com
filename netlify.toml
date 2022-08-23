@@ -1,3 +1,10 @@
 [build]
   command = "npm run build"
   publish = "_site/"
+
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+
+  [plugins.inputs]
+  cloudName = "andrew-stiefel"
+  imagesPath = "/assets/images"
