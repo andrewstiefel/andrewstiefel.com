@@ -8,17 +8,17 @@ category: Notes
 tags: [Coding, Jekyll]
 ---
 
-Maybe it’s nostalgia for the early web, but I love web feeds as a tool for following and reading content. Feeds are privacy-first and put the reader in control: you can opt-out any time, choose your tool for reading, and organize them in any way you want.
+Maybe it’s nostalgia for the early web, but I love web feeds as a tool for following and reading content. Feeds are privacy-first and put the reader in control: you can opt out any time, choose your tool for reading, and organize them in any way you want.
 
 But the UX experience is terrible.
 
-Web feeds are meant to be machine readable, so most users follow a link to an RSS or Atom feed and end up looking at something like this:
+Web feeds are meant to be machine-readable, so most users follow a link to an RSS or Atom feed and end up looking at something like this:
 
-![Raw RSS or Atom][image-1]{width=760px; height=483px}
+![Raw RSS or Atom][image-1]
 
 This doesn't have to be the case. RSS and Atom feeds can be human-readable with a little extra work. [Here's an example from my website](/feed.xml){:target="_blank"}. It’s simple and clean and provides some essential instructions on how to get started:
 
-![Human-readable Atom or RSS Feed][image-2]{width=760px; height=483px}
+![Human-readable Atom or RSS Feed][image-2]
 
 Let’s explore how to implement this with Atom and an XSLT stylesheet.
 
@@ -38,7 +38,7 @@ _If you’re using a different tech stack to create your website, you can [skip 
 
 You can either use the excellent [Jekyll Feed plugin][2]{:target="_blank" rel="noopener noreferrer"}, or create your own template using liquid tags and save it in your project as `feed.xml`.
 
-I chose to create my own template so I could incorporate some additional markup. You can see my version below:
+I chose to create my own template, so I could incorporate some additional markup. You can see my version below:
 
 {% raw %}
 ```xml
@@ -92,7 +92,7 @@ I chose to create my own template so I could incorporate some additional markup.
 
 You’ll notice some similarities to HTML and CSS in the example below, but with a few semantic changes and special attributes.
 
-First of all, you can place your CSS in the `<style>` tag like normal. You can also use some standard HTML markup like the `<body>`, `<section>`, `<p>`, and `<h1>` tags.
+First, you can place your CSS in the `<style>` tag like normal. You can also use some standard HTML markup like the `<body>`, `<section>`, `<p>`, and `<h1>` tags.
 
 There are a few special elements you can use, like `<xsl:apply-templates>` or `<xsl:value-of>`. I won’t cover these in detail during this tutorial, but W3Schools maintains [a great XSLT reference][4] if you want to learn about all these special elements.
 
