@@ -14,11 +14,11 @@ But the UX experience is terrible.
 
 Web feeds are meant to be machine readable, so most users follow a link to an RSS or Atom feed and end up looking at something like this:
 
-![Raw RSS or Atom][image-1]
+![Raw RSS or Atom][image-1]{width=760px; height=483px}
 
-This doesn't have to be the case. RSS and Atom feeds can be human-readable with a little extra work. Here's an example from my website. It’s simple and clean and provides some essential instructions on how to get started:
+This doesn't have to be the case. RSS and Atom feeds can be human-readable with a little extra work. [Here's an example from my website](/feed.xml){:target="_blank"}. It’s simple and clean and provides some essential instructions on how to get started:
 
-![Human-readable Atom or RSS Feed][image-2]
+![Human-readable Atom or RSS Feed][image-2]{width=760px; height=483px}
 
 Let’s explore how to implement this with Atom and an XSLT stylesheet.
 
