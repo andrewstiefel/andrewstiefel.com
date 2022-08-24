@@ -6,3 +6,6 @@ assets/css
 node_modules
 .bundle/
 vendor/
+
+# Local Netlify folder
+.netlify
