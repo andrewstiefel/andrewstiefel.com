@@ -6,4 +6,4 @@
   package = "netlify-plugin-cloudinary"
 
   [plugins.inputs]
-  cloudName = "andrew-stiefel"
+  cloudName = "andrewstiefel"
