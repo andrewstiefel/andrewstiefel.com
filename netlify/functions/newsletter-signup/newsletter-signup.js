@@ -1,26 +1,27 @@
-// // optionally configure local env vars
-// require('dotenv').config()
+require('dotenv').config()
 
-// // details in https://css-tricks.com/using-netlify-forms-and-netlify-functions-to-build-an-email-sign-up-widget
 const process = require('process')
 
 const fetch = require('node-fetch')
 
-const { EMAIL_TOKEN } = process.env
+const { CONVERTKIT_API_KEY } = process.env
 const handler = async (event) => {
   const { email } = JSON.parse(event.body).payload
   console.log(`Received a submission: ${email}`)
+  const subscriber = {
+    api_key: CONVERTKIT_API_KEY,
+    email: email,
+  };
   try {
-    const response = await fetch('https://api.buttondown.email/v1/subscribers', {
+    const response = await fetch('https://api.convertkit.com/v3/forms/3384627/subscribe', {
       method: 'POST',
       headers: {
-        Authorization: `Token ${EMAIL_TOKEN}`,
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json; chartset=utf-8',
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ subscriber }),
     })
     const data = await response.json()
-    console.log(`Submitted to Buttondown:\n ${data}`)
+    console.log(`Submitted to ConvertKit:\n ${data}`)
   } catch (error) {
     return { statusCode: 422, body: String(error) }
   }
