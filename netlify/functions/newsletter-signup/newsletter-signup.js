@@ -1,33 +1,28 @@
-const fetch = require("node-fetch");
-const apiKey = process.env.CONVERTKIT_API_KEY;
+const axios = require('axios');
+
+const { CONVERTKIT_API_KEY } = process.env;
 
 exports.handler = async (event, context) => {
-  const email = event.queryStringParameters.email || "Oops, no email";
-  const data = {
-    api_key: apiKey,
+  const { email } = JSON.parse(event.body);
+
+  const subscriber = {
+    api_key: CONVERTKIT_API_KEY,
     email: email,
   };
 
-  const subscriber = JSON.stringify(data);
-
-  // Subscribe an email
-
-  return fetch( 'https://api.convertkit.com/v3/forms//3384627/subscribe', {
-    method: "post",
-    body: subscriber,
-    headers: { "Content-Type": "application/json; charset=utf-8" },
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("Success:", data);
-    })
-    .then(() => ({
-      statusCode: 301,
-      headers: {
-        Location: "/almost",
-      },
-    }))
-    .catch((error) => {
-      console.error("Error:", error);
-    });
+  try {
+    await axios.post(
+      'https://api.convertkit.com/v3/forms/3384627/subscribe',
+      subscriber,
+    );
+    return {
+      statusCode: 200,
+      body: 'Email subscribed',
+    };
+  } catch (err) {
+    return {
+      statusCode: 433,
+      body: JSON.stringify({ msg: err.message }),
+    };
+  }
 };

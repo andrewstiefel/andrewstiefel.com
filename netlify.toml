@@ -7,3 +7,7 @@
 
   [plugins.inputs]
   cloudName = "andrewstiefel"
+
+[dev]
+  command = "npm run start"
+  targetPort = 4000
