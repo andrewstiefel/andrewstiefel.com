@@ -26,8 +26,7 @@
     "build:dev": "cross-env NODE_ENV=development gulp",
     "build": "npm run build:production",
     "dev": "cross-env NODE_ENV=development gulp serve",
-    "start": "npm run dev",
-    "postinstall": "netlify-lambda install"
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -43,7 +42,6 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "netlify-lambda": "^2.0.15",
     "node-fetch": "^2.6.7"
   }
 }

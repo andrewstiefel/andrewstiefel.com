@@ -7,10 +7,3 @@
 
   [plugins.inputs]
   cloudName = "andrewstiefel"
-
-[functions]
-  directory = "netlify/functions/"
-
-[dev]
-  command = "npm run start"
-  targetPort = 4000
