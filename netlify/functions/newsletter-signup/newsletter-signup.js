@@ -1,12 +1,8 @@
 require('dotenv').config()
-
-const process = require('process')
-
 const fetch = require('node-fetch')
-
 const { CONVERTKIT_API_KEY } = process.env
-const handler = async (event) => {
-  const { email } = JSON.parse(event.body).payload
+exports.handler = async (event) => {
+  const email = JSON.parse(event.body).payload.email
   console.log(`Received a submission: ${email}`)
   const subscriber = {
     api_key: CONVERTKIT_API_KEY,
