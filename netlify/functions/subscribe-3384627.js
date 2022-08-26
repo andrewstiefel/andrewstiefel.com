@@ -1,6 +1,16 @@
 const fetch = require("node-fetch");
-const { CONVERTKIT_API_KEY } = process.env;
+// const { CONVERTKIT_API_KEY } = process.env;
 
+exports.handler = async (event, context) => {
+    const name = event.queryStringParameters.name || "World";
+  
+    return {
+      statusCode: 200,
+      body: `Hello, ${name}`,
+    };
+  };
+
+/*
 exports.handler = async (event, context) => {
     const email = JSON.parse(event.body).payload.email
     console.log(`Received a submission: ${email}`)
@@ -20,3 +30,4 @@ exports.handler = async (event, context) => {
             })
             .catch (error => ({ statusCode: 422, body: String(error) }))
 }
+*/
