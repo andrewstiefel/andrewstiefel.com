@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const { CONVERTKIT_API_KEY } = process.env;
 
 exports.handler = async (event, context) => {
-    const email = JSON.parse(event.body).payload.email
+    const email = event.queryStringParameters.email
     console.log(`Received a submission: ${email}`)
 
     const subscriber = {
