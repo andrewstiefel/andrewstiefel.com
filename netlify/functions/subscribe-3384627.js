@@ -20,9 +20,10 @@ exports.handler = async (event, context) => {
     let responseText = await response.text();
     console.log('response:', responseText);
     return {
-        statusCode: 301,
+        statusCode: 302,
         headers: {
-            Location: "/almost",
+            'Location': '/almost',
+            'Cache-Control': 'no-cache',
         },
     }
 }
