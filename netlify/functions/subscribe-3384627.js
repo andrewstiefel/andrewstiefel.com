@@ -49,7 +49,7 @@ exports.handler = async (event, context) => {
   */
   .then((response) => response.json())
     .then((data) => {
-        console.log({ statusCode: 200, body: data })
+        console.log(`Submitted to ConvertKit: ${data}`);
     })
     .catch((error) => ({ statusCode: 422, body: String(error) }));
     };
