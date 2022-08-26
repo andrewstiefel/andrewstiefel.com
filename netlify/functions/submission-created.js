@@ -3,15 +3,16 @@ const fetch = require("node-fetch");
 const { CONVERTKIT_API_KEY } = process.env;
 
 exports.handler = async (event, context) => {
-    const { EMAIL } = JSON.parse(event.body).payload.email
-    console.log(`Received a submission: ${EMAIL}`)
-    
+    const EMAIL = JSON.parse(event.body).payload.email
+    console.log(`Received a submission`)
+
     const { SUBSCRIBER } = {
         api_key: CONVERTKIT_API_KEY,
         email: EMAIL,
+        tags: [newsletter]
       };
 
-    return fetch('https://api.convertkit.com/v3/forms/3384627/subscribe', {
+    return fetch('https://api.convertkit.com/v3/forms/2655631/subscribe', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json; charset=utf-8',
@@ -20,7 +21,7 @@ exports.handler = async (event, context) => {
          })
             .then(response => response.json())
             .then(data => {
-                console.log('Submitted to ConvertKit:\n ${data')
+                console.log('Submitted to ConvertKit')
             })
             .catch (error => ({ statusCode: 422, body: String(error) }))
 }
