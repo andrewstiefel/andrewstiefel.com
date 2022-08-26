@@ -9,4 +9,4 @@
   cloudName = "andrewstiefel"
 
 [functions]
-  director = "netlify/functions/"
+  directory = "netlify/functions/"
