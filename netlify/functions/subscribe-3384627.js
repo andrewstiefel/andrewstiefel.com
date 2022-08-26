@@ -2,11 +2,11 @@ const fetch = require("node-fetch");
 // const { CONVERTKIT_API_KEY } = process.env;
 
 exports.handler = async (event, context) => {
-    const name = event.queryStringParameters.name || "World";
+    const email = event.queryStringParameters.email || "No email";
   
     return {
       statusCode: 200,
-      body: `Hello, ${name}`,
+      body: `Hello, ${email}`,
     };
   };
 
