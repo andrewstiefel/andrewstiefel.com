@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
             headers: {
                 'Content-Type': 'application/json; charset=utf-8',
             },
-            body: JSON.stringify({ subscriber }),
+            body: JSON.stringify(subscriber),
          })
             .then(response => response.json())
             .then(data => {
