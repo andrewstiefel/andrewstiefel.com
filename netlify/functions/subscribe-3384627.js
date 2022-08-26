@@ -14,10 +14,9 @@ exports.handler = async (event, context) => {
             email: email
         }),
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Submitted to ConvertKit:\n ${data}')
-    })
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(`Submitted to ConvertKit: ${data}`);
+      })
     .catch (error => ({ statusCode: 422, body: String(error) }))
-
   }
