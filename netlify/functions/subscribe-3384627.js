@@ -5,6 +5,7 @@ exports.handler = async (event, context) => {
     const email = event.queryStringParameters.email || "No email";
     console.log(`Received a submission: ${email}`)
 
+    /*
     const response = await fetch(
         'https://api.convertkit.com/v3/forms/3384627/subscribe', {
             method: 'POST',
@@ -22,11 +23,9 @@ exports.handler = async (event, context) => {
     return {
         statusCode: response.status,
         body: responseText,
-    };
-}
+    }
+*/
 
-
-/*
 exports.handler = async (event, context) => {
     const email = event.queryStringParameters.email || "No email";
     console.log(`Received a submission: ${email}`)
@@ -40,6 +39,7 @@ exports.handler = async (event, context) => {
             email: email
         }),
     })
+    /*
     .then((res) => res.json())
     .then((data) => {
         console.log(`Submitted to ConvertKit: ${data}`);
@@ -47,3 +47,10 @@ exports.handler = async (event, context) => {
     .catch (error => ({ statusCode: 422, body: String(error) }))
   }
   */
+  .then((response) => response.json())
+    .then((data) => {
+        console.log({ statusCode: 200, body: data })
+    })
+    .catch((error) => ({ statusCode: 422, body: String(error) }));
+    };
+}
