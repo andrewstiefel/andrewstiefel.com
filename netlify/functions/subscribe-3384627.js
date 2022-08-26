@@ -2,32 +2,24 @@ const fetch = require("node-fetch");
 const { CONVERTKIT_API_KEY } = process.env;
 
 exports.handler = async (event, context) => {
-  const email = event.queryStringParameters.email || "Oops, no email";
-  const data = {
-    api_key: CONVERTKIT_API_KEY,
-    email: email,
-  };
+    const email = JSON.parse(event.body).payload.email
+    console.log(`Received a submission: ${email}`)
 
-  const subscriber = JSON.stringify(data);
+    const subscriber = {
+        api_key: CONVERTKIT_API_KEY,
+        email: email
+      };
 
-  // Subscribe an email
-
-  return fetch('https://api.convertkit.com/v3/forms/3384627/subscribe', {
-    method: "post",
-    body: subscriber,
-    headers: { "Content-Type": "application/json; charset=utf-8" },
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("Success:", data);
-    })
-    .then(() => ({
-      statusCode: 301,
-      headers: {
-        Location: "/almost",
-      },
-    }))
-    .catch((error) => {
-      console.error("Error:", error);
-    });
-};
+    return fetch('https://api.convertkit.com/v3/forms/3384627/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8',
+            },
+            body: JSON.stringify({ subscriber }),
+         })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Submitted to ConvertKit:\n ${data}')
+            })
+            .catch (error => ({ statusCode: 422, body: String(error) }))
+}

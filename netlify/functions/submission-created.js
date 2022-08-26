@@ -1,5 +1,4 @@
 const fetch = require("node-fetch");
-
 const { CONVERTKIT_API_KEY } = process.env;
 
 exports.handler = async (event, context) => {
