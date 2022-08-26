@@ -25,10 +25,6 @@ exports.handler = async (event, context) => {
         body: responseText,
     }
 */
-
-exports.handler = async (event, context) => {
-    const email = event.queryStringParameters.email || "No email";
-    console.log(`Received a submission: ${email}`)
     return fetch ('https://api.convertkit.com/v3/forms/3384627/subscribe', {
         method: 'POST',
         headers: {
@@ -39,18 +35,9 @@ exports.handler = async (event, context) => {
             email: email
         }),
     })
-    /*
-    .then((res) => res.json())
-    .then((data) => {
-        console.log(`Submitted to ConvertKit: ${data}`);
-      })
-    .catch (error => ({ statusCode: 422, body: String(error) }))
-  }
-  */
-  .then((response) => response.json())
+    .then((response) => response.json())
     .then((data) => {
         console.log(`Submitted to ConvertKit: ${data}`);
     })
-    .catch((error) => ({ statusCode: 422, body: String(error) }));
-    };
+    .catch((error) => ({ statusCode: 422, body: String(error) }))
 }
