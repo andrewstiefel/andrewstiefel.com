@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
     return {
         statusCode: 302,
         headers: {
-            'Location': '/almost',
+            'Location': 'https://andrewstiefel.com/almost/?utm_campaign=subscribe-newsletter&utm_source=convertkit',
             'Cache-Control': 'no-cache',
         },
     }
