@@ -23,6 +23,7 @@ exports.handler = async (event, context) => {
         statusCode: response.status,
         body: responseText,
     };
+}
 
 
 /*
