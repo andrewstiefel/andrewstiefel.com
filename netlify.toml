@@ -7,3 +7,6 @@
 
   [plugins.inputs]
   cloudName = "andrewstiefel"
+
+[functions]
+  director = "netlify/functions/"
