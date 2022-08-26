@@ -6,11 +6,11 @@ permalink: /thanks/
 sitemap: false
 ---
 
-# Welcome!
+# Welcome
 
-Thanks for subscribing to my blog. I'm glad you're here. This is where I spend a lot of my time and energy, and I look forward to sharing my thoughts and musings with you.
+Thanks for signing up for my email list! I'm glad you're here. This is where I devote a lot of my time and energy, and I look forward to sharing my writing with you.
 
-This is a conversation, not an email blast, so please write to me any time.
+This is a conversation, not an email blast, so please write to me any time. Tell me what you're working on, share something cool you've made, or ask me a question.
 
 Really, I mean that. I love getting emails from people.
 
