@@ -3,7 +3,7 @@ layout: post
 title: Build an Email Subscription Form with Netlify Functions
 description: Learn how to use Netlify Functions and ConvertKit to create a custom newsletter subscription form for your website.
 image:
-date: 2022-06-28
+date: 2022-08-28
 category: Notes
 tags: [Coding, Netlify, Jekyll]
 ---
