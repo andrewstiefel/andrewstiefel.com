@@ -1,6 +1,8 @@
 # andrewstiefel.com
 Personal website built with Jekyll and Tailwind CSS
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8f058203-ba39-47b9-8bf8-72c4ce1c2605/deploy-status)](https://app.netlify.com/sites/andrewstiefel/deploys)
+
 ## Get started
 * `bundle install` to install Ruby gems
 * `npm ci` to install npm packages listed in `package-lock.json`
