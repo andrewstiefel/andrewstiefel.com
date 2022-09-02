@@ -5,6 +5,4 @@ description:
 permalink: /newsletter/
 ---
 
-# Newsletter
-
 Coming soon!
