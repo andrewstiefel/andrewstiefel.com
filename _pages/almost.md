@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Almost
+title: Almost there...
 permalink: /almost/
 sitemap: false
 ---
-
-# Almost there...
 
 Hey there, I need to confirm your email address. To complete the subscription process, please check your inbox for an email from andrew@andrewstiefel.com.
 
