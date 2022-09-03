@@ -1,0 +1,23 @@
+{% assign featured_Post = site.posts | where: "featured", "true" %}
+{% unless featured_Post == empty %}
+<section class="py-6">
+    <div class="flex justify-start">
+      <div class="text-xl font-bold w-72">Featured Posts</div>
+      <div class="w-full">
+        <span class="inline-block w-full h-0.5 bg-gray-900 dark:bg-gray-500"></span>
+      </div>
+    </div>
+    <div class="grid grid-cols-12 gap-x-6 pt-6">
+    {% for post in featured_Post limit:3 %}
+        <div class="col-span-full xl:col-span-4">
+            <a href="{{ post.url }}">
+                <figure>
+                    <img src="{{ post.image }}" />
+                </figure>
+                <h4 class="py-3 text-lg font-bold">{{ post.title }}</h4>
+            </a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endunless %}
