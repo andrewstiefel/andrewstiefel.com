@@ -18,6 +18,7 @@ title: Home
       </div>
     </div>
   </section>
+  {% include loop-featured.html %}
   <section class="grid grid-cols-6 py-6">
     <div class="col-span-full xl:col-span-4 xl:col-start-2">
       <div class="flex justify-start">
@@ -33,6 +34,13 @@ title: Home
         </li>
         {% endfor %}
       </ul>
+      <div>
+        <a class="" href="/archive/" alt="Archive">
+          <span class="border border-teal-700 rounded block m-auto w-80 text-center py-2 hover:bg-teal-800 hover:border-teal-800 text-teal-700 hover:text-white">
+            All Posts →
+          </span>
+        </a>
+      </div>
     </div>
   </section>
 </main>
