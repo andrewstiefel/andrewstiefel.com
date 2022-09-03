@@ -1,3 +1,4 @@
+const fetch = require("node-fetch");
 const { CONVERTKIT_API_KEY } = process.env;
 
 import fetch from 'node-fetch';
