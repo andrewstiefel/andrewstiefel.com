@@ -79,7 +79,14 @@ On line 2, I add a small library called `node-fetch`. This allows me to use Java
 import fetch from 'node-fetch';
 ```
 
-NOTE: When I was writing this post, many of the tutorials available used the `require` method to import the Fetch API which resulted in errors when I tried to deploy the function. Make sure you use the method I described above.
+NOTE: When I was writing this post, many of the tutorials available used the `require` method to import the Fetch API which resulted in errors when I tried to deploy the function. Make sure you use the method I described above. If you upgrade to node-fetch v3, you'll also need to update either your netlify.toml file or package.json to use ESM.
+
+```YAML
+  [functions]
+    node_bundler = "esbuild"
+```
+
+You can find more information about [how to make a fetch request using node-fetch v3](https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/ "Netlify Blog") in an excellent guide by Tatyana Novell on the Netlify blog.
 
 Next create a synchronous function on line 4. The `exports.handler` value is where Netlify expects to find the function, so I define it there. The basic syntax to create the function is provided below:
 
