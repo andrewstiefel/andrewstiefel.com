@@ -112,7 +112,7 @@ After retrieving the email address from the event value using `JSON.parse`, I’
 
 I’ve outlined code examples for a few services below, but make sure you consult the API documentation from your email provider to make sure the API request is properly format.
 
-#### ConvertKit Subscription Form
+### ConvertKit Subscription Form
 Using ConvertKit as an example, send a POST request to `https://api.convertkit.com/v3/forms/<YOUR_FORM_ID/subscribe`. 
 
 To find the form ID, navigate to **Grow \> Landing Pages & Forms**, select the form you want to use, and copy the ID number from the url:
@@ -137,7 +137,7 @@ const response = await fetch( 'https://api.convertkit.com/v3/forms/<YOUR_FORM_ID
 );
 ```
 
-#### Buttondown Subscription Form
+### Buttondown Subscription Form
 Buttondown’s API sends the authorization in the headers rather than the body, so you’ll need to adapt the code slightly:
 
 ```js
@@ -152,7 +152,7 @@ const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {
 );
 ```
 
-#### SendStack Subscription Form
+### SendStack Subscription Form
 SendStack is a new privacy-first email service. Unlike Buttondown and ConvertKit, they offer API access on their free plan. There is currently a waiting list, but if you have access, you can try it out using the code below.
 
 Add the email token to the headers and the email address to the body of the POST request:
