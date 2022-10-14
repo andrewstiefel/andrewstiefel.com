@@ -18,7 +18,7 @@ module.exports = {
       yellow: colors.yellow,
       red: colors.rose,
       primary: '#065F46',
-      primary_dark: '#34D399',
+      primary_dark: '#059669',
     },
     extend: {},
   },
