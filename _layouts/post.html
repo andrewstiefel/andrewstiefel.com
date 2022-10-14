@@ -4,12 +4,12 @@ layout: default
 
 {% include header.html %}
 <main class="mb-auto">
-  <article class="prose dark:prose-invert mx-auto prose-pre:whitespace-pre-wrap prose-a:text-teal-700 dark:prose-a:text-teal-400">
+  <article class="prose dark:prose-invert mx-auto prose-pre:whitespace-pre-wrap prose-a:text-primary dark:prose-a:text-primary_dark">
     <section>
-      <a class="text-sm capitalize text-teal-700 dark:text-teal-400 font-semibold no-underline" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
+      <a class="text-sm capitalize text-primary dark:text-primary_dark font-semibold no-underline" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
       <h1 class="mb-3 mt-2">{{ page.title }}</h1>
-      <p class="lead text-gray-500 dark:text-gray-400 my-2">{{ page.description }}</p>
-      <span class="text-sm text-gray-500 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include reading-time.html %}</span>
+      <p class="lead text-gray-400 dark:text-gray-400 my-2">{{ page.description }}</p>
+      <span class="text-sm text-gray-400 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include reading-time.html %}</span>
     </section>
     <section>
       {{ content}}
