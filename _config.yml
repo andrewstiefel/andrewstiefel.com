@@ -5,6 +5,8 @@ url: "https://andrewstiefel.com"
 
 ### BUILD SETTINGS
 
+markdown: kramdown
+highlighter: none
 include: [_pages, _redirects]
 permalink: '/:title/'
 

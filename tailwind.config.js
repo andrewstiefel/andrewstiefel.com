@@ -1,12 +1,9 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  darkMode: 'class',
   content: [`_site/**/*.html`],
   theme: {
-    fontFamily: {
-      display: ['Inter', 'system-ui', 'sans-serif'],
-      body: ['Inter', 'system-ui', 'sans-serif'],
-    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -18,9 +15,20 @@ module.exports = {
       yellow: colors.yellow,
       red: colors.rose,
       primary: '#065F46',
-      primary_dark: '#34D399',
+      primary_dark: '#059669',
     },
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: {
+              border: '1px solid',
+              'border-color': '#3f3f46',
+            }
+          }
+        }
+      }
+    }
   },
   variants: {},
   plugins: [

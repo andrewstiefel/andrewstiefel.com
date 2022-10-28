@@ -1,3 +1,44 @@
+pre[class*=language-] {
+    color:#f4f4f5
+}
+.token.class-name,
+.token.function,
+.token.selector,
+.token.selector .class,
+.token.selector.class,
+.token.tag {
+    color:#f472b6
+}
+.token.attr-name,
+.token.important,
+.token.keyword,
+.token.pseudo-class,
+.token.rule {
+    color:#d4d4d8
+}
+.token.module {
+    color:#f472b6
+}
+.token.attr-value,
+.token.class,
+.token.property,
+.token.string {
+    color:#6ee7b7
+}
+.token.attr-equals,
+.token.punctuation {
+    color:#71717a
+}
+.language-css .token.function,
+.token.unit {
+    color:#bae6fd
+}
+.token.combinator,
+.token.comment,
+.token.operator {
+    color:#a1a1aa
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
