@@ -1,5 +1,5 @@
 let html = document.getElementById('html-tag');
-let icon = document.getElementsByClassName('dark-mode-icon');
+let icon = document.getElementById('dark-mode-icon');
 
 window.addEventListener('load', (event) => {
   document.getElementById('dark-mode-icon').addEventListener('click', () => {
