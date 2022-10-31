@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include header.html %}
+{% include layout/header.html %}
 <main class="mb-auto">
   <section class="grid grid-cols-6">
     <div class="col-span-full lg:col-start-2 lg:col-span-4">
@@ -14,11 +14,11 @@ layout: default
       <ul class="divide-y divide-gray-200 dark:divide-gray-700">
         {% for post in page.posts limit:5 %}
         <li class="py-12">
-        {% include loop.html %}
+        {% include helpers/posts-loop.html %}
         </li>
         {% endfor %}
       </ul>
     </div>
   </section>
 </main>
-{% include footer.html %}
+{% include layout/footer.html %}
