@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-{% include header.html %}
+{% include layout/header.html %}
 <main class="mb-auto">
   <section class="pb-6">
     <div class="grid items-center lg:grid-cols-12 lg:gap-8 bg-gray-50 dark:bg-gray-800">
@@ -14,7 +14,7 @@ title: Home
         <div class="prose dark:prose-invert mb-6">
           {{ content }}
         </div>
-        {% include content/embedded-form.html %}
+        {% include forms/newsletter-default.html %}
       </div>
     </div>
   </section>
@@ -30,7 +30,7 @@ title: Home
       <ul class="divide-y divide-gray-200 dark:divide-gray-700">
         {% for post in site.posts limit:5 %}
         <li class="py-12">
-        {% include loop.html %}
+          {% include helpers/posts-loop.html %}
         </li>
         {% endfor %}
       </ul>
@@ -44,4 +44,4 @@ title: Home
     </div>
   </section>
 </main>
-{% include footer.html %}
+{% include layout/footer.html %}
