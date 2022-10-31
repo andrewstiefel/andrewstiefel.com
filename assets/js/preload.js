@@ -1,8 +1,7 @@
 let html = document.getElementById('html-tag');
-let icon = document.getElementById('dark-mode-icon');
 
-window.addEventListener('load', (event) => {
-  document.getElementById('dark-mode-icon').addEventListener('click', () => {
+document.querySelectorAll('.dark-mode-icon').forEach(item => {
+  item.addEventListener('click', event => {
     if (html.classList.contains('dark')) {
       html.classList.remove('dark');
       html.classList.add('light');
