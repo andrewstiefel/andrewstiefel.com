@@ -1,5 +1,4 @@
 <!-- Page Info -->
-
 {% if page.title == "Home" %}<title>{{ site.title }} &middot; {{ site.tagline }}</title>{% else %}<title>{{ page.title }} &middot; {{ site.title }}</title>{% endif %}
 <meta name="description" content="{{ page.description }}" />
 <meta name="author" content="{{ site.author.name }}" />
@@ -14,7 +13,6 @@
 {% endif %}
 
 <!-- Open Graph -->
-
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="og:locale" content="en_US" />
 {% if page.is_post %}
@@ -28,7 +26,6 @@
 <meta property="og:image" content="{{ page.image }}" />
 
 <!-- Twitter -->
-
 <meta name="twitter:card" content="summary_large_image" />
 {% if page.title == "Home" %}<meta property="twitter:title" content="{{ site.title }}" />{% else %}<meta name="twitter:title" content="{{ page.title }}" />{% endif %}
 <meta name="twitter:description" content="{{ page.description }}" />
@@ -41,8 +38,10 @@
 {% endif %}
 <meta name="twitter:site" content="@{{ site.author.twitter }}" />
 
-<!--Schema.org-->
+<!-- Mastodon -->
+<meta name="mastodon" rel="me" href="{{ site.author.mastodon }}"/>
 
+<!--Schema.org-->
 {% if page.is_post %}
 <script type="application/ld+json">
   {
@@ -55,6 +54,7 @@
           "sameAs": [
               "https://twitter.com/{{ site.author.twitter }}",
               "https://www.linkedin.com/in/{{ site.author.linkedin }}",
+              "{{ site.author.mastodon }}",
               "https://medium.com/@{{ site.author.medium }}",
               "https://github.com/{{ site.author.github }}"
           ]
@@ -88,6 +88,7 @@
         "sameAs": [
           "https://twitter.com/{{ site.author.twitter }}",
           "https://www.linkedin.com/in/{{ site.author.linkedin }}",
+          "{{ site.author.mastodon }}",
           "https://medium.com/@{{ site.author.medium }}",
           "https://github.com/{{ site.author.github }}"
         ]
