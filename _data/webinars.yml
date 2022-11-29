@@ -1,9 +1,23 @@
 - name: BrightTalk
   title: 'Winning in the Digital Era: Is API Management the Silver Bullet?'
+  description:
+    With comprehensive API management being essential to remaining competitive in the digital economy, IT leaders must understand the latest management strategies that can enable them to stay competitive and deliver maximum business value.
+  location: Online
   link: https://www.brighttalk.com/webcast/16121/538594
-  date: 22 September 2022
+  date: 2022-09-22
 
 - name: BrightTalk
   title: 'Modernization in the Digital Era: API Management for Today’s App Infrastructures'
+  description:
+    While organizations are embracing the API economy in order to improve connectivity and drive digital transformation initiatives, many are not fully equipped to effectively and securely manage API sprawl.
+  location: Online
   link: https://www.brighttalk.com/webcast/16121/538586
-  date: 16 June 2022
+  date: 2022-06-22
+
+- name: NGINX
+  title: 'Implement Your API Strategy with NGINX'
+  description:
+    Without an effective API strategy, APIs quickly become unmanageable. Explore trends accelerating API sprawl and look at some well-established best practices for managing, governing, and securing APIs. 
+  location: Online
+  link: https://www.nginx.com/resources/webinars/successfully-implement-your-api-strategy-with-nginx/
+  date: 2022-11-11
