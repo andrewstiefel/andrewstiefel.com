@@ -5,10 +5,6 @@ description: A colophon is term borrowed from publishing to describe 'how this s
 permalink: /colophon/
 ---
 
-# Colophon
-
-<p class="lead">A colophon is term borrowed from publishing to describe 'how this site was made.'</p>
-
 ## Typography
 The headers and body use the default system sans serif for speed and privacy. I intend to add support for custom, self-hosted fonts down the line as I build out the website further.
 

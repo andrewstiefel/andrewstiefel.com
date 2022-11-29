@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-blank
 title: Thanks
 description: Thanks for signing up for my email list. I'm glad you're here.
 permalink: /thanks/

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-blank
 title: Almost
 permalink: /almost/
 sitemap: false

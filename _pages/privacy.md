@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Privacy
-description: This website is proudly cookie and tracker free.
+description: This website is proudly cookie and tracker free
 permalink: /privacy/
 ---
 
-<h1>You’re being watched.</h1>
+You’re being watched online.
 
-<p>Imagine if every time you walked into a physical store, someone scanned a barcode on your body to learn who you are.</p>
+Imagine if every time you walked into a physical store, someone scanned a barcode on your body to learn who you are.
 
 Then, they followed you around the store and took notes about everything you picked up, put back, or purchased. When you finally leave, they send that information to a central agency. Now, people follow you around — to your home, your work — suggesting similar products to you.
 
