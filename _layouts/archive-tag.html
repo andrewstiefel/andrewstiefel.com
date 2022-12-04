@@ -4,13 +4,13 @@ layout: default
 
 {% include layout/header.html %}
 <main class="mb-auto">
-  <section class="grid grid-cols-6">
+  <section class="grid grid-cols-6 py-4">
     <div class="col-span-full lg:col-start-2 lg:col-span-4">
       <div class="lg:col-start-2 col-span-4">
         <div class="border-b border-gray-200 dark:border-gray-700">
-          <h1 class="text-3xl font-bold capitalize">{{ page.title }}</h1>
+          <h1 class="text-5xl font-bold font-display capitalize mb-1">{{ page.title }}</h1>
               {% assign meta = site.data.metatag[page.title] %}
-          <p class="text-gray-500 dark:text-gray-400 text-lg leading-7 mb-8">{{ meta.description }}</p>
+          <p class="text-gray-500 dark:text-gray-400 font-serif text-lg leading-10 mb-8">{{ meta.description }}</p>
         </div>
       <ul class="divide-y divide-gray-200 dark:divide-gray-700">
         {% for post in page.posts limit:5 %}

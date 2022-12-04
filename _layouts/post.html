@@ -7,7 +7,7 @@ layout: default
   <article class="prose prose-zinc dark:prose-invert mx-auto prose-pre:whitespace-pre-wrap prose-a:text-primary dark:prose-a:text-primary_dark">
     <section>
       <a class="text-sm capitalize font-semibold no-underline" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
-      <h1 class="mb-3 mt-2 text-5xl font-display">{{ page.title }}</h1>
+      <h1 class="mb-3 mt-2 text-5xl font-display mb-1">{{ page.title }}</h1>
       <p class="lead text-gray-500 dark:text-gray-400 my-2 font-serif">{{ page.description }}</p>
       <span class="text-sm text-gray-400 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include helpers/reading-time.html %}</span>
     </section>
