@@ -3,28 +3,47 @@ layout: default
 ---
 
 {% include layout/header.html %}
-<main class="mb-auto">
-  <article class="prose prose-zinc dark:prose-invert mx-auto prose-pre:whitespace-pre-wrap prose-a:text-primary dark:prose-a:text-primary_dark">
-    <section>
-      <a class="text-sm capitalize font-semibold no-underline" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
-      <h1 class="mb-3 mt-2 text-5xl font-display mb-1">{{ page.title }}</h1>
-      <p class="lead text-gray-500 dark:text-gray-400 my-2 font-serif">{{ page.description }}</p>
-      <span class="text-sm text-gray-400 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include helpers/reading-time.html %}</span>
-    </section>
-    <section>
-      {{ content}}
-    </section>
-    <section class="my-8">
-    {% if page.tags != empty %}
-      <div class="flex flex-wrap">
-      {% for tag in page.tags %}
-        <div class="not-prose text-sm capitalize bg-gray-100 dark:bg-gray-800 rounded mr-3 px-2 py-1">
-          <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | slugify }}">{{tag}}</a>
+<main class="my-8">
+  <article>
+    <section class="grid grid-cols-6 py-4">
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
+        <div class="lg:col-start-2 col-span-4">
+          <div class="border-b border-gray-200 dark:border-gray-700">
+            <div class="mb-4">
+              <a class="capitalize font-semibold no-underline text-primary dark:text-primary_dark" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-bold font-display capitalize mb-4 sm:leading-tight">{{ page.title }}</h1>
+            <p class="text-gray-600 font-serif dark:text-gray-400 text-lg leading-8 mb-8">{{ page.description }}</p>
+          </div>
+          <div class="mt-4">
+            <span class="text-sm text-gray-400 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include helpers/reading-time.html %}</span>
+          </div>
         </div>
-      {% endfor %}
       </div>
-    {% endif %}
-    {% include components/newsletter-box.html %}
+    </section>
+    <section class="grid grid-cols-6 py-4">
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
+        <div class="lg:col-start-2 col-span-4 prose max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark"">
+          {{ content }}
+        </div>
+      </div>
+    </section>
+    <section class="grid grid-cols-6 py-8">
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
+        <div class="lg:col-start-2 col-span-4">
+        {% if page.tags != empty %}
+          <div class="flex flex-wrap">
+          {% for tag in page.tags %}
+            <div class="not-prose text-sm capitalize bg-gray-100 dark:bg-gray-800 rounded mr-3 px-2 py-1">
+              <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | slugify }}">{{tag}}</a>
+            </div>
+          {% endfor %}
+          </div>
+        {% endif %}
+        {% include components/newsletter-box.html %}
+        </div>
+      </div>
+    </section>  
   </article>
 </main>
 {% include layout/footer.html %}
