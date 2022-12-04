@@ -157,3 +157,9 @@ pre[class*=language-] {
   src: url("../fonts/inter/Inter-BoldItalic.woff2?v=3.13") format("woff2"),
        url("../fonts/inter/Inter-BoldItalic.woff?v=3.13") format("woff");
 }
+
+@layer components {
+  .prose-custom {
+    @apply max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-display prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3;
+  }
+}

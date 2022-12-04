@@ -16,14 +16,14 @@ layout: default
             <p class="text-gray-600 font-serif dark:text-gray-400 text-lg leading-8 mb-8">{{ page.description }}</p>
           </div>
           <div class="mt-4">
-            <span class="text-sm text-gray-400 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include helpers/reading-time.html %}</span>
+            <span class="text-sm text-gray-600 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include helpers/reading-time.html %}</span>
           </div>
         </div>
       </div>
     </section>
     <section class="grid grid-cols-6 py-4">
       <div class="col-span-full lg:col-start-2 lg:col-span-4">
-        <div class="lg:col-start-2 col-span-4 prose max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark"">
+        <div class="lg:col-start-2 col-span-4 prose prose-custom">
           {{ content }}
         </div>
       </div>
@@ -34,7 +34,7 @@ layout: default
         {% if page.tags != empty %}
           <div class="flex flex-wrap">
           {% for tag in page.tags %}
-            <div class="not-prose text-sm capitalize bg-gray-100 dark:bg-gray-800 rounded mr-3 px-2 py-1">
+            <div class="not-prose text-sm capitalize bg-gray-100 dark:bg-gray-800 rounded mr-3 px-2 py-1 my-1">
               <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | slugify }}">{{tag}}</a>
             </div>
           {% endfor %}
