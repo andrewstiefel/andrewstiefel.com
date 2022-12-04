@@ -29,11 +29,11 @@ Companies that are beating their competitors have a great product and build a un
 Here's how you differentiate your product from the competition in 2022:
 
 1. [Target a niche market segment](#target-a-niche-market-segment)
-2. [Tell a differentiated story](tell-a-differentiated-story)
-3. [Provide valuable education](Provide valuable education)
-4. [Build a community around your vision](build-a-community-around-your-vision)
-5. [Cultivate a partner ecosystem](cultivate-a-partner-ecosystem)
-6. [Amplify employee advocacy](amplify-employee-advocacy)
+2. [Tell a differentiated story](#tell-a-differentiated-story)
+3. [Provide valuable education](#provide-valuable-education)
+4. [Build a community around your vision](#build-a-community-around-your-vision)
+5. [Cultivate a partner ecosystem](#cultivate-a-partner-ecosystem)
+6. [Amplify employee advocacy](#amplify-employee-advocacy)
 
 Each takes time to build. But don't get intimidated—that's the point. Your competition cannot easily duplicate your work.
 
