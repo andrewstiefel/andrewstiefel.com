@@ -1,9 +1,13 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   darkMode: 'class',
   content: [`_site/**/*.html`],
   theme: {
+    fontFamily: {
+      'display': ['Roboto Condensed'],
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -18,16 +22,23 @@ module.exports = {
       primary_dark: '#059669',
     },
     extend: {
-      typography: {
+      fontFamily: {
+        'sans': ['Inter', ...defaultTheme.fontFamily.sans],
+        'serif': ['Martel', ...defaultTheme.fontFamily.serif],
+      },
+      typography: (theme) => ({
         DEFAULT: {
           css: {
+            'h1, h2, h3, h4, h5, h6': {
+              'font-family': theme('fontFamily.display'),
+            },
             pre: {
               border: '1px solid',
               'border-color': '#3f3f46',
-            }
+            },
           }
         }
-      }
+      }),
     }
   },
   variants: {},
