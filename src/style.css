@@ -1,3 +1,124 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local(''),
+       url('../fonts/roboto-condensed-v24-latin/roboto-condensed-v24-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-condensed-v24-latin/roboto-condensed-v24-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local(''),
+       url('../fonts/martel-v9-latin/martel-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/martel-v9-latin/martel-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 900;
+  font-display: fallback;
+  src: local(''),
+       url('../fonts/martel-v9-latin/martel-v9-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/martel-v9-latin/martel-v9-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-Light.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Light.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 300;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-LightItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-LightItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-Regular.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Regular.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-Italic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Italic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-Medium.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Medium.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-MediumItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-MediumItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-SemiBold.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-SemiBold.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-SemiBoldItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-SemiBoldItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-Bold.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Bold.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("../fonts/inter/Inter-BoldItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-BoldItalic.woff?v=3.13") format("woff");
+}
+
+@layer components {
+  .prose-custom {
+    @apply max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-display prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3;
+  }
+}
+
 pre[class*=language-] {
     color:#f4f4f5
 }
@@ -42,124 +163,3 @@ pre[class*=language-] {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/roboto-condensed-v24-latin/roboto-condensed-v24-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-condensed-v24-latin/roboto-condensed-v24-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-  font-family: 'Martel';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/martel-v9-latin/martel-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/martel-v9-latin/martel-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-  font-family: 'Martel';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/martel-v9-latin/martel-v9-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/martel-v9-latin/martel-v9-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Light.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-Light.woff?v=3.13") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-LightItalic.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-LightItalic.woff?v=3.13") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Regular.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-Regular.woff?v=3.13") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Italic.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-Italic.woff?v=3.13") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Medium.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-Medium.woff?v=3.13") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-MediumItalic.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-MediumItalic.woff?v=3.13") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-SemiBold.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-SemiBold.woff?v=3.13") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-SemiBoldItalic.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-SemiBoldItalic.woff?v=3.13") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Bold.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-Bold.woff?v=3.13") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-BoldItalic.woff2?v=3.13") format("woff2"),
-       url("../fonts/inter/Inter-BoldItalic.woff?v=3.13") format("woff");
-}
-
-@layer components {
-  .prose-custom {
-    @apply max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-display prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3;
-  }
-}
