@@ -1,15 +1,9 @@
 ---
 layout: page
-title:
-description:
+title: Typography
+description: Welcome to the typography page for the Showcase Pro theme. We’re glad you are interested in using this and want to show you how elements look.
 permalink: /typography/
 ---
-
-# Typography
-
-<p class="intro">Welcome to the typography page for the Showcase Pro theme. We’re glad you are interested in using this and want to show you how elements look.</p>
-
-<hr>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Arcu risus quis varius quam quisque id diam vel quam. At tellus at urna condimentum mattis pellentesque id nibh tortor. Posuere lorem ipsum dolor sit amet. Nulla aliquet enim tortor at. Est ultricies integer quis auctor.
 
