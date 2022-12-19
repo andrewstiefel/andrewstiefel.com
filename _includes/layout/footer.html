@@ -1,5 +1,8 @@
  <footer class="border-t border-gray-200 dark:border-gray-700 mt-12">
   <div class="py-8 flex flex-col items-center">
+    <div class="my-1 flex">
+      {% include components/social-icons.html %}
+    </div>
     <div class="my-1 flex text-sm text-gray-500 dark:text-gray-400">
       <div>
         <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span>
