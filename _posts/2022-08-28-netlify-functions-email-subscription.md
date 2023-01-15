@@ -67,6 +67,8 @@ Next, you’ll need to give your function a name. For example, to create a funct
 - `netlify/functions/hello-world/hello-world.js`
 - `netlify/functions/hello-world/index.js`
 
+For this tutorial, I'm going to use the 'submission-created' event trigger. Netlify will run my function every time a form is submitted. To do that, I'm going to name my function 'submission-created.js'.
+
 Now you’re ready to start writing the function. Start by importing the API key you created earlier as an environment variable:
 
 ```js
@@ -99,7 +101,7 @@ exports.handler = async function (event, context) {
 Next retrieve the email from the event value using `JSON.parse`:
 
 ```js
-const email = event.queryStringParameters.email
+const email = JSON.parse(event.body).payload.email
 ```
 
 Then log the data in the console for debugging:
@@ -194,7 +196,7 @@ const { EMAIL_TOKEN } = process.env;
 import fetch from 'node-fetch';
 
 exports.handler = async (event, context) => {
-    const email = event.queryStringParameters.email || "No email";
+    const email = JSON.parse(event.body).payload.email
     console.log(`Received a submission: ${email}`)
 
     const response = await fetch(
@@ -221,7 +223,9 @@ exports.handler = async (event, context) => {
 ```
 
 ## Create the email subscription form
-Now that you’ve built the function, let’s call it from the email subscription form. The HTML for the email subscription form is very minimal. All you need to do is call the function using the form action:
+Now that you’ve built the function, let’s call it from the email subscription form. The HTML for the email subscription form is very minimal.
+
+All you need to do is call the function using the form action:
 
 ```html
 <form name="newsletter" method="POST" action="/.netlify/functions/subscribe-email">
@@ -232,6 +236,16 @@ Now that you’ve built the function, let’s call it from the email subscriptio
 ```
 
 Make sure you specific input name (“email”) and make sure it matches the information you parse from the event value using `JSON.parse`.
+
+If you used the 'submission-created' trigger for your function like I did, you'll need to change the '<form>' field slightly by adding 'data-netlify="true"' to tell Netlify to process this form:
+
+'''html
+<form name="newsletter" method="POST" data-netlify="true">
+  <label for="email">Your Email Address</label>
+  <input type="email" name="email" placeholder=Email Address"/>
+  <button type="submit">Subscribe</button>
+</form>
+```
 
 ## Deploy the function
 Now that I’ve written my function, configured my netlify.toml file, and added my environment variables, everything is ready to go. Deploying is painless: just set up Netlify’s GitHub integration, and your function will be deployed when your project is pushed.
