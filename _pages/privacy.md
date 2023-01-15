@@ -39,9 +39,10 @@ When in the course of human events it becomes necessary to have a privacy policy
 
 ### Things you should expect
 
-- If you sign up for my newsletter or to receive posts by email, your email address will be kept by Andrew Stiefel, LLC and our email service provider, MailChimp.
-- We'll exercise commercially reasonable levels of care about this information within the context of “this is a newsletter and your email is something you’re telling me in confidence but it’s not patient health information.”
-- I will send you email because you asked for it. If you ever don’t want to receive it, email andrew@andrewstiefel.com or click the unsubscribe link inside the email.
+- If you sign up for our newsletter or to receive posts by email, your name and email address will be kept by Andrew Stiefel, LLC and our email service provider, ConvertKit.
+- We'll exercise commercially reasonable levels of care about this information within the context of “this is a newsletter and your email is something you’re telling me in confidence.”
+- We will send you an occasional email because you signed up for our mailing list. 
+- If you ever don't want to receive the emails, email andrew@ this domain (or click on the link inside the email) and we'll take care of that.
 
 ### Things you should not expect
 
@@ -49,7 +50,7 @@ We will not sell, rent, share, disclose, or otherwise make your email address av
 
 ### Other useful information
 
-You may find it useful to know that Andrew Stiefel, LLC is a Washington-organized company whose primary place of business is in Seattle, Washington.
+You may find it useful to know that Andrew Stiefel, LLC is a Washington-organized company whose primary place of business is in Bremerton, Washington.
 
 [1]:	https://usefathom.com/ "Fathom Analytics"
 [2]:	https://usefathom.com/ref/FBJDFZ "Fathom Analytics"
