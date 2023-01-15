@@ -11,3 +11,8 @@
 [functions]
   directory = "netlify/functions/"
   node_bundler = "esbuild"
+
+[[headers]]
+  for = "/portfolio"
+  [headers.values]
+    X-Robots-Tag = "noindex"
