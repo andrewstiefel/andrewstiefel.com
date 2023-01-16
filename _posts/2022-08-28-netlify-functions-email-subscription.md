@@ -59,7 +59,7 @@ Next, specify where Netlify should look for your functions. Edit your netlify.to
   directory = "netlify/functions/"
 ```
 
-Create a function file in the directory you specified above. If you used the default functions directory, you should save your function at`YOUR_BASE_DIRECTORY/netlify/functions`.
+Create a function file in the directory you specified above. If you used the default functions directory, you should save your function at `YOUR_BASE_DIRECTORY/netlify/functions`.
 
 Next, you’ll need to give your function a name. For example, to create a function with an endpoint name of `hello-world`, save the function in one of these locations:
 
@@ -67,7 +67,7 @@ Next, you’ll need to give your function a name. For example, to create a funct
 - `netlify/functions/hello-world/hello-world.js`
 - `netlify/functions/hello-world/index.js`
 
-For this tutorial, I'm going to use the 'submission-created' event trigger. Netlify will run my function every time a form is submitted. To do that, I'm going to name my function 'submission-created.js'.
+For this tutorial, I'm going to use the `submission-created` event trigger. Netlify will run my function every time a form is submitted. To do that, I'm going to name my function `submission-created.js`.
 
 Now you’re ready to start writing the function. Start by importing the API key you created earlier as an environment variable:
 
@@ -237,7 +237,7 @@ All you need to do is call the function using the form action:
 
 Make sure you specific input name (“email”) and make sure it matches the information you parse from the event value using `JSON.parse`.
 
-If you used the 'submission-created' trigger for your function like I did, you'll need to change the '<form>' field slightly by adding 'data-netlify="true"' to tell Netlify to process this form:
+If you used the `submission-created` trigger for your function like I did, you'll need to change the `<form>` field slightly by adding `data-netlify="true"` to tell Netlify to process this form:
 
 '''html
 <form name="newsletter" method="POST" data-netlify="true">
