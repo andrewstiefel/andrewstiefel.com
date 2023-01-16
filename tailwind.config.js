@@ -16,7 +16,7 @@ module.exports = {
       yellow: colors.yellow,
       red: colors.rose,
       primary: '#065F46',
-      primary_dark: '#059669',
+      primary_dark: '#a7f3d0',
     },
     extend: {
       fontFamily: {
