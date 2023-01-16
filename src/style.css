@@ -116,3 +116,8 @@ pre[class*=language-] {
     @apply max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-display prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3;
   }
 }
+
+pre, code {
+  white-space: pre-wrap; 
+  word-break: break-word;
+}

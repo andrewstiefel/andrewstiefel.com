@@ -239,7 +239,7 @@ Make sure you specific input name (“email”) and make sure it matches the inf
 
 If you used the `submission-created` trigger for your function like I did, you'll need to change the `<form>` field slightly by adding `data-netlify="true"` to tell Netlify to process this form:
 
-'''html
+```html
 <form name="newsletter" method="POST" data-netlify="true">
   <label for="email">Your Email Address</label>
   <input type="email" name="email" placeholder=Email Address"/>
