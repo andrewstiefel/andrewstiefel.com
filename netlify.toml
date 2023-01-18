@@ -16,3 +16,9 @@
   for = "/portfolio"
   [headers.values]
     X-Robots-Tag = "noindex"
+  for = "/almost"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+  for = "/thanks"
+  [headers.values]
+    X-Robots-Tag = "noindex"
