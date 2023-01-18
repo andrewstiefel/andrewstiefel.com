@@ -3,6 +3,7 @@ layout: portfolio
 title: Portfolio
 description: 
 permalink: /portfolio/
+sitemap: false
 ---
 
 # About me
