@@ -11,13 +11,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
   <link rel="manifest" href="/assets/images/site.webmanifest">
-  <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#ffffff">
 
   {% include helpers/seo-tags.html %}
 
   <!-- Scripts -->
-  <script defer src="{{ site.baseurl }}/assets/js/preload.js"></script>
+  <script>
+    try {
+      if (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18181b');
+      } else if (localStorage.theme === 'dark') {
+        document.documentElement.classList.add('theme-dark', 'dark');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18181b');
+      } else if (localStorage.theme === 'light') {
+        document.documentElement.classList.add('light');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
+      }
+    } catch (_) {}
+  </script>
   <script defer nonce="fgrSLg123s" src="https://equal-equal.andrewstiefel.com/script.js" data-site="BKYGCADM"></script>
 
 </head>

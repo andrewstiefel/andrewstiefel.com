@@ -121,3 +121,30 @@ pre, code {
   white-space: pre-wrap; 
   word-break: break-word;
 }
+
+.theme-icon-dark, 
+.theme-icon-light {
+    display: none;
+}
+
+.dark .theme-icon-dark,
+.dark .theme-icon-light {
+    display: none;
+}
+
+.theme-dark .theme-icon-dark {
+    display: inline-block;
+}
+
+.theme-dark .theme-icon-system {
+  display: none;
+}
+
+.light .theme-icon-system,
+.light .theme-icon-dark {
+    display: none;
+}
+
+.light .theme-icon-light {
+    display: inline-block;
+}
