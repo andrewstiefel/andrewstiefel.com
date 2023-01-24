@@ -17,10 +17,12 @@
   [headers.values]
     X-Robots-Tag = "noindex"
 
+[[headers]]
   for = "/almost"
   [headers.values]
     X-Robots-Tag = "noindex"
 
+[[headers]]
   for = "/thanks"
   [headers.values]
     X-Robots-Tag = "noindex"
