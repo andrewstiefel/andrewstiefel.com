@@ -29,7 +29,7 @@ If you still want to know how many people are visiting your website, there are w
 
 Personally, I use [Fathom Analytics][1], a privacy-first, paid software alternative that doesn’t collect or store personal information. Visitor data is collected anonymously and gives me just enough information so I can understand how people are finding my website and what content they are finding useful.
 
-If you want to give Fathom Analytics a try, you can [use this referral link for $10 off your first invoice](https://usefathom.com/ref/FBJDFZ){:title="Fathom Analytics" id="clickAff" target="_blank"}. This isn’t a paid promotion and so far I make $0 from referrals. I’m just a happy customer.
+If you want to give Fathom Analytics a try, you can [use this referral link for $10 off your first invoice](https://usefathom.com/ref/FBJDFZ){:title="Fathom Analytics" data-fathom="N9ZM2BUT" target="_blank"}. This isn’t a paid promotion and so far I make $0 from referrals. I’m just a happy customer.
 
 **Our choices matter.** If you care about online privacy, pay attention and choose businesses and tools that put your privacy first.
 

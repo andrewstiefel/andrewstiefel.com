@@ -1,4 +1,4 @@
-// Navbar mobile menu
+// Toggle mobile menu
 
 var body = document.body;
 const button = document.querySelector('#menu-button');
@@ -56,42 +56,9 @@ window.addEventListener('load', (event) => {
   }
 });
 
-// Subscribe to RSS
-window.addEventListener('load', (event) => {
-  if(document.getElementById('subRSS')) {
-    subRSS.addEventListener('click', () => {
-      fathom.trackGoal('YKQ6ZLVM', 0);
-    });
-  } else {
-    console.log()
-  }
-});
-
-// Subscribe to newsletter
-window.addEventListener('load', (event) => {
-  if(document.getElementById('subForm')) {
-    subForm.addEventListener('submit', () => {
-        fathom.trackGoal('UFIQJWTI', 0);
-    });
-  } else {
-    console.log()
-  }
-});
-
-// Subscribe to Convertkit form
-document.querySelectorAll('.formkit-submit').forEach(item => {
-    item.addEventListener('click', event => {
-        fathom.trackGoal('UFIQJWTI', 0);
-    });
-});
-
-// Click affiliate link
-window.addEventListener('load', (event) => {
-  if(document.getElementById('clickAff')) {
-    clickAff.addEventListener('click', () => {
-      fathom.trackGoal('N9ZM2BUT', 0);
-    });
-  } else {
-    console.log()
-  }
-});
+// Track click events with Fathom Analytics
+var link_elements = document.querySelectorAll('[data-fathom]');
+for (var i = 0, len = link_elements.length; i < len; i++) {
+    link_elements[i].addEventListener('click', function(event) {
+        fathom.trackGoal(event.currentTarget.getAttribute('data-fathom'), 0);
+}, false); }
