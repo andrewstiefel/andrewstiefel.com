@@ -2,48 +2,55 @@
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 400;
-  font-display: swap;
-  src: local("Inter-Regular"),
-      url("../fonts/inter/Inter-Regular.woff2?v=3.13") format("woff2"),
-      url("../fonts/inter/Inter-Regular.woff?v=3.13") format("woff");
+  font-display: optional;
+  src: 
+    local('Inter'),
+    local('Inter-Regular'),
+    url('../fonts/inter/Inter-Regular.woff2?v=3.13') format('woff2'),
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
   font-weight: 400;
-  font-display: swap;
-  src: local("Inter-Italic"),
-      url("../fonts/inter/Inter-Italic.woff2?v=3.13") format("woff2"),
-      url("../fonts/inter/Inter-Italic.woff?v=3.13") format("woff");
+  font-display: optional;
+  src: 
+    local('Inter Italic')
+    local('Inter-Italic'),
+    url('../fonts/inter/Inter-Italic.woff2?v=3.13') format('woff2'),
 }
 
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 700;
-  font-display: swap;
-  src: local("Inter-Bold"),
-      url("../fonts/inter/Inter-Bold.woff2?v=3.13") format("woff2"),
-      url("../fonts/inter/Inter-Bold.woff?v=3.13") format("woff");
+  font-display: optional;
+  src: 
+    local('Inter Bold'),
+    local('Inter-Bold'),
+    url('../fonts/inter/Inter-Bold.woff2?v=3.13') format('woff2'),
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
   font-weight: 700;
-  font-display: swap;
-  src: local("Inter-BoldItalic"),
-      url("../fonts/inter/Inter-BoldItalic.woff2?v=3.13") format("woff2"),
-      url("../fonts/inter/Inter-BoldItalic.woff?v=3.13") format("woff");
+  font-display: optional;
+  src:
+    local('Inter Bold Italic')
+    local('Inter-BoldItalic'),
+    url('../fonts/inter/Inter-BoldItalic.woff2?v=3.13') format('woff2'),
 }
 
 @font-face {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/roboto-condensed-v24-latin/roboto-condensed-v24-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-condensed-v24-latin/roboto-condensed-v24-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: optional;
+  src: 
+    local('Roboto Condensed'),
+    local('Roboto-Condensed'),
+    url('../fonts/roboto-condensed-v24-latin/roboto-condensed-v24-latin-700.woff2') format('woff2'),
 }
 
 @font-face {
@@ -51,9 +58,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local(''),
-       url('../fonts/martel-v9-latin/martel-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/martel-v9-latin/martel-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: 
+    url('../fonts/martel-v9-latin/martel-v9-latin-regular.woff2') format('woff2'),
 }
 
 @font-face {
@@ -61,9 +67,8 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local(''),
-       url('../fonts/martel-v9-latin/martel-v9-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/martel-v9-latin/martel-v9-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: 
+    url('../fonts/martel-v9-latin/martel-v9-latin-900.woff2') format('woff2'),
 }
 
 pre[class*=language-] {
