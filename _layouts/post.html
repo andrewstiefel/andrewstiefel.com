@@ -9,14 +9,15 @@ layout: default
       <div class="col-span-full lg:col-start-2 lg:col-span-4">
         <div class="lg:col-start-2 col-span-4">
           <div class="border-b border-gray-200 dark:border-gray-700">
-            <div class="mb-4">
-              <a class="capitalize font-semibold no-underline text-primary dark:text-primary_dark" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
+            <div class="mb-4 text-gray-600 dark:text-gray-400 uppercase text-sm">
+              <a class="font-semibold no-underline text-primary dark:text-primary_dark" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
+              <span> / {% include helpers/reading-time.html %}</span>
             </div>
             <h1 class="text-4xl sm:text-5xl font-bold font-display capitalize mb-4 sm:leading-tight">{{ page.title }}</h1>
             <p class="text-gray-600 font-serif dark:text-gray-400 text-lg leading-8 mb-8">{{ page.description }}</p>
           </div>
           <div class="mt-4">
-            <span class="text-sm text-gray-600 dark:text-gray-400"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post-date">{{ page.date | date: "%-d %b %Y" }}</time> • {% include helpers/reading-time.html %}</span>
+            <span class="text-sm text-gray-600 dark:text-gray-400">Published <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time> • Updated <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time></span>
           </div>
         </div>
       </div>
