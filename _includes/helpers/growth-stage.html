@@ -1,0 +1,45 @@
+{% if page.stage == "Seedling" %}
+<div class="bg-green-100 border border-green-200 dark:bg-green-800/40 dark:border-green-800 text-green-700 dark:text-gray-200 p-4 rounded flex items-start">
+  <div class="flex-none mr-4">
+    <svg class="w-6 h-6 m-2 fill-green-700 dark:fill-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M512 64c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 78.3 364 32 448 32h32c17.7 0 32 14.3 32 32zM0 128c0-17.7 14.3-32 32-32H64c123.7 0 224 100.3 224 224v32 96c0 17.7-14.3 32-32 32s-32-14.3-32-32V352C100.3 352 0 251.7 0 128z"/>
+    </svg>
+  </div>
+  </span>
+  <div class="flex-auto">
+    <span class="block min-w-full font-bold">Seedling</span>
+    <span class="block">
+      Seedling posts are ideas I've just started that are rough, unrefined, and need some time to grow.
+    </span>
+  </div>
+</div>
+{% elsif page.stage == "Budding" %}
+<div class="bg-green-100 border border-green-200 dark:bg-green-800/40 dark:border-green-800 text-green-700 dark:text-gray-200 p-4 rounded flex items-center">
+  <div class="flex-none mr-4">
+    <svg class="w-6 h-6 m-2 fill-green-700 dark:fill-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+     <path d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z"/>
+    </svg>
+  </div>
+  <div class="flex-auto">
+    <span class="block min-w-full font-bold">Budding</span>
+    <span class="block">
+      Budding posts are ideas I've revised and worked on a bit. They're starting to grow, but still need refinement.
+    </span>
+  </div>
+</div>
+{% elsif page.stage == "Evergreen" %}
+<div class="bg-green-100 border border-green-200 dark:bg-green-800/40 dark:border-green-800 text-green-700 dark:text-gray-200 p-4 rounded flex items-center">
+  <div class="flex-none mr-4">
+    <svg class="w-6 h-6 m-2 fill-green-700 dark:fill-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z"/>
+    </svg>
+  </div>
+  <div class="flex-auto">
+    <span class="block min-w-full font-bold">Evergreen</span>
+    <span class="block">
+      Evergreen posts are ideas I've invested significant time into. They are refined, edited, and won't significantly change – aside from the occassional trimming.
+    </span>
+  </div>
+</div>
+{% else %}
+{% endif %}
