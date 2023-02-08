@@ -6,11 +6,16 @@ import { dest, series, src, task, watch } from "gulp";
 import postcss from "gulp-postcss";
 import atimport from "postcss-import";
 import tailwindcss from "tailwindcss";
+import concat from "gulp-concat";
+import uglify from "gulp-uglify";
 
 const SITE_ROOT = "./_site";
 const POST_BUILD_STYLESHEET = `${SITE_ROOT}/assets/css/`;
-const PRE_BUILD_STYLESHEET = "./src/style.css";
+const PRE_BUILD_STYLESHEET = "./src/css/style.css";
 const TAILWIND_CONFIG = "./tailwind.config.js";
+const POST_BUILD_FONTS = `${SITE_ROOT}/assets/fonts/`;
+const POST_BUILD_SCRIPTS = `${SITE_ROOT}/assets/js/`;
+const POST_BUILD_IMAGES = `${SITE_ROOT}/assets/images/`;
 
 // Fix for Windows compatibility
 const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
@@ -43,6 +48,29 @@ task("processStyles", () => {
     .pipe(dest(POST_BUILD_STYLESHEET));
 });
 
+task("copyFonts", () => {
+  browserSync.notify("Copying fonts...");
+
+  return src('./src/fonts/**/*')
+    .pipe(dest(POST_BUILD_FONTS))
+});
+
+task("optimizeImages", () => {
+  browserSync.notify("Optimizing images...");
+
+  return src('./src/img/**/*')
+    .pipe(dest(POST_BUILD_IMAGES))
+});
+
+task("processScripts", () => {
+  browserSync.notify("Compiling scripts...");
+
+  return src('src/js/*.js')
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(dest(POST_BUILD_SCRIPTS))
+});
+
 task("startServer", () => {
   browserSync.init({
     files: [SITE_ROOT + "/**"],
@@ -60,7 +88,7 @@ task("startServer", () => {
     [
       "**/*.css",
       "**/*.html",
-      "**/*.js",
+      "src/**/*.js",
       "**/*.md",
       "**/*.markdown",
       "!_site/**/*",
@@ -71,7 +99,7 @@ task("startServer", () => {
   );
 });
 
-const buildSite = series("buildJekyll", "processStyles");
+const buildSite = series("buildJekyll", "processScripts", "optimizeImages", "processStyles", "copyFonts");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);
