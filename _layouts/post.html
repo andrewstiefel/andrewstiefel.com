@@ -17,7 +17,13 @@ layout: default
             <p class="text-gray-600 font-serif dark:text-gray-400 text-lg leading-8 mb-8">{{ page.description }}</p>
           </div>
           <div class="mt-4">
-            <span class="text-sm text-gray-600 dark:text-gray-400">Published <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time> • Updated <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time></span>
+            <span class="text-sm text-gray-600 dark:text-gray-400">
+              Published <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
+              {% assign pubDate = page.date | date: "%Y%m%d" %}
+              {% assign modDate = page.last_modified_at | date: "%Y%m%d" %}
+              {% if modDate != pubDate %}
+               • Updated <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time></span>
+              {% endif %}
           </div>
         </div>
       </div>
