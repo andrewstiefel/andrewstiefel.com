@@ -2,10 +2,11 @@
 layout: post
 title: Networking Tips for Remote and Hybird Work
 description: Networking is always a challenge when starting a new job. It's even more critical for success in a remote or hybrid workplace.
-image:
+image: https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b
 date: 2022-05-25
 category: Notes
 tags: [Career Growth]
+featured: true
 ---
 
 You've finally landed that dream job — and it’s going to involve some (or a lot) of remote work. Maybe it's your first job, or maybe you just took a position with a new company. Or, like the rest of the world, you and your team have transitioned to working remotely during the pandemic.
