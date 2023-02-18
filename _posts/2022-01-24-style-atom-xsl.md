@@ -4,7 +4,7 @@ title: How to Style an Atom Feed with XSLT
 description: Create a seamless user experience for your Atom or RSS feed with XLST stylesheets.
 image:
 date: 2022-01-24
-category: Notes
+category: Articles
 tags: [Coding, Jekyll]
 ---
 
