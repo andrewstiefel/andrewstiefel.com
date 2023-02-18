@@ -4,7 +4,7 @@ title: Pocket Guide to Privacy-First Email Newsletter Software
 description: A handy guide to privacy-first email newsletter services that protect user privacy by turning off open and click tracking by default.
 image:
 date: 2023-02-09
-category: Notes
+category: Articles
 tags: [Marketing, Privacy]
 ---
 

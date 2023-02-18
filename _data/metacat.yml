@@ -1,10 +1,14 @@
+Articles:
+  description: |
+    Mostly objective writing exploring a single topic or idea
+
 Essays:
   description: |
     Narrative writing with a distinct point of view
 
 Notes:
   description: |
-    Mostly objective writing exploring a single topic or idea
+    Short-form writing that connects sources and asks questions
 
 Library:
   description: Books I've read, and books I like the idea of having read

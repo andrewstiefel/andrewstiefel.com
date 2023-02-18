@@ -4,7 +4,7 @@ title: Why is Storytelling Important for B2B Marketing?
 description: B2B storytelling helps unify groups of people around a shared narrative about what they need to accomplish.
 image:
 date: 2022-06-22
-category: Notes
+category: Articles
 tags: [Product Marketing, Storytelling, Strategic Narrative]
 ---
 
