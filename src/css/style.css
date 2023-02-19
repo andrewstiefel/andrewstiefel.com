@@ -4,7 +4,7 @@
   font-display: swap;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url("../fonts/inter/Inter-roman.var.woff2?v=3.19") format("woff2");
+  src: url('../fonts/inter/Inter-roman.var.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,23 +13,7 @@
   font-display: swap;
   font-style: italic;
   font-named-instance: 'Italic';
-  src: url('../fonts/inter/Inter-italic.var.woff2?v=3.19') format('woff2');
-}
-
-@font-face {
-  font-family: 'Martel';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/martel/martel-v9-latin-regular.woff2') format('woff2'),
-}
-
-@font-face {
-  font-family: 'Martel';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url('../fonts/martel/martel-v9-latin-900.woff2') format('woff2'),
+  src: url('../fonts/inter/Inter-italic.var.woff2') format('woff2');
 }
 
 @font-face {
@@ -37,8 +21,23 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: 
-    url('../fonts/roboto-condensed/roboto-condensed-v24-latin-700.woff2') format('woff2'),
+  src: url('../fonts/roboto-condensed/roboto-condensed-v24-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/martel/martel-v9-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/martel/martel-v9-latin-900.woff2') format('woff2');
 }
 
 pre[class*=language-] {
