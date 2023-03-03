@@ -34,9 +34,11 @@ module.exports = {
             },
             blockquote: {
               'font-weight': '400',
+              'padding-top': theme('spacing.px'),
+              'padding-bottom': theme('spacing.px'),
             },
           }
-        }
+        },
       }),
     }
   },

@@ -87,7 +87,7 @@ pre[class*=language-] {
 
 @layer components {
   .prose-custom {
-    @apply max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-display prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3;
+    @apply prose-zinc max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-display prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-800;
   }
 }
 
