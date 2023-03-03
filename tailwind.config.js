@@ -32,6 +32,9 @@ module.exports = {
               border: '1px solid',
               'border-color': '#3f3f46',
             },
+            blockquote: {
+              'font-weight': '400',
+            },
           }
         }
       }),
