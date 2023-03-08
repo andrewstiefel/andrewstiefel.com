@@ -69,7 +69,7 @@
         <xsl:value-of select="atom:summary"  disable-output-escaping="yes" />
       </p>
       <small>
-        Published: <xsl:value-of select="atom:updated" />
+        Published: <xsl:value-of select="atom:published" />
       </small>
     </div>
   </xsl:template>

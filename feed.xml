@@ -21,7 +21,7 @@
  <entry>
    <title>{{ post.title }}</title>
    <link rel="alternate" href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <published>{{ post.date | date_to_xmlschema }}</published>
    <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
    <summary>{{ post.description }}</summary>
    <content type="html">{{ post.content | xml_escape }}</content>
