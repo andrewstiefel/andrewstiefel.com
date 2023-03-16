@@ -17,7 +17,7 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src: 'self' andrewstiefel.com *.andrewstiefel.com; img-src 'self' res.cloudinary.com;
+    Content-Security-Policy = "default-src: 'self' andrewstiefel.com *.andrewstiefel.com; img-src *; media-src *; child-src https://player.vimeo.com https://www.youtube.com;"
     Permissions-Policy = "microphone=(), camera=(), geolocation=()"
     Referrer-Policy = "same-origin"
 
