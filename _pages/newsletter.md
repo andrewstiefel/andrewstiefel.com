@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Newsletter
-description: Notes on creativity, work, and life
+layout: newsletter
+title: Product Marketing Weekly Review Newsletter
+description: Get actionable product marketing tips in your inbox every week.
 permalink: /newsletter/
 ---
 

@@ -13,6 +13,15 @@
   node_bundler = "esbuild"
 
 [[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'nonce-Njc5MTEyNzgy' 'nonce-fgrSLg123s' https://player.vimeo.com https://f.vimeocdn.com; style-src 'self' https://f.vimeocdn.com; img-src *; media-src *; child-src https://player.vimeo.com https://www.youtube.com;"
+    Permissions-Policy = "microphone=(), camera=(), geolocation=(), picture-in-picture=*, autoplay=*, fullscreen=*"
+    Referrer-Policy = "same-origin"
+
+[[headers]]
   for = "/portfolio"
   [headers.values]
     X-Robots-Tag = "noindex"

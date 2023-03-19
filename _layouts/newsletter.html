@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{% include layout/header.html %}
+<main class="mb-8">
+  <section class="pb-12 bg-gray-50 dark:bg-gray-800">
+    <div class="mx-auto max-w-screen-xl px-6 lg:px-24">
+      <div class="grid grid-cols-6 py-6">
+        <div class="col-span-full lg:col-span-4 prose prose-custom">
+          <h2>Unlock actionable insights, weekly</h2>
+          <p class="lead">Prepare for the week with one tip every Sunday evening on how to take product marketing strategy and apply it to your day-to-day work.</p>
+          <div class="max-w-lg">
+            {% include forms/newsletter-default.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="mx-auto max-w-screen-xl px-6 lg:px-24">
+      <div class="grid items-center py-6 lg:grid-cols-6 lg:gap-8">
+        <div class="col-span-full lg:col-span-3 prose prose-custom">
+          <h2>Hey there, I'm Andrew Stiefel.</h2>
+          <p>I help product marketers build high impact careers by sharing my unique perspective on a complex role.</p>
+          <p>Product marketing is a strategic role. Unfortunately, many product marketing managers struggle to elevate their work beyond preparing for the next release.</p>
+          <p>Each week I share reflections and lessons from my experience building effective go-to-market strategies in my own careers as a product marketing leader and management consultant.</p>
+        </div>
+        <div class="col-span-full lg:col-span-3 h-full">
+          <img src="/assets/images/andrew-stiefel-1024x1024.png" alt="Andrew Stiefel" width="1024px" height="1024px" class="w-full h-full object-cover object-center dark:brightness-75">
+        </div>
+      </div>
+    </div>
+  </section>
+  {% assign newsletter_Post = site.posts | where: "newsletter", "true" %}
+  {% unless newsletter_Post == empty %}
+  <section class="py-4">
+    <div class="mx-auto max-w-screen-xl px-6 lg:px-24">
+      <h2>Previous Editions</h2>
+      <div class="grid grid-cols-12 gap-x-6 pt-6">
+      {% for post in newsletter_Post limit:3 %}
+        <div class="col-span-full xl:col-span-4">
+            <a href="{{ post.url }}">
+                <figure class="aspect-w-16 aspect-h-9">
+                    <img class="object-center object-cover dark:brightness-75" src="{{ post.image }}" />
+                </figure>
+                <h4 class="py-3 text-xl font-bold font-display">{{ post.title }}</h4>
+            </a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endunless %}
+</main>
+{% include layout/footer.html %}
