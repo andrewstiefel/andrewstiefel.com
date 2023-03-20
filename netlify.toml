@@ -17,6 +17,7 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' equal-equal.andrewstiefel.com player.vimeo.com f.vimeocdn.com 'nonce-Njc5MTEyNzgy'; style-src 'self' https://f.vimeocdn.com; img-src *; media-src *; child-src https://player.vimeo.com https://www.youtube.com;"
 
 [[headers]]
   for = "/portfolio"
