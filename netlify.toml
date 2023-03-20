@@ -13,14 +13,6 @@
   node_bundler = "esbuild"
 
 [[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Permissions-Policy = "microphone=(), camera=(), geolocation=(), picture-in-picture=*, autoplay=*, fullscreen=*"
-    Referrer-Policy = "same-origin"
-
-[[headers]]
   for = "/portfolio"
   [headers.values]
     X-Robots-Tag = "noindex"
