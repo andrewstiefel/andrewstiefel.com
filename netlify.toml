@@ -17,7 +17,7 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' https://equal-equal.andrewstiefel.com https://player.vimeo.com https://f.vimeocdn.com 'nonce-Njc5MTEyNzgy'; style-src 'self' https://f.vimeocdn.com; img-src *; media-src *; child-src https://player.vimeo.com https://www.youtube.com;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' equal-equal.andrewstiefel.com player.vimeo.com f.vimeocdn.com 'nonce-Njc5MTEyNzgy'; style-src 'self' https://f.vimeocdn.com; img-src *; media-src *; child-src https://player.vimeo.com https://www.youtube.com;"
     Permissions-Policy = "microphone=(), camera=(), geolocation=(), picture-in-picture=*, autoplay=*, fullscreen=*"
     Referrer-Policy = "same-origin"
 
