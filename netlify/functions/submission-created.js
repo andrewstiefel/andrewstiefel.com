@@ -4,10 +4,9 @@ import fetch from 'node-fetch';
 
 exports.handler = async (event, context) => {
     const submission = JSON.parse(event.body).payload.data
-    console.log(submission.email)
     const email = submission.email
-    console.log(submission.tag)
     const tag = submission.tag
+    console.log(`Received a submission: ${email}, ${tag}`)
 
     const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {
 		  method: 'POST',
