@@ -1,29 +1,30 @@
-const { CONVERTKIT_API_KEY } = process.env;
+const { BUTTONDOWN_API_KEY } = process.env;
 
 import fetch from 'node-fetch';
 
 exports.handler = async (event, context) => {
     const email = JSON.parse(event.body).payload.email
-    console.log(`Received a submission: ${email}`)
+    const tag = JSON.parse(event.body).payload.tag
+    console.log(`Received a submission: ${email}, tags: ${tag}`)
 
-    const response = await fetch(
-        'https://api.convertkit.com/v3/forms/3384627/subscribe', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ 
-                api_key: CONVERTKIT_API_KEY,
-                email: email
-             }),
-        }
+    const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {
+		  method: 'POST',
+		  headers: {
+			  Authorization: `Token ${BUTTONDOWN_API_KEY}`,
+			  'Content-Type': 'application/json',
+		  },
+		  body: JSON.stringify({ 
+        email: email,
+        tags: tag
+        }),
+	    }
     );
+
     let responseText = await response.text();
-    console.log('response:', responseText);
+    console.log('Response:', responseText);
+    
     return {
-        statusCode: 301,
-        headers: {
-            'Location': '/almost/',
-        },
+      statusCode: 200,
+      body: JSON.stringify({})
     }
 }

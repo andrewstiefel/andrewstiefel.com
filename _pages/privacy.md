@@ -39,7 +39,7 @@ When in the course of human events it becomes necessary to have a privacy policy
 
 ### Things you should expect
 
-- If you sign up for our newsletter or to receive posts by email, your name and email address will be kept by Andrew Stiefel, LLC and our email service provider, ConvertKit.
+- If you sign up for our newsletter or to receive posts by email, your name and email address will be kept by Andrew Stiefel, LLC and our email service provider, [Buttondown](https://buttondown.email/).
 - We'll exercise commercially reasonable levels of care about this information within the context of “this is a newsletter and your email is something you’re telling me in confidence.”
 - We will send you an occasional email because you signed up for our mailing list. 
 - If you ever don't want to receive the emails, email andrew@ this domain (or click on the link inside the email) and we'll take care of that.
