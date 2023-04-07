@@ -17,7 +17,7 @@ exports.handler = async (event, context) => {
 		  },
 		  body: JSON.stringify({ 
         email: email,
-        tags: tag
+        tags: [tag]
         }),
 	    }
     );
