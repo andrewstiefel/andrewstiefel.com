@@ -3,7 +3,8 @@ const { BUTTONDOWN_API_KEY } = process.env;
 import fetch from 'node-fetch';
 
 exports.handler = async (event, context) => {
-    const submission = JSON.parse(event.body).payload
+    console.log(event)
+    const submission = JSON.parse(event.body)
     console.log(submission.email)
     console.log(submission.tag)
 
