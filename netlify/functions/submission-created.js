@@ -3,10 +3,11 @@ const { BUTTONDOWN_API_KEY } = process.env;
 import fetch from 'node-fetch';
 
 exports.handler = async (event, context) => {
-    console.log(event)
-    const submission = JSON.parse(event.body)
+    const submission = JSON.parse(event.data)
     console.log(submission.email)
+    const email = submission.email
     console.log(submission.tag)
+    const tag = submission.tag
 
     const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {
 		  method: 'POST',
