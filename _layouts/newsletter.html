@@ -4,30 +4,42 @@ layout: default
 
 {% include layout/header.html %}
 <main class="mb-8">
-  <section class="pb-12 bg-gray-50 dark:bg-gray-800">
+  <section class="py-4 bg-gray-50 dark:bg-gray-800">
     <div class="mx-auto max-w-screen-xl px-6 lg:px-24">
-      <div class="grid grid-cols-6 py-6">
-        <div class="col-span-full lg:col-span-4 prose prose-custom">
-          <h2>Unlock actionable insights, weekly</h2>
-          <p class="lead">Prepare for the week with one tip every Sunday evening on how to take product marketing strategy and apply it to your day-to-day work.</p>
-          <div class="max-w-lg">
-            {% include forms/newsletter-default.html %}
+      <div class="grid items-center lg:grid-cols-12 gap-4 py-6">
+        <div class="col-span-full lg:col-span-7">
+          <div class="prose prose-custom">
+            <h1>Product Marketing Weekly Review</h1>
           </div>
+        </div>
+        <div class="col-span-full lg:col-span-5">
+          {% include components/newsletter-pmm-box.html %}
         </div>
       </div>
     </div>
   </section>
   <section class="py-4">
     <div class="mx-auto max-w-screen-xl px-6 lg:px-24">
-      <div class="grid items-center py-6 lg:grid-cols-6 lg:gap-8">
+      <div class="grid grid-cols-6 py-6">
         <div class="col-span-full lg:col-span-3 prose prose-custom">
+          <h2>Unlock actionable insights, weekly</h2>
+          <p class="lead">Prepare for the week with one tip every Sunday evening on how to take product marketing strategy and apply it to your day-to-day work.</p>
+          <a class="" href="">Read past issues</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="mx-auto max-w-screen-xl px-6 lg:px-24">
+      <div class="grid items-center py-6 lg:grid-cols-12 lg:gap-8">
+        <div class="col-span-full lg:col-span-5 h-full">
+          <img src="/assets/images/andrew-stiefel-1024x1024.png" alt="Andrew Stiefel" width="1024px" height="1024px" class="w-full h-full object-cover object-center dark:brightness-75">
+        </div>
+        <div class="col-span-full lg:col-span-7 prose prose-custom">
           <h2>Hey there, I'm Andrew Stiefel.</h2>
           <p>I help product marketers build high impact careers by sharing my unique perspective on a complex role.</p>
           <p>Product marketing is a strategic role. Unfortunately, many product marketing managers struggle to elevate their work beyond preparing for the next release.</p>
           <p>Each week I share reflections and lessons from my experience building effective go-to-market strategies in my own careers as a product marketing leader and management consultant.</p>
-        </div>
-        <div class="col-span-full lg:col-span-3 h-full">
-          <img src="/assets/images/andrew-stiefel-1024x1024.png" alt="Andrew Stiefel" width="1024px" height="1024px" class="w-full h-full object-cover object-center dark:brightness-75">
         </div>
       </div>
     </div>
