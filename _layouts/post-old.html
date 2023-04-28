@@ -3,10 +3,11 @@ layout: default
 ---
 
 {% include layout/header.html %}
-<main class="mx-auto max-w-screen-2xl px-6 lg:px-16 my-8">
+<main class="mx-auto max-w-screen-xl px-6 lg:px-24 my-8">
   <article>
-    <section id="intro" class="grid grid-cols-12 py-4">
-      <div class="col-span-full lg:col-span-6 lg:col-start-4">
+    <section class="grid grid-cols-6 py-4">
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
+        <div class="lg:col-start-2 col-span-4">
           <div class="border-b border-gray-200 dark:border-gray-700">
             <div class="mb-4 text-gray-600 dark:text-gray-400 uppercase text-sm">
               <a class="font-semibold no-underline text-primary dark:text-primary_dark" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
@@ -24,25 +25,19 @@ layout: default
                • Updated <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time></span>
               {% endif %}
           </div>
-      </div>
-    </section>
-    <section class="grid grid-cols-12 py-4">
-      <div class="toc-sidebar col-span-3 lg:bg-transparent dark:lg:bg-transparent bg-gray-100 dark:bg-gray-800 rounded">
-        <div class="sticky top-8 lg:p-0 p-4">
-          <div class="mb-4 font-bold">On this page</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">
-            <a class="toc-link" href="#intro">Introduction</a>
-            <div class="js-toc mt-3"></div>
-          </div>
         </div>
       </div>
-      <div class="js-toc-content col-span-full lg:col-span-6 prose prose-custom lg:mt-0 mt-4">
-        {% include helpers/growth-stage.html %}
-        {{ content }}
+    </section>
+    <section class="grid grid-cols-6 py-4">
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
+        <div class="lg:col-start-2 col-span-4 prose prose-custom">
+          {% include helpers/growth-stage.html %}
+          {{ content }}
+        </div>
       </div>
     </section>
-    <section class="grid grid-cols-12 py-8">
-      <div class="col-span-full lg:col-start-4 lg:col-span-6">
+    <section class="grid grid-cols-6 py-8">
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
         <div class="lg:col-start-2 col-span-4">
         {% if page.tags != empty %}
           <div class="flex flex-wrap">
