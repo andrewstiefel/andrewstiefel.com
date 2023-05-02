@@ -65,7 +65,7 @@ task("optimizeImages", () => {
 task("processScripts", () => {
   browserSync.notify("Compiling scripts...");
 
-  return src('src/js/*.js')
+  return src(['src/js/tocbot.js', 'src/js/local.js', 'src/js/prism.js'])
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(dest(POST_BUILD_SCRIPTS))
