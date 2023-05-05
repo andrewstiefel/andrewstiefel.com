@@ -33,7 +33,7 @@ Below is a list of the email newsletter services that met the criteria, as well 
 | MailCoach  | Off by default | EU          | $9.99                      |
 
 ## Buttondown
-[Buttondown](https://buttondown.email/){:title="Buttondowm" target="_blank"} is a minimalist tool for writing and producing email newsletters. Based in the United States, it is run as an indie software business. Buttondown gets a lot of things right, like privacy-first by default (you can, however, opt-in to tracking if you want), the ability to write in markdown, RSS-to-Email tools so you can run your own version of Substack, and a first-party API.
+[Buttondown](https://buttondown.email/refer/andrewstiefel){:title="Buttondowm" target="_blank" data-fathom="N9ZM2BUT"} is a minimalist tool for writing and producing email newsletters. Based in the United States, it is run as an indie software business. Buttondown gets a lot of things right, like privacy-first by default (you can, however, opt-in to tracking if you want), the ability to write in markdown, RSS-to-Email tools so you can run your own version of Substack, and a first-party API.
 
 ## SendStack
 [SendStack](https://getsendstack.com/){:title="SendStack" target="_blank"} is one of the newest tools and was released by a team based in the European Union (Germany, specifically). It has fewer features than Buttondown but a much friendlier user interface. They also make their first-party API available to free plans, which is a great feature for developers or anyone wanting to [build their own first-party email newsletter subscription form](https://andrewstiefel.com/netlify-functions-email-subscription/). SendStack takes a much harder line on automation, so there is no RSS-to-Email function or other automation tools.
