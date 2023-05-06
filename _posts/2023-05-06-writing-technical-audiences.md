@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writinng for Technical Audiences
+title: Writing for Technical Audiences
 description: These tips can help you write more effectively for software developers, scientists, and other expert audiences.
 image:
 date: 2023-05-06
