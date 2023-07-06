@@ -9,7 +9,7 @@ permalink: /about/
 
 <p class="intro is-size-5-tablet">This is the main thing you should read about me.</p>
 
-More about me will go here, obviously.
+More about me will go here, obviously. Adding a bit more here.
 
 I'm always happy to meet interesting people for coffee. You can email me at andrew@andrewstiefel.com.
 
