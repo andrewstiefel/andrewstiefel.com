@@ -25,19 +25,6 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta property="og:image" content="{{ page.image }}" />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-{% if page.title == "Home" %}<meta property="twitter:title" content="{{ site.title }}" />{% else %}<meta name="twitter:title" content="{{ page.title }}" />{% endif %}
-<meta name="twitter:description" content="{{ page.description }}" />
-<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
-<meta name="twitter:image" content="{{ page.image }}" />
-{% if page.is_post %}
-<meta name="twitter:label1" content="Written by" />
-<meta name="twitter:data1" content="{{ site.author.name }}" />
-<meta name="twitter:creator" content="@{{ site.author.twitter }}" />
-{% endif %}
-<meta name="twitter:site" content="@{{ site.author.twitter }}" />
-
 <!-- Mastodon -->
 <link name="mastodon" href="{{ site.author.mastodon }}" rel="me"/>
 
@@ -52,7 +39,6 @@
           "name": "{{ site.author.name }}",
           "url": "{{ site.url }}",
           "sameAs": [
-              "https://twitter.com/{{ site.author.twitter }}",
               "https://www.linkedin.com/in/{{ site.author.linkedin }}",
               "{{ site.author.mastodon }}",
               "https://medium.com/@{{ site.author.medium }}",
@@ -86,7 +72,6 @@
         "name": "{{ site.author.name }}",
         "url": "{{ site.url }}",
         "sameAs": [
-          "https://twitter.com/{{ site.author.twitter }}",
           "https://www.linkedin.com/in/{{ site.author.linkedin }}",
           "{{ site.author.mastodon }}",
           "https://medium.com/@{{ site.author.medium }}",
