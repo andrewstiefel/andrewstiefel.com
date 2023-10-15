@@ -45,7 +45,7 @@
     "access": "public"
   },
   "dependencies": {
-    "node-fetch": "^3.3.0",
+    "node-fetch": "^3.3.2",
     "prismjs": "^1.29.0"
   }
 }
