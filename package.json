@@ -5,7 +5,7 @@
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "10.4.14",
     "babel-preset-env": "1.7.0",
