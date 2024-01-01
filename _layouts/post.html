@@ -6,7 +6,8 @@ layout: default
 <main class="mx-auto max-w-screen-xl px-6 lg:px-24 my-8">
   <article>
     <section class="grid grid-cols-6 py-4">
-      <div class="col-span-full lg:col-span-4">
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
+        <div class="lg:col-start-2 col-span-4">
           <div class="border-b border-gray-200 dark:border-gray-700">
             <div class="mb-4 text-gray-600 dark:text-gray-400 uppercase text-sm">
               <a class="font-semibold no-underline text-primary dark:text-primary_dark" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
@@ -24,35 +25,31 @@ layout: default
                • Updated <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time></span>
               {% endif %}
           </div>
+        </div>
       </div>
     </section>
-    <section class="grid grid-cols-6 gap-8 py-4">
-      <div class="js-toc-content col-span-full lg:col-span-4 prose prose-custom lg:mt-0 mt-4">
-        {% include helpers/growth-stage.html %}
-        <h2 class="sr-only">Introduction</h2>
-        {{ content }}
-      </div>
-      <div class="toc-sidebar col-span-2 lg:bg-transparent dark:lg:bg-transparent bg-gray-100 dark:bg-gray-800 rounded">
-        <div class="sticky top-8 lg:p-0 p-4">
-          <div class="mb-4 font-bold">On this page</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">
-            <div class="js-toc mt-3"></div>
-          </div>
+    <section class="grid grid-cols-6 py-4">
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
+        <div class="lg:col-start-2 col-span-4 prose prose-custom">
+          {% include helpers/growth-stage.html %}
+          {{ content }}
         </div>
       </div>
     </section>
     <section class="grid grid-cols-6 py-8">
-      <div class="col-span-full lg:col-span-4">
-      {% if page.tags != empty %}
-        <div class="flex flex-wrap">
-        {% for tag in page.tags %}
-          <div class="not-prose text-sm capitalize bg-gray-100 dark:bg-gray-800 rounded mr-3 px-2 py-1 my-1">
-            <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | slugify }}">{{tag}}</a>
+      <div class="col-span-full lg:col-start-2 lg:col-span-4">
+        <div class="lg:col-start-2 col-span-4">
+        {% if page.tags != empty %}
+          <div class="flex flex-wrap">
+          {% for tag in page.tags %}
+            <div class="not-prose text-sm capitalize bg-gray-100 dark:bg-gray-800 rounded mr-3 px-2 py-1 my-1">
+              <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | slugify }}">{{tag}}</a>
+            </div>
+          {% endfor %}
           </div>
-        {% endfor %}
+        {% endif %}
+        {% include components/newsletter-box.html %}
         </div>
-      {% endif %}
-      {% include components/newsletter-box.html %}
       </div>
     </section>  
   </article>
