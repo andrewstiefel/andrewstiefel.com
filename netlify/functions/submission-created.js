@@ -1,17 +1,27 @@
-const { BUTTONDOWN_API_KEY } = process.env;
-
+import { createClient } from "@1password/sdk";
 import fetch from 'node-fetch';
 
-exports.handler = async (event, context) => {
-    const submission = JSON.parse(event.body).payload.data
-    const email = submission.email
-    const tag = submission.tag
-    console.log(`Received a submission: ${email}, ${tag}`)
+const { OP_SERVICE_ACCOUNT_TOKEN } = process.env;
 
+export default async (event) => {
+  const submission = JSON.parse(event.body).payload.data
+  const email = submission.email
+  const tag = submission.tag
+  console.log(`Received a submission: ${email}, ${tag}`)
+
+  const client = await createClient({
+    auth: OP_SERVICE_ACCOUNT_TOKEN,
+    integrationName: "Netlify and 1Password Demo",
+    integrationVersion: "v1.0.0",
+  });
+  
+  const secret = await client.secrets.resolve("op://website/buttondown-api/credential");
+
+  try {
     const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {
 		  method: 'POST',
 		  headers: {
-			  Authorization: `Token ${BUTTONDOWN_API_KEY}`,
+			  Authorization: `Token ${secret}`,
 			  'Content-Type': 'application/json',
 		  },
 		  body: JSON.stringify({ 
@@ -23,9 +33,10 @@ exports.handler = async (event, context) => {
 
     let responseText = await response.text();
     console.log('Response:', responseText);
+
+  } catch (error) {
+    console.log(error);
     
-    return {
-      statusCode: 200,
-      body: JSON.stringify({})
-    }
-}
+    return Response.redirect("https://andrewstiefel.com/almost", 302)
+  }
+};
