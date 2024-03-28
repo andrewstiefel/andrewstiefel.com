@@ -23,7 +23,7 @@
     "gulp-uglify": "^3.0.2",
     "postcss": "8.4.35",
     "postcss-import": "16.0.1",
-    "tailwindcss": "3.4.1"
+    "tailwindcss": "3.4.3"
   },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production gulp",
