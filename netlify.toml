@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
   publish = "_site/"
+  command = "npm run build"
+  node_bundler = "esbuild"
 
 [[plugins]]
   package = "netlify-plugin-cloudinary"
@@ -17,12 +18,10 @@
   [headers.values]
     X-Robots-Tag = "noindex"
 
-[[headers]]
   for = "/almost"
   [headers.values]
     X-Robots-Tag = "noindex"
 
-[[headers]]
   for = "/thanks"
   [headers.values]
     X-Robots-Tag = "noindex"
