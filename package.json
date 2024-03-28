@@ -2,6 +2,8 @@
   "name": "andrewstiefel.com",
   "version": "6.0.0",
   "description": "Personal website built with Jekyll and Tailwind CSS",
+  "author": "Andrew Stiefel",
+  "license": "MIT",
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -36,8 +38,6 @@
     "type": "git",
     "url": "https://github.com/andrewstiefel/andrewstiefel.com.git"
   },
-  "author": "Andrew Stiefel",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/andrewstiefel/andrewstiefel.com/issues"
   },
