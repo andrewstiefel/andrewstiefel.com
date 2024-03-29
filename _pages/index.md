@@ -2,6 +2,7 @@
 layout: home
 title: Home
 description: Andrew Stiefel writes and publishes a newsletter called Margin Notes. This digital garden is a collection of essasys and short notes exploring topic including product marketing, career growth, and learning.
+permalink: /
 ---
 
 <p class="text-2xl font-bold mb-0">
