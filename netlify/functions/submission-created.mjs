@@ -15,7 +15,7 @@ export default async (request) => {
     integrationVersion: "v1.0.0",
   });
   
-  const secret = await client.secrets.resolve("op://sdk-beta/api-key/credential");
+  const secret = await client.secrets.resolve("op://website/buttondown-api/credential");
 
   const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {
     method: 'POST',
