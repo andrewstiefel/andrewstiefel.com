@@ -5,6 +5,7 @@ const { OP_SERVICE_ACCOUNT_TOKEN } = process.env;
 
 export default async (request) => {
   const body = await request.json();
+  console.log(body);
   const email = body.payload.email;
   const tag = body.payload.tag;
   console.log(`Received a submission: ${email}, ${tag}`);
