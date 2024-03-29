@@ -32,5 +32,5 @@ export default async (request) => {
   let responseText = await response.text();
   console.log('Received response:', responseText);
     
-  return new Response.redirect("https://andrewstiefel.com/almost", 302)
+  return new Response()
 };
