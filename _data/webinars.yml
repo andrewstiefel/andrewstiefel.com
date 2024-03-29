@@ -1,3 +1,19 @@
+- name: '1Password'
+  title: 'Quarterly security spotlight and roadmap review'
+  description:
+    Learn how to make the most of recent product releases and get a glimpse at what to look forward to in our product roadmap.
+  location: Online
+  link: https://1password.com/webinars/1p-quarterly-security-spotlight-and-roadmap-review/
+  date: 2024-03-27
+
+- name: '1Password'
+  title: 'The New Perimeter: Access Management in a Hybrid World'
+  description:
+    Employees can work from anywhere, on any device, with whatever applications best get the job done. This is the new perimeter security teams need to defend.
+  location: Online
+  link: https://1password.com/webinars/access-management-webinar/
+  date: 2024-01-24
+
 - name: BrightTalk
   title: 'Winning in the Digital Era: Is API Management the Silver Bullet?'
   description:
