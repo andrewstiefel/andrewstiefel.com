@@ -14,7 +14,7 @@ _Simple ideas travel farther than complex ones_
 
 Most of us intuitively understand this. But sometimes we forget as we get into the details of whatever we are doing. That's why I like to keep the idea of fidelity vs transmission in mind.
 
-![Information Transmission and Fidelity](assets/images/Information-Transmission-Fidelity-Dark-Mode.png){:height="483px" width="760px" class="dark:brightness-75"}
+![Information Transmission and Fidelity](../assets/img/Information-Transmission-Fidelity-Dark-Mode.png){:height="483px" width="760px" class="dark:brightness-75"}
 
 A book has hi-fidelity, but low transmission. You can read an author's ideas in depth. Everything they wanted to tell you is there. But the full message — the text of the entire book itself — will practically never be remembered or transmitted, in detail, to the recipient. They may highlight the text, take notes, and summarize the text. But the full message will be lost.
 

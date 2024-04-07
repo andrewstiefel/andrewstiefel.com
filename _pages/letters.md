@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Newsletter
+title: Letters
 description: Subscribe for a few long-form articles per month
-permalink: /newsletter/
+permalink: /letters/
 ---
 
 **Margin Notes** is my private email list where I share a few long-form articles each month. I don’t sell anything here — it’s fulfilling for me when people read, enjoy, and share ideas.

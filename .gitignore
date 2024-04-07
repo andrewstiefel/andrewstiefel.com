@@ -7,6 +7,5 @@ node_modules
 .bundle/
 vendor/
 Gemfile.lock
-
-# Local Netlify folder
 .netlify
+_tailwind

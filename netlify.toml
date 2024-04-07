@@ -1,6 +1,6 @@
 [build]
   publish = "_site/"
-  command = "npm run build"
+  command = "jekyll build"
 
 [[plugins]]
   package = "netlify-plugin-cloudinary"
@@ -11,6 +11,17 @@
 [functions]
   directory = "netlify/functions/"
   node_bundler = "esbuild"
+
+[[redirects]]
+  from = "https://andrew.st/*"
+  to = "https://andrewstiefel.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/newsletter"
+  to = "/letters"
+  status = 301
 
 [[headers]]
   for = "/portfolio"

@@ -1,21 +1,46 @@
+### SITE SETTINGS
+
 title: Andrew Stiefel
 tagline: '@andrewstiefel'
 description: Hey, I'm Andrew Stiefel. Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays.
 url: "https://andrewstiefel.com"
 
-### BUILD SETTINGS
+### SITE AUTHOR
 
-markdown: kramdown
-highlighter: none
-include: [_pages, _redirects]
-permalink: '/:title/'
+author:
+  name: Andrew Stiefel
+  url: 'https://andrewstiefel.com'
+  email: andrew@andrewstiefel.com
+  twitter: andrewstiefel
+  linkedin: andrewstiefel
+  mastodon: 'https://mas.to/@andrewstiefel'
+  medium: andrewstiefel
+  github: andrewstiefel
+
+### BUILD SETTINGS
 
 plugins:
   - jekyll-archives
   - jekyll-last-modified-at
   - jekyll-sitemap
   - jekyll-target-blank
+  - jekyll-tailwind
   - jekyll-tidy
+
+markdown: kramdown
+highlighter: none
+include: [_pages, _redirects]
+permalink: '/:title/'
+tailwind:
+  version: 3.4.3
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
 
 ### JEKYLL ARCHIVE SETTINGS
 
@@ -34,18 +59,6 @@ jekyll-archives:
 
 jekyll_tidy:
   exclude: ["feed.xml"]
-
-### SITE AUTHOR
-
-author:
-  name: Andrew Stiefel
-  url: 'https://andrewstiefel.com'
-  email: andrew@andrewstiefel.com
-  twitter: andrewstiefel
-  linkedin: andrewstiefel
-  mastodon: 'https://mas.to/@andrewstiefel'
-  medium: andrewstiefel
-  github: andrewstiefel
 
 exclude:
   - Gemfile
