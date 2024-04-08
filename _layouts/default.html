@@ -5,5 +5,8 @@
       {{ content }}
     <!-- Scripts-->
     <script defer src="{{ site.baseurl }}/assets/js/main.js"></script>
+    {% if page.is_post %}
+    <script src="{{ site.baseurl }}/assets/js/prism.js"></script>
+    {% endif %}
   </body>
 </html>

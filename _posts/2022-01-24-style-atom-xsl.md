@@ -129,5 +129,5 @@ Thanks for reading!
 [9]:	https://natclark.com/tutorials/xslt-style-rss-feed/ "Nat Clark"
 [10]:	https://aboutfeeds.com/ "About Feeds"
 
-[image-1]:	/assets/images/raw-atom-rss.png
-[image-2]:	/assets/images/human-readable-atom-feed.png
+[image-1]:	/assets/img/raw-atom-rss.png
+[image-2]:	/assets/img/human-readable-atom-feed.png

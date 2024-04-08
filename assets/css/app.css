@@ -1,5 +1,3 @@
-@import "tocbot.css";
-
 @font-face {
   font-family: 'Inter var';
   font-weight: 100 900;
@@ -123,22 +121,4 @@ pre, code {
 
 .light .theme-icon-light {
     display: inline-block;
-}
-
-.toc-list {
-  padding-left: 0px !important;
-}
-
-.toc-list-item {
-  margin-bottom: 12px;
-}
-
-.toc-link:before {
-  display: none !important;
-}
-
-.is-collapsible {
-  padding-left: 10px !important;
-  margin-top: 12px;
-  margin-bottom: -12px;
 }
