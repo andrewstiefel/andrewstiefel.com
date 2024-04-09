@@ -4,9 +4,6 @@
   <body class="bg-white text-gray-900 antialiased dark:bg-gray-900 dark:text-white">
       {{ content }}
     <!-- Scripts-->
-    <script defer src="{{ site.baseurl }}/assets/js/main.js"></script>
-    {% if page.is_post %}
-    <script src="{{ site.baseurl }}/assets/js/prism.js"></script>
-    {% endif %}
+    <script defer src="{{ site.baseurl }}/assets/js/bundle.min.js"></script>
   </body>
 </html>
