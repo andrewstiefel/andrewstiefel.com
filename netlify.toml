@@ -1,6 +1,10 @@
 [build]
-  publish = "_site/"
   command = "npm run build"
+    publish = "_site/"
+
+[dev]
+  command = "npm run start"
+  publish = "_site/"
 
 [[plugins]]
   package = "netlify-plugin-cloudinary"

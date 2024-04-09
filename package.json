@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "preinstall": "cd netlify/functions && npm install",
+    "start": "jekyll serve --livereload",
     "build": "jekyll build"
   },
   "repository": {
