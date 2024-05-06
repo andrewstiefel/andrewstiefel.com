@@ -3,7 +3,14 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   darkMode: 'class',
-  content: [`_site/**/*.html`],
+  content: [
+    "./_includes/**/*.{html,liquid}",
+    "./_layouts/**/*.{html,liquid}",
+    "./_pages/*.{html,liquid}",
+    "./_posts/**/*.md",
+    "./*.md",
+    "./*.html",
+  ],
   theme: {
     colors: {
       transparent: 'transparent',

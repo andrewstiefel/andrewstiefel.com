@@ -24,7 +24,7 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-sitemap
   - jekyll-target-blank
-  - jekyll-tailwind
+  - jekyll-tailwindcss
   - jekyll-tidy
 
 markdown: kramdown
