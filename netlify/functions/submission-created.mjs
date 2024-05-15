@@ -8,12 +8,13 @@ export default async (request) => {
   console.log(body);
   const email = body.payload.data.email;
   const tag = body.payload.data.tag;
-  console.log(`Received a submission: ${email}, ${tag}`);
+  const url = body.payload.data.referrer_url;
+  console.log(`Received a submission: ${email}, ${tag}, ${url}`);
 
   const client = await createClient({
     auth: OP_SERVICE_ACCOUNT_TOKEN,
-    integrationName: "Netlify and 1Password Demo",
-    integrationVersion: "v1.0.0",
+    integrationName: "andrewstiefel.com",
+    integrationVersion: "v1.1",
   });
   
   const secret = await client.secrets.resolve("op://website/buttondown-api/credential");
@@ -26,7 +27,8 @@ export default async (request) => {
     },
     body: JSON.stringify({ 
       email: email,
-      tags: [tag]
+      tags: [tag],
+      referrer_url: url
      }),
   });
 
