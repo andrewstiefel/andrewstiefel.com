@@ -1,23 +1,20 @@
 {% assign featured_Post = site.posts | where: "featured", "true" %}
 {% unless featured_Post == empty %}
-<section class="py-6">
+<section class="grid grid-cols-6 py-6">
+  <div class="col-span-full xl:col-span-4 xl:col-start-2">
     <div class="flex justify-start">
-      <div class="text-xl font-bold font-display w-72">Featured Posts</div>
+      <div class="text-xl font-bold font-display w-60">Featured Posts</div>
       <div class="w-full">
         <span class="inline-block w-full h-0.5 bg-gray-900 dark:bg-gray-500"></span>
       </div>
     </div>
-    <div class="grid grid-cols-12 gap-x-6 pt-6">
-    {% for post in featured_Post limit:3 %}
-        <div class="col-span-full xl:col-span-4">
-            <a href="{{ post.url }}">
-                <figure class="aspect-w-16 aspect-h-9">
-                    <img class="object-center object-cover dark:brightness-75" src="{{ post.image }}" />
-                </figure>
-                <h4 class="py-3 text-xl font-bold font-display">{{ post.title }}</h4>
-            </a>
-        </div>
+    <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+      {% for post in featured_Post limit:3 %}
+      <li class="py-12">
+        {% include helpers/posts-loop.html %}
+      </li>
       {% endfor %}
-    </div>
-  </section>
-  {% endunless %}
+    </ul>
+  </div>
+</section>
+{% endunless %}
