@@ -5,11 +5,11 @@ description: Andrew Stiefel writes and publishes a newsletter called Margin Note
 permalink: /
 ---
 
-<p class="text-2xl font-bold mb-0">Hi, I'm Andrew Stiefel.</p>
+Hi, I'm Andrew 👋
 
-This website is my digital garden, a slowly growing collection of working notes and essays about things I’ve learned or created over the years.
+I'm a product marketing manager based in Seattle, Washington.
 
-I enjoy writing for a small audience here. It’s low stakes and I occasionally connect with folks who are interested in something random I wrote. 
+This website is my digital garden, a slowly growing collection of working notes and essays about things I’ve learned over the years.
 
 I often explore topics like developer marketing, online privacy, digital gardening, and building for the indie web.
 
