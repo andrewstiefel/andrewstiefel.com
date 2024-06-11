@@ -37,14 +37,6 @@
   src: url('../fonts/source-serif/SourceSerif4Variable-Roman.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Martel';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/martel/martel-v9-latin-regular.woff2') format('woff2');
-  }
-
 pre[class*=language-] {
     color:#f3f4f6
 }
