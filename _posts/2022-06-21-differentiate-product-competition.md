@@ -6,7 +6,7 @@ image:
 date: 2022-06-21
 category: Articles
 tags: [Product Marketing, Positioning & Messaging]
-featured: 
+featured: true
 ---
 
 Product differentiation communicates the unique qualities of your brand or product to distinguish it from your competition.

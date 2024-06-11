@@ -6,7 +6,7 @@ image:
 date: 2022-08-28
 category: Articles
 tags: [Coding, Netlify, Jekyll]
-featured: 
+featured: true
 ---
 
 I enjoy the process of building and maintaining my own personal website. It’s a great way to experiment with different technologies, and have fun learning new tools and concepts along the way.

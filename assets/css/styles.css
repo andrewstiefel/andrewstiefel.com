@@ -29,23 +29,24 @@
 }
 
 @font-face {
-  font-family: 'Martel';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Source Serif';
+  font-weight: 100 900;
   font-display: swap;
-  src: url('../fonts/martel/martel-v9-latin-regular.woff2') format('woff2');
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('../fonts/source-serif/SourceSerif4Variable-Roman.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Martel';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 400;
   font-display: swap;
-  src: url('../fonts/martel/martel-v9-latin-900.woff2') format('woff2');
-}
+  src: url('../fonts/martel/martel-v9-latin-regular.woff2') format('woff2');
+  }
 
 pre[class*=language-] {
-    color:#f4f4f5
+    color:#f3f4f6
 }
 .token.class-name,
 .token.function,
@@ -60,7 +61,7 @@ pre[class*=language-] {
 .token.keyword,
 .token.pseudo-class,
 .token.rule {
-    color:#d4d4d8
+    color:#d1d5db
 }
 .token.module {
     color:#f472b6
@@ -73,7 +74,7 @@ pre[class*=language-] {
 }
 .token.attr-equals,
 .token.punctuation {
-    color:#71717a
+    color:#6b7280
 }
 .language-css .token.function,
 .token.unit {
@@ -82,7 +83,7 @@ pre[class*=language-] {
 .token.combinator,
 .token.comment,
 .token.operator {
-    color:#a1a1aa
+    color:#9ca3af
 }
 
 @tailwind base;
@@ -91,7 +92,7 @@ pre[class*=language-] {
 
 @layer components {
   .prose-custom {
-    @apply prose-zinc max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-display prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-800;
+    @apply prose-gray max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-serif prose-headings:font-normal prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3 prose-blockquote:bg-gray-100 dark:prose-blockquote:bg-gray-800;
   }
 }
 

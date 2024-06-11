@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Typography
-description: Welcome to the typography page for the Showcase Pro theme. We’re glad you are interested in using this and want to show you how elements look.
+description: Welcome to the typography page demo page for my site. I use this as a way to see how the different elements in the design work together.
 permalink: /typography/
 ---
 
