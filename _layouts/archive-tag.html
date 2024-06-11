@@ -8,9 +8,9 @@ layout: default
     <div class="col-span-full lg:col-start-2 lg:col-span-4">
       <div class="lg:col-start-2 col-span-4">
         <div class="border-b border-gray-200 dark:border-gray-700">
-          <h1 class="text-4xl sm:text-5xl font-bold font-display capitalize mb-4 sm:leading-tight">{{ page.title }}</h1>
+          <h1 class="text-4xl sm:text-5xl font-display capitalize mb-4 sm:leading-tight">{{ page.title }}</h1>
             {% assign meta = site.data.metatag[page.title] %}
-          <p class="text-gray-600 font-serif dark:text-gray-400 text-lg leading-8 mb-8">{{ meta.description }}</p>
+          <p class="text-gray-600 dark:text-gray-400 text-lg font-serif leading-8 mb-8">{{ meta.description }}</p>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@ layout: default
     <div class="col-span-full lg:col-start-2 lg:col-span-4">
       <ul class="divide-y divide-gray-200 dark:divide-gray-700">
         {% for post in page.posts limit:10 %}
-        <li class="py-12">
+        <li class="py-8">
           {% include helpers/posts-loop.html %}
         </li>
         {% endfor %}

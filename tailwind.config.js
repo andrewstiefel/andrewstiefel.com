@@ -17,7 +17,7 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      gray: colors.zinc,
+      gray: colors.gray,
       green: colors.emerald,
       blue: colors.sky,
       yellow: colors.yellow,
@@ -28,8 +28,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Inter var', ...defaultTheme.fontFamily.sans],
-        'serif': ['Martel', ...defaultTheme.fontFamily.serif],
-        'display': ['Roboto Condensed', 'Inter', ...defaultTheme.fontFamily.sans],
+        'serif': ['Source Serif', ...defaultTheme.fontFamily.serif],
+        'display': ['Roboto Condensed', ...defaultTheme.fontFamily.sans]
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -37,7 +37,8 @@ module.exports = {
           css: {
             pre: {
               border: '1px solid',
-              'border-color': '#3f3f46',
+              'background-color': '#030712',
+              'border-color': '#374151',
             },
             blockquote: {
               'font-weight': '400',

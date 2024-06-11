@@ -1,15 +1,15 @@
 <header class="mx-auto max-w-screen-xl px-6 lg:px-24">
-  <nav class="py-8" role="navigation" aria-label="main navigation">
-    <div class="flex items-center justify-between">
+  <nav class="grid grid-cols-6 py-8" role="navigation" aria-label="main navigation">
+    <div class="col-span-full lg:col-start-2 lg:col-span-4 flex items-center justify-between">
       <div id="logo">
         <a href="/" aria-label="{{ site.title }}">
-          <div class="text-2xl font-bold font-serif lg:block">
+          <div class="text-2xl font-serif font-semibold lg:block">
             {{ site.title }}
           </div>
         </a>
       </div>
       <div id="nav-wrap" class="hidden lg:block">
-        <ul class="flex items-center justify-between">
+        <ul class="flex items-center justify-between text-sm uppercase text-gray-900 dark:text-gray-100">
           {% include menus/menu-nav.html %}
         </ul>
       </div>

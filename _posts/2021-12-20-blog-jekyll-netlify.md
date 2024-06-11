@@ -5,6 +5,7 @@ description: I used Jekyll and Netlify to build a custom personal website and bl
 date: 2021-12-20
 category: Essays
 tags: [Coding, Blogging, Jekyll, Netlify]
+featured: true
 ---
 
 I’ve been blogging and hosting my website since 2006, but I’ve always been unhappy with the themes available for technologies like Blogger, WordPress, or Squarespace. I usually had a vision for what I wanted to create and would spend hours scouring marketplaces to find something that came close.
