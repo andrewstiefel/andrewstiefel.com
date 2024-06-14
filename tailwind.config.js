@@ -31,6 +31,11 @@ module.exports = {
         'serif': ['Source Serif', ...defaultTheme.fontFamily.serif],
         'display': ['Roboto Condensed', ...defaultTheme.fontFamily.sans]
       },
+      colors: {
+        gray: {
+          150: '#eceef1',
+        },
+      },
       typography: (theme) => ({
         DEFAULT: {
           'max-width': '72.5ch',
