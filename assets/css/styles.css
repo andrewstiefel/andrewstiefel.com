@@ -38,7 +38,7 @@
   src: url('../fonts/source-serif/SourceSerif4-Semibold.woff2') format('woff2');
 }
 
-font-face {
+@font-face {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
