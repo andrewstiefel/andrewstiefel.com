@@ -6,6 +6,8 @@ image:
 date: 2023-02-09
 category: Articles
 tags: [Marketing, Privacy]
+stage: Evergreen
+audience: Everyone
 ---
 
 When I first started to look for privacy-first email newsletter options back in 2019, there just weren’t many options. There were great privacy-first website analytics tools like [Fathom Analytics](https://usefathom.com/ref/FBJDFZ){:title="Fathom Analytics" data-fathom="N9ZM2BUT" target="_blank"}, but nothing for email. Nearly every provider required tracking pixels by default.

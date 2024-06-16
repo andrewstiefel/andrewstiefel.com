@@ -6,6 +6,8 @@ image:
 date: 2022-08-28
 category: Articles
 tags: [Coding, Netlify, Jekyll]
+stage: Evergreen
+audience: People familiar with APIs and Javascript
 featured: true
 ---
 

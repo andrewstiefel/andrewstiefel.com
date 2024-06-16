@@ -25,7 +25,6 @@ permalink: /uses/
 - Readwise
 - Reflect
 - Raindrop
-- Things
 - Tidal
 - Ulysses
 

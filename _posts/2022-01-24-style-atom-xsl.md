@@ -6,6 +6,8 @@ image:
 date: 2022-01-24
 category: Articles
 tags: [Coding, Jekyll]
+stage: Evergreen
+audience: People with some knowledge of web technologies
 featured: true
 ---
 

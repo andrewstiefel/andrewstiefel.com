@@ -6,6 +6,8 @@ image:
 date: 2023-08-25
 category: Notes
 tags: [Product Marketing, Writing]
+stage: Seedling
+audience: Everyone
 ---
 
 There is a useful axiom to keep in mind whenever you are crafting a message for someone else, whether writing a book, filming a video, or drafting an email.

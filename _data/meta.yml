@@ -10,5 +10,6 @@ Notes:
   description: |
     Short-form writing that connects sources and asks questions
 
-Library:
-  description: Books I've read, and books I like the idea of having read
+Jekyll:
+  description: |
+    Jekyll is a simple, blog-aware, static site generator. Think of it like a file-based CMS, without all the complexity.

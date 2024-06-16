@@ -49,8 +49,8 @@ jekyll-archives:
     - categories
     - tags
   layouts:
-    category: archive-category
-    tag: archive-tag
+    category: archive-meta
+    tag: archive-meta
   permalinks:
     category: '/:name/'
     tag: '/tag/:name/'

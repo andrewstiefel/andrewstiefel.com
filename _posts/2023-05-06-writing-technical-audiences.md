@@ -6,6 +6,8 @@ image:
 date: 2023-05-06
 category: Notes
 tags: [Product Marketing, Writing]
+stage: Seedlinng
+audience: Everyone
 ---
 
 Whether you are marketing to software developers, scientists, academic audiences, or other specialized industries, writing is a tool that can serve you well.

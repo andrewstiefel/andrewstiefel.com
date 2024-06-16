@@ -1,0 +1,31 @@
+<h4>Metadata</h5>
+<table class="table-auto">
+  <tbody>
+    <tr>
+      <td>Published</td>
+      <td>{{ page.date | date: "%-d %b %Y" }}</td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td>{{ page.category }}</td>
+    </tr>
+    <tr>
+      <td>Stage</td>
+      <td>{{ page.stage }}</td>
+    </tr>
+    <tr>
+      <td>Tags</td>
+      <td class="flex flex-wrap">
+      {% for tag in page.tags %}
+        <span class="not-prose text-sm capitalize bg-gray-200 dark:bg-gray-800 rounded mr-3 px-2 py-1 my-1">
+          <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | slugify }}">{{tag}}</a>
+        </span>
+      {% endfor %}
+      </td>
+    </tr>
+    <tr>
+      <td>Assumed audience</td>
+      <td>{{ page.audience }}</td>
+    </tr>
+  </tbody>
+</table>

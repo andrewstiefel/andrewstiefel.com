@@ -6,6 +6,8 @@ image:
 date: 2022-06-22
 category: Articles
 tags: [Product Marketing, Storytelling, Strategic Narrative]
+stage: Seedling
+audience: People with some knowledge of marketing
 ---
 
 Storytelling has been a buzzword in consumer marketing (B2C) for nearly a decade. And for a good reason. We, as humans, can’t help but tell stories. They are a critical way to convey information and build common ground.

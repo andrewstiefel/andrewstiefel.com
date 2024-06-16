@@ -6,6 +6,8 @@ image:
 date: 2022-06-28
 category: Essays
 tags: [Writing, Productivity]
+stage: Seedling
+audience: Everyone
 ---
 
 How long have you been working on a project with nothing to show?

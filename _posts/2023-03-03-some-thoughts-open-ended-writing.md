@@ -6,6 +6,8 @@ image:
 date: 2023-03-03
 category: Notes
 tags: [Writing, Digital Gardening]
+stage: Seedling
+audience: Everyone
 ---
 
 Writing online, especially for a blog, can feel difficult. Especially for a (recovering) social media and content marketer like myself. Yes, it’s easy to make a blog. It seems like there are constantly new tools popping up promising to help you blog, build a newsletter, or post on social media.
