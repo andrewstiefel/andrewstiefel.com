@@ -1,14 +1,12 @@
 ---
-layout: page-blank
-title: Thanks
+layout: page
+title: Welcome
 description: Thanks for signing up for my email list. I'm glad you're here.
 permalink: /thanks/
 sitemap: false
 ---
 
-# Welcome!
-
-Thanks for signing up for my email list! I'm glad you're here. This is where I devote a lot of my time and energy, and I look forward to sharing my writing with you.
+This is where I devote a lot of my time and energy, and I look forward to sharing my writing with you.
 
 This is a conversation, not an email blast, so please write to me any time. Tell me what you're working on, share something cool you've made, or ask me a question.
 
