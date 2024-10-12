@@ -93,7 +93,7 @@ pre[class*=language-] {
 
 @layer components {
   .prose-custom {
-    @apply prose-gray max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-serif prose-headings:font-normal prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h4:sm:text-[1.25rem] prose-h2:mt-8 prose-h2:mb-3 prose-blockquote:bg-gray-100 dark:prose-blockquote:bg-gray-800;
+    @apply prose-gray max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-serif prose-headings:font-normal prose-h1:font-display prose-h1:text-5xl prose-h1:mb-8 prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h3:mt-0 prose-h4:mb-6 prose-h4:sm:text-[1.25rem] prose-h4:mb-5 prose-h5:font-sans prose-h5:font-semibold prose-h5:text-sm prose-h5:uppercase prose-h5:mb-4 prose-h6:font-sans prose-h6:text-sm prose-h6:uppercase prose-h6:mb-2 prose-h2:mt-8 prose-h2:mb-3 prose-blockquote:bg-gray-100 dark:prose-blockquote:bg-gray-800 prose-th:font-sans prose-th:font-semibold;
   }
 }
 

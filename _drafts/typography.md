@@ -11,7 +11,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Amet purus gravida quis blandit turpis cursus in. Posuere urna nec tincidunt praesent semper feugiat. Mattis rhoncus urna neque viverra. Eu sem integer vitae justo eget magna fermentum iaculis eu. Sit amet consectetur adipiscing elit ut aliquam purus. Tempor orci dapibus ultrices in iaculis nunc sed augue. Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
 
-### This is a sample heading
+![Example photo embed](/assets/img/reeves-pheasent.jpg "Reeve's Pheasant")
+
+At tellus at urna condimentum mattis pellentesque id nibh tortor. Posuere lorem ipsum dolor sit amet. Nulla aliquet enim tortor at. Est ultricies integer quis auctor.
+
+## This is a sample heading
 
 Amet purus gravida quis blandit turpis cursus in. Posuere urna nec tincidunt praesent semper feugiat. Mattis rhoncus urna neque viverra. Eu sem integer vitae justo eget magna fermentum iaculis eu. Sit amet consectetur adipiscing elit ut aliquam purus. Tempor orci dapibus ultrices in iaculis nunc sed augue. Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
 
@@ -48,3 +52,30 @@ Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. M
 > This is a blockquote example for you.
 
 Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
+
+## Code needs to look good, too
+
+Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
+
+```js
+module.exports = {
+  purge: [],
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+}
+```
+Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
+
+## We also need to style tables
+
+Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
+
+| Column 1      | Column 2      | Column 3      |
+| ------------- | ------------- | ------------- |
+| Cell 1, Row 1 | Cell 2, Row 1 | Cell 3, Row 1 |
+| Cell 1, Row 2 | Cell 1, Row 2 | Cell 3, Row 2 |
+
+Eu sem integer vitae justo eget magna fermentum iaculis eu. Sit amet consectetur adipiscing elit ut aliquam purus. Tempor orci dapibus ultrices in iaculis nunc sed augue. Penatibus et magnis dis parturient montes. 
