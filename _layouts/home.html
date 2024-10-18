@@ -6,8 +6,13 @@ title: Home
 {% include layout/header.html %}
 <main class="mx-auto max-w-screen-xl px-6 lg:px-24 mb-auto">
   <section class="grid grid-cols-6 py-6">
-    <div class="col-span-full xl:col-span-4 xl:col-start-2 prose prose-custom text-lg font-serif dark:prose-invert bg-gray-150 dark:bg-gray-800 rounded p-8">
-      {{ content }}
+    <div class="col-span-full xl:col-span-4 xl:col-start-2 bg-gray-150 dark:bg-gray-800 rounded p-8">
+      <div class="prose prose-custom text-lg font-serif dark:prose-invert mb-6">
+        {{ content }}
+      </div>
+      <div>
+        {% include forms/newsletter-default.html %}
+      </div>
     </div>
   </section>
   {% include helpers/posts-featured.html %}
