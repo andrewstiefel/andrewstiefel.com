@@ -123,7 +123,7 @@ Finally, run `git remote -v` to confirm that Git is using the correct remote rep
 ## Resources
 
 - [Configure Multiple Git Signing Setups](https://developer.1password.com/docs/ssh/git-commit-signing#configure-multiple-commit-signing-setups "Configure Multiple Git Commit Signing Setups") (1Password)
-- [Use Multiple GitHub Accounts](https://developer.1password.com/docs/ssh/agent/advanced#use-multiple-github-accounts "Use Multiple GitHub Accounts")(1Password)
+- [Use Multiple GitHub Accounts](https://developer.1password.com/docs/ssh/agent/advanced#use-multiple-github-accounts "Use Multiple GitHub Accounts") (1Password)
 - [Adding a New SSH Key to Your GitHub Account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account "Adding a New SSH Key to Your GitHub Account") (GitHub)
 - [Register a Public SSH Key with GitHub](https://developer.1password.com/docs/ssh/git-commit-signing#step-2-register-your-public-key "Register a Public SSH Key with GitHub") (1Password)
 - [Testing Your SSH Connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection "Testing Your SSH Connection") (GitHub)

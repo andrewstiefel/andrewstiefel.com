@@ -13,19 +13,19 @@ Whether you are marketing to software developers, scientists, academic audiences
 But writing for technical audiences is a unique skill that requires a different set of techniques than copywriting for a consumer marketing campaign. You need not only an in-depth understanding of the subject but also the ability to convey complex information clearly and concisely. 
 The following tips can help you to communicate your ideas more effectively.
 
-## Use simple language
+## Know your audience
+
+One of the tricky aspects of writing for technical audiences is knowing when to simplify something, and when to assume a level of advanced knowledge. Nothing drives developers, scientists, and other technical audiences away faster than overly simplified, 101-level writing. Occasionally, you do need 101-level content! But know what level of information your audience should already know.
+
+For example, I often write about API technologies. In 101-level content, I might define that the acronym API stands for an application programming interface. But if I start an article for a technical audience by introducing “what is an API” and defining the acronym, they are likely to quit reading and look for a resource that is more aligned with their knowledge level.
+
+## Use clear language
 
 When writing technical documents, it can be tempting to use complex technical jargon and terminology. However, this can often make your writing more difficult to understand, especially for those who are not familiar with the subject. 
 
 To avoid confusion, it is best to use simple, clear language that is easy to understand. This means avoiding overly technical terms and breaking down complex concepts into more digestible pieces. You should also summarize key ideas in bullet points, which can help reinforce your ideas and improve retention.
 
 One of the most important first lessons I learned was to avoid adverbs whenever possible, especially in headlines. Adverbs typically make writing “feel like marketing” because they make broad claims (for example, “quickly, effortlessly, rapidly, always”).
-
-## Know your audience
-
-One of the tricky aspects of writing for technical audiences is knowing when to simplify something, and when to assume a level of advanced knowledge. Nothing drives developers, scientists, and other technical audiences away faster than overly simplified, 101-level writing. Occasionally, you do need 101-level content! But know what level of information your audience should already know.
-
-For example, I often write about API technologies. In 101-level content, I might define that the acronym API stands for an application programming interface. But if I start an article for a technical audience by introducing “what is an API” and defining the acronym, they are likely to quit reading and look for a resource that is more aligned with their knowledge level.
 
 ## Provide evidence
 

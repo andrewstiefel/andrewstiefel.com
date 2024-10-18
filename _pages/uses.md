@@ -14,19 +14,19 @@ permalink: /uses/
 
 ## Software
 - Arc
+- Obsidian
 - Raycast
-- VSCode
 - Things
+- VS Code
 
 ## Services
 - 1Password
 - Backblaze
-- Proton
+- Proton Mail
 - Readwise
-- Reflect
 - Raindrop
-- Things
 - Tidal
 - Ulysses
 
+----
 Check out [uses.tech](https://uses.tech) for more lists like this one.
