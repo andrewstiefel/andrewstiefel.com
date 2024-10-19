@@ -7,7 +7,7 @@ layout: page
     {% if currentdate != date %}
         {% unless forloop.first %}</ul>{% endunless %}
         <h2 id="{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
-        <ul class="list-none pl-0">
+        <ul class="list-disc">
         {% assign date = currentdate %}
     {% endif %}
         <li class="leading-8"><a class="underline" href="{{ post.url }}">{{ post.title }}</a></li>
