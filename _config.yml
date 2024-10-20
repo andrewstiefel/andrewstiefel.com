@@ -62,7 +62,6 @@ jekyll_tidy:
 
 ### OPEN GRAPH IMAGE SETTTINGS
 
-bareUrl: "andrewstiefel.com"
 ogImageBackground: "/assets/img/og-background.jpg"
 cloudinary_cloud: andrewstiefel
 
