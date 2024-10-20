@@ -60,6 +60,11 @@ jekyll-archives:
 jekyll_tidy:
   exclude: ["feed.xml"]
 
+### OPEN GRAPH IMAGE SETTTINGS
+
+ogImageBackground: "/assets/img/og-background.jpg"
+cloudinary_cloud: andrewstiefel
+
 exclude:
   - Gemfile
   - Gemfile.lock

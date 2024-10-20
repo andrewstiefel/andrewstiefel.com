@@ -1,0 +1,17 @@
+{% assign ogImageUrl = 'https://res.cloudinary.com/' | append: site.cloudinary_cloud %}
+
+{% assign ogImageUrl = ogImageUrl | append: '/image/fetch/w_1200,h_630,q_100' %}
+
+{% if page.title %}
+    {% assign title = page.title %}
+{% else %}
+    {% assign title = site.title %}
+{% endif %}
+
+{% assign ogImageUrl = ogImageUrl | append: '/l_text:Inter_48_bold:' | append: title %}
+
+{% assign ogImageUrl = ogImageUrl | append: ',c_fit,w_1066,co_rgb:000,h_180' %}
+
+{% assign ogImageUrl = ogImageUrl | append: '/' | append: site.url | append: site.ogImageBackground %}
+
+<meta property="og:image" content="{{ ogImageUrl | uri_escape }}">
