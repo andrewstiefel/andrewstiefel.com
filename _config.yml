@@ -62,7 +62,7 @@ jekyll_tidy:
 
 ### OPEN GRAPH IMAGE SETTTINGS
 
-ogImageBackground: "/assets/img/og-background.jpg"
+ogImageBackground: '/assets/img/og-background.png'
 cloudinary_cloud: andrewstiefel
 
 exclude:
