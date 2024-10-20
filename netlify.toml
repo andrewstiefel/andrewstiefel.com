@@ -11,10 +11,10 @@
 
 [[plugins]]
   package = "netlify-plugin-cloudinary"
-  imagesPath = "/assets/img"
 
   [plugins.inputs]
   cloudName = "andrewstiefel"
+  imagesPath = "/assets/img"
 
 [functions]
   directory = "netlify/functions/"
