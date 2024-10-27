@@ -32,7 +32,7 @@ highlighter: none
 include: [_pages, _redirects]
 permalink: '/:title/'
 tailwind:
-  version: 3.4.3
+  version: 3.4.13
 
 defaults:
   -
