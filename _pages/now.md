@@ -7,7 +7,7 @@ permalink: /now/
 This page was updated October 17, 2024 from near Seattle, Washington. The purpose of the page is to share what I'm up to and working on currently. I aim to update it every few months.
 
 ## Currently
-- Planting trees, bushes, and the winnter garden
+- Planting trees, bushes, and the winter garden
 - Painting the house, tables, and other outdoor furniture
 
 ## Making
