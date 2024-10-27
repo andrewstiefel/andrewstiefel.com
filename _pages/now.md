@@ -7,12 +7,12 @@ permalink: /now/
 This page was updated October 17, 2024 from near Seattle, Washington. The purpose of the page is to share what I'm up to and working on currently. I aim to update it every few months.
 
 ## Currently
-- Planting trees, bushes, and the winter garden
-- Painting the house, tables, and other outdoor furniture
+- Planting trees, bushes, and the winter vegetable garden
+- Painting the house, picnic table, and other outdoor furniture
 
 ## Making
 - Hacking away on projects like this site and whatever else I can find time for
-- Building NASA Lego sets
+- Writing on this blog about whatever comes to mind
 
 ## Reading
 - James by Percival Everett

@@ -26,7 +26,6 @@ permalink: /uses/
 - Readwise
 - Raindrop
 - Tidal
-- Ulysses
 
 ----
 Check out [uses.tech](https://uses.tech) for more lists like this one.
