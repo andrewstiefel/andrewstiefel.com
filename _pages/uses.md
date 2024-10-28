@@ -1,8 +1,12 @@
 ---
 layout: page
-title: What I Use
+title: Uses
 permalink: /uses/
 ---
+
+Developers love talking about their tools. These are the tools I like to use to be productive and have fun. You can find more examples at [uses.tech](https://uses.tech).
+
+Last updated: <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time>
 
 ## Hardware
 - MacBook Pro 13"
@@ -15,6 +19,8 @@ permalink: /uses/
 ## Software
 - Arc
 - Obsidian
+- Pocket Casts
+- Raindrop
 - Raycast
 - Things
 - VS Code
@@ -24,8 +30,4 @@ permalink: /uses/
 - Backblaze
 - Proton Mail
 - Readwise
-- Raindrop
 - Tidal
-
-----
-Check out [uses.tech](https://uses.tech) for more lists like this one.
