@@ -4,7 +4,7 @@ title: Now
 permalink: /now/
 ---
 
-This page was last updated on <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time> from near Seattle, Washington. The purpose of the page is to share what I'm up to and working on currently. I aim to update it every few months.
+This page was last updated on <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time> from near Seattle, Washington. The purpose of the page is to share what I'm up to currently. I aim to update it every few months.
 
 ## Currently
 - Imagining what life I'll be proud of ten years from now
