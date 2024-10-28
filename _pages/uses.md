@@ -28,6 +28,12 @@ Last updated: <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemp
 ## Services
 - 1Password
 - Backblaze
-- Proton Mail
+- Proton
 - Readwise
 - Tidal
+
+## Music
+- Ableton Live
+- Finale
+- Logic Pro
+- Max
