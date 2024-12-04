@@ -62,11 +62,17 @@ Overall I’m pretty happy with the results of the project. I learned a lot alon
 **Implement Tailwind CSS to replace Bulma**
 I used the [Bulma CSS Framework][15]{:target="_blank" rel="noopener noreferrer"} to scaffold the development of this project. Previously, I used Bootstrap for a few starter projects. Bulma is great, but I’ve been wanting something easier to customize. Enter [Tailwind CSS][16]{:target="_blank" rel="noopener noreferrer"}, which is a just-in-time, atomic framework for creating CSS. I can build and design the website, all within HTML. Then, I can filter out any unused classes, resulting in a very small file.
 
+> **Update 2024-12-01:** I completed this work back in May 2022. I am currently using the excellent [jekyll-tailwindcss plugin](https://github.com/vormwald/jekyll-tailwindcss) to implement Tailwind CSS for my site. I wraps the Tailwind CSS CLI and lets you specify which version of Tailwind CSS you want to use.
+
 **Buildout functionality for my digital garden**
 I expect to write about this more in the coming months, but I’m planning to treat this blog more like [a digital garden][17]{:target="_blank" rel="noopener noreferrer"}. There are some core functionalities I want to add, like sides notes, bi-directional links, and search, to make the reading experience more rich and interconnected.
 
+> **Update 2024-12-01:** I'm still working on this. Overall this feels a bit more like a distraction from writing than a priority. I have played around with introducing categories for evergreen, seedling, and budding notes to indicate how complete an idea/post is.
+
 **Rebuild the site with Gatsby, Next, or another framework**
 I really like Jekyll, so this one isn’t urgent. But I’m starting to see how javascript frameworks like Gatsby, Next, or Vue could enable some new capabilities. One function that stands out to me is the ability to import markdown (my blog posts) from a separate Github repository. This way my thinking and writing could truly exist separately (and under version control!) from the frontend visual design.
+
+> **Update 2024-12-01:** I no longer plan to do this for a variety of reasons. I may write more about why in the future, but the short version for now is that I _hate_ dependencies and heavy frameworks. I like how simple Jekyll is to run, and that the final result is really just a bunch of html files, one stylesheet, and one bit of non-critical, vanilla Javascript.
 
 I hope you have a similar positive experience, and please reach out if you have any questions about building your website with Jekyll and Netlify.
 
