@@ -23,9 +23,9 @@
 {% if page.title == "Home" %}<meta property="og:title" content="{{ site.title }}" />{% else %}<meta property="og:title" content="{{ page.title }}" />{% endif %}
 <meta property="og:description" content="{{ page.description }}" />
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-{% include helpers/og-image.html %}
+<meta property="og:image" content="{% include helpers/og-image.html %}" />
 
-<!-- Mastodon -->
+<!-- Mastodon  -->
 <link name="mastodon" href="{{ site.author.mastodon }}" rel="me"/>
 
 <!--Schema.org-->
@@ -41,7 +41,7 @@
           "sameAs": [
               "https://www.linkedin.com/in/{{ site.author.linkedin }}",
               "{{ site.author.mastodon }}",
-              "https://medium.com/@{{ site.author.medium }}",
+              "{{ site.author.bluesky }}",
               "https://github.com/{{ site.author.github }}"
           ]
       },
@@ -51,9 +51,9 @@
       "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
       "image": {
           "@type": "ImageObject",
-          "url": "{{ page.image }}",
-          "width": 1920,
-          "height": 1080
+          "url": "{% include helpers/og-image.html %}",
+          "width": 1200,
+          "height": 630
       },
       "description": "{{ page.description }}",
       "mainEntityOfPage": {
