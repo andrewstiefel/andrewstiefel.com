@@ -13,7 +13,7 @@ document.querySelector('#theme-toggle').addEventListener('click', () => {
   if (!html.classList.contains('dark') && !html.classList.contains('light')) {
     html.classList.remove('light');
     html.classList.add('theme-dark', 'dark');
-    themeText.innerText = "Dark theme";
+    themeText.innerText = "Dark";
 
     // store the value whenever the user explicitly chooses dark mode
     localStorage.setItem('theme', 'dark');
@@ -21,14 +21,14 @@ document.querySelector('#theme-toggle').addEventListener('click', () => {
   } else if (html.classList.contains('dark')) {
     html.classList.remove('theme-dark', 'dark');
     html.classList.add('light');
-    themeText.innerText = "Light theme";
+    themeText.innerText = "Light";
 
     // store the value whenever the user explicitly chooses light mode
     localStorage.setItem('theme', 'light');
 
   } else {
     html.classList.remove('theme-dark', 'dark', 'light');
-    themeText.innerText = "System theme";
+    themeText.innerText = "System";
 
     // remove the stored value when the user chooses to respect the OS prefernce
     localStorage.removeItem('theme'); 
@@ -38,10 +38,10 @@ document.querySelector('#theme-toggle').addEventListener('click', () => {
 // Evaluate if we need to update the theme toggle text
 window.addEventListener('load', (event) => {
   if (localStorage.theme === 'dark') {
-    themeText.innerText = "Dark theme";
+    themeText.innerText = "Dark";
   }
   else if (localStorage.theme === 'light') {
-    themeText.innerText = "Light theme";
+    themeText.innerText = "Light";
   }
   else {
     console.log()
