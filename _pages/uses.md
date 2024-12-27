@@ -4,12 +4,10 @@ title: Uses
 permalink: /uses/
 ---
 
-Developers love talking about their tools. These are the tools I like to use to be productive and have fun. You can find more examples at [uses.tech](https://uses.tech).
-
-Last updated: <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time>
+These are the tools I like to use to be productive and have fun. You can find more examples at [uses.tech](https://uses.tech). This list was last updated <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time>.
 
 ## Hardware
-- MacBook Pro 13"
+- MacBook Pro 14"
 - Magic Keyboard
 - Magic Mouse
 - Shure MV7 Microphone
@@ -17,7 +15,6 @@ Last updated: <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemp
 - LG UltraFine 24" Monitor
 
 ## Software
-- Arc
 - Obsidian
 - Pocket Casts
 - Raindrop
@@ -32,7 +29,7 @@ Last updated: <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemp
 - Readwise
 - Tidal
 
-## Music
+## Music Production
 - Ableton Live
 - Finale
 - Logic Pro
