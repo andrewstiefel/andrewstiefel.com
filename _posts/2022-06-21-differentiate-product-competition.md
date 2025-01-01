@@ -27,7 +27,7 @@ It just means that a great product is table stakes.
 
 Companies that are beating their competitors have a great product and build a unique market position.
 
-Here's how you differentiate your product from the competition in 2022:
+Here's how you differentiate your product from the competition:
 
 1. [Target a niche market segment](#target-a-niche-market-segment)
 2. [Tell a differentiated story](#tell-a-differentiated-story)
