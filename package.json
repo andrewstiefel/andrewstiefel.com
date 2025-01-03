@@ -7,10 +7,13 @@
   "scripts": {
     "preinstall": "cd netlify/functions && npm install",
     "start": "bundle exec jekyll serve --livereload",
-    "build": "jekyll build"
+    "build": "jekyll build && uglifyjs _site/assets/js/bundle.js -o _site/assets/js/bundle.min.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/andrewstiefel/andrewstiefel.com"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.19.3"
   }
 }
