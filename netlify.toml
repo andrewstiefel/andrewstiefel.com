@@ -2,6 +2,9 @@
   command = "npm run build"
     publish = "_site/"
 
+[context.production.environment]
+  JEKYLL_ENV="production"
+
 [build.environment]
   RUBY_VERSION = "3.3.5"
 
