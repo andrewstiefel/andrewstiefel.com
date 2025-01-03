@@ -5,12 +5,15 @@
   "author": "Andrew Stiefel",
   "license": "MIT",
   "scripts": {
+    "build": "jekyll build && npm run uglify",
     "preinstall": "cd netlify/functions && npm install",
     "start": "bundle exec jekyll serve --livereload",
-    "build": "jekyll build"
+    "uglify": "uglifyjs --output assets/js/bundle.min.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/andrewstiefel/andrewstiefel.com"
-  }
-}
+  },
+"devDependencies": {
+  "uglify-js":
+},

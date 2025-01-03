@@ -1,11 +1,3 @@
-// Track click events with Fathom Analytics
-var link_elements = document.querySelectorAll('[data-fathom]');
-for (var i = 0, len = link_elements.length; i < len; i++) {
-    link_elements[i].addEventListener('click', function(event) {
-        fathom.trackGoal(event.currentTarget.getAttribute('data-fathom'), 0);
-}, false); }
-
-// Toggle document theme
 let html = document.getElementById('html-tag');
 let themeText = document.querySelector(".theme-text");
 
@@ -46,19 +38,4 @@ window.addEventListener('load', (event) => {
   else {
     console.log()
   }
-});
-
-// Toggle mobile menu
-
-var body = document.body;
-const button = document.querySelector('#menu-button');
-const menu = document.querySelector('#menu');
-const burger = document.querySelector('#burger');
-const close = document.querySelector('#close');
-
-button.addEventListener('click', () => {
-  menu.classList.toggle('hidden');
-  burger.classList.toggle('hidden');
-  close.classList.toggle('hidden');
-  body.classList.toggle('overflow-hidden');
 });
