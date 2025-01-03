@@ -11,10 +11,10 @@ Optimized to have [a very low carbon footprint](https://digitalbeacon.co/report/
 * RSS feed with full content
 * Simple design focused on content
 * Code highlighting via Prism JS
-* Newsletter sign up form using Netlify Functions and Buttondown API
 
 ## Get started
 * `bundle install` to install Ruby gems
+* `npm install` to install node modules
 * `npm run start` to run the Jekyll development server with live reload enabled
 
 ## Build the site

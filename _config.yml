@@ -31,7 +31,6 @@ include: [_pages]
 permalink: '/:title/'
 tailwind:
   version: 3.4.13
-
 defaults:
   -
     scope:
@@ -63,11 +62,8 @@ cloudinary_cloud: andrewstiefel
 exclude:
   - Gemfile
   - Gemfile.lock
-  - gulpfile.babel.js
   - LICENSE.md
-  - node_modules
   - package.json
-  - package-lock.json
   - README.md
   - tailwind.config.js
   - netlify.toml
