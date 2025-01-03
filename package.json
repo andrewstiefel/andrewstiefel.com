@@ -5,7 +5,6 @@
   "author": "Andrew Stiefel",
   "license": "MIT",
   "scripts": {
-    "preinstall": "cd netlify/functions && npm install",
     "start": "bundle exec jekyll serve --livereload",
     "build": "jekyll build"
   },
