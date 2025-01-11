@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Weighing in on AI Hype and Risk
-description: There’s been a fight over the past few days about Casey Newton's article, "The phony comforts of AI skepticism."
+description: There’s been a fight over the past few days about Casey Newton's article, "The phony comforts of AI skepticism." Here's my take.
 image:
 date: 2024-12-10
 category: Essays
