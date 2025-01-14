@@ -22,6 +22,10 @@
   cloudName = "andrewstiefel"
   imagesPath = "/assets/img"
 
+[functions]
+  directory = "netlify/functions/"
+  node_bundler = "esbuild"
+
 [[redirects]]
   from = "https://andrew.st/*"
   to = "https://andrewstiefel.com/:splat"
