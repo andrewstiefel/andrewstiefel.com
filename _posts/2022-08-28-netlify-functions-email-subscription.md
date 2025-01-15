@@ -141,7 +141,7 @@ const response = await fetch( 'https://api.convertkit.com/v3/forms/<YOUR_FORM_ID
 ```
 
 ### Buttondown Subscription Form
-[Buttondown’s API](https://buttondown.email/refer/andrewstiefel){:data-fathom="Referral"} sends the authorization in the headers rather than the body, so you’ll need to adapt the code slightly:
+[Buttondown’s API](https://buttondown.email/refer/andrewstiefel){:data-fathom="Referral click"} sends the authorization in the headers rather than the body, so you’ll need to adapt the code slightly:
 
 ```js
 const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {

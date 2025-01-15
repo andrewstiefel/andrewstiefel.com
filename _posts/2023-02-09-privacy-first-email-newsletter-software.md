@@ -8,7 +8,7 @@ category: Articles
 tags: [Marketing, Privacy]
 ---
 
-When I first started to look for privacy-first email newsletter options back in 2019, there just weren’t many options. There were great privacy-first website analytics tools like [Fathom Analytics](https://usefathom.com/ref/FBJDFZ){:title="Fathom Analytics" data-fathom="Referral" target="_blank"}, but nothing for email. Nearly every provider required tracking pixels by default.
+When I first started to look for privacy-first email newsletter options back in 2019, there just weren’t many options. There were great privacy-first website analytics tools like [Fathom Analytics](https://usefathom.com/ref/FBJDFZ){:title="Fathom Analytics" data-fathom="Referral click" target="_blank"}, but nothing for email. Nearly every provider required tracking pixels by default.
 
 I want to briefly acknowledge that there are some legitimate reasons why email newsletter software providers might require pixels. Tracking pixels are one way to evaluate a sender's reputation and ensure overall deliverability for everyone using their platform. Higher open and click rates indicate that a list is engaged. The reverse could indicate that an account is sending spam emails.
 
@@ -33,7 +33,7 @@ Below is a list of the email newsletter services that met the criteria, as well 
 | MailCoach  | Off by default | EU          | $9.99                      |
 
 ## Buttondown
-[Buttondown](https://buttondown.email/refer/andrewstiefel){:title="Buttondowm" target="_blank" data-fathom="Referral"} is a minimalist tool for writing and producing email newsletters. Based in the United States, it is run as an indie software business. Buttondown gets a lot of things right, like privacy-first by default (you can, however, opt-in to tracking if you want), the ability to write in markdown, RSS-to-Email tools so you can run your own version of Substack, and a first-party API.
+[Buttondown](https://buttondown.email/refer/andrewstiefel){:title="Buttondowm" target="_blank" data-fathom="Referral click"} is a minimalist tool for writing and producing email newsletters. Based in the United States, it is run as an indie software business. Buttondown gets a lot of things right, like privacy-first by default (you can, however, opt-in to tracking if you want), the ability to write in markdown, RSS-to-Email tools so you can run your own version of Substack, and a first-party API.
 
 ## SendStack
 [SendStack](https://getsendstack.com/){:title="SendStack" target="_blank"} is one of the newest tools and was released by a team based in the European Union (Germany, specifically). It has fewer features than Buttondown but a much friendlier user interface. They also make their first-party API available to free plans, which is a great feature for developers or anyone wanting to [build their own first-party email newsletter subscription form](https://andrewstiefel.com/netlify-functions-email-subscription/). SendStack takes a much harder line on automation, so there is no RSS-to-Email function or other automation tools.
