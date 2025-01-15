@@ -8,7 +8,7 @@ permalink: /letters/
 **Margin Notes** is my private email list where I share a few long-form articles each month. I don’t sell anything here — it’s fulfilling for me when people read, enjoy, and share ideas.
 
 <div class="max-w-md mx-auto py-3">
-{% include forms/buttondown-default.html %}
+{% include forms/newsletter-default.html %}
 </div>
 
 Once you sign up, you will receive an email asking you to confirm your subscription. You can expect to receive at most 1-2 emails per month.
@@ -30,5 +30,5 @@ Rather than add yet another marketing newsletter or round up of the week’s top
 If that's not for you, you can unsubscribe at any time. But I hope you enjoy it and find it useful.
 
 <div class="max-w-md mx-auto py-3">
-{% include forms/buttondown-default.html %}
+{% include forms/newsletter-default.html %}
 </div>
