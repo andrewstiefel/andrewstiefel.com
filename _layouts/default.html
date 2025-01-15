@@ -4,6 +4,6 @@
   <body class="bg-gray-50 text-gray-900 antialiased dark:bg-gray-900 dark:text-gray-100">
       {{ content }}
     <!-- Scripts-->
-    <script defer src="{% if jekyll.environment == 'production' %}/assets/js/bundle.min.js{% else %}/assets/js/bundle.js{% endif %}"></script>
+    <script defer src="{% if jekyll.environment == 'production' %}/assets/js/bundle.min.js{% elsif jekyll.environment == 'staging' %}/assets/js/bundle.min.js{% else %}/assets/js/bundle.js{% endif %}"></script>
   </body>
 </html>

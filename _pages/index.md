@@ -9,4 +9,4 @@ Hey, I'm Andrew 👋
 
 Welcome to my digital garden, a slowly growing collection of of working notes and essays about things I’ve learned or made over the years.
 
-You can [browse the archive](/archive/) or sign up to get posts by [email](/letters/) or <a href="/feed.xml" data-fathom="YKQ6ZLVM" target="_blank">RSS</a>.
+You can [browse the archive](/archive/) or sign up to get posts by [email](/letters/) or <a href="/feed.xml" data-fathom="RSS subscription" target="_blank">RSS</a>.
