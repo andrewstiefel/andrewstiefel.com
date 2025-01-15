@@ -1,5 +1,8 @@
-var link_elements = document.querySelectorAll('[data-fathom]');
-for (var i = 0, len = link_elements.length; i < len; i++) {
-    link_elements[i].addEventListener('click', function(event) {
-        fathom.trackGoal(event.currentTarget.getAttribute('data-fathom'), 0);
-}, false); }
+window.addEventListener('load', (event) => {
+    document.querySelectorAll('[data-fathom]').forEach(item => {
+        item.addEventListener('click', event => {
+            let dataFathom = item.getAttribute('data-fathom');
+            fathom.trackEvent(`${dataFathom}`);
+        });
+    });
+});
