@@ -10,11 +10,13 @@ This website was first published in the fall of 2011 in Waco, Texas. It was buil
 Everything is open souce and published on <a href="https://github.com/andrewstiefel/andrewstiefel.com">GitHub</a> if you'd like to poke around.
 
 ## Technologies
-I used <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> to generate the static files for this website. The site is deployed with <a href="https://www.netlify.com/" title="Netlify">Netlify</a> so I don't have to worry about managing a server. Images are served by <a href="https://cloudinary.com/">Cloudinary</a>.
+I use <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> to generate the static files for this website. The site is deployed with <a href="https://www.netlify.com/" title="Netlify">Netlify</a> so I don't have to worry about managing a server. Images are served by <a href="https://cloudinary.com/">Cloudinary</a>.
 
 I used <a href="https://tailwindcss.com/" title="Tailwind CSS">Tailwind CSS</a> to build and design the site theme and individual components. An atomic design framework, it provides a set of utility classes for your HTML markup. The result is a tiny CSS file (less than 10KB) without any of the bloat you find with other CSS frameworks. 
 
 Scripts are vanilla Javascript. I wanted to avoid using any heavy JS libraries.
+
+As a result the page size is under 500KB, and often under 200KB depending on the content.
 
 All the individual posts are written in markdown for ease of portability. My content management system (CMS) is a bunch of files and folders on my operating system. I use GitHub for version control and backups.
 
