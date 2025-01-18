@@ -5,7 +5,7 @@ description: Markdown is simple, portable, and free. And it works beautifully wi
 image:
 date: 2025-01-17
 category: Essays
-tags: [Technology, Productivity, Writing]
+tags: [Technology, Productivity, Writing, Artificial Intelligence]
 ---
 
 Files, not apps. I'm convinced this is the best way to work in the future.
