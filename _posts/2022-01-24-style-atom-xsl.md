@@ -101,7 +101,7 @@ This Github Gist shows an [example of the XLST stylesheet I created for my websi
 
 Save your file as `feed.xsl` and add the tag below to your XML file. Make sure the href tag points to the correct location and file name for your website.
 
-```xml
+```
 <?xml-stylesheet href="/feed.xsl" type="text/xsl"?>
 ```
 
