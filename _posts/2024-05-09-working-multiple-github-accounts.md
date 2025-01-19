@@ -20,7 +20,7 @@ Fortunately, this only takes a few minutes to setup!
 
 All my repositories are saved under a GitHub folder and then I use directories to organize my projects by account. Although I prefer to keep personal and work separate, you could configure all three accounts for a single device like in the example below:
 
-```yaml
+```
 ~/github
 ├── /demo
 ├── /personal
@@ -33,7 +33,7 @@ This will make it very easy to configure which profile and SSH key to use in the
 
 In this example, I'm setting my personal Git configuration as the global default. Using `[includeIf]` I specify a different `.gitconfig` file for the **demo **and **work **directories.
 
-```yaml
+```shell
 [user]
   name = <github_personal_name>
   email = <github_personal_email>
@@ -59,7 +59,7 @@ In this example, I'm setting my personal Git configuration as the global default
 
 Next I'll create `.gitconfig` files and save them in the **demo **and **work **directories. I'll use a similar template, but this time I'll provide the GitHub name, email, and public signing key for my demo and work accounts.
 
-```yaml
+```shell
 [user]
   name = <github_work_name>
   email = <github_work_email>
@@ -79,11 +79,11 @@ Next I'll create `.gitconfig` files and save them in the **demo **and **work *
 
 In order to call the correct SSH keys, I'll need to update the SSH agent config file located at `~/.ssh/config`.
 
-I start by setting the 1Password SSh agent as the default for all hosts. Then I create custom hosts for each account, in this case** Demo**,** Personal**, and** Work**.
+I start by setting the 1Password SSH agent as the default for all hosts. Then I create custom hosts for each account, in this case** Demo**,** Personal**, and** Work**.
 
 Next, I downloaded the public keys from 1Password for my demo, personal, and work accounts. I renamed each file (for example, `demo_git.pub`) and saved the all to my `~/.ssh/` folder.
 
-```yaml
+```shell
 # By default, use the 1Password SSH agent for all hosts
 Host *
   IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
@@ -114,7 +114,7 @@ Host gh-work
 
 Finally, I'll need to reset each individual repository so it uses one of the hosts specified above. This will make sure it uses the correct SSH key to authenticate with GitHub and when pushing Git commits.
 
-```yaml
+```shell
 git remote set-url origin <host>:<organization>/<repository>.git
 ```
 

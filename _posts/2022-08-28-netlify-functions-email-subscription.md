@@ -54,10 +54,10 @@ Next, specify where Netlify should look for your functions. Edit your netlify.to
 
 ```yaml
 [build]
-	base = "."
+   base = "."
 
 [functions]
-  directory = "netlify/functions/"
+   directory = "netlify/functions/"
 ```
 
 Create a function file in the directory you specified above. If you used the default functions directory, you should save your function at `YOUR_BASE_DIRECTORY/netlify/functions`.
@@ -84,9 +84,9 @@ import fetch from 'node-fetch';
 
 NOTE: When I was writing this post, many of the tutorials available used the `require` method to import the Fetch API which resulted in errors when I tried to deploy the function. Make sure you use the method I described above. If you upgrade to node-fetch v3, you'll also need to update either your netlify.toml file or package.json to use ESM.
 
-```YAML
-  [functions]
-    node_bundler = "esbuild"
+```yaml
+[functions]
+   node_bundler = "esbuild"
 ```
 
 You can find more information about [how to make a fetch request using node-fetch v3](https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/ "Netlify Blog") in an excellent guide by Tatyana Novell on the Netlify blog.
@@ -120,7 +120,7 @@ Using ConvertKit as an example, send a POST request to `https://api.convertkit.c
 
 To find the form ID, navigate to **Grow \> Landing Pages & Forms**, select the form you want to use, and copy the ID number from the url:
 
-```js
+```html
 https://app.convertkit.com/forms/designers/<YOUR_FORM_ID>/edit
 ```
 
@@ -128,16 +128,15 @@ The body of the POST request contains the email token and the email address from
 
 ```js
 const response = await fetch( 'https://api.convertkit.com/v3/forms/<YOUR_FORM_ID/subscribe', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify({ 
-			api_key: EMAIL_TOKEN,
-			email: email
-		}),
-	}
-);
+	method: 'POST',
+	headers: {
+		'Content-Type': 'application/json',
+	},
+	body: JSON.stringify({ 
+		api_key: EMAIL_TOKEN,
+		email: email
+	}),
+});
 ```
 
 ### Buttondown Subscription Form
@@ -145,14 +144,13 @@ const response = await fetch( 'https://api.convertkit.com/v3/forms/<YOUR_FORM_ID
 
 ```js
 const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {
-		method: 'POST',
-		headers: {
-			Authorization: `Token ${EMAIL_TOKEN}`,
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify({ email }),
-	}
-);
+	method: 'POST',
+	headers: {
+		Authorization: `Token ${EMAIL_TOKEN}`,
+		'Content-Type': 'application/json',
+	},
+	body: JSON.stringify({ email }),
+});
 ```
 
 ### SendStack Subscription Form
@@ -162,14 +160,13 @@ Add the email token to the headers and the email address to the body of the POST
 
 ```js
 const response = await fetch( 'https://getsendstack.com/api/subscribers', {
-		method: 'POST',
-		headers: {
-			Authorization: `Bearer ${EMAIL_TOKEN}`,
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify({ email }),
-	}
-);
+	method: 'POST',
+	headers: {
+		Authorization: `Bearer ${EMAIL_TOKEN}`,
+		'Content-Type': 'application/json',
+	},
+	body: JSON.stringify({ email }),
+});
 ```
 
 Then capture and log the response from the email service. We do this to diagnose any issues that happened. Netlify makes it easy to check your function’s logs, so use console.log often!
@@ -200,7 +197,7 @@ exports.handler = async (event, context) => {
     const email = JSON.parse(event.body).payload.email
     console.log(`Received a submission: ${email}`)
 
-    const response = await fetch(
+    const response = await fetch (
         'https://api.convertkit.com/v3/forms/{YOUR_FORM-ID}/subscribe', {
             method: 'POST',
             headers: {
