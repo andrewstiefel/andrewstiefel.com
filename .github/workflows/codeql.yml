@@ -15,11 +15,11 @@ on:
   push:
     branches: [ "main" ]
     paths-ignore:
-      - assets/js/bundle.js
+      - /assets/js/bundle.js
   pull_request:
     branches: [ "main" ]
     paths-ignore:
-      - assets/js/bundle.js
+      - /assets/js/bundle.js
   schedule:
     - cron: '17 10 * * 3'
 
