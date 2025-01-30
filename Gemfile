@@ -6,6 +6,6 @@ group :jekyll_plugins do
   gem "jekyll-last-modified-at"
   gem "jekyll-sitemap"
   gem "jekyll-target-blank"
-  gem "jekyll-tailwindcss"
+  gem 'jekyll-tailwindcss', '~> 0.5.0'
   gem "jekyll-tidy"
 end
