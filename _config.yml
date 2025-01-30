@@ -29,8 +29,6 @@ markdown: kramdown
 highlighter: rouge
 include: [_pages]
 permalink: '/:title/'
-tailwind:
-  version: 3.4.13
 
 defaults:
   -
