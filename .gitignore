@@ -1,0 +1,4 @@
+.jekyll-cache
+node_modules
+_site
+.ds_store
