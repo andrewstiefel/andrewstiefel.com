@@ -95,6 +95,8 @@ I prefer to create a new branch and to submit a pull request when I'm ready to p
 
 Now if you visit your project, you'll see your post has automatically been moved to the "done" column!
 
+![GitHub Pull Request](/assets/img/github-pull-request.png){:height="483px" width="760px" class="dark:brightness-75"}
+
 ## Final thoughts
 
 I've been exploring ways to [customize this further by creating new views](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project) — for example, a table view that adds publication dates so I can when I want to publish a post. But most importantly, I'm enjoying the flexibility and close integration between what I write and how it's published. 
