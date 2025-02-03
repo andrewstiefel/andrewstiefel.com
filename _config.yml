@@ -1,23 +1,33 @@
 ### SITE SETTINGS
-title: Andrew Stiefel
-tagline: '@andrewstiefel'
-description: Hey, I'm Andrew Stiefel. Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays.
+title: "Andrew Stiefel"
+tagline: "@andrewstiefel"
+description: "Hey, I'm Andrew Stiefel. Welcome to my digital garden, a slowly growing collection of ideas in the form of working notes and narrative essays."
 url: "https://andrewstiefel.com"
-timezone: America/Los_Angeles
+timezone: "America/Los_Angeles"
+
+# OPEN GRAPH IMAGE SETTINGS
+ogImageBackground: "/assets/img/og-background.png"
+cloudinary_cloud: "andrewstiefel"
 
 ### SITE AUTHOR
 author:
-  name: Andrew Stiefel
-  url: 'https://andrewstiefel.com'
-  email: andrew@andrewstiefel.com
-  twitter: andrewstiefel
-  linkedin: andrewstiefel
-  mastodon: 'https://mas.to/@andrewstiefel'
-  bluesky: 'https://bsky.app/profile/andrewstiefel.bsky.social'
-  medium: andrewstiefel
-  github: andrewstiefel
+  name: "Andrew Stiefel"
+  url: "https://andrewstiefel.com"
+  email: "andrew@andrewstiefel.com"
+  twitter: "andrewstiefel"
+  linkedin: "andrewstiefel"
+  mastodon: "https://mas.to/@andrewstiefel"
+  bluesky: "https://bsky.app/profile/andrewstiefel.bsky.social"
+  medium: "andrewstiefel"
+  github: "andrewstiefel"
 
-### BUILD SETTINGS
+### BUILD & PLUGIN SETTINGS
+markdown: kramdown
+highlighter: rouge
+permalink: "/:title/"
+include:
+  - "_pages"
+
 plugins:
   - jekyll-archives
   - jekyll-last-modified-at
@@ -25,18 +35,14 @@ plugins:
   - jekyll-target-blank
   - jekyll-tailwindcss
   - jekyll-tidy
-markdown: kramdown
-highlighter: rouge
-include: [_pages]
-permalink: '/:title/'
 
+### DEFAULTS
 defaults:
-  -
-    scope:
-      path: ""      # empty string for all files
-      type: posts   # limit to posts
+  - scope:
+      path: ""       # Empty string for all files
+      type: "posts"  # Limit to posts
     values:
-      is_post: true # automatically set is_post=true for all posts
+      is_post: true  # Automatically set is_post=true for all posts
 
 ### JEKYLL ARCHIVE SETTINGS
 jekyll-archives:
@@ -47,25 +53,24 @@ jekyll-archives:
     category: archive-category
     tag: archive-tag
   permalinks:
-    category: '/:name/'
-    tag: '/tag/:name/'
+    category: "/:name/"
+    tag: "/tag/:name/"
 
 ### JEKYLL TIDY SETTINGS
 jekyll_tidy:
-  exclude: ["feed.xml", "assets/js/bundle.js"]
+  exclude:
+    - "feed.xml"
+    - "assets/js/bundle.js"
 
-### OPEN GRAPH IMAGE SETTTINGS
-ogImageBackground: '/assets/img/og-background.png'
-cloudinary_cloud: andrewstiefel
-
+### EXCLUSIONS
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - gulpfile.babel.js
-  - LICENSE.md
-  - node_modules
-  - package.json
-  - package-lock.json
-  - README.md
-  - tailwind.config.js
-  - netlify.toml
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "gulpfile.babel.js"
+  - "LICENSE.md"
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
+  - "README.md"
+  - "tailwind.config.js"
+  - "netlify.toml"
