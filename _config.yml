@@ -5,10 +5,6 @@ description: "Hey, I'm Andrew Stiefel. Welcome to my digital garden, a slowly gr
 url: "https://andrewstiefel.com"
 timezone: "America/Los_Angeles"
 
-# OPEN GRAPH IMAGE SETTINGS
-ogImageBackground: "/assets/img/og-background.png"
-cloudinary_cloud: "andrewstiefel"
-
 ### SITE AUTHOR
 author:
   name: "Andrew Stiefel"
@@ -20,6 +16,10 @@ author:
   bluesky: "https://bsky.app/profile/andrewstiefel.bsky.social"
   medium: "andrewstiefel"
   github: "andrewstiefel"
+
+# OPEN GRAPH IMAGE SETTINGS
+ogImageBackground: "/assets/img/og-background.png"
+cloudinary_cloud: "andrewstiefel"
 
 ### BUILD & PLUGIN SETTINGS
 markdown: kramdown
@@ -49,9 +49,7 @@ jekyll-archives:
   enabled:
     - categories
     - tags
-  layouts:
-    category: archive-category
-    tag: archive-tag
+  layout: archive
   permalinks:
     category: "/:name/"
     tag: "/tag/:name/"

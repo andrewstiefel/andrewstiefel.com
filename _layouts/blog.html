@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+{% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h2 id="{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+        <ul class="list-disc">
+        {% assign date = currentdate %}
+    {% endif %}
+        <li class="leading-8"><a class="underline" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% if forloop.last %}</ul>{% endif %}
+{% endfor %} 
