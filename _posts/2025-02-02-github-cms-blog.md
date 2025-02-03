@@ -49,7 +49,7 @@ If you'd like to create one, all you need to add is a markdown file in your repo
 
 Here's [an example](https://github.com/andrewstiefel/andrewstiefel.com/blob/main/.github/ISSUE_TEMPLATE/cms.md?plain=1) of what mine looks like:
 
-```
+```markdown
 ---
 name: cms
 about: Submit an idea for the blog
