@@ -1,14 +1,14 @@
 # Jekyll specific
 _site/
-.jekyll-cache/
+.jekyll-cache
 .jekyll-metadata
 
 # Dependencies
-.bundle/
-vendor/bundle/
-vendor/cache/
-vendor/gems/
-vendor/ruby/
+.bundle
+vendor/bundle
+vendor/cache
+vendor/gems
+vendor/ruby
 
 # Logs and temp files
 *.log
@@ -19,7 +19,7 @@ vendor/ruby/
 *.tmp
 
 # Node and package manager dependencies
-node_modules/
+node_modules
 package-lock.json
 yarn.lock
 
