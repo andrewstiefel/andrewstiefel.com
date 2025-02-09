@@ -1,128 +1,298 @@
----
-# This yaml frontmatter is required for jekyll to process the file
----
+@import 'tailwindcss';
 
-@font-face {
-  font-family: 'Inter var';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: url('../fonts/inter/Inter-roman.var.woff2') format('woff2');
+/* Comment */ /* Error */ /* Keyword */ /* Literal */ /* Name */ /* Operator */ /* Punctuation */ /* Comment.Hashbang */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.PreprocFile */ /* Comment.Single */ /* Comment.Special */ /* Generic.Deleted */ /* Generic.Emph */ /* Generic.Inserted */ /* Generic.Strong */ /* Generic.Subheading */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */ /* Literal.Number */ /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */ /* Name.Property */ /* Name.Tag */ /* Name.Variable */ /* Operator.Word */ /* Text.Whitespace */ /* Literal.Number.Bin */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Literal.String.Affix */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Delimiter */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */ /* Name.Builtin.Pseudo */ /* Name.Function.Magic */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Name.Variable.Magic */ /* Literal.Number.Integer.Long */
+@config '../../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
-@font-face {
-  font-family: 'Inter var';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('../fonts/inter/Inter-italic.var.woff2') format('woff2');
+@utility prose-custom {
+  @apply prose-gray max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-serif prose-headings:font-normal prose-h1:font-display prose-h1:text-5xl prose-h1:mb-8 sm:prose-h2:text-[2rem] sm:prose-h3:text-[1.5rem] prose-h3:mt-0 prose-h4:mb-6 sm:prose-h4:text-[1.25rem] prose-h4:mb-5 prose-h5:font-sans prose-h5:font-semibold prose-h5:text-sm prose-h5:uppercase prose-h5:mb-4 prose-h6:font-sans prose-h6:text-sm prose-h6:uppercase prose-h6:mb-2 prose-h2:mt-8 prose-h2:mb-3 prose-blockquote:not-italic prose-blockquote:bg-gray-100 dark:prose-blockquote:bg-gray-800 prose-th:font-sans prose-th:font-semibold;
 }
 
-@font-face {
-  font-family: 'Source Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  font-named-instance: 'Regular';
-  src: url('../fonts/source-serif/SourceSerif4-Regular.woff2') format('woff2');
-}
+@layer base {
+  ---
+    #
+    This
+    yaml
+    frontmatter
+    is
+    required
+    for
+    jekyll
+    to
+    process
+    the
+    file
+    ---
+    @font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url('../fonts/inter/Inter-roman.var.woff2') format('woff2');
+  }
 
-@font-face {
-  font-family: 'Source Serif';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  font-named-instance: 'Semibold';
-  src: url('../fonts/source-serif/SourceSerif4-Semibold.woff2') format('woff2');
-}
+  @font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+    font-named-instance: 'Italic';
+    src: url('../fonts/inter/Inter-italic.var.woff2') format('woff2');
+  }
 
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/roboto-condensed/roboto-condensed-v24-latin-700.woff2') format('woff2');
-}
+  @font-face {
+    font-family: 'Source Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-named-instance: 'Regular';
+    src: url('../fonts/source-serif/SourceSerif4-Regular.woff2') format('woff2');
+  }
 
-.highlight  { color: #f3f4f6 }
-.highlight .c { color: #6b7280 } /* Comment */
-.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
-.highlight .k { color: #fb7185 } /* Keyword */
-.highlight .l { color: #ae81ff } /* Literal */
-.highlight .n { color: #f8f8f2 } /* Name */
-.highlight .o { color: #66d9ef } /* Operator */
-.highlight .p { color: #f8f8f2 } /* Punctuation */
-.highlight .ch { color: #6b7280 } /* Comment.Hashbang */
-.highlight .cm { color: #6b7280 } /* Comment.Multiline */
-.highlight .cp { color: #6b7280 } /* Comment.Preproc */
-.highlight .cpf { color: #6b7280 } /* Comment.PreprocFile */
-.highlight .c1 { color: #6b7280 } /* Comment.Single */
-.highlight .cs { color: #6b7280 } /* Comment.Special */
-.highlight .gd { color: #66d9ef } /* Generic.Deleted */
-.highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gi { color: #d1d5db } /* Generic.Inserted */
-.highlight .gs { font-weight: bold } /* Generic.Strong */
-.highlight .gu { color: #6b7280 } /* Generic.Subheading */
-.highlight .kc { color: #fb7185 } /* Keyword.Constant */
-.highlight .kd { color: #fb7185 } /* Keyword.Declaration */
-.highlight .kn { color: #66d9ef } /* Keyword.Namespace */
-.highlight .kp { color: #fb7185 } /* Keyword.Pseudo */
-.highlight .kr { color: #fb7185 } /* Keyword.Reserved */
-.highlight .kt { color: #fb7185 } /* Keyword.Type */
-.highlight .ld { color: #6ee7b7 } /* Literal.Date */
-.highlight .m { color: #ae81ff } /* Literal.Number */
-.highlight .s { color: #6ee7b7 } /* Literal.String */
-.highlight .na { color: #d1d5db } /* Name.Attribute */
-.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
-.highlight .nc { color: #d1d5db } /* Name.Class */
-.highlight .no { color: #fb7185 } /* Name.Constant */
-.highlight .nd { color: #d1d5db } /* Name.Decorator */
-.highlight .ni { color: #f8f8f2 } /* Name.Entity */
-.highlight .ne { color: #d1d5db } /* Name.Exception */
-.highlight .nf { color: #d1d5db } /* Name.Function */
-.highlight .nl { color: #f8f8f2 } /* Name.Label */
-.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
-.highlight .nx { color: #d1d5db } /* Name.Other */
-.highlight .py { color: #f8f8f2 } /* Name.Property */
-.highlight .nt { color: #66d9ef } /* Name.Tag */
-.highlight .nv { color: #f8f8f2 } /* Name.Variable */
-.highlight .ow { color: #66d9ef } /* Operator.Word */
-.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
-.highlight .mb { color: #ae81ff } /* Literal.Number.Bin */
-.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
-.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
-.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
-.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
-.highlight .sa { color: #6ee7b7 } /* Literal.String.Affix */
-.highlight .sb { color: #6ee7b7 } /* Literal.String.Backtick */
-.highlight .sc { color: #6ee7b7 } /* Literal.String.Char */
-.highlight .dl { color: #6ee7b7 } /* Literal.String.Delimiter */
-.highlight .sd { color: #6ee7b7 } /* Literal.String.Doc */
-.highlight .s2 { color: #6ee7b7 } /* Literal.String.Double */
-.highlight .se { color: #ae81ff } /* Literal.String.Escape */
-.highlight .sh { color: #6ee7b7 } /* Literal.String.Heredoc */
-.highlight .si { color: #6ee7b7 } /* Literal.String.Interpol */
-.highlight .sx { color: #6ee7b7 } /* Literal.String.Other */
-.highlight .sr { color: #6ee7b7 } /* Literal.String.Regex */
-.highlight .s1 { color: #6ee7b7 } /* Literal.String.Single */
-.highlight .ss { color: #6ee7b7 } /* Literal.String.Symbol */
-.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #d1d5db } /* Name.Function.Magic */
-.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
-.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
-.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
-.highlight .vm { color: #f8f8f2 } /* Name.Variable.Magic */
-.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+  @font-face {
+    font-family: 'Source Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    font-named-instance: 'Semibold';
+    src: url('../fonts/source-serif/SourceSerif4-Semibold.woff2')
+      format('woff2');
+  }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/roboto-condensed/roboto-condensed-v24-latin-700.woff2')
+      format('woff2');
+  }
 
-@layer components {
-  .prose-custom {
-    @apply prose-gray max-w-none dark:prose-invert mx-auto prose-a:text-primary dark:prose-a:text-primary_dark prose-headings:font-serif prose-headings:font-normal prose-h1:font-display prose-h1:text-5xl prose-h1:mb-8 prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h3:mt-0 prose-h4:mb-6 prose-h4:sm:text-[1.25rem] prose-h4:mb-5 prose-h5:font-sans prose-h5:font-semibold prose-h5:text-sm prose-h5:uppercase prose-h5:mb-4 prose-h6:font-sans prose-h6:text-sm prose-h6:uppercase prose-h6:mb-2 prose-h2:mt-8 prose-h2:mb-3 prose-blockquote:not-italic prose-blockquote:bg-gray-100 dark:prose-blockquote:bg-gray-800 prose-th:font-sans prose-th:font-semibold;
+  .highlight {
+    color: #f3f4f6;
+  }
+  .highlight .c {
+    color: #6b7280;
+  }
+  .highlight .err {
+    color: #960050;
+    background-color: #1e0010;
+  }
+  .highlight .k {
+    color: #fb7185;
+  }
+  .highlight .l {
+    color: #ae81ff;
+  }
+  .highlight .n {
+    color: #f8f8f2;
+  }
+  .highlight .o {
+    color: #66d9ef;
+  }
+  .highlight .p {
+    color: #f8f8f2;
+  }
+  .highlight .ch {
+    color: #6b7280;
+  }
+  .highlight .cm {
+    color: #6b7280;
+  }
+  .highlight .cp {
+    color: #6b7280;
+  }
+  .highlight .cpf {
+    color: #6b7280;
+  }
+  .highlight .c1 {
+    color: #6b7280;
+  }
+  .highlight .cs {
+    color: #6b7280;
+  }
+  .highlight .gd {
+    color: #66d9ef;
+  }
+  .highlight .ge {
+    font-style: italic;
+  }
+  .highlight .gi {
+    color: #d1d5db;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #6b7280;
+  }
+  .highlight .kc {
+    color: #fb7185;
+  }
+  .highlight .kd {
+    color: #fb7185;
+  }
+  .highlight .kn {
+    color: #66d9ef;
+  }
+  .highlight .kp {
+    color: #fb7185;
+  }
+  .highlight .kr {
+    color: #fb7185;
+  }
+  .highlight .kt {
+    color: #fb7185;
+  }
+  .highlight .ld {
+    color: #6ee7b7;
+  }
+  .highlight .m {
+    color: #ae81ff;
+  }
+  .highlight .s {
+    color: #6ee7b7;
+  }
+  .highlight .na {
+    color: #d1d5db;
+  }
+  .highlight .nb {
+    color: #f8f8f2;
+  }
+  .highlight .nc {
+    color: #d1d5db;
+  }
+  .highlight .no {
+    color: #fb7185;
+  }
+  .highlight .nd {
+    color: #d1d5db;
+  }
+  .highlight .ni {
+    color: #f8f8f2;
+  }
+  .highlight .ne {
+    color: #d1d5db;
+  }
+  .highlight .nf {
+    color: #d1d5db;
+  }
+  .highlight .nl {
+    color: #f8f8f2;
+  }
+  .highlight .nn {
+    color: #f8f8f2;
+  }
+  .highlight .nx {
+    color: #d1d5db;
+  }
+  .highlight .py {
+    color: #f8f8f2;
+  }
+  .highlight .nt {
+    color: #66d9ef;
+  }
+  .highlight .nv {
+    color: #f8f8f2;
+  }
+  .highlight .ow {
+    color: #66d9ef;
+  }
+  .highlight .w {
+    color: #f8f8f2;
+  }
+  .highlight .mb {
+    color: #ae81ff;
+  }
+  .highlight .mf {
+    color: #ae81ff;
+  }
+  .highlight .mh {
+    color: #ae81ff;
+  }
+  .highlight .mi {
+    color: #ae81ff;
+  }
+  .highlight .mo {
+    color: #ae81ff;
+  }
+  .highlight .sa {
+    color: #6ee7b7;
+  }
+  .highlight .sb {
+    color: #6ee7b7;
+  }
+  .highlight .sc {
+    color: #6ee7b7;
+  }
+  .highlight .dl {
+    color: #6ee7b7;
+  }
+  .highlight .sd {
+    color: #6ee7b7;
+  }
+  .highlight .s2 {
+    color: #6ee7b7;
+  }
+  .highlight .se {
+    color: #ae81ff;
+  }
+  .highlight .sh {
+    color: #6ee7b7;
+  }
+  .highlight .si {
+    color: #6ee7b7;
+  }
+  .highlight .sx {
+    color: #6ee7b7;
+  }
+  .highlight .sr {
+    color: #6ee7b7;
+  }
+  .highlight .s1 {
+    color: #6ee7b7;
+  }
+  .highlight .ss {
+    color: #6ee7b7;
+  }
+  .highlight .bp {
+    color: #f8f8f2;
+  }
+  .highlight .fm {
+    color: #d1d5db;
+  }
+  .highlight .vc {
+    color: #f8f8f2;
+  }
+  .highlight .vg {
+    color: #f8f8f2;
+  }
+  .highlight .vi {
+    color: #f8f8f2;
+  }
+  .highlight .vm {
+    color: #f8f8f2;
+  }
+  .highlight .il {
+    color: #ae81ff;
   }
 }
 

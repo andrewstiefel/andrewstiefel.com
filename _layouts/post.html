@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% include layout/header.html %}
-<main class="mx-auto max-w-screen-xl px-6 lg:px-24 mt-8">
+<main class="mx-auto max-w-(--breakpoint-xl) px-6 lg:px-24 mt-8">
   <article>
     <section class="grid grid-cols-6 py-4">
       <div class="col-span-full lg:col-start-2 lg:col-span-4">
@@ -42,7 +42,7 @@ layout: default
         {% if page.tags != empty %}
           <div class="flex flex-wrap">
           {% for tag in page.tags %}
-            <div class="not-prose text-sm capitalize bg-gray-150 dark:bg-gray-800 rounded mr-3 px-2 py-1 my-1">
+            <div class="not-prose text-sm capitalize bg-gray-150 dark:bg-gray-800 rounded-sm mr-3 px-2 py-1 my-1">
               <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | slugify }}">{{tag}}</a>
             </div>
           {% endfor %}

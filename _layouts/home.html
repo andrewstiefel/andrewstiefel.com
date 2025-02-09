@@ -4,9 +4,9 @@ title: Home
 ---
 
 {% include layout/header.html %}
-<main class="mx-auto max-w-screen-xl px-6 lg:px-24 mb-auto">
+<main class="mx-auto max-w-(--breakpoint-xl) px-6 lg:px-24 mb-auto">
   <section class="grid grid-cols-6 py-6">
-    <div class="col-span-full xl:col-span-4 xl:col-start-2 bg-gray-150 dark:bg-gray-800 rounded p-8">
+    <div class="col-span-full xl:col-span-4 xl:col-start-2 bg-gray-150 dark:bg-gray-800 rounded-sm p-8">
       <div class="prose prose-custom text-lg font-serif dark:prose-invert mb-6">
         {{ content }}
       </div>
@@ -35,7 +35,7 @@ title: Home
       </ul>
       <div>
         <a class="" href="/archive/" alt="Archive">
-          <span class="border border-primary rounded block m-auto max-w-xs text-center py-2 hover:bg-green-900 hover:border-green-900 text-primary hover:text-white dark:text-primary_dark dark:border-primary_dark dark:hover:bg-primary_dark dark:hover:text-gray-700">
+          <span class="border border-primary rounded-sm block m-auto max-w-xs text-center py-2 hover:bg-green-900 hover:border-green-900 text-primary hover:text-white dark:text-primary_dark dark:border-primary_dark dark:hover:bg-primary_dark dark:hover:text-gray-700">
             All Posts →
           </span>
         </a>
