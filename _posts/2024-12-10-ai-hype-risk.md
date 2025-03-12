@@ -6,7 +6,7 @@ image: ai-hype-risk/
 date: 2024-12-10
 category: essays
 tags:
-  - artifical-intelligence
+  - artificial-intelligence
   - technology
 ---
 

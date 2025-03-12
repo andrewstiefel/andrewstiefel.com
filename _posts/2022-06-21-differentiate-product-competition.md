@@ -88,7 +88,7 @@ One of the best ways to do this is by building a community around your vision. F
 
 Remember that a community can be centralized (Slack, Discord, Facebook Groups) or decentralized (conversations and hashtags on social media).
 
-Different companies take different approaches depending on what they want to accomplish. For example, Nike, REI, and Starbucks have massive audiences online. As a result, they can rely on social media to amplify their brand messages and drive conversation around their brands. (The REI #OptOutside campaign is a great example – people opt-in and interact around it every year.)
+Different companies take different approaches depending on what they want to accomplish. For example, Nike, REI, and Starbucks have massive audiences online. As a result, they can rely on social media to amplify their brand messages and drive conversation around their brands. (The REI OptOutside campaign is a great example – people opt-in and interact around it every year.)
 
 Other brands rely on bringing people together in a centralized space. For example, developer communities often organize around Slack or Discord as a place to discuss problems and share ideas – the VueJS community is a great example.
 
