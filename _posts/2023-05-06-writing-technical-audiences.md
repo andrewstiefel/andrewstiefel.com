@@ -2,10 +2,13 @@
 layout: post
 title: Writing for Technical Audiences
 description: These tips can help you write more effectively for software developers, scientists, and other expert audiences.
-image:
+permalink: writing-technical-audiences/
+image: 
 date: 2023-05-06
-category: Notes
-tags: [Product Marketing, Writing]
+category: notes
+tags:
+  - product-marketing
+  - writing
 ---
 
 Whether you are marketing to software developers, scientists, academic audiences, or other specialized industries, writing is a tool that can serve you well.

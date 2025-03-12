@@ -2,12 +2,15 @@
 layout: post
 title: The Myth of the Average User
 description: A 1940s Air Force crisis revealed a crucial design principle — the average user doesn't exist.
-image:
+permalink: myth-average-user/
+image: 
 date: 2024-12-31
-category: Essays
-tags: [Product Marketing, Product Management, Design]
+category: essays
+tags: 
+  - product-marketing
+  - product-management
+  - design
 ---
-
 This particular bit of history will live forever in my head. 
 
 In the late 1940s, the U.S. Air Force faced a deadly crisis: their pilots were crashing at an alarming rate, with 17 crashes in a single day at its peak. The military knew something was terribly wrong, but the cause eluded them.

@@ -2,11 +2,14 @@
 layout: post
 title: Networking Tips for Remote and Hybrid Work
 description: Networking is always a challenge when starting a new job. It's even more critical for success in a remote or hybrid workplace.
+permalink: networking-tips-remote-hybrid-job/
 image: 
 date: 2022-05-25
-category: Articles
-tags: [Career Growth]
-featured: 
+category: articles
+tags:
+  - career
+  - growth
+featured:
 ---
 
 You've finally landed that dream job — and it’s going to involve some (or a lot) of remote work. Maybe it's your first job, or maybe you just took a position with a new company. Or, like the rest of the world, you and your team have transitioned to working remotely during the pandemic.

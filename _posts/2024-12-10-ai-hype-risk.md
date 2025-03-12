@@ -2,10 +2,12 @@
 layout: post
 title: Weighing in on AI Hype and Risk
 description: There’s been a fight over the past few days about Casey Newton's article. Here's my take.
-image:
+image: ai-hype-risk/
 date: 2024-12-10
-category: Essays
-tags: [Artifical Intelligence, Technology]
+category: essays
+tags:
+  - artifical-intelligence
+  - technology
 ---
 
 Casey Newton wrote a piece last Thursday titled “[The phony comforts of AI skepticism](https://www.platformer.news/ai-skeptics-gary-marcus-curve-conference/)” — and wow did people have some thoughts about it:

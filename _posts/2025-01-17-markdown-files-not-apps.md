@@ -2,10 +2,15 @@
 layout: post
 title: Markdown Files, Not Apps
 description: Markdown is simple, portable, and free. And it works beautifully with AI tools.
-image:
+permalink: markdown-files-not-apps/
+image: 
 date: 2025-01-17
-category: Essays
-tags: [Technology, Productivity, Writing, Artificial Intelligence]
+category: essays
+tags: 
+  - technology
+  - productivity
+  - writing
+  - artificial-intelligence
 ---
 
 Files, not apps. I'm convinced this is the best way to work in the future.

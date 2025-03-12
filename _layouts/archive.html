@@ -8,7 +8,7 @@ layout: default
     <div class="col-span-full lg:col-start-2 lg:col-span-4">
       <div class="lg:col-start-2 col-span-4">
         <div class="border-b border-gray-200 dark:border-gray-700">
-          <h1 class="text-4xl sm:text-5xl font-display capitalize mb-4 sm:leading-tight">{{ page.title }}</h1>
+          <h1 class="text-4xl sm:text-5xl font-display capitalize mb-4 sm:leading-tight">{{ page.title | replace: "-", " " }}</h1>
             {% assign meta = site.data.meta[page.title] %}
           <p class="text-gray-600 dark:text-gray-400 text-xl font-serif leading-8 mb-8">{{ meta.description }}</p>
         </div>

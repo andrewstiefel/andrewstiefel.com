@@ -69,6 +69,7 @@ exclude:
   - "gulpfile.babel.js"
   - "LICENSE.md"
   - "node_modules"
+  - ".obsidian"
   - "package.json"
   - "package-lock.json"
   - "README.md"
