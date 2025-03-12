@@ -2,10 +2,13 @@
 layout: post
 title: Some Thoughts on Open-Ended Writing
 description: Open-ended writing connects ideas and identifies new questions. It encourages conversation instead of presenting a polished argument.
-image:
+permalink: some-thoughts-open-ended-writing/
+image: 
 date: 2023-03-03
-category: Notes
-tags: [Writing, Digital Gardening]
+category: notes
+tags:
+  - writing
+  - digital-gardening
 ---
 
 Writing online, especially for a blog, can feel difficult. Especially for a (recovering) social media and content marketer like myself. Yes, it’s easy to make a blog. It seems like there are constantly new tools popping up promising to help you blog, build a newsletter, or post on social media.

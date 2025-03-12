@@ -1,10 +1,15 @@
 ---
 layout: post
 title: How I Built My Blog with Jekyll and Netlify
+permalink: blog-jekyll-netlify/
 description: I used Jekyll and Netlify to build a custom personal website and blog.
 date: 2021-12-20
-category: Essays
-tags: [Coding, Blogging, Jekyll, Netlify]
+category: essays
+tags:
+  - coding
+  - blogging
+  - jekyll
+  - netlify
 featured: true
 ---
 

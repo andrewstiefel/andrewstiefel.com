@@ -2,10 +2,13 @@
 layout: post
 title: Just Start
 description: How long have you been working on a project with nothing to show?
-image:
+permalink: just-start/
+image: 
 date: 2022-06-28
-category: Essays
-tags: [Writing, Productivity]
+category: essays
+tags:
+  - writing
+  - productivity
 ---
 
 How long have you been working on a project with nothing to show?

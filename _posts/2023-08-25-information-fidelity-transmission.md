@@ -2,10 +2,13 @@
 layout: post
 title: Thoughts on Information Fidelity and Transmission
 description: Rich, complex ideas can have more impact — but they won't travel as far as a simple idea.
-image:
+permalink: information-fidelity-transmission/
+image: 
 date: 2023-08-25
-category: Notes
-tags: [Product Marketing, Writing]
+category: notes
+tags:
+  - product-marketing
+  - writing
 ---
 
 There is a useful axiom to keep in mind whenever you are crafting a message for someone else, whether writing a book, filming a video, or drafting an email.

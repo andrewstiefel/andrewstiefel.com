@@ -2,10 +2,13 @@
 layout: post
 title: Principles of Platform Independence
 description: A short guide to choosing apps and services that preserve your digital freedom by avoiding ecosystem lock-in.
-image:
+permalink: principles-platform-independence/
+image: 
 date: 2025-01-10
-category: Essays
-tags: [Technology, Privacy]
+category: essays
+tags:
+  - technology
+  - privacy
 ---
 
 The internet is filled with stories of people breaking free from Google's ecosystem ([here](https://coryd.dev/posts/2014/leaving-google-apps-for-fastmail) [are](https://www.nytimes.com/2024/04/07/opinion/gmail-email-digital-shame.html) [a](https://www.youtube.com/watch?v=YnSv8ylLfPw) [few](https://guissmo.com/blog/degoogling-2024-alternatives-to-google-that-i-am-using/) [examples](https://news.ycombinator.com/item?id=39882468) I've seen recently). Yet in their rush to escape one tech giant, many users inadvertently chain themselves to another. 

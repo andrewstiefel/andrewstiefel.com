@@ -1,5 +1,20 @@
 <!-- Page Info -->
-{% if page.title == "Home" %}<title>{{ site.title }} &middot; {{ site.tagline }}</title>{% else %}<title>{{ page.title }} &middot; {{ site.title }}</title>{% endif %}
+{% if page.title == "Home" %}
+  <title>{{ site.title }} &middot; {{ site.tagline }}</title>
+{% elsif page.type == "category" or page.type == "tag" %}
+  {% assign words = page.title | split: "-" %}
+  {% assign formatted_title = "" %}
+  {% for w in words %}
+    {% assign capitalized_word = w | capitalize %}
+    {% assign formatted_title = formatted_title | append: capitalized_word %}
+    {% unless forloop.last %}
+      {% assign formatted_title = formatted_title | append: " " %}
+    {% endunless %}
+  {% endfor %}
+  <title>{{ formatted_title }} &middot; {{ site.title }}</title>
+{% else %}
+  <title>{{ page.title }} &middot; {{ site.title }}</title>
+{% endif %}
 <meta name="description" content="{{ page.description }}" />
 <meta name="author" content="{{ site.author.name }}" />
 <link rel="canonical" href='{{ site.url }}{{ page.url }}' />
@@ -8,7 +23,7 @@
 <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}" />
 <meta property="article:author" content="{{ site.author.name }}" />
 {% for tag in page.tags %}
-<meta property="article:tag" content="{{ tag }}" />
+<meta property="article:tag" content="{{ tag | replace: "-", " " }}" />
 {% endfor %}
 {% endif %}
 
@@ -20,7 +35,22 @@
 {% else %}
 <meta property="og:type" content="website" />
 {% endif %}
-{% if page.title == "Home" %}<meta property="og:title" content="{{ site.title }}" />{% else %}<meta property="og:title" content="{{ page.title }}" />{% endif %}
+{% if page.title == "Home" %}
+  <meta property="og:title" content="{{ site.title }}" />
+{% elsif page.type == "category" or page.type == "tag" %}
+  {% assign words = page.title | split: "-" %}
+  {% assign formatted_title = "" %}
+  {% for w in words %}
+    {% assign capitalized_word = w | capitalize %}
+    {% assign formatted_title = formatted_title | append: capitalized_word %}
+    {% unless forloop.last %}
+      {% assign formatted_title = formatted_title | append: " " %}
+    {% endunless %}
+  {% endfor %}
+  <meta property="og:title" content="{{ formatted_title }}" />
+{% else %}
+  <meta property="og:title" content="{{ page.title }}" />
+{% endif %}
 <meta property="og:description" content="{{ page.description }}" />
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta property="og:image" content="{% include helpers/og-image.html %}" />
@@ -30,63 +60,81 @@
 <meta name="fediverse:creator" content="@andrewstiefel@mas.to" />
 
 <!--Schema.org-->
+{%- capture schema_headline -%}
+  {%- if page.title == "Home" -%}
+    {{ site.title }}
+  {%- elsif page.type == "category" or page.type == "tag" -%}
+    {%- assign words = page.title | split: "-" -%}
+    {%- assign formatted_title = "" -%}
+    {%- for w in words -%}
+      {%- assign capitalized_word = w | capitalize -%}
+      {%- assign formatted_title = formatted_title | append: capitalized_word -%}
+      {%- unless forloop.last -%}
+        {%- assign formatted_title = formatted_title | append: " " -%}
+      {%- endunless -%}
+    {%- endfor -%}
+    {{ formatted_title }}
+  {%- else -%}
+    {{ page.title }}
+  {%- endif -%}
+{%- endcapture -%}
 {% if page.is_post %}
 <script type="application/ld+json">
   {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "author": {
-          "@type": "Person",
-          "name": "{{ site.author.name }}",
-          "url": "{{ site.url }}",
-          "sameAs": [
-              "https://www.linkedin.com/in/{{ site.author.linkedin }}",
-              "{{ site.author.mastodon }}",
-              "{{ site.author.bluesky }}",
-              "https://github.com/{{ site.author.github }}"
-          ]
-      },
-      "headline": "{{ page.title }}",
-      "url": "{{ site.url }}{{ page.url }}",
-      "datePublished": "{{ page.date | date_to_xmlschema }}",
-      "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
-      "image": {
-          "@type": "ImageObject",
-          "url": "{% include helpers/og-image.html %}",
-          "width": 1200,
-          "height": 630
-      },
-      "description": "{{ page.description }}",
-      "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ site.url }}"
-      }
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.url }}",
+      "sameAs": [
+          "https://www.linkedin.com/in/{{ site.author.linkedin }}",
+          "{{ site.author.mastodon }}",
+          "{{ site.author.bluesky }}",
+          "https://github.com/{{ site.author.github }}"
+      ]
+    },
+    "headline": "{{ schema_headline }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{% include helpers/og-image.html %}",
+      "width": 1200,
+      "height": 630
+    },
+    "description": "{{ page.description }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}"
+    }
   }
 </script>
 {% else %}
 <script type="application/ld+json">
-{
+  {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "publisher": {
-        "@type": "Person",
-        "name": "{{ site.author.name }}",
-        "url": "{{ site.url }}",
-        "sameAs": [
-          "https://www.linkedin.com/in/{{ site.author.linkedin }}",
-          "{{ site.author.mastodon }}",
-          "https://medium.com/@{{ site.author.medium }}",
-          "https://github.com/{{ site.author.github }}"
-        ]
+      "@type": "Person",
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.url }}",
+      "sameAs": [
+        "https://www.linkedin.com/in/{{ site.author.linkedin }}",
+        "{{ site.author.mastodon }}",
+        "https://medium.com/@{{ site.author.medium }}",
+        "https://github.com/{{ site.author.github }}"
+      ]
     },
     "url": "{{ site.url }}{{ page.url }}",
-    "headline": "{{ page.title }}",
+    "headline": "{{ schema_headline }}",
     "description": "{{ page.description }}",
     "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ site.url }}"
+      "@type": "WebPage",
+      "@id": "{{ site.url }}"
     }
-}
+  }
 </script>
 {% endif %}
 

@@ -2,10 +2,14 @@
 layout: post
 title: Working with Multiple GitHub Accounts and SSH Keys
 description: Learn how to use 1Password to sign Git commits for multiple GitHub accounts on one machine
-image:
+permalink: working-multiple-github-accounts/
+image: 
 date: 2024-05-09
-category: Articles
-tags: [Coding, GitHub, 1Password]
+category: articles
+tags:
+  - coding
+  - GitHub
+  - 1Password
 featured: true
 ---
 
