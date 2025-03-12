@@ -3,12 +3,22 @@ _site/
 .jekyll-cache
 .jekyll-metadata
 
-# Dependencies
+# Obsidian
+.obsidian
+
+# Ruby dependencies
+.ruby-version
 .bundle
+Gemfile.lock
 vendor/bundle
 vendor/cache
 vendor/gems
 vendor/ruby
+
+# Node dependencies
+node_modules
+package-lock.json
+yarn.lock
 
 # Logs and temp files
 *.log
@@ -17,11 +27,3 @@ vendor/ruby
 *.DS_Store
 *.bak
 *.tmp
-
-# Node and package manager dependencies
-node_modules
-package-lock.json
-yarn.lock
-
-# Ignore generated Gemfile.lock
-Gemfile.lock
