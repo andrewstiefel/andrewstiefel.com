@@ -27,8 +27,6 @@ highlighter: rouge
 permalink: "/:title/"
 include:
   - "_pages"
-tailwindcss:
-  config: "./tailwind.config.js"
 
 plugins:
   - jekyll-archives
