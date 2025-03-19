@@ -1,25 +1,25 @@
 <form name="bd-newsletter-default" action="/almost/" netlify-honeypot="bot-field" data-netlify="true">
-  <div class="flex flex-col sm:flex-row">
-    <div class="hidden">
-      <label id="bot-field" aria-hidden="true">Why are you filling out this field?<input name="bot-field" aria-hidden="true"/></label>
-    </div>
-    <div class="grow">
-      <label id="email">
-        <input type="email" name="email" placeholder="Enter your email" autocomplete="email" autocapitalize="off" autocorrect="off" class="border-gray-300 dark:border-gray-500 w-full rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-900" required>
-      </label>
-      <input type="hidden" name="referrer_url" value="{{ site.url}}{{ page.url }}" class="hidden">
-      {% if page.tags contains "Product Marketing" or post.tags contains "Career" %}
-      <input type="hidden" name="tag" value="product marketing" class="hidden">
-      {% elsif page.tags contains "Privacy" %}
-      <input type="hidden" name="tag" value="privacy" class="hidden">
-      {% elsif page.tags contains "Productivity" %}
-      <input type="hidden" name="tag" value="productivity" class="hidden">
-      {% else %}
-      <input type="hidden" name="tag" value="newsletter" class="hidden">
-      {% endif %}
-    </div>
-    <div class="mt-2 flex rounded-md shadow-sm sm:mt-0 sm:ml-3">
-      <button type="submit" data-fathom="UFIQJWTI" class="w-full rounded-md bg-primary dark:bg-primary_dark dark:text-gray-700 dark:hover:bg-green-300 py-2 px-4 font-medium text-white sm:py-0 hover:bg-green-900">Subscribe</button>
-    </div>
-  </div>
-</form>
+	<div class="flex flex-col sm:flex-row">
+	  <div class="hidden">
+		<label id="bot-field" aria-hidden="true">Why are you filling out this field?<input name="bot-field" aria-hidden="true"/></label>
+	  </div>
+	  <div class="grow">
+		<label id="email">
+		  <input type="email" name="email" placeholder="Enter your email" autocomplete="email" autocapitalize="off" autocorrect="off" class="border-gray-300 dark:border-gray-500 w-full rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-900" required>
+		</label>
+		<input type="hidden" name="referrer_url" value="{{ site.url}}{{ page.url }}" class="hidden">
+		{% if page.tags contains "Product Marketing" or post.tags contains "Career" %}
+		<input type="hidden" name="tag" value="product marketing" class="hidden">
+		{% elsif page.tags contains "Privacy" %}
+		<input type="hidden" name="tag" value="privacy" class="hidden">
+		{% elsif page.tags contains "Productivity" %}
+		<input type="hidden" name="tag" value="productivity" class="hidden">
+		{% else %}
+		<input type="hidden" name="tag" value="newsletter" class="hidden">
+		{% endif %}
+	  </div>
+	  <div class="mt-2 flex rounded-md shadow-sm sm:mt-0 sm:ml-3">
+		<button type="submit" data-fathom="UFIQJWTI" class="w-full rounded-md bg-primary dark:bg-primary_dark dark:text-gray-700 dark:hover:bg-green-300 py-2 px-4 font-medium text-white sm:py-0 hover:bg-green-900">Subscribe</button>
+	  </div>
+	</div>
+  </form>

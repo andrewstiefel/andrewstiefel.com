@@ -7,6 +7,6 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-target-blank"
   gem "jekyll-tailwindcss"
-  gem "tailwindcss-ruby", "~> 3.4.17"
+  gem "tailwindcss-ruby"
   gem "jekyll-tidy"
 end
