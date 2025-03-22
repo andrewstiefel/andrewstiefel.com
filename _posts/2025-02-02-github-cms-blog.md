@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I Use GitHub as a CMS for My Blog
+title: How I Use GitHub as a CMS
 description: GitHub makes it easy to build a free content management system for your blog.
 permalink: github-cms-blog/
 image: 
@@ -11,7 +11,6 @@ tags:
   - writing
   - coding
   - jekyll
-  - GitHub
 ---
 I use [Jekyll to build and publish my blog on Netlify](/blog-jekyll-netlify/). For a long time my content management system (CMS) was just a bunch of markdown files on my laptop. Most of the time I don't need anything else — it's simple, and it's just me. 
 

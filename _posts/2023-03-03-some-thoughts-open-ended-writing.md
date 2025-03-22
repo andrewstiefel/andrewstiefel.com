@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Some Thoughts on Open-Ended Writing
+title: Thoughts on Open-Ended Writing
 description: Open-ended writing connects ideas and identifies new questions. It encourages conversation instead of presenting a polished argument.
 permalink: some-thoughts-open-ended-writing/
 image: 

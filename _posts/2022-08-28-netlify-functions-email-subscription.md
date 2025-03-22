@@ -10,7 +10,6 @@ tags:
   - coding
   - netlify
   - jekyll
-featured: true
 ---
 
 I enjoy the process of building and maintaining my own personal website. It’s a great way to experiment with different technologies, and have fun learning new tools and concepts along the way.

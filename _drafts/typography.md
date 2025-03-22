@@ -58,13 +58,32 @@ Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. M
 Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
 
 ```js
-module.exports = {
-  purge: [],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
+import { Plugin } from "obsidian";
+
+export default class SystemDarkMode extends Plugin {
+	async onload() {
+		// Watch for system changes to color theme
+		const media = window.matchMedia (
+			"(prefers-color-scheme: dark)");
+		
+		const callback = () => {
+			if (media.matches) {
+				console.log("Dark mode active");
+				this.updateStyle(true);
+			} else {
+				console.log("Light mode active");
+				this.updateStyle(false);
+			}
+		};
+
+		media.addEventListener("change", callback);
+
+		// Remove listener on unload
+		this.register(() =>
+			media.removeEventListener("change", callback));
+
+		callback();
+	}
 }
 ```
 Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.

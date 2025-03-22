@@ -1,46 +1,92 @@
 ---
 layout: default
-title: Home
+title: Writing
 ---
 
 {% include layout/header.html %}
 <main class="mx-auto max-w-screen-xl px-6 lg:px-24 mb-auto">
-  <section class="grid grid-cols-6 py-6">
-    <div class="col-span-full xl:col-span-4 xl:col-start-2 bg-gray-150 dark:bg-gray-800 rounded p-8">
-      <div class="prose prose-custom text-lg font-serif dark:prose-invert mb-6">
-        {{ content }}
-      </div>
-      <div>
-        {% include forms/newsletter-default.html %}
-      </div>
-    </div>
-  </section>
-  {% include helpers/posts-featured.html %}
-  <section class="grid grid-cols-6 py-6">
-    <div class="col-span-full xl:col-span-4 xl:col-start-2">
-      <div class="flex justify-start">
-        <div class="text-sm uppercase w-60">Recent Posts</div>
-        <div class="w-full">
-          <span class="inline-block w-full h-px mb-1 bg-gray-900 dark:bg-gray-500"></span>
-        </div>
-      </div>
-    </div>
-    <div class="col-span-full xl:col-span-4 xl:col-start-2">
-      <ul class="divide-y divide-gray-200 dark:divide-gray-700">
-        {% for post in site.posts limit:5 %}
-        <li class="py-8">
-          {% include helpers/posts-loop.html %}
-        </li>
-        {% endfor %}
-      </ul>
-      <div>
-        <a class="" href="/archive/" alt="Archive">
-          <span class="border border-primary rounded block m-auto max-w-xs text-center py-2 hover:bg-green-900 hover:border-green-900 text-primary hover:text-white dark:text-primary_dark dark:border-primary_dark dark:hover:bg-primary_dark dark:hover:text-gray-700">
-            All Posts →
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
+	<section class="grid grid-cols-6 py-6">
+		<div class="col-span-full xl:col-span-4 xl:col-start-2 bg-gray-50 dark:bg-gray-900 rounded p-8">
+			<div class="prose prose-custom text-lg font-serif dark:prose-invert mb-6">
+				{{ content }}
+			</div>
+		<div>
+			{% include forms/newsletter-default.html %}
+		</div>
+		</div>
+  	</section>
+  	<section class="grid grid-cols-6 py-6">
+		<div class="col-span-full xl:col-span-4 xl:col-start-2">
+		  <div class="flex justify-start">
+				<div class="text-sm uppercase w-60">Latest</div>
+					<div class="w-full">
+					<span class="inline-block w-full h-px mb-1 bg-gray-200 dark:bg-gray-800"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-full xl:col-span-4 xl:col-start-2">
+				<div class="w-full pt-8">
+					{% for post in site.posts limit:1 %}
+					{% include helpers/posts-loop.html %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="grid grid-cols-6 py-6">
+		<div class="col-span-full xl:col-span-4 xl:col-start-2">
+		  <div class="flex justify-start">
+				<div class="text-sm uppercase w-60">Topics</div>
+					<div class="w-full">
+					<span class="inline-block w-full h-px mb-1 bg-gray-200 dark:bg-gray-800"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-span-full xl:col-span-4 xl:col-start-2">
+			<div class="w-full pt-8 leading-8">
+				{% assign sorted_tags = site.tags | sort %}
+				{% for tag in sorted_tags %}
+				{% assign tag_name = tag[0] %}
+				  {% assign display_name = tag_name | replace: "-", " " %}
+					  <a class="text-black dark:text-gray-100 underline" href="/tag/{{ tag_name | slugify }}/">{{ display_name }}</a>{% unless forloop.last %}, {% endunless %}
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	<section class="grid grid-cols-6 py-6">
+		<div class="col-span-full xl:col-span-4 xl:col-start-2">
+		  <div class="flex justify-start">
+				<div class="text-sm uppercase w-60">Recent Posts</div>
+					<div class="w-full">
+					<span class="inline-block w-full h-px mb-1 bg-gray-200 dark:bg-gray-800"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-span-full xl:col-span-4 xl:col-start-2">
+			<div class="w-full pt-8">
+				<ul class="list-none divide-y divide-gray-200 dark:divide-gray-800">
+					{% for post in site.posts offset:1 limit:10 %}
+					  <li class="flex flex-wrap py-4">
+						<div class="mr-1 sm:w-32 sm:mr-4 sm:order-none order-2 sm:text-base text-sm">{{post.date | date: "%d %b %Y"}}</div>
+						<div class="flex-grow sm:w-auto w-full sm:order-none order-1 sm:pb-0 pb-1"><a class="text-primary underline" href="{{ post.url }}">{{ post.title }}</a></div>
+						<div class="sm:order-none order-3 sm:text-base text-sm">
+							<span class="sm:hidden px-px">•</span>
+							<span>{% assign words = post.content | number_of_words %}{%- if words < 360 -%}1 min read{%- else -%}{{ words | divided_by:180 }} min read{%- endif -%}</span>
+						</div>
+					</li>
+					{% endfor %}
+				 </ul>
+			</div>
+			<div class="pt-8">
+				<a class="" href="/archive/" alt="Archive">
+				  <span class="block m-auto max-w-3xs border border-gray-100 dark:border-gray-800 hover:border-gray-200 hover:dark:border-gray-700 rounded py-2 text-black dark:text-gray-200 text-center">
+					 All Posts →
+				  </span>
+				</a>
+			 </div>
+		</div>
+	</section>
 </main>
 {% include layout/footer.html %}
