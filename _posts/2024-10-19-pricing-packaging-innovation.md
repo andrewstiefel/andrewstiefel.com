@@ -7,7 +7,7 @@ image:
 date: 2024-10-19
 category: notes
 tags:
-  - product-parketing
+  - product-marketing
   - pricing-strategy
 ---
 

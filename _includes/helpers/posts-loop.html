@@ -1,12 +1,12 @@
 <article>
   <div class="w-full">
     <h2 class="text-2xl font-serif font-semibold">
-      <a class="text-gray-900 dark:text-gray-300" title="{{post.title }}" href="{{ post.url }}">{{post.title }}</a>
+      <a class="text-black dark:text-gray-100" title="{{post.title }}" href="{{ post.url }}">{{post.title }}</a>
     </h2>
-    <div class="text-gray-700 dark:text-gray-400 my-2">
+    <div class="text-gray-600 dark:text-gray-400 my-2">
       {{ post.description }}
     </div>
-    <div class="text-sm text-gray-500"
+    <div class="text-sm text-gray-600 dark:text-gray-400"
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time> • 
       {% assign words = post.content | number_of_words %}
       {% if words < 360 %}

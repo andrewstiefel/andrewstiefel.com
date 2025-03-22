@@ -8,9 +8,6 @@ date: 2024-05-09
 category: articles
 tags:
   - coding
-  - GitHub
-  - 1Password
-featured: true
 ---
 
 I have multiple GitHub accounts – one for work, one for demos, and one for personal projects. Each has a unique email address, password, and 2FA associated with it. They also each have a unique SSH key. In fact, the SSH keys are all saved in different 1Password accounts (personal, demo, and work).
