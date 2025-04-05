@@ -6,5 +6,4 @@ image:
 date: 
 category: 
 tags: 
-featured:
 ---
