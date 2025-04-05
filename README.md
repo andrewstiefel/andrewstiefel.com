@@ -9,8 +9,7 @@ Optimized to have [a very low carbon footprint](https://digitalbeacon.co/report/
 * Jekyll hosted on Netlify
 * Markdown, images, and videos
 * RSS feed with full content
-* Simple design focused on content
-* Code highlighting via Prism JS
+* Simple design focused on typography
 * Newsletter sign up form using Netlify Functions and Buttondown API
 
 ## Get started
