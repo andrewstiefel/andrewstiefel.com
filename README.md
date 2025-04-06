@@ -9,15 +9,15 @@ Optimized to have [a very low carbon footprint](https://digitalbeacon.co/report/
 * Jekyll hosted on Netlify
 * Markdown, images, and videos
 * RSS feed with full content
-* Simple design focused on typography
+* Minimal design focused on typography
 * Newsletter sign up form using Netlify Functions and Buttondown API
 
 ## Get started
-* `bundle install` to install Ruby gems
-* `npm run start` to run the Jekyll development server with live reload enabled
+* `make install` to install Ruby gems
+* `make start` to run the Jekyll development server with live reload enabled
 
 ## Build the site
-* `npm run build` to compile the site for production
+* `make build` to compile the site for production
 
 ## License
 [MIT](https://github.com/andrewstiefel/andrewstiefel.com/blob/master/LICENSE.md)

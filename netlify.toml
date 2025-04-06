@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "jekyll build"
   publish = "_site/"
 
 [build.environment]
@@ -12,7 +12,7 @@
   JEKYLL_ENV = "staging"
 
 [dev]
-  command = "npm run start"
+  command = "bundle exec jekyll serve"
   publish = "_site/"
 
 [[plugins]]
@@ -36,18 +36,3 @@
   from = "/newsletter"
   to = "/letters"
   status = 301
-
-[[headers]]
-  for = "/portfolio"
-  [headers.values]
-    X-Robots-Tag = "noindex"
-
-[[headers]]
-  for = "/almost"
-  [headers.values]
-    X-Robots-Tag = "noindex"
-
-[[headers]]
-  for = "/thanks"
-  [headers.values]
-    X-Robots-Tag = "noindex"
