@@ -11,6 +11,7 @@ Optimized to have [a very low carbon footprint](https://digitalbeacon.co/report/
 * RSS feed with full content
 * Minimal design focused on typography
 * Custom newsletter form using Netlify Functions and Buttondown API
+* Cloudinary for image optimization
 
 ## Get started
 * `make install` to install Ruby gems
