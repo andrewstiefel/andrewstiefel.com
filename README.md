@@ -3,14 +3,14 @@
 
 Personal website built with Jekyll and Tailwind CSS. 
 
-Optimized to have [a very low carbon footprint](https://digitalbeacon.co/report/andrewstiefel-com) and to score a 100 across all [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) dimensions for performance, accessibility, SEO, etc.
+Optimized to have [a very low carbon footprint](https://digitalbeacon.co/report/andrewstiefel-com) and to score a 100 across all [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) dimensions for performance, accessibility, best practices, and SEO optimization.
 
 ## Features
 * Jekyll hosted on Netlify
 * Markdown, images, and videos
 * RSS feed with full content
 * Minimal design focused on typography
-* Newsletter sign up form using Netlify Functions and Buttondown API
+* Custom newsletter form using Netlify Functions and Buttondown API
 
 ## Get started
 * `make install` to install Ruby gems
