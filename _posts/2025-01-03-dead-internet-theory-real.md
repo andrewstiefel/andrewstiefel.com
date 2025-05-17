@@ -8,7 +8,6 @@ date: 2025-01-03
 category: essays
 tags:
   - technology
-  - internet
   - culture
 ---
 

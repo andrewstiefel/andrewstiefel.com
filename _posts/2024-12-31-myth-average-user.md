@@ -6,9 +6,8 @@ permalink: myth-average-user/
 image: 
 date: 2024-12-31
 category: essays
-tags: 
+tags:
   - product-marketing
-  - product-management
   - design
 ---
 This particular bit of history will live forever in my head. 

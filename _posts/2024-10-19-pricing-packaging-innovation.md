@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Strategically Package New Product Features
+title: How to Package New Product Features
 description: This framework can help you decide how to package new product innovations based on customer needs and perceived value.
 permalink: pricing-packaging-innovation/
 image: 
@@ -8,7 +8,6 @@ date: 2024-10-19
 category: notes
 tags:
   - product-marketing
-  - pricing-strategy
 ---
 
 When your company develops new innovations, a key question is: how should you package those features within your current product tiers? This decision can significantly impact customer perception of value and the ease of selling it.

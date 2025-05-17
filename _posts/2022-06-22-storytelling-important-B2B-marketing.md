@@ -6,10 +6,8 @@ permalink: storytelling-important-B2B-marketing/
 image: 
 date: 2022-06-22
 category: articles
-tags: 
+tags:
   - product-marketing
-  - storytelling
-  - strategic-narrative
 ---
 
 Storytelling has been a buzzword in consumer marketing (B2C) for nearly a decade. And for a good reason. We, as humans, can’t help but tell stories. They are a critical way to convey information and build common ground.
