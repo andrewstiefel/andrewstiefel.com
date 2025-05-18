@@ -19,7 +19,7 @@ Ironically, Meta decided to turn the conspiracy theory into reality.
 
 Quoting from [404 Media](https://www.404media.co/metas-ai-profiles-are-indistinguishable-from-terrible-spam-that-took-over-facebook/):
 
->Earlier this week, Meta executive Connor Hayes told the _Financial Times_ that the company is going to roll out AI character profiles on Instagram and Facebook that “exist on our platforms, kind of in the same way that accounts do … they’ll have bios and profile pictures and be able to generate and share content powered by AI on the platform.”
+>Earlier this week, Meta executive Connor Hayes told the _Financial Times_ that the company is going to roll out AI character profiles on Instagram and Facebook that “exist on our platforms, kind of in the same way that accounts do … they’ll have bios and profile pictures and be able to generate and share content powered by AI on the platform.
 
 It didn't take long for users on [Blue Sky](https://bsky.app/profile/jasonkoebler.bsky.social/post/3leu3l7fcas22) and [Reddit](https://www.reddit.com/r/mildlyinfuriating/comments/1hsqe2z/metas_aigenerated_profiles_are_starting_to_show/?rdt=62372) to find some of these fake AI profiles on Instagram. The profiles were often offensive caricatures of what a gigantic corporation like Meta might imagine a “proud Black queer momma of 2” might post about. The profiles tended to post AI generated content similar to what other spammer's on Meta's Facebook and Instagram platforms have been creating.
 

@@ -25,7 +25,7 @@ When I started writing on this website (again), I wanted to treat it more like a
 
 This approach resonates with me. Mainly because producing exhaustive articles is, well, exhausting. This definition of the digital garden is similar to the concept of “[small b blogging](https://tomcritchlow.com/2018/02/23/small-b-blogging/ "Small B Blogging")” introduced by Tom Critchlow:
 
-> _"Small b blogging is learning to write and think with the network. Small b blogging is writing content designed for small deliberate audiences and showing it to them. Small b blogging is deliberately chasing interesting ideas over pageviews and scale. An attempt at genuine connection vs the gloss and polish and mass market of most “content marketing”."_
+> _"Small b blogging is learning to write and think with the network. Small b blogging is writing content designed for small deliberate audiences and showing it to them. Small b blogging is deliberately chasing interesting ideas over pageviews and scale. An attempt at genuine connection vs the gloss and polish and mass market of most content marketing."_
 
 I recently read another note by Tom Critchlow that was the direct inspiration for this line of thinking, entitled “[Writing, Riffs, and Relationships](https://tomcritchlow.com/2023/02/10/riffs/).” There are lots of good concepts in the article, but the idea of _making writing small_ stood out to me. In particular
 
@@ -35,7 +35,7 @@ And then:
 
 > _"Closed writing is boring writing. If you’ve fully explored and put to bed the topic you’re writing about then there’s very little left for someone to react to. “Nice post” someone might say._
 > 
-> _But if you deliberately leave some rough edges, some threads that the reader can pull on, then you’re inviting the reader into the conversation. You’re saying (possibly explicitly!) - “Hey, what are your thoughts on this topic? How do you think about it?”_"
+> _But if you deliberately leave some rough edges, some threads that the reader can pull on, then you’re inviting the reader into the conversation. You’re saying (possibly explicitly!) - “Hey, what are your thoughts on this topic? How do you think about it?”_
 
 Critchlow goes on to recommend ending a blog post or “riff” with more questions that encourage you (and your audience) to explore other topics. Altogether, this made me think about the difference between open-ended and closed writing and how they are different modes of writing altogether.
 
