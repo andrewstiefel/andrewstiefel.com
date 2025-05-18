@@ -25,7 +25,7 @@ It didn't take long for users on [Blue Sky](https://bsky.app/profile/jasonkoeble
 
 Here's the example I referenced above:
 
-![Meta AI Generated Profile](/assets/img/metas-ai-generated-profiles-are-starting-to-show-up.webp){:height="483px" width="760px" class="dark:brightness-75"}
+{% cloudinary /assets/img/metas-ai-generated-profiles-are-starting-to-show-up.webp alt="Meta AI Generated Profile" %}{:class="dark:brightness-75"}
 
 Most of these profiles were already a few years old, and Meta has since announced that they will be taking them down.
 

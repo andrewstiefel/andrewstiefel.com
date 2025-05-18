@@ -18,8 +18,17 @@ author:
   github: "andrewstiefel"
 
 # OPEN GRAPH IMAGE SETTINGS
+cloudinary:
+  cloud_name: andrewstiefel
+  only_prod: true
+  presets:
+    default:
+      min_width: 320
+      max_width: 1450
+      fallback_max_width: 725
+      steps: 5
+      sizes: "(min-width: 50rem) 50rem, 90vw"
 ogImageBackground: "/assets/img/og-background.png"
-cloudinary_cloud: "andrewstiefel"
 
 ### BUILD & PLUGIN SETTINGS
 markdown: kramdown
@@ -56,7 +65,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: "/:name/"
-    tag: "/tag/:name/"
+    tag: "/topics/:name/"
 
 ### JEKYLL TIDY SETTINGS
 jekyll_tidy:

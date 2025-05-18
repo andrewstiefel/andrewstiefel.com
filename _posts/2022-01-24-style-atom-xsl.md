@@ -16,11 +16,11 @@ But the UX experience is terrible.
 
 Web feeds are meant to be machine-readable, so most users follow a link to an RSS or Atom feed and end up looking at something like this:
 
-![Raw RSS or Atom][image-1]{:height="483px" width="760px" class="dark:brightness-75"}
+{% cloudinary /assets/img/raw-atom-rss.png alt="Raw RSS or Atom feed" %}{:class="dark:brightness-75"}
 
 This doesn't have to be the case. RSS and Atom feeds can be human-readable with a little extra work. [Here's an example from my website](/feed.xml){:target="_blank" data-fathom="RSS subscription"}. It’s simple and clean and provides some essential instructions on how to get started:
 
-![Human-readable Atom or RSS Feed][image-2]{:height="483px" width="760px" class="dark:brightness-75"}
+{% cloudinary /assets/img/human-readable-atom-feed.png alt="Human-readable Atom or RSS feed" %}{:class="dark:brightness-75"}
 
 Let’s explore how to implement this with Atom and an XSLT stylesheet.
 
@@ -130,6 +130,3 @@ Thanks for reading!
 [8]:	https://lepture.com/en/2019/rss-style-with-xsl "Just Lepture"
 [9]:	https://natclark.com/tutorials/xslt-style-rss-feed/ "Nat Clark"
 [10]:	https://aboutfeeds.com/ "About Feeds"
-
-[image-1]:	/assets/img/raw-atom-rss.png
-[image-2]:	/assets/img/human-readable-atom-feed.png
