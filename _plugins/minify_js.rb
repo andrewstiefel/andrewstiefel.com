@@ -1,9 +1,9 @@
 require 'uglifier'
 
 Jekyll::Hooks.register :site, :post_write do |site|
-  # Only run in production mode
-  if Jekyll.env == "production"
-    # Define the paths in your destination folder (commonly _site)
+  # Run in production or staging
+  if %w[production staging].include?(Jekyll.env)
+    # Define the paths in your destination folder
     source_path = File.join(site.dest, "assets", "js", "bundle.js")
     minified_path = File.join(site.dest, "assets", "js", "bundle.min.js")
 
