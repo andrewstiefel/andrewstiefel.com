@@ -1,52 +1,49 @@
----
-# This yaml frontmatter is required for jekyll to process the file
----
-
-@font-face {
-   font-family: 'Inter var';
-	font-weight: 100 900;
-	font-display: swap;
-	font-style: normal;
-	font-named-instance: 'Regular';
-	src: url('../fonts/inter/Inter-roman.var.woff2') format('woff2');
-}
-  
-@font-face {
-	font-family: 'Inter var';
-	font-weight: 100 900;
-	font-display: swap;
-	font-style: italic;
-	font-named-instance: 'Italic';
-	src: url('../fonts/inter/Inter-italic.var.woff2') format('woff2');
-}
-  
-@font-face {
-	font-family: 'Source Serif';
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	font-named-instance: 'Regular';
-	src: url('../fonts/source-serif/SourceSerif4-Regular.woff2') format('woff2');
-}
-  
-@font-face {
-	font-family: 'Source Serif';
-	font-style: normal;
-	font-weight: 600;
-	font-display: swap;
-	font-named-instance: 'Semibold';
-	src: url('../fonts/source-serif/SourceSerif4-Semibold.woff2') format('woff2');
-}
-  
-@font-face {
-	font-family: 'Roboto Condensed';
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-	src: url('../fonts/roboto-condensed/roboto-condensed-v24-latin-700.woff2') format('woff2');
-}
-
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url('../fonts/inter/Inter-roman.var.woff2') format('woff2');
+}
+   
+@font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+    font-named-instance: 'Italic';
+    src: url('../fonts/inter/Inter-italic.var.woff2') format('woff2');
+}
+   
+@font-face {
+    font-family: 'Source Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-named-instance: 'Regular';
+    src: url('../fonts/source-serif/SourceSerif4-Regular.woff2') format('woff2');
+}
+   
+@font-face {
+    font-family: 'Source Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    font-named-instance: 'Semibold';
+    src: url('../fonts/source-serif/SourceSerif4-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/roboto-condensed/roboto-condensed-v24-latin-700.woff2') format('woff2');
+}
+ 
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/aspect-ratio";
@@ -60,12 +57,15 @@
 
 	--color-black: oklch(16.96% 0.002 17.32);
 	--color-paper: oklch(99.01% 0.016 95.22);
+
+    --color-gray-*: initial;
   
 	--color-gray-50: oklch(95.37% 0.015 98.29);
 	--color-gray-100: oklch(91.74% 0.015 98.30);
 	--color-gray-150: oklch(88.10% 0.014 97.46);
 	--color-gray-200: oklch(84.63% 0.014 102.05);
 	--color-gray-300: oklch(77.21% 0.013 96.47);
+    --color-gray-400: oklch(69.56% 0.010 93.62);
 	--color-gray-500: oklch(61.69% 0.008 88.67);
 	--color-gray-600: oklch(53.75% 0.008 97.45);
 	--color-gray-700: oklch(45.31% 0.005 91.50);
@@ -93,7 +93,7 @@
 }
 
 :root {
-	--color-primary: var(--color-green-800);
+    --color-primary: var(--color-green-800);
 	--color-red: var(--color-red-600);
 	--color-orange: var(--color-orange-600);
 	--color-yellow: var(--color-yellow-600);
@@ -128,23 +128,51 @@
 	--color-magenta: var(--color-magenta);
 }
 
-.prose-custom {
-	@apply prose-gray max-w-none dark:prose-invert mx-auto prose-a:text-primary prose-headings:font-serif prose-headings:font-normal prose-h1:font-display prose-h1:text-5xl prose-h1:mb-8 prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h3:mt-0 prose-h4:mb-6 prose-h4:sm:text-[1.25rem] prose-h4:mb-5 prose-h5:font-sans prose-h5:font-semibold prose-h5:text-sm prose-h5:uppercase prose-h5:mb-4 prose-h6:font-sans prose-h6:text-sm prose-h6:uppercase prose-h6:mb-2 prose-h2:mt-8 prose-h2:mb-3 dark:prose-blockquote:border-l-gray-800 prose-blockquote:border-l-gray-100 prose-blockquote:not-italic prose-blockquote:font-normal prose-blockquote:py-1 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900 prose-th:font-sans prose-th:font-semibold prose-thead:border-gray-100 dark:prose-thead:border-b-gray-800 prose-tr:border-gray-100 dark:prose-tr:border-gray-800;
+@utility prose {
+    --tw-prose-body: var(--color-gray-800);
+    --tw-prose-headings: var(--color-gray-900);
+    --tw-prose-lead: var(--color-gray-700);
+    --tw-prose-links: var(--color-primary);
+    --tw-prose-bold: var(--color-gray-900);
+    --tw-prose-counters: var(--color-gray-600);
+    --tw-prose-bullets: var(--color-gray-400);
+    --tw-prose-hr: var(--color-gray-300);
+    --tw-prose-quotes: var(--color-gray-900);
+    --tw-prose-quote-borders: var(--color-gray-300);
+    --tw-prose-captions: var(--color-gray-700);
+    --tw-prose-code: var(--color-gray-900);
+    --tw-prose-pre-code: var(--color-gray-100);
+    --tw-prose-pre-bg: var(--color-gray-900);
+    --tw-prose-th-borders: var(--color-gray-300);
+    --tw-prose-td-borders: var(--color-gray-200);
+    --tw-prose-invert-body: var(--color-gray-200);
+    --tw-prose-invert-headings: var(--color-paper);
+    --tw-prose-invert-lead: var(--color-gray-300);
+    --tw-prose-invert-links: var(--color-primary);
+    --tw-prose-invert-bold: var(--color-paper);
+    --tw-prose-invert-counters: var(--color-gray-400);
+    --tw-prose-invert-bullets: var(--color-gray-600);
+    --tw-prose-invert-hr: var(--color-gray-700);
+    --tw-prose-invert-quotes: var(--color-gray-100);
+    --tw-prose-invert-quote-borders: var(--color-gray-700);
+    --tw-prose-invert-captions: var(--color-gray-400);
+    --tw-prose-invert-code: var(--color-paper);
+    --tw-prose-invert-pre-code: var(--color-gray-300);
+    --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+    --tw-prose-invert-th-borders: var(--color-gray-600);
+    --tw-prose-invert-td-borders: var(--color-gray-700);
+
+    @apply prose-headings:font-serif prose-headings:font-normal prose-h1:font-display prose-h1:text-5xl prose-h1:mb-8 prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h3:mt-0 prose-h4:mb-6 prose-h4:sm:text-[1.25rem] prose-h4:mb-5 prose-h5:font-sans prose-h5:font-semibold prose-h5:text-sm prose-h5:uppercase prose-h5:mb-4 prose-h6:font-sans prose-h6:text-sm prose-h6:uppercase prose-h6:mb-2 prose-h2:mt-8 prose-h2:mb-3 dark:prose-blockquote:border-l-gray-800 prose-blockquote:border-l-gray-100 prose-blockquote:not-italic prose-blockquote:font-normal prose-blockquote:py-1 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900 prose-th:font-sans prose-th:font-semibold prose-thead:border-gray-100 dark:prose-thead:border-b-gray-800 prose-tr:border-gray-100 dark:prose-tr:border-gray-800;
 }
 
 pre {
 	@apply border border-gray-850 bg-black;
 }
 
-.prose-custom .blockquote p, ::before, ::after {
+.prose .blockquote p, ::before, ::after {
 	display: none;
 }
-  
-pre, code {
-	white-space: pre-wrap; 
-	word-break: break-word;
-}
-  
+
 .theme-icon-dark, 
 .theme-icon-light {
 	display: none;

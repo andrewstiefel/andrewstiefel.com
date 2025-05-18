@@ -44,6 +44,10 @@ defaults:
     values:
       is_post: true  # Automatically set is_post=true for all posts
 
+### JEKYLL TAILWINDCSS SETTINGS
+tailwindcss:
+  css_path: "./assets/css/_tailwind.css"
+
 ### JEKYLL ARCHIVE SETTINGS
 jekyll-archives:
   enabled:
