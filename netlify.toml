@@ -9,22 +9,11 @@
   JEKYLL_ENV = "production"
 
 [context.deploy-preview.environment]
-  JEKYLL_ENV = "staging"
+  JEKYLL_ENV = "production"
 
 [dev]
   command = "bundle exec jekyll serve"
   publish = "_site/"
-
-[[plugins]]
-  package = "netlify-plugin-cloudinary"
-
-  [plugins.inputs]
-  cloudName = "andrewstiefel"
-  imagesPath = "/assets/img"
-
-[functions]
-  directory = "netlify/functions/"
-  node_bundler = "esbuild"
 
 [[redirects]]
   from = "https://andrew.st/*"
@@ -35,4 +24,9 @@
 [[redirects]]
   from = "/newsletter"
   to = "/letters"
+  status = 301
+
+[[redirects]]
+  from = "https://andrewstiefel.com/tag/*"
+  to = "https://andrewstiefel.com/topics/:splat"
   status = 301

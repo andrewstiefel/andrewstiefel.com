@@ -22,7 +22,6 @@ You’ve probably seen examples, especially around the Super Bowl or other signi
 <div class="aspect-w-16 aspect-h-9">
   <iframe src="https://player.vimeo.com/video/112042156?h=c9de6161d7&title=0&byline=0&portrait=0" class="w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
-
 {% endraw %}
 
 I may not want to run out and buy an iPad right after watching this, but I do remember the ad. And I feel inspired to create something. That feeling is now associated with Apple and their products. The Apple advertisement is an excellent example of why B2C marketers rely on storytelling to build customer connections and trust.

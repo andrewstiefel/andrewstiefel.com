@@ -13,7 +13,7 @@ Amet purus gravida quis blandit turpis cursus in. Posuere urna nec tincidunt pra
 
 [Or maybe a link?](https://andrewstiefel.com) Sit amet consectetur adipiscing elit ut aliquam purus. Tempor orci dapibus ultrices in iaculis nunc sed augue. Penatibus et magnis dis parturient montes. Enim tortor at auctor urna nunc id. Massa sapien faucibus et molestie ac. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
 
-![Example photo embed](/assets/img/reeves-pheasent.jpg "Reeve's Pheasant")
+{% cloudinary /assets/img/reeves-pheasent.jpg alt="Reeve's Pheasant" %}{:class="dark:brightness-75"}
 
 At tellus at urna condimentum mattis pellentesque id nibh tortor. Posuere lorem ipsum dolor sit amet. Nulla aliquet enim tortor at. Est ultricies integer quis auctor.
 

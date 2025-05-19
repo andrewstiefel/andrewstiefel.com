@@ -42,7 +42,7 @@ layout: default
           <div class="flex flex-wrap">
           {% for tag in page.tags %}
             <div class="not-prose text-sm capitalize bg-gray-50 dark:bg-gray-800 rounded mr-3 px-2 py-1 my-1">
-              <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/tag/{{ tag | slugify }}">{{tag | replace: "-", " "}}</a>
+              <a class="no-underline text-gray-600 dark:text-gray-200" href="{{site.baseurl}}/topics/{{ tag | slugify }}">{{tag | replace: "-", " "}}</a>
             </div>
           {% endfor %}
           </div>
