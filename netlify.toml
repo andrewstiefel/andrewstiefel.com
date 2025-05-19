@@ -9,7 +9,7 @@
   JEKYLL_ENV = "production"
 
 [context.deploy-preview.environment]
-  JEKYLL_ENV = "staging"
+  JEKYLL_ENV = "production"
 
 [dev]
   command = "bundle exec jekyll serve"
