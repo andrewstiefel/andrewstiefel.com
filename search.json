@@ -1,0 +1,39 @@
+---
+layout: null
+permalink: /search.json
+---
+
+[
+    {%- assign items = site.posts | concat: site.pages -%}
+    {%- assign filtered = items | where_exp: "item", "item.search_exclude != true" -%}
+    {%- assign total = 0 -%}
+  
+    {%- for item in filtered -%}
+      {%- assign url = item.url | downcase -%}
+      {%- assign suffix = url | slice: -5, 5 -%}
+      {%- assign skip = false -%}
+  
+      {%- if url == "/welcome/" or url == "/thanks/" -%}
+        {%- assign skip = true -%}
+      {%- endif -%}
+  
+      {%- if suffix contains ".json" or suffix contains ".xml" or suffix contains ".txt" -%}
+        {%- assign skip = true -%}
+      {%- endif -%}
+  
+      {%- if item.title == nil or item.content == nil -%}
+        {%- assign skip = true -%}
+      {%- endif -%}
+  
+      {%- unless skip -%}
+        {%- if total > 0 -%},{%- endif -%}
+        {
+          "title": {{ item.title | strip_newlines | jsonify }},
+          "url": "{{ item.url }}",
+          "content": {{ item.content | strip_html | normalize_whitespace | strip_newlines | jsonify }},
+          "tags": {{ item.tags | join: " " | jsonify }}
+        }
+        {%- assign total = total | plus: 1 -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  ]  
