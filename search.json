@@ -13,7 +13,7 @@ permalink: /search.json
       {%- assign suffix = url | slice: -5, 5 -%}
       {%- assign skip = false -%}
   
-      {%- if url == "/welcome/" or url == "/thanks/" -%}
+      {%- if url == "/welcome/" or url == "/thanks/" or url == "/almost/" -%}
         {%- assign skip = true -%}
       {%- endif -%}
   
