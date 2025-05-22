@@ -10,4 +10,6 @@ tags:
   - technology
 ---
 
-This is a link to [[This is another note|different text]] about [[How to Style an Atom Feed with XSLT]].
+This is a post. It links to [[This is another note|another note]].
+
+I also use it to link to a longer note about [[How to Style an Atom Feed with XSLT]].

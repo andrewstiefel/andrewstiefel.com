@@ -10,4 +10,4 @@ tags:
   - technology
 ---
 
-This is an [[How to Style an Atom Feed with XSLT|internal link]] to [[This is a first note|another note]].
+This is some text in another note. It links to [[This is a first note]].
