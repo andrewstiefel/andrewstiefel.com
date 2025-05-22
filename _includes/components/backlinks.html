@@ -1,0 +1,23 @@
+{% if page.backlinks.size > 0 %}
+<div class="pt-12">
+    <div class="border border-gray-100 dark:border-gray-800 p-8 rounded">
+        <h3 class="text-sm uppercase">Referenced by {{ page.backlinks.size }} post{% if page.backlinks.size != 1 %}s{% endif %}</h3>
+        <ul>
+            {% for backlink in page.backlinks %}
+                <li>
+                    <article class="pt-8">
+                        <div class="w-full">
+                            <h2 class="text-2xl font-serif font-semibold">
+                            <a class="text-black dark:text-gray-100" title="{{ backlink.title }}" href="{{ backlink.url }}">{{backlink.title }}</a>
+                            </h2>
+                            <div class="text-gray-600 dark:text-gray-400 my-2">
+                            {{ backlink.description }}
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            {% endfor %}
+            </ul>
+    </div>
+</div>
+{% else %}{% endif %}
