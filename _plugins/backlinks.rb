@@ -35,12 +35,13 @@ class BacklinkGenerator < Jekyll::Generator
           backlinks[target_post] << post unless backlinks[target_post].include?(post)
 
           raw_excerpt = extract_excerpt(target_post)
-          title_attr = escape_html(label)
-          excerpt_attr = escape_html(sanitize_excerpt(raw_excerpt))
-
-          puts "[preview] link=#{label.inspect}, preview-title=#{title_attr.inspect}, excerpt=#{excerpt_attr.inspect}"
-
-          "<a href=\"#{target_post.url}\" class=\"internal-link\" data-preview-title=\"#{title_attr}\" data-preview-excerpt=\"#{excerpt_attr}\">#{label}</a>"
+          preview_title = escape_html(target_post.data['title'] || label)
+          label_attr    = escape_html(label)
+          excerpt_attr  = escape_html(sanitize_excerpt(raw_excerpt))
+        
+          "<a href=\"#{target_post.url}\" class=\"internal-link\" "\
+            "data-preview-title=\"#{preview_title}\" "\
+            "data-preview-excerpt=\"#{excerpt_attr}\">#{label_attr}</a>"
         else
           "<span class=\"invalid-link\" title=\"Post not found\">[[#{escape_html(raw_target)}]]</span>"
         end
@@ -67,13 +68,16 @@ class BacklinkGenerator < Jekyll::Generator
   end
 
   def sanitize_excerpt(text)
-    text.gsub(/\[\[([^\|\]]+)\|([^\]]+)\]\]/, '\2')     # [[slug|label]] → label
-        .gsub(/\[\[([^\]]+)\]\]/, '\1')                 # [[slug]] → slug
-        .gsub(/\[([^\]]+)\]\([^\)]+\)/, '\1')           # [label](url) → label
-        .gsub(/[*_~`>#]/, '')                           # Remove markdown formatting
-        .gsub(/\|/, '')                                 # Strip pipe chars
-        .gsub(/\n+/, ' ')                               # Flatten newlines
-        .strip
+    cleaned = text
+      .gsub(/\[\[([^\|\]]+)\|([^\]]+)\]\]/, '\2')
+      .gsub(/\[\[([^\]]+)\]\]/, '\1')
+      .gsub(/\[([^\]]+)\]\([^\)]+\)/, '\1')
+      .gsub(/[*_~`>#]/, '')
+      .gsub(/\|/, '')
+      .gsub(/\n{3,}/, "\n\n")
+      .gsub(/(?<!\n)\n(?!\n)/, ' ')
+      .strip
+    cleaned.gsub("\n", '\\n')
   end
 
   def escape_html(text)
