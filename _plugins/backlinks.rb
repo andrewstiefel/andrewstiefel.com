@@ -57,28 +57,39 @@ class BacklinkGenerator < Jekyll::Generator
 
   def extract_excerpt(post)
     raw_source = File.read(post.path)
-    content_without_front_matter = raw_source.sub(/\A---.*?---\s*/m, '')
-    clean_lines = content_without_front_matter.lines.reject { |line| line.strip.start_with?('#') }
-    raw = clean_lines.join.strip
-
-    min_chars = 200
-    slice = raw[0..800]
-    sentence = slice.match(/(.{#{min_chars},}?[.!?])(\s|$)/m)
-    sentence ? sentence[1].strip : slice.strip[0..min_chars]
-  end
+    body       = raw_source.sub(/\A---.*?---\s*/m, '')
+    lines      = body.lines.reject { |l| l.strip.start_with?('#') }
+    raw        = lines.join.strip               # full text without headings
+  
+    min_chars  = 250
+    slice      = raw[0..800] || raw
+  
+    excerpt = if (m = slice.match(/(.{#{min_chars},}?[.!?])(\s|$)/m))
+                m[1].strip                      # got a whole sentence
+              else
+                slice.strip                     # hard cut in mid-sentence
+              end
+    if raw.length > excerpt.length &&           # we DID truncate
+       excerpt !~ /[.!?]["')\]]?\z/             # and didn’t end on . ! ? ) ] "
+      excerpt << '…'
+    end
+  
+    excerpt
+  end  
 
   def sanitize_excerpt(text)
     cleaned = text
-      .gsub(/\[\[([^\|\]]+)\|([^\]]+)\]\]/, '\2')
-      .gsub(/\[\[([^\]]+)\]\]/, '\1')
-      .gsub(/\[([^\]]+)\]\([^\)]+\)/, '\1')
-      .gsub(/[*_~`>#]/, '')
-      .gsub(/\|/, '')
-      .gsub(/\n{3,}/, "\n\n")
-      .gsub(/(?<!\n)\n(?!\n)/, ' ')
+      .gsub(/\[\[([^\|\]]+)\|([^\]]+)\]\]/, '\2')      # [[target|label]]
+      .gsub(/\[\[([^\]]+)\]\]/,        '\1')           # [[target]]
+      .gsub(/\[([^\]]+)\]\([^)]+\)/,   '\1')           # [text](url)
+      .gsub(/\{\:\s*[^}]+\}/,          '')             # ← new: {: .class data-attr="x"}
+      .gsub(/[*_~`>#]/,                '')             # emphasis / code marks
+      .gsub(/\|/,                      '')
+      .gsub(/\n{3,}/,                  "\n\n")
+      .gsub(/(?<!\n)\n(?!\n)/,         ' ')
       .strip
     cleaned.gsub("\n", '\\n')
-  end
+  end  
 
   def escape_html(text)
     CGI.escape_html(text.to_s)
