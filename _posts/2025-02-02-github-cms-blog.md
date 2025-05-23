@@ -11,7 +11,7 @@ tags:
   - writing
   - coding
 ---
-I use [Jekyll to build and publish my blog on Netlify](/blog-jekyll-netlify/). For a long time my content management system (CMS) was just a bunch of markdown files on my laptop. Most of the time I don't need anything else — it's simple, and it's just me. 
+I use [[2021-12-20-blog-jekyll-netlify|Jekyll to build and publish my blog on Netlify]]. For a long time my content management system (CMS) was just a bunch of markdown files on my laptop. Most of the time I don't need anything else — it's simple, and it's just me. 
 
 But as I've wanted to focus on writing more often, I wanted to find an easier way to track future ideas, what I'd like to work on now, and easily see what I've done.
 
@@ -105,5 +105,5 @@ Now if you visit your project, you'll see your post has automatically been moved
 I've been exploring ways to [customize this further by creating new views](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project) — for example, a table view that adds publication dates so I can when I want to publish a post. But most importantly, I'm enjoying the flexibility and close integration between what I write and how it's published. 
 
 ## Further Reading
-- [How I Built My Blog with Jekyll and Netlify](/blog-jekyll-netlify/)
-- [Markdown Files, Not Apps](/markdown-files-not-apps/)
+- [[2021-12-20-blog-jekyll-netlify|How I Built My Blog with Jekyll and Netlify]]
+- [[2025-01-17-markdown-files-not-apps|Markdown Files, Not Apps]]

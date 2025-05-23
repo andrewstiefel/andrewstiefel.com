@@ -11,12 +11,17 @@ class BacklinkGenerator < Jekyll::Generator
   def generate(site)
     posts = site.posts.docs
 
+    # Build lookup table: filename-based slug is primary, title slug remains
     slug_to_post = posts.each_with_object({}) do |post, hash|
-      title = post.data['title']
-      next unless title.is_a?(String)
+      # 1. Primary key – file name without extension
+      filename_slug = Jekyll::Utils.slugify(post.basename_without_ext)
+      hash[filename_slug] = post
 
-      slug = Jekyll::Utils.slugify(title)
-      hash[slug] = post
+      # 2. Optional key for back-compatibility with [[Title]] links
+      if (title = post.data['title']).is_a?(String)
+        title_slug = Jekyll::Utils.slugify(title)
+        hash[title_slug] = post unless hash.key?(title_slug)
+      end
     end
 
     backlinks = Hash.new { |h, k| h[k] = [] }
