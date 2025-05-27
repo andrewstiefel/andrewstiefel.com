@@ -1,5 +1,5 @@
 [build]
-  command = "jekyll build"
+  command = "npm install --prefix netlify/functions && bundle exec jekyll build"
   publish = "_site/"
 
 [build.environment]
@@ -14,6 +14,11 @@
 [dev]
   command = "bundle exec jekyll serve"
   publish = "_site/"
+
+[functions]
+  directory = "netlify/functions/"
+  node_bundler = "esbuild"
+  external_node_modules = ["@1password/sdk"]
 
 [[redirects]]
   from = "https://andrew.st/*"

@@ -1,12 +1,15 @@
-# Jekyll specific
+# Jekyll
 _site/
 .jekyll-cache
 .jekyll-metadata
 
+# Netlify
+.netlify
+
 # Obsidian
 .obsidian
 
-# Ruby dependencies
+# Ruby
 .ruby-version
 .bundle
 Gemfile.lock
@@ -15,7 +18,7 @@ vendor/cache
 vendor/gems
 vendor/ruby
 
-# Node dependencies
+# Node
 node_modules
 package-lock.json
 yarn.lock
