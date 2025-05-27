@@ -1,9 +1,9 @@
-import fetch from 'node-fetch';
-import sdk from "@1password/sdk";
+import fetch from "node-fetch";
+import sdk   from "@1password/sdk";
 
 const { OP_SERVICE_ACCOUNT_TOKEN } = process.env;
 
-// Parse the event data
+// Parse event submissions
 export default async (request) => {
   let payload;
   try {
@@ -32,65 +32,63 @@ export default async (request) => {
   }
 
   // Validate URL
-  let safeUrl = undefined;
+  let safeUrl;
   if (rawUrl) {
     try {
       const u = new URL(rawUrl);
       if (u.protocol === "http:" || u.protocol === "https:") safeUrl = u.toString();
-    } catch { /* ignore invalid URL */ }
+    } catch {/* ignore bad URL */}
   }
 
-  console.log(`Received submission: ${normalEmail}, ${tag}`);
+  console.log(`Received submission: ${normalEmail}, ${tag}, ${safeUrl}`);
 
-  // Create 1Password client
-  const client = await sdk.createClient({
+  // Fetch API key from 1Password
+  const client  = await sdk.createClient({
     auth: OP_SERVICE_ACCOUNT_TOKEN,
     integrationName: "andrewstiefel.com",
     integrationVersion: "v1.2",
   });
-  
-  // Fetch the API key
-  const apiKey = await client.secrets.resolve("op://website/buttondown-api/credential");
+  const apiKey  = await client.secrets.resolve(
+    "op://website/buttondown-api/credential"
+  );
 
   // Form the headers
   const authHeaders = {
     Authorization: `Token ${apiKey}`,
     "Content-Type": "application/json",
+    "X-Buttondown-Collision-Behavior": "add",
   };
 
   // Upsert the subscriber
-  const upsertRes = await fetch( 'https://api.buttondown.email/v1/subscribers', {
-    method: 'POST',
-    headers: {
-        ...authHeaders,
-        "X-Buttondown-Collision-Behavior": "add",
-      },
-    headers: authHeaders,
-    body: JSON.stringify({ 
-      email_address: email,
-      tags: [tag],
-      referrer_url: url,
-     }),
-  });
+  const upsertRes = await fetch(
+    "https://api.buttondown.email/v1/subscribers",
+    {
+      method: "POST",
+      headers: authHeaders,
+      body: JSON.stringify({
+        email_address: normalEmail,
+        tags: [tag],
+        referrer_url: safeUrl,
+      }),
+    }
+  );
 
   // Log the response
-  const sub = await upsertRes.json();
-
-  // Handle the success response
-  if (createRes.status === 201) {
-    return new Response(
-      JSON.stringify({ status: "created" }),
-      { status: 201, headers: { "Content-Type": "application/json" } },
-    );
+  if (!upsertRes.ok) {
+    const err = await upsertRes.text();
+    console.error("Buttondown error:", upsertRes.status, err);
+    return new Response("Upsert failed", { status: 502 });
   }
 
-  // Send a reminder if a duplicate request
+  const sub = await upsertRes.json();
+
+  // Send reminder only if still unconfirmed
   if (sub.type === "unactivated") {
     await fetch(
       `https://api.buttondown.com/v1/subscribers/${encodeURIComponent(
-        email,
+        normalEmail
       )}/send-reminder`,
-      { method: "POST", headers: authHeaders },
+      { method: "POST", headers: authHeaders }
     );
   }
 
@@ -100,6 +98,6 @@ export default async (request) => {
       status: sub.type === "unactivated" ? "reminder-sent" : "updated",
       tags: sub.tags,
     }),
-    { status: 200, headers: { "Content-Type": "application/json" } },
+    { status: 200, headers: { "Content-Type": "application/json" } }
   );
 };
