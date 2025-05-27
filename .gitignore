@@ -27,3 +27,5 @@ yarn.lock
 *.DS_Store
 *.bak
 *.tmp
+# Local Netlify folder
+.netlify
