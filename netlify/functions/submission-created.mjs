@@ -59,7 +59,7 @@ export default async (request) => {
     "X-Buttondown-Collision-Behavior": "add",
   };
 
-  // Upsert the subscriber
+  // Upsert subscriber
   const upsertRes = await fetch(
     "https://api.buttondown.email/v1/subscribers",
     {
@@ -70,10 +70,9 @@ export default async (request) => {
         tags: [tag],
         referrer_url: safeUrl,
       }),
-    }
+    },
   );
 
-  // Log the response
   if (!upsertRes.ok) {
     const err = await upsertRes.text();
     console.error("Buttondown error:", upsertRes.status, err);
@@ -81,23 +80,28 @@ export default async (request) => {
   }
 
   const sub = await upsertRes.json();
+  const isNew = upsertRes.status === 201;      // 201 = brand-new subscriber
 
-  // Send reminder only if still unconfirmed
-  if (sub.type === "unactivated") {
+  // Send reminder only for existing unconfirmed addresses
+  if (!isNew && sub.type === "unactivated") {
     await fetch(
       `https://api.buttondown.com/v1/subscribers/${encodeURIComponent(
-        normalEmail
+        normalEmail,
       )}/send-reminder`,
-      { method: "POST", headers: authHeaders }
+      { method: "POST", headers: authHeaders },
     );
   }
 
-  // Respond to caller
   return new Response(
     JSON.stringify({
-      status: sub.type === "unactivated" ? "reminder-sent" : "updated",
+      status:
+        !isNew && sub.type === "unactivated"
+          ? "reminder-sent"
+          : isNew
+          ? "created"
+          : "updated",
       tags: sub.tags,
     }),
-    { status: 200, headers: { "Content-Type": "application/json" } }
+    { status: 200, headers: { "Content-Type": "application/json" } },
   );
 };
