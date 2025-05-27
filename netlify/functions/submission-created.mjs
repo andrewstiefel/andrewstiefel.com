@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import sdk   from "@1password/sdk";
+import sdk from "@1password/sdk";
 
 const { OP_SERVICE_ACCOUNT_TOKEN } = process.env;
 
