@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import { createClient } from "@1password/sdk";
+import sdk from "@1password/sdk";
 
 const { OP_SERVICE_ACCOUNT_TOKEN } = process.env;
 
@@ -43,7 +43,7 @@ export default async (request) => {
   console.log(`Received submission: ${normalEmail}, ${tag}`);
 
   // Create 1Password client
-  const client = await createClient({
+  const client = await sdk.createClient({
     auth: OP_SERVICE_ACCOUNT_TOKEN,
     integrationName: "andrewstiefel.com",
     integrationVersion: "v1.2",
