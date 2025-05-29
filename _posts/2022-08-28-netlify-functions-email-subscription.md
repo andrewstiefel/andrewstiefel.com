@@ -49,7 +49,10 @@ You need to follow three basic steps to create a Netlify function:
 
 To start, let’s save the API token from our email service as an **environment variable**. Environment variables are useful to hold information that I don’t want to make public, like this API key. You can add an environment variable using the Netlify admin interface under your build and deploy settings.
 
-{% cloudinary /assets/img/netlify-environment-variables.png alt="Netlify environment variables" %}{:class="dark:brightness-75"}
+{% include image.html
+   src="/assets/img/netlify-environment-variables.png"
+   alt="Netlify environment variables"
+%}
 
 Next, specify where Netlify should look for your functions. Edit your netlify.toml to specify the functions directory. It might look something like this:
 
