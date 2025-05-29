@@ -35,3 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape" && !lightbox.classList.contains("hidden")) closeLightbox();
   });
 });
+
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const hiRes = entry.target.dataset.full;
+      if (hiRes) {
+        const tmp = new Image();
+        tmp.src = hiRes;
+      }
+      obs.unobserve(entry.target);
+    }
+  });
+}, { rootMargin: "200px" });
+
+document.querySelectorAll('img[data-full]').forEach(img => observer.observe(img));
