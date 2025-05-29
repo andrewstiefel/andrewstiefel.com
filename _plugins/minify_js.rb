@@ -1,4 +1,4 @@
-require 'uglifier'
+require 'terser'
 
 Jekyll::Hooks.register :site, :post_write do |site|
   # Run in production or staging
@@ -15,13 +15,18 @@ Jekyll::Hooks.register :site, :post_write do |site|
     begin
       # Read the generated bundle.js file
       content = File.read(source_path)
-      # Minify using Uglifier with harmony mode enabled for ES6 syntax
-      minified_content = Uglifier.new(harmony: true).compile(content)
-      # Write the minified content to bundle.min.js
-      File.open(minified_path, 'w') { |f| f.write(minified_content) }
-      Jekyll.logger.info "MinifyJs:", "Generated minified file at assets/js/bundle.min.js"
+      # Terser configuration for modern syntax
+      minified = Terser.new(
+        compress: true,
+        mangle:   true
+      ).compile(content)
+
+      # Write minified JS file
+      File.write(minified_path, minified)
+      # Log in console
+      Jekyll.logger.info 'MinifyJs:', 'Generated assets/js/bundle.min.js'
     rescue StandardError => e
-      Jekyll.logger.error "MinifyJs:", "Failed to minify bundle.js: #{e.message}"
+      Jekyll.logger.error 'MinifyJs:', "Failed to minify bundle.js: #{e.message}"
     end
   end
 end

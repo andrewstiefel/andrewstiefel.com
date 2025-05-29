@@ -1,0 +1,51 @@
+---
+layout: null
+permalink: /search.json
+---
+
+[
+  {%- assign items = site.posts | concat: site.pages -%}
+  {%- assign filtered = items | where_exp: "item", "item.search_exclude != true" -%}
+  {%- assign total = 0 -%}
+
+  {%- for item in filtered -%}
+    {%- assign url = item.url | downcase -%}
+    {%- assign suffix = url | slice: -5, 5 -%}
+    {%- assign skip = false -%}
+
+    {%- if url == "/welcome/" or url == "/thanks/" or url == "/almost/" or url == "/404.html" -%}
+      {%- assign skip = true -%}
+    {%- endif -%}
+
+    {%- if suffix contains ".json" or suffix contains ".xml" or suffix contains ".txt" -%}
+      {%- assign skip = true -%}
+    {%- endif -%}
+
+    {%- if item.title == nil -%}
+      {%- assign skip = true -%}
+    {%- endif -%}
+
+    {%- unless skip -%}
+      {%- if total > 0 -%},{%- endif -%}
+
+      {%- comment %}
+        Category/tag index pages tend to have slug-style titles (“essays”, “notes”).
+        Detect them and convert only those; leave everything else untouched.
+      {% endcomment -%}
+      {%- assign display_title = item.title -%}
+      {%- if item.type == "category" or item.type == "tag" -%}
+        {%- assign display_title = display_title | humanize_slug -%}
+      {%- endif -%}
+
+      {%- capture display_tags -%}{{ item.tags | humanize_slugs }}{%- endcapture -%}
+
+      {
+        "title": {{ display_title | strip_newlines | jsonify }},
+        "url": "{{ item.url }}",
+        "content": {{ item.content | strip_html | normalize_whitespace | strip_newlines | jsonify }},
+        "tags": {{ display_tags | jsonify }}
+      }
+      {%- assign total = total | plus: 1 -%}
+    {%- endunless -%}
+  {%- endfor -%}
+]

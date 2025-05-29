@@ -24,18 +24,16 @@
   <!-- Scripts -->
   <script nonce="Njc5MTEyNzgy">
     try {
-      if (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      const theme = localStorage.getItem('theme');
+      if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.classList.add('dark');
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18181b');
-      } else if (localStorage.theme === 'dark') {
-        document.documentElement.classList.add('theme-dark', 'dark');
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18181b');
-      } else if (localStorage.theme === 'light') {
+      } else if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (theme === 'light') {
         document.documentElement.classList.add('light');
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f9fafb');
       }
     } catch (_) {}
-  </script>
+  </script>  
   <script src="https://cdn.usefathom.com/script.js" {% if jekyll.environment == 'production' %}data-site="BKYGCADM"{% else %}data-site="BJMXGCVM"{% endif %} defer></script>
 
 </head>
