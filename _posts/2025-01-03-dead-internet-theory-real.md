@@ -25,7 +25,10 @@ It didn't take long for users on [Blue Sky](https://bsky.app/profile/jasonkoeble
 
 Here's the example I referenced above:
 
-{% cloudinary /assets/img/metas-ai-generated-profiles-are-starting-to-show-up.webp alt="Meta AI Generated Profile" data-lightbox %}{:class="dark:brightness-75"}
+{% include image.html
+   src="/assets/img/metas-ai-generated-profiles-are-starting-to-show-up.webp"
+   alt="Meta AI Generated Profile"
+%}
 
 Most of these profiles were already a few years old, and Meta has since announced that they will be taking them down.
 

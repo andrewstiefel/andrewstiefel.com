@@ -35,7 +35,10 @@ If you're already using GitHub to host the code for your blog (like I do with Je
 
 You can [see an example of mine on GitHub](https://github.com/users/andrewstiefel/projects/2), or with the screenshot below:
 
-{% cloudinary /assets/img/github-cms.png alt="GitHub CMS" data-lightbox %}{:class="dark:brightness-75"}
+{% include image.html
+   src="/assets/img/github-cms.png"
+   alt="GitHub CMS"
+%}
 
 ## Use issues to track posts
 
@@ -98,7 +101,10 @@ I prefer to create a new branch and to submit a pull request when I'm ready to p
 
 Now if you visit your project, you'll see your post has automatically been moved to the "done" column!
 
-{% cloudinary /assets/img/github-pull-request.png alt="GitHub Pull Request" data-lightbox %}{:class="dark:brightness-75"}
+{% include image.html
+   src="/assets/img/github-pull-request.png"
+   alt="GitHub Pull Request"
+%}
 
 ## Final thoughts
 
