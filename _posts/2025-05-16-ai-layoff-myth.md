@@ -2,6 +2,7 @@
 layout: post
 title: AI Isn't Taking Your Job – The Economy Is
 description: AI is the excuse, not the cause, behind layoffs across tech and beyond.
+permalink: ai-layoff-myth/
 image: 
 date: 2025-05-16
 category: essays

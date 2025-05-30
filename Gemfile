@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'uglifier'
+gem 'terser'
 gem 'tailwindcss-ruby', '4.1.7'
 
 group :jekyll_plugins do
