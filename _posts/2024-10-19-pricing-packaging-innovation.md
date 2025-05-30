@@ -19,10 +19,7 @@ There are two main factors to consider:
 
 Here's an easy framework to visualize your options:
 
-{% include image.html
-   src="/assets/img/Packaging-Innovation-Framework.png"
-   alt="How to package innovation"
-%}
+{% include image.html src="/assets/img/Packaging-Innovation-Framework.png" alt="How to package innovation" %}
 
 ### 1. New Product or Tier
 If the new capability stretches beyond the value of your existing tiers, or it could shift the positioning of your entire product, it may be better to create a new tier or even an entirely new product. This will need more effort in field enablement and communication, but it also opens the door to greater potential revenue.
