@@ -31,11 +31,7 @@ layout: default
     <section class="grid grid-cols-6 py-4">
       <div class="col-span-full lg:col-start-2 lg:col-span-4">
         <div class="lg:col-start-2 col-span-4 prose dark:prose-invert max-w-none mx-auto">
-          {% if page.processed_content %}
-            {{ page.processed_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
+          {{ content }}
         </div>
       </div>
     </section>
