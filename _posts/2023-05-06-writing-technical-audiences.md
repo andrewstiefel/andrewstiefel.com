@@ -14,6 +14,7 @@ tags:
 Whether you are marketing to software developers, scientists, academic audiences, or other specialized industries, writing is a tool that can serve you well.
 
 But writing for technical audiences is a unique skill that requires a different set of techniques than copywriting for a consumer marketing campaign. You need not only an in-depth understanding of the subject but also the ability to convey complex information clearly and concisely. 
+
 The following tips can help you to communicate your ideas more effectively.
 
 ## Know your audience
