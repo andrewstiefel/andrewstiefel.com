@@ -11,24 +11,41 @@ const icons = {
   light: `<svg class="w-4 h-4 fill-gray-700" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M4.733 24.72l1.88 1.88 2.4-2.387L7.12 22.32zm9.934 5.213h2.667V26h-2.667zM16 7.333c-4.413 0-8 3.587-8 8s3.587 8 8 8 8-3.587 8-8c0-4.427-3.587-8-8-8zm10.667 9.334h4V14h-4zm-3.68 7.546l2.4 2.387 1.88-1.88-2.387-2.4zm4.28-18.266l-1.88-1.88-2.4 2.387 1.893 1.893zM17.333.733h-2.667v3.933h2.667zM5.333 14h-4v2.667h4zm3.68-7.547l-2.4-2.387-1.88 1.88 2.387 2.4 1.893-1.893z"></path></svg>`
 };
 
+const metaTheme = document.querySelector('meta[name="theme-color"]');
+
+function setThemeColor(hex) {
+  metaTheme.setAttribute('content', hex);
+}
+
 function applyTheme(value) {
   html.classList.remove('dark', 'light');
 
   if (value === 'dark') {
     html.classList.add('dark');
     localStorage.setItem('theme', 'dark');
+    setThemeColor('#1c1b1a');
   } else if (value === 'light') {
     html.classList.add('light');
     localStorage.setItem('theme', 'light');
+    setThemeColor('#FFFCF0');
   } else {
     localStorage.removeItem('theme');
     const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     html.classList.add(isDark ? 'dark' : 'light');
+    setThemeColor(isDark ? '#1c1b1a' : '#FFFCF0');
   }
 
-  themeLabel.textContent = value.charAt(0).toUpperCase() + value.slice(1);
+  themeLabel.textContent =
+    value.charAt(0).toUpperCase() + value.slice(1);
   iconWrapper.innerHTML = icons[value];
 }
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+  if (!localStorage.getItem('theme')) {
+    html.classList.toggle('dark', e.matches);
+    setThemeColor(e.matches ? '#1c1b1a' : '#FFFCF0');
+  }
+});
 
 function showMenu() {
   optionsMenu.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
