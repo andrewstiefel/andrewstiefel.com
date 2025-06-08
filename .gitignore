@@ -10,7 +10,6 @@ _site/
 .obsidian
 
 # Ruby
-.ruby-version
 .bundle
 Gemfile.lock
 vendor/bundle
