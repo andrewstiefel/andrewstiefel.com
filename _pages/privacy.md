@@ -48,9 +48,5 @@ When in the course of human events it becomes necessary to have a privacy policy
 
 We will not sell, rent, share, disclose, or otherwise make your email address available to other organizations unless you ask us to or we are required to by law, administrative guidance, or exigent circumstances.
 
-### Other useful information
-
-You may find it useful to know that Andrew Stiefel, LLC is a Washington-organized company whose primary place of business is in Bremerton, Washington.
-
 [1]:	https://usefathom.com/ "Fathom Analytics"
 [2]:	https://usefathom.com/ref/FBJDFZ "Fathom Analytics"
