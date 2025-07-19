@@ -104,7 +104,7 @@ To wrap up, your final workflow looks something this this:
 2. Commit and push changes to Github
 3. Netlify will pick up the changes and publish your posts
 
-## Bonus: convert backlinks to weblinks
+## Bonus: Convert Backlinks to Weblinks
 
 It's outside the scope of this post, but I also wrote a custom plugin to convert backlinks to web links. That way I can use Obsidian's backlinks within my published posts. 
 
