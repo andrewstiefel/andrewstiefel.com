@@ -2,7 +2,7 @@
 layout: post
 title: Building a Personal Monorepo for Writing
 description: How I created a workflow for researching and blogging with Obsidian and Jekyll
-permalink: monorepo
+permalink: monorepo/
 image:
 date: 2025-07-19
 category: articles
