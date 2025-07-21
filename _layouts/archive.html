@@ -9,14 +9,14 @@ layout: default
       <div class="lg:col-start-2 col-span-4">
 			<div class="border-b border-gray-100 dark:border-gray-800">
       {% if page.type == "category" %}
-        <h1 class="text-4xl sm:text-5xl font-display capitalize mb-4 sm:leading-tight">{{ page.title | replace: "-", " " }}</h1>
+        <h1 class="text-4xl sm:text-5xl font-serif capitalize mb-2 sm:leading-tight">{{ page.title | replace: "-", " " }}</h1>
         {% assign meta = site.data.meta[page.title] %}
-      	<p class="text-gray-600 dark:text-gray-400 text-xl font-serif leading-8 mb-8">{{ meta.description }}</p>
+      	<p class="text-gray-600 dark:text-gray-400 text-lg leading-8 mb-8">{{ meta.description }}</p>
       {% else %}
-        <h1 class="text-4xl sm:text-5xl font-display capitalize mb-4 sm:leading-tight">
+        <h1 class="text-4xl sm:text-5xl font-serif capitalize mb-4 sm:leading-tight">
           <span class="text-gray-600 dark:text-gray-500">Topics / </span><span>{{ page.title | replace: "-", " " }}</span>
         </h1>
-        <p class="text-gray-600 dark:text-gray-400 text-xl font-serif leading-8 mb-8">{{ page.posts | size }} posts about this topic</p>
+        <p class="text-gray-600 dark:text-gray-400 text-lg leading-8 mb-8">{{ page.posts | size }} posts about this topic</p>
       {% endif %}
         </div>
       </div>
