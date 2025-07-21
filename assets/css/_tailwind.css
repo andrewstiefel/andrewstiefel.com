@@ -45,6 +45,7 @@
 @theme {
 	--font-sans: "Inter var", sans-serif;
 	--font-serif: "Crimson Text", serif;
+	--font-display: "Roboto Condensed", sans-serif;
 
 	--color-black: oklch(16.96% 0.002 17.32);
 	--color-paper: oklch(99.01% 0.016 95.22);
