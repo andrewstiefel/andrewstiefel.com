@@ -19,8 +19,8 @@
 		</tr>
 		{% endif %}
 		<tr>
-			<td class="uppercase">Reading Time</td>
-			<td>{% include helpers/reading-time.html %}</td>
+			<td class="uppercase">Length</td>
+			<td>{{ page.content | number_of_words }} words</td>
 		</tr>
 		<tr>
 			<td class="uppercase">Type</td>
