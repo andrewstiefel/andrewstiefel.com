@@ -6,7 +6,7 @@
     font-display: swap;
     font-style: normal;
     font-named-instance: 'Regular';
-    src: url('../fonts/inter/Inter-roman.var.woff2') format('woff2');
+    src: url('/assets/fonts/inter/Inter-roman.var.woff2') format('woff2');
 }
    
 @font-face {
@@ -15,7 +15,7 @@
     font-display: swap;
     font-style: italic;
     font-named-instance: 'Italic';
-    src: url('../fonts/inter/Inter-italic.var.woff2') format('woff2');
+    src: url('/assets/fonts/inter/Inter-italic.var.woff2') format('woff2');
 }
    
 @font-face {
@@ -24,7 +24,7 @@
     font-weight: 400;
     font-display: swap;
     font-named-instance: 'Regular';
-    src: url('../fonts/crimson-text/CrimsonText-Regular.woff2') format('woff2');
+    src: url('/assets/fonts/crimson-text/CrimsonText-Regular.woff2') format('woff2');
 }
    
 @font-face {
@@ -33,7 +33,7 @@
     font-weight: 600;
     font-display: swap;
     font-named-instance: 'Semibold';
-    src: url('../fonts/crimson-text/CrimsonText-SemiBold.woff2') format('woff2');
+    src: url('/assets/fonts/crimson-text/CrimsonText-SemiBold.woff2') format('woff2');
 }
  
 @plugin "@tailwindcss/typography";
