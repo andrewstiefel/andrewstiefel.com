@@ -9,12 +9,7 @@ timezone: "America/Los_Angeles"
 author:
   name: "Andrew Stiefel"
   url: "https://andrewstiefel.com"
-  email: "andrew@andrewstiefel.com"
-  twitter: "andrewstiefel"
   linkedin: "andrewstiefel"
-  mastodon: "https://mas.to/@andrewstiefel"
-  bluesky: "https://bsky.app/profile/andrewstiefel.bsky.social"
-  medium: "andrewstiefel"
   github: "andrewstiefel"
 
 # OPEN GRAPH IMAGE SETTINGS
@@ -72,6 +67,7 @@ jekyll_tidy:
   exclude:
     - "feed.xml"
     - "assets/js/bundle.js"
+    - "llms.txt"
 
 ### EXCLUSIONS
 exclude:
