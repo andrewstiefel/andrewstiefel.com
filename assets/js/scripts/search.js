@@ -44,7 +44,7 @@ async function loadSearch() {
   searchLoaded = true;
 
   // Dynamically import FlexSearch
-  const FlexSearchModule = await import('/assets/js/flexsearch.bundle.module.min.js');
+  const FlexSearchModule = await import('/assets/js/vendor/flexsearch.bundle.module.min.js');
     const FlexSearch = FlexSearchModule.default;
 
   // Initialize index
