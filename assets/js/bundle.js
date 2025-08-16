@@ -6,3 +6,4 @@
 {% include_relative scripts/preview.js %}
 {% include_relative scripts/lightbox.js %}
 {% include_relative scripts/search.js %}
+{% include_relative scripts/scroll-indicator.js %}
