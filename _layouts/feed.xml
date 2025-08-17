@@ -1,0 +1,42 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>{{ page.title }}</title>
+ {% if page.feed_type == 'category' %}
+ <link href="{{ site.url }}{{ site.baseurl }}/feed/{{ page.feed_name }}.xml" rel="self"/>
+ <link href="{{ site.url }}{{ site.baseurl }}/{{ page.feed_name }}/" rel="alternate"/>
+ <id>{{ site.url }}/{{ page.feed_name }}/</id>
+ {% else %}
+ <link href="{{ site.url }}{{ site.baseurl }}/feed/topics/{{ page.feed_name }}.xml" rel="self"/>
+ <link href="{{ site.url }}{{ site.baseurl }}/topics/{{ page.feed_name }}/" rel="alternate"/>
+ <id>{{ site.url }}/topics/{{ page.feed_name }}/</id>
+ {% endif %}
+ <subtitle>{{ page.description }}</subtitle>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <author>
+   <name>{{ site.author.name }}</name>
+   <email>{{ site.author.email }}</email>
+ </author>
+ <rights type="text">Copyright © {{ site.time | date: "%Y" }} {{ site.author }}. All rights reserved.</rights>
+
+ {% if page.feed_type == 'category' %}
+   {% assign filtered_posts = site.posts | where: "category", page.feed_name %}
+ {% else %}
+   {% assign filtered_posts = site.posts | where_exp: "post", "post.tags contains page.feed_name" %}
+ {% endif %}
+ 
+ {% for post in filtered_posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link rel="alternate" href="{{ site.url }}{{ post.url }}"/>
+   <published>{{ post.date | date_to_xmlschema }}</published>
+   <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
+   <summary>{{ post.description }}</summary>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
