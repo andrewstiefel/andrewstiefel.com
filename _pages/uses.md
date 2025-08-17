@@ -14,6 +14,7 @@ These are the tools I like to use to be productive. You can find more examples a
 - LG UltraFine 24" Monitor
 
 ## Software
+- Amperfy
 - Firefox
 - Ghostty
 - Obsidian
@@ -28,3 +29,8 @@ These are the tools I like to use to be productive. You can find more examples a
 - Proton
 - Readwise
 - Tidal
+
+## Self-Hosted
+- Linkding
+- Navidrome
+- Plex
