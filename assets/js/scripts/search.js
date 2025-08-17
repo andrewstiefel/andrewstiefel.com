@@ -23,6 +23,10 @@ document.addEventListener('keydown', function (e) {
   const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
   if ((isMac && e.metaKey && e.key === 'k') || (!isMac && e.ctrlKey && e.key === 'k')) {
     e.preventDefault();
+    // Track keyboard shortcut usage with Fathom
+    if (typeof fathom !== 'undefined') {
+      fathom.trackEvent('Search');
+    }
     toggleModal(true);
   }
   if (e.key === 'Escape') {

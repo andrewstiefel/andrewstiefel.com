@@ -139,7 +139,7 @@
 }
 
 .internal-link {
-	@apply underline bg-primary/10 decoration-primary p-1;
+	@apply underline bg-primary/10 decoration-primary;
   }
 
 pre {
