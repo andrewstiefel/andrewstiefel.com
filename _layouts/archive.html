@@ -11,12 +11,37 @@ layout: default
       {% if page.type == "category" %}
         <h1 class="text-4xl sm:text-5xl font-serif capitalize mb-2 sm:leading-tight">{{ page.title | replace: "-", " " }}</h1>
         {% assign meta = site.data.meta[page.title] %}
-      	<p class="text-gray-600 dark:text-gray-400 text-lg leading-8 mb-8">{{ meta.description }}</p>
+      	<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8">
+          <p class="text-gray-600 dark:text-gray-400 text-lg leading-8">{{ meta.description }}</p>
+          <a href="/feed/{{ page.title }}.xml" data-fathom="RSS subscription" class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors mt-2 sm:mt-0 sm:ml-4 flex-shrink-0">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"></path>
+              <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0A5 5 0 005 10a1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"></path>
+            </svg>
+            Subscribe
+          </a>
+        </div>
       {% else %}
         <h1 class="text-4xl sm:text-5xl font-serif capitalize mb-4 sm:leading-tight">
           <span class="text-gray-600 dark:text-gray-500">Topics / </span><span>{{ page.title | replace: "-", " " }}</span>
         </h1>
-        <p class="text-gray-600 dark:text-gray-400 text-lg leading-8 mb-8">{{ page.posts | size }} posts about this topic</p>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8">
+          {% assign post_count = page.posts | size %}
+          <p class="text-gray-600 dark:text-gray-400 text-lg leading-8">
+            {% if post_count == 1 %}
+              {{ post_count }} article, essay, or note related to {{ page.title | replace: "-", " " }}
+            {% else %}
+              {{ post_count }} articles, essays, and notes related to {{ page.title | replace: "-", " " }}
+            {% endif %}
+          </p>
+          <a href="/feed/topics/{{ page.title }}.xml" data-fathom="RSS subscription" class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors mt-2 sm:mt-0 sm:ml-4 flex-shrink-0">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"></path>
+              <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0A5 5 0 005 10a1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"></path>
+            </svg>
+            Subscribe
+          </a>
+        </div>
       {% endif %}
         </div>
       </div>

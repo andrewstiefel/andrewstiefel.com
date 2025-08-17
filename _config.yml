@@ -66,6 +66,7 @@ jekyll-archives:
 jekyll_tidy:
   exclude:
     - "feed.xml"
+    - "feed-*.xml"
     - "assets/js/bundle.js"
     - "llms.txt"
 

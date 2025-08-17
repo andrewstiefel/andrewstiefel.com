@@ -12,13 +12,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <title>Web Feed • <xsl:value-of select="atom:feed/atom:title"/></title>
         <style type="text/css" nonce="MzY2NDM2OjE2">
-          body{max-width:768px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5em}section{margin:30px 15px}h1{font-size:2em;margin:.67em 0;line-height:1.125em}h2{border-bottom:1px solid #eaecef;padding-bottom:.3em}.alert{background:#fff5b1;padding:4px 12px;margin:0 -12px}a{text-decoration:none}.entry h3{margin-bottom:0}.entry p{margin:4px 0}
+          body{max-width:768px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5em}section{margin:30px 15px}h1{font-size:2em;margin:.67em 0;line-height:1.125em;text-transform:capitalize}h2{border-bottom:1px solid #eaecef;padding-bottom:.3em}.alert{background:#fff5b1;padding:4px 12px;margin:0 -12px}a{text-decoration:none}.entry h3{margin-bottom:0}.entry p{margin:4px 0}
         </style>
       </head>
       <body>
         <section>
           <div class="alert">
-            <p><strong>This is a web feed</strong>, also known as an RSS feed. <strong>Subscribe</strong> by copying the URL from the address bar into your newsreader app.</p>
+            <p><strong>This is an RSS feed.</strong> Subscribe by copying the URL from the address bar into your newsreader app.</p>
           </div>
         </section>
         <section>
@@ -33,14 +33,14 @@
   </xsl:template>
 
   <xsl:template match="atom:feed">
-    <h1><xsl:value-of select="atom:title"/>'s Web Feed Preview</h1>
-    <p>This RSS feed provides the latest posts from <xsl:value-of select="atom:title"/>'s blog.
+    <h1><xsl:value-of select="atom:title"/></h1>
+    <p><xsl:value-of select="atom:subtitle"/>
 
     <a class="head_link" target="_blank">
       <xsl:attribute name="href">
         <xsl:value-of select="atom:link[@rel='alternate']/@href"/>
       </xsl:attribute>
-      Visit Website &#x2192;
+      Return to website &#x2192;
     </a>
 
     </p>
