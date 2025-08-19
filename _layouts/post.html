@@ -16,14 +16,26 @@ layout: default
             <h1 class="text-4xl sm:text-5xl font-serif capitalize mb-2 sm:leading-tight">{{ page.title }}</h1>
             <p class="text-gray-600 dark:text-gray-400 text-lg leading-8 mb-4">{{ page.description }}</p>
           </div>
-          <div class="mt-4">
-            <span class="text-sm text-gray-600 dark:text-gray-400 uppercase">
+          <div class="mt-4 flex justify-between items-center">
+            <div class="text-sm text-gray-600 dark:text-gray-400">
               Published <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
               {% assign pubDate = page.date | date: "%Y%m%d" %}
               {% assign modDate = page.last_modified_at | date: "%Y%m%d" %}
               {% if modDate != pubDate %}
-               • Updated <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time></span>
+               <span class="hidden sm:inline">• Updated <time date="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%-d %b %Y" }}</time></span>
               {% endif %}
+			</div>
+            <div class="relative">
+              <button id="share-btn" data-fathom="Share" class="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-200 cursor-pointer" data-url="{{ site.url }}{{ page.url }}">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                </svg>
+                <span>Share</span>
+              </button>
+              <div id="copied-popup" class="absolute top-full right-0 mt-1 px-2 py-1 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 text-xs rounded opacity-0 pointer-events-none transition-opacity duration-200">
+                Copied
+              </div>
+            </div>
           </div>
         </div>
       </div>
