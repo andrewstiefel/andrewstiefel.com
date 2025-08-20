@@ -9,3 +9,4 @@
 {% include_relative scripts/scroll-indicator.js %}
 {% include_relative scripts/toc.js %}
 {% include_relative scripts/share.js %}
+{% include_relative scripts/email-protection.js %}

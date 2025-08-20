@@ -135,7 +135,7 @@
     --tw-prose-invert-th-borders: var(--color-gray-600);
     --tw-prose-invert-td-borders: var(--color-gray-700);
 
-    @apply prose-headings:font-serif prose-headings:font-normal prose-h1:text-5xl prose-h1:mb-8 prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h3:mt-0 prose-h4:mb-6 prose-h4:sm:text-[1.25rem] prose-h4:mb-5 prose-h5:font-sans prose-h5:font-semibold prose-h5:text-sm prose-h5:uppercase prose-h5:mb-4 prose-h6:font-sans prose-h6:text-sm prose-h6:uppercase prose-h6:mb-2 prose-h2:mt-8 prose-h2:mb-3 dark:prose-blockquote:border-l-gray-800 prose-blockquote:border-l-gray-100 prose-blockquote:not-italic prose-blockquote:font-normal prose-blockquote:py-1 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900 prose-th:font-sans prose-th:font-semibold prose-thead:border-gray-100 dark:prose-thead:border-b-gray-800 prose-tr:border-gray-100 dark:prose-tr:border-gray-800;
+    @apply prose-headings:font-serif prose-headings:font-normal prose-h1:text-5xl prose-h1:mb-8 prose-h2:sm:text-[2rem] prose-h3:sm:text-[1.5rem] prose-h3:mt-0 prose-h4:mb-6 prose-h4:sm:text-[1.25rem] prose-h4:mb-5 prose-h5:font-sans prose-h5:font-semibold prose-h5:text-sm prose-h5:uppercase prose-h5:mb-4 prose-h6:font-sans prose-h6:text-sm prose-h6:uppercase prose-h6:mb-2 prose-h2:mt-8 prose-h2:mb-3 prose-blockquote:border-l-primary prose-blockquote:not-italic prose-blockquote:font-normal prose-blockquote:py-1 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900 prose-th:font-sans prose-th:font-semibold prose-thead:border-gray-100 dark:prose-thead:border-b-gray-800 prose-tr:border-gray-100 dark:prose-tr:border-gray-800;
 }
 
 .internal-link {
@@ -274,4 +274,36 @@ display: none;
 
 #toc-toggle:hover svg {
   @apply text-primary;
+}
+
+/* Email Protection Styles */
+.email-protected {
+  @apply inline-flex items-center gap-1 text-primary cursor-pointer transition-all duration-200 hover:border-solid hover:text-green-700 dark:hover:text-green-300;
+}
+
+.email-protected:hover {
+  @apply bg-gray-50 dark:bg-gray-800 px-1 rounded;
+}
+
+.email-protected::after {
+  content: "🔒";
+  @apply text-xs opacity-70;
+}
+
+.email-revealed {
+  @apply text-primary hover:text-green-700 dark:hover:text-green-300 underline cursor-pointer;
+}
+
+.email-revealed::after {
+  content: "";
+}
+
+/* Copy notification */
+#email-copy-notification {
+  @apply fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded shadow-lg z-50 opacity-0 transition-opacity duration-300;
+}
+
+/* Additional bot protection - hide content for automated scrapers */
+.email-honeypot {
+  @apply absolute left-[-9999px] top-[-9999px] w-0 h-0 overflow-hidden;
 }
