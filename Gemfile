@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'terser'
-gem 'tailwindcss-ruby', '4.1.7'
+gem 'tailwindcss-ruby', '4.1.11'
 
 group :jekyll_plugins do
   gem 'jekyll-archives'
