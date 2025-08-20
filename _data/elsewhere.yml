@@ -1,0 +1,27 @@
+### EXTERNAL PUBLICATIONS
+
+articles:
+  - title: "Your First Publication Title"
+    url: "https://example.com/article-1"
+    publication: "Publication Name"
+    date: "2024-01-15"
+    description: "Brief description of what this article covers and why it was written."
+  
+  - title: "Another Article Title" 
+    url: "https://example.com/article-2"
+    publication: "Another Publication"
+    date: "2023-12-10"
+    description: "Description of the second article's content and key insights."
+
+blog_posts:
+  - title: "Company Blog Post Title"
+    url: "https://company.com/blog/post-1"
+    publication: "Company Name Blog"
+    date: "2024-02-20"
+    description: "Description of this work-related blog post and its focus."
+    
+  - title: "Another Work Blog Post"
+    url: "https://another-company.com/blog/post-2" 
+    publication: "Another Company Blog"
+    date: "2023-11-05"
+    description: "Brief summary of this professional blog post content."
