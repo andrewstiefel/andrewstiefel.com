@@ -7,3 +7,4 @@
 {% include_relative scripts/lightbox.js %}
 {% include_relative scripts/search.js %}
 {% include_relative scripts/scroll-indicator.js %}
+{% include_relative scripts/toc.js %}
