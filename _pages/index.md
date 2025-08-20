@@ -7,6 +7,8 @@ permalink: /
 
 Hey, I'm Andrew 👋
 
-Welcome to my digital garden, a slowly growing collection of of working notes and essays about things I’ve learned or made over the years.
+Welcome to my digital garden, a slowly growing collection of [notes](/notes/) and [essays](/essays/).
 
-You can get my latest posts by email, or grab the <a href="/feed.xml" data-fathom="RSS subscription" target="_blank">RSS feed</a> instead.
+Trained in classical music and inspired by biology, I’ve always been drawn to complex systems and how we make sense of them. My work centers on clarifying complexity—whether in [technology](/topics/technology/), [marketing](/topics/product-marketing/), or [writing](/topics/writing/).
+
+Subscribe by email to get my latest posts, or follow along via <a href="/feeds/" >RSS</a>.
