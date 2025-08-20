@@ -242,3 +242,36 @@ display: none;
 .highlight .mi{color:var(--color-purple-400)}
 .highlight .mo{color:var(--color-purple-400)}
 .highlight .il{color:var(--color-purple-400)}
+
+/* Table of Contents Styles */
+.toc-item {
+  @apply mb-1;
+}
+
+.toc-link {
+  @apply block py-1 px-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors duration-200 no-underline first:mt-3;
+}
+
+.toc-link.active {
+  @apply text-primary bg-gray-50 dark:bg-gray-800 font-medium;
+}
+
+.toc-level-2 .toc-link {
+  @apply font-medium;
+}
+
+.toc-level-3 .toc-link,
+.toc-level-4 .toc-link,
+.toc-level-5 .toc-link,
+.toc-level-6 .toc-link {
+  @apply text-xs text-gray-500 dark:text-gray-500;
+}
+
+/* TOC Collapsible Styles */
+#toc-toggle {
+  @apply cursor-pointer focus:outline-none;
+}
+
+#toc-toggle:hover svg {
+  @apply text-primary;
+}
