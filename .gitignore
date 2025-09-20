@@ -12,7 +12,6 @@ _site/
 # Ruby
 .ruby-version
 .bundle
-Gemfile.lock
 vendor/bundle
 vendor/cache
 vendor/gems
@@ -20,8 +19,6 @@ vendor/ruby
 
 # Node
 node_modules
-package-lock.json
-yarn.lock
 
 # Logs and temp files
 *.log
