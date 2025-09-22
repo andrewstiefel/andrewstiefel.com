@@ -9,7 +9,7 @@ permalink: /elsewhere/
 {% if site.data.elsewhere.articles and site.data.elsewhere.articles.size > 0 %}
 <div class="mb-12">
   <div class="flex justify-start mb-6">
-    <div class="text-sm uppercase w-60">Articles & Publications</div>
+    <div class="text-sm uppercase w-60">Articles</div>
     <div class="w-full">
       <span class="inline-block w-full h-px mb-1 bg-gray-200 dark:bg-gray-800"></span>
     </div>
