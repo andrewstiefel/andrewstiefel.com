@@ -5,7 +5,7 @@ description: GitHub makes it easy to build a free content management system for 
 permalink: github-cms-blog/
 image: 
 date: 2025-02-02
-category: articles
+category: guides
 tags:
   - blogging
   - writing

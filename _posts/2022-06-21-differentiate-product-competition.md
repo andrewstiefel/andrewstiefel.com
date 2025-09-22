@@ -5,7 +5,7 @@ description: Differentiation is about setting your product apart from your compe
 permalink: differentiate-product-competition/
 image: 
 date: 2022-06-21
-category: articles
+category: guides
 tags:
   - product-marketing
   - positioning-messaging

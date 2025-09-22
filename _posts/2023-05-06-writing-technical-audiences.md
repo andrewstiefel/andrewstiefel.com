@@ -5,7 +5,7 @@ description: These tips can help you write more effectively for software develop
 permalink: writing-technical-audiences/
 image: 
 date: 2023-05-06
-category: notes
+category: guides
 tags:
   - product-marketing
   - writing

@@ -5,7 +5,7 @@ description: Learn how to use 1Password to sign Git commits for multiple GitHub 
 permalink: working-multiple-github-accounts/
 image: 
 date: 2024-05-09
-category: articles
+category: guides
 tags:
   - coding
 ---

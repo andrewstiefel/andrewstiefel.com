@@ -5,7 +5,7 @@ description: A handy guide to privacy-first email newsletter services that prote
 permalink: privacy-first-email-newsletter-software/
 image: 
 date: 2023-02-09
-category: articles
+category: guides
 tags:
   - marketing
   - privacy

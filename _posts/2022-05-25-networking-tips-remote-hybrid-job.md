@@ -5,7 +5,7 @@ description: Networking is always a challenge when starting a new job. It's even
 permalink: networking-tips-remote-hybrid-job/
 image: 
 date: 2022-05-25
-category: articles
+category: guides
 tags:
   - career
 featured:

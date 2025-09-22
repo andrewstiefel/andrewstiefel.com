@@ -5,7 +5,7 @@ description: B2B storytelling helps unify groups of people around a shared narra
 permalink: storytelling-important-B2B-marketing/
 image: 
 date: 2022-06-22
-category: articles
+category: essays
 tags:
   - product-marketing
 ---
