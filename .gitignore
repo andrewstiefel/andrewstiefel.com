@@ -10,7 +10,6 @@ _site/
 .obsidian
 
 # Ruby
-.ruby-version
 .bundle
 vendor/bundle
 vendor/cache
