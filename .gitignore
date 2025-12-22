@@ -9,6 +9,9 @@ _site/
 # Obsidian
 .obsidian
 
+# Claude Code
+CLAUDE.md
+
 # Ruby
 .bundle
 vendor/bundle
