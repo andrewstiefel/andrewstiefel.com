@@ -10,10 +10,10 @@ This website was first published in the fall of 2011 in Waco, Texas. It was buil
 Everything is open souce and published on <a href="https://github.com/andrewstiefel/andrewstiefel.com">GitHub</a> if you'd like to poke around.
 
 ## Design
-The theme is inspired by antique field guides and paper notebooks. It is designed to showcase text and code on digital screens. The color palatte is loosely based on [Flexoki](https://stephango.com/flexoki) by [Steph Ango](https://stephango.com/). The biggest differences are in dark mode. I prefer a lower contrast background that is gentler on the eyes than a deep black.
+The theme is inspired by antique field guides and paper notebooks. It is designed to showcase text and code on digital screens. The color palatte is loosely based on [Flexoki](https://stephango.com/flexoki) by [Steph Ango](https://stephango.com/). The biggest difference is in the grays. I prefer less saturation in background colors because I find it gentler on the eyes. 
 
 ## Typography
-All fonts are self-hosted for privacy and performance. The body copy is set in Inter by Rasmus Andersson. Headers are set in Crimson Text by Sebastian Kosch.
+All fonts are self-hosted for privacy and performance. The body copy is set Crimson Text by Sebastian Kosch. UI elements are in Inter by Rasmus Andersson.
 
 ## Technologies
 I use <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> to generate the static files for this website. The site is deployed with <a href="https://www.netlify.com/" title="Netlify">Netlify</a> so I don't have to worry about managing a server. Images are served by <a href="https://cloudinary.com/">Cloudinary</a>.

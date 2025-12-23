@@ -24,7 +24,7 @@
 		</tr>
 		<tr>
 			<td class="uppercase">Type</td>
-			<td class="capitalize"><a class="font-normal" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a></td>
+			<td class="capitalize"><a class="font-normal hover:text-primary" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a></td>
 		</tr>
 		{% if page.stage %}
 		<tr>
@@ -44,7 +44,15 @@
 		</tr>
 		<tr>
 			<td class="uppercase">Permalink</td>
-			<td>{{ site.url }}{{ page.url }}</td>
+			<td><div class="relative">
+				<button id="share-btn" data-fathom="Share" class="flex items-center gap-1 text-sm text-black dark:text-paper underline hover:text-primary transition-colors duration-200 cursor-pointer" data-url="{{ site.url }}{{ page.url }}">
+				  <span>{{ site.url }}{{ page.url }}</span>
+				</button>
+				<div id="copied-popup" class="absolute mt-1 px-2 py-1 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 text-xs rounded opacity-0 pointer-events-none transition-opacity duration-200">
+				  Copied
+				</div>
+			  </div>
+			</td>
 		</tr>
 		</tbody>
 	</table>
