@@ -6,17 +6,23 @@ permalink: /links/
 ---
 
 {% if site.data.shared_links and site.data.shared_links.size > 0 %}
-  <div class="space-y-8 mt-8">
+  <div class="space-y-8 mt-8 font-sans text-base">
     {% for link in site.data.shared_links %}
       <div class="border-b border-gray-100 dark:border-gray-800 pb-6 last:border-b-0">
         <div class="mb-3">
-          <h2 class="text-2xl leading-tight mb-2">
+          <h2 class="text-2xl font-serif">
             <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="text-black dark:text-gray-100 no-underline">
               {{ link.title }}
             </a>
           </h2>
-                    {% if link.date %}
-            <div class="text-sm text-gray-500 dark:text-gray-400">
+         </div>
+         {% if link.description %}
+           <div class="text-gray-600 dark:text-gray-400 my-2 line-clamp-2">
+             {{ link.description }}
+           </div>
+         {% endif %}
+		 {% if link.date %}
+            <div class="text-sm text-gray-600 dark:text-gray-400">
               <time datetime="{{ link.date | date_to_xmlschema }}">
                 {{ link.date | date: "%-d %b %Y" }}
               </time>
@@ -26,12 +32,6 @@ permalink: /links/
               </a>
             </div>
           {% endif %}
-         </div>
-         {% if link.description %}
-           <div class="text-gray-700 dark:text-gray-300 leading-relaxed line-clamp-2">
-             {{ link.description }}
-           </div>
-         {% endif %}
       </div>
     {% endfor %}
   </div>

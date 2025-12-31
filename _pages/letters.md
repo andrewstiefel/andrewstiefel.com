@@ -9,7 +9,7 @@ _This is not a way to get notified of new posts. You can sign up for those <a hr
 
 This is my private email list where I share ideas with a group of like-minded people. I don’t sell anything here — it’s fulfilling for me when people read and respond.
 
-<div class="max-w-md mx-auto py-3">
+<div class="max-w-md mx-auto py-3 not-prose font-sans text-base">
 {% include forms/newsletter-default.html %}
 </div>
 
@@ -27,6 +27,6 @@ Rather than add yet another marketing newsletter or round up of the week’s top
 
 If that's not for you, you can unsubscribe at any time. But I hope you enjoy it and find it useful.
 
-<div class="max-w-md mx-auto py-3">
+<div class="max-w-md mx-auto py-3 not-prose font-sans text-base">
 {% include forms/newsletter-default.html %}
 </div>

@@ -27,11 +27,16 @@
   force = true
 
 [[redirects]]
+  from = "https://andrewstiefel.com/tag/*"
+  to = "https://andrewstiefel.com/topics/:splat"
+  status = 301
+
+[[redirects]]
   from = "/newsletter"
   to = "/letters"
   status = 301
 
 [[redirects]]
-  from = "https://andrewstiefel.com/tag/*"
-  to = "https://andrewstiefel.com/topics/:splat"
+  from = "/articles"
+  to = "/guides"
   status = 301

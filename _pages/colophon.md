@@ -5,27 +5,23 @@ description: A colophon is a brief statement about how a book was produced. In t
 permalink: /colophon/
 ---
 
-This website was first published in the fall of 2011 in Waco, Texas. It was built on a self-hosted server using [WordPress](https://wordpress.org/). It's gone through several iterations over the years as a blog and portfolio, and I've rebuilt it a few times. I designed and built the current version of the site myself. It is optimized to have a [very low carbon footprint](https://digitalbeacon.co/report/andrewstiefel-com). 
+This website was first published in the fall of 2011 in Waco, Texas. It was built on a self-hosted server using [WordPress](https://wordpress.org/). It's gone through several iterations over the years as a blog and portfolio, and I've rebuilt it a few times. I designed and built the current version myself with a focus on minimizing its [carbon footprint](https://digitalbeacon.co/report/andrewstiefel-com).
 
-Everything is open souce and published on <a href="https://github.com/andrewstiefel/andrewstiefel.com">GitHub</a> if you'd like to poke around.
+Everything is open source and published on [GitHub](https://github.com/andrewstiefel/andrewstiefel.com) if you'd like to poke around.
 
 ## Design
-The theme is inspired by antique field guides and paper notebooks. It is designed to showcase text and code on digital screens. The color palatte is loosely based on [Flexoki](https://stephango.com/flexoki) by [Steph Ango](https://stephango.com/). The biggest difference is in the grays. I prefer less saturation in background colors because I find it gentler on the eyes. 
+The theme is inspired by antique field guides and paper notebooks, designed to showcase text and code on digital screens. The color palette is loosely based on [Flexoki](https://stephango.com/flexoki) by [Steph Ango](https://stephango.com/), particularly for accent colors and code highlighting. The biggest difference is in the gray scale—I created a custom neutral range with less saturation in the backgrounds, which I find gentler on the eyes.
 
 ## Typography
-All fonts are self-hosted for privacy and performance. The body copy is set Crimson Text by Sebastian Kosch. UI elements are in Inter by Rasmus Andersson.
+All fonts are self-hosted for privacy and performance. The body copy is set in Literata by TypeTogether. UI elements are in Inter by Rasmus Andersson.
 
 ## Technologies
-I use <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> to generate the static files for this website. The site is deployed with <a href="https://www.netlify.com/" title="Netlify">Netlify</a> so I don't have to worry about managing a server. Images are served by <a href="https://cloudinary.com/">Cloudinary</a>.
+I optimized the site for performance and a low carbon footprint. I use [Jekyll](https://jekyllrb.com/) to generate static files, deployed via [Netlify](https://www.netlify.com/). Images are served by [Cloudinary](https://cloudinary.com/).
 
-I used <a href="https://tailwindcss.com/" title="Tailwind CSS">Tailwind CSS</a> to build and design the site theme and individual components. An atomic design framework, it provides a set of utility classes for your HTML markup. The result is a tiny CSS file (less than 10KB) without any of the bloat you find with other CSS frameworks. 
+To keep things lightweight, I built the theme with [Tailwind CSS](https://tailwindcss.com/) (resulting in less than 10KB of CSS) and use vanilla JavaScript instead of heavy libraries. Page sizes typically stay under 200KB, with a 500KB maximum.
 
-Scripts are vanilla Javascript. I wanted to avoid using any heavy JS libraries.
-
-As a result the page size is under 500KB, and often under 200KB depending on the content.
-
-All the individual posts are written in markdown for ease of portability. My content management system (CMS) is a bunch of files and folders on my operating system. I use GitHub for version control and backups.
+All posts are written in markdown for portability. My content management system (CMS) is a bunch of files and folders on my operating system. I use GitHub for version control and backups.
 
 ## License
 
-The code for this website is released under the <a href="https://github.com/andrewstiefel/andrewstiefel.com/blob/master/LICENSE.md">MIT License</a>. If you republish any of the content on this site, you must provide an author credit and a link back to this site.
+The code for this website is released under the [MIT License](https://github.com/andrewstiefel/andrewstiefel.com/blob/master/LICENSE.md). If you republish any of the content on this site, please provide an author credit and a link back to this site.

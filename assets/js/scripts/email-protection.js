@@ -176,7 +176,7 @@
           const encoded = rot13(email);
           link.dataset.email = encoded;
           link.href = '#';
-          link.textContent = 'Click to reveal email';
+          link.textContent = 'Reveal email';
           link.classList.add('email-protected');
           
           // Add the same event handlers

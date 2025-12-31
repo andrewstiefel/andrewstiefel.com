@@ -1,4 +1,5 @@
-### EXTERNAL PUBLICATIONS
+talks:
+ - title: "Beyond AI-Powered"
 
 articles:
   - title: "Your First Publication Title"
@@ -13,7 +14,7 @@ articles:
     date: "2023-12-10"
     description: "Description of the second article's content and key insights."
 
-blog_posts:
+posts:
   - title: "Company Blog Post Title"
     url: "https://company.com/blog/post-1"
     publication: "Company Name Blog"
