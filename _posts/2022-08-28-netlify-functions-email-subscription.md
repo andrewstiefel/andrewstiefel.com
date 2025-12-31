@@ -5,7 +5,7 @@ description: Learn how to use Netlify Functions and ConvertKit to create a custo
 permalink: netlify-functions-email-subscription/
 image: 
 date: 2022-08-28
-category: articles
+category: guides
 tags:
   - coding
 ---

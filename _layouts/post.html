@@ -13,7 +13,7 @@ layout: default
               <a class="font-semibold no-underline text-primary" href="{{site.baseurl}}/{{ page.category | downcase }}/">{{ page.category }}</a>
               <span> &middot; {% include helpers/reading-time.html %} read</span>
             </div>
-            <h1 class="text-4xl font-serif capitalize mb-2 sm:leading-tight tracking-tight">{{ page.title }}</h1>
+            <h1 class="text-4xl font-serif capitalize mb-4 sm:leading-tight tracking-tight">{{ page.title }}</h1>
             <p class="text-gray-600 dark:text-gray-400 mb-4 leading-7 text-lg">{{ page.description }}</p>
           </div>
         </div>
@@ -36,7 +36,7 @@ layout: default
     </section>
     <section class="grid grid-cols-6 py-4">
       <div class="col-span-full lg:col-start-2 lg:col-span-4">
-        <div class="lg:col-start-2 col-span-4 prose dark:prose-invert max-w-none mx-auto blog font-serif text-xl">
+        <div class="lg:col-start-2 col-span-4 prose dark:prose-invert max-w-none mx-auto blog font-serif text-lg">
           {{ content }}
         </div>
       </div>

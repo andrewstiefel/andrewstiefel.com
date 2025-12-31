@@ -5,7 +5,7 @@ description: Create a seamless user experience for your Atom or RSS feed with XL
 permalink: style-atom-xsl/
 image: 
 date: 2022-01-24
-category: articles
+category: guides
 tags:
   - coding
 ---

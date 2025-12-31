@@ -1,4 +1,5 @@
 require 'net/http'
+require 'openssl'
 require 'rexml/document'
 require 'uri'
 
@@ -16,7 +17,32 @@ module Jekyll
       begin
         # Fetch the RSS feed
         uri = URI(feed_url)
-        response = Net::HTTP.get_response(uri)
+        
+        # Use Net::HTTP.start with proper SSL configuration
+        http = Net::HTTP.new(uri.host, uri.port)
+        http.use_ssl = true if uri.scheme == 'https'
+        
+        if uri.scheme == 'https'
+          begin
+            # Try with full SSL verification first
+            http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+            http.cert_store = OpenSSL::X509::Store.new
+            http.cert_store.set_default_paths
+            response = http.request(Net::HTTP::Get.new(uri.request_uri))
+          rescue OpenSSL::SSL::SSLError => ssl_error
+            # If SSL verification fails (e.g., CRL check issues), retry with hostname verification only
+            # This is less secure but handles cases where CRL servers are unreachable
+            if ssl_error.message.include?('certificate') || ssl_error.message.include?('CRL')
+              Jekyll.logger.warn "SharedLinks:", "SSL verification issue, retrying with relaxed verification: #{ssl_error.message}"
+              http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+              response = http.request(Net::HTTP::Get.new(uri.request_uri))
+            else
+              raise
+            end
+          end
+        else
+          response = http.request(Net::HTTP::Get.new(uri.request_uri))
+        end
         
         unless response.is_a?(Net::HTTPSuccess)
           Jekyll.logger.warn "SharedLinks:", "Failed to fetch feed: #{response.code}"

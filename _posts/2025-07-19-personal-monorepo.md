@@ -5,7 +5,7 @@ description: How I created a workflow for researching and blogging with Obsidian
 permalink: monorepo/
 image:
 date: 2025-07-19
-category: articles
+category: guides
 tags:
   - blogging
   - writing
