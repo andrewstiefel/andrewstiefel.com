@@ -23,16 +23,16 @@ function applyTheme(value) {
   if (value === 'dark') {
     html.classList.add('dark');
     localStorage.setItem('theme', 'dark');
-    setThemeColor('#1c1b1a');
+    setThemeColor('#1b1b1a');
   } else if (value === 'light') {
     html.classList.add('light');
     localStorage.setItem('theme', 'light');
-    setThemeColor('#FFFCF0');
+    setThemeColor('#fafaf9');
   } else {
     localStorage.removeItem('theme');
     const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     html.classList.add(isDark ? 'dark' : 'light');
-    setThemeColor(isDark ? '#1c1b1a' : '#FFFCF0');
+    setThemeColor(isDark ? '#1b1b1a' : '#fafaf9');
   }
 
   themeLabel.textContent =
@@ -43,7 +43,7 @@ function applyTheme(value) {
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
   if (!localStorage.getItem('theme')) {
     html.classList.toggle('dark', e.matches);
-    setThemeColor(e.matches ? '#1c1b1a' : '#FFFCF0');
+    setThemeColor(e.matches ? '#1b1b1a' : '#fafaf9');
   }
 });
 
