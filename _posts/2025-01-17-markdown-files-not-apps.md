@@ -6,6 +6,7 @@ permalink: markdown-files-not-apps/
 image: 
 date: 2025-01-17
 category: essays
+stage: seedling
 tags: 
   - technology
   - productivity

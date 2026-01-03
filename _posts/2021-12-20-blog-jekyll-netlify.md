@@ -5,6 +5,7 @@ permalink: blog-jekyll-netlify/
 description: I used Jekyll and Netlify to build a custom personal website and blog.
 date: 2021-12-20
 category: essays
+stage: budding
 tags:
   - coding
   - blogging

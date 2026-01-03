@@ -6,6 +6,7 @@ permalink: monorepo/
 image:
 date: 2025-07-19
 category: guides
+stage: budding
 tags:
   - blogging
   - writing

@@ -6,6 +6,7 @@ permalink: netlify-functions-email-subscription/
 image: 
 date: 2022-08-28
 category: guides
+stage: budding
 tags:
   - coding
 ---

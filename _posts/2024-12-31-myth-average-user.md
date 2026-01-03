@@ -6,6 +6,7 @@ permalink: myth-average-user/
 image: 
 date: 2024-12-31
 category: essays
+stage: evergreen
 tags:
   - product-marketing
   - design

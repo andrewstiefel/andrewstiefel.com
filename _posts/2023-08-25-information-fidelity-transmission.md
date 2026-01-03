@@ -6,6 +6,7 @@ permalink: information-fidelity-transmission/
 image: 
 date: 2023-08-25
 category: notes
+stage: seedling
 tags:
   - product-marketing
   - writing

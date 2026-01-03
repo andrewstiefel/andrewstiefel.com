@@ -6,6 +6,7 @@ permalink: ai-layoff-myth/
 image: 
 date: 2025-05-16
 category: essays
+stage: budding
 tags:
   - artificial-intelligence
   - technology

@@ -1,0 +1,10 @@
+{% assign stage_data = site.data.stages[page.stage] %}
+<span class="relative inline-block group">
+  <button type="button" class="underline decoration-dashed uppercase cursor-help" aria-describedby="stage-tooltip">
+    {{ page.stage }}
+  </button>
+  <span id="stage-tooltip" role="tooltip" class="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 px-3 py-2 text-sm font-normal normal-case text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 bottom-full sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 left-0 sm:left-full mb-2 sm:mb-0 sm:ml-2 w-64 max-w-[calc(100vw-3rem)] pointer-events-none">
+    {{ stage_data.description | strip }}
+    <span class="absolute top-full sm:top-1/2 sm:-translate-y-1/2 left-8 sm:left-auto sm:right-full border-[6px] border-transparent border-t-white sm:border-t-transparent sm:border-r-white dark:border-t-gray-800 dark:sm:border-t-transparent dark:sm:border-r-gray-800"></span>
+  </span>
+</span>

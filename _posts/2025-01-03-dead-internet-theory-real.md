@@ -6,6 +6,7 @@ permalink: dead-internet-theory-real/
 image: 
 date: 2025-01-03
 category: essays
+stage: budding
 tags:
   - technology
   - culture

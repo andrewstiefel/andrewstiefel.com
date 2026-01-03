@@ -6,6 +6,7 @@ permalink: pricing-packaging-innovation/
 image: 
 date: 2024-10-19
 category: notes
+stage: seedling
 tags:
   - product-marketing
 ---

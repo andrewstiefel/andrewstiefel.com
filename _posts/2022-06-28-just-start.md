@@ -6,6 +6,7 @@ permalink: just-start/
 image: 
 date: 2022-06-28
 category: essays
+stage: seedling
 tags:
   - writing
   - productivity

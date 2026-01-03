@@ -6,6 +6,7 @@ permalink: privacy-first-email-newsletter-software/
 image: 
 date: 2023-02-09
 category: guides
+stage: budding
 tags:
   - marketing
   - privacy

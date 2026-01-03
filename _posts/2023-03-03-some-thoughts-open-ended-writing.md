@@ -6,6 +6,7 @@ permalink: some-thoughts-open-ended-writing/
 image: 
 date: 2023-03-03
 category: notes
+stage: budding
 tags:
   - writing
   - digital-gardening

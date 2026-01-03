@@ -5,6 +5,7 @@ description: There’s been a fight over the past few days about Casey Newton's 
 image: ai-hype-risk/
 date: 2024-12-10
 category: essays
+stage: budding
 tags:
   - artificial-intelligence
   - technology

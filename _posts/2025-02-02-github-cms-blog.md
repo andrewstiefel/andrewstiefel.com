@@ -6,6 +6,7 @@ permalink: github-cms-blog/
 image: 
 date: 2025-02-02
 category: guides
+stage: evergreen
 tags:
   - blogging
   - writing

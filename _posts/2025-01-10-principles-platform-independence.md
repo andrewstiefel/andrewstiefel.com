@@ -6,6 +6,7 @@ permalink: principles-platform-independence/
 image: 
 date: 2025-01-10
 category: essays
+stage: seedling
 tags:
   - technology
   - privacy
