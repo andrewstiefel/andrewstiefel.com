@@ -136,7 +136,7 @@
     --tw-prose-invert-th-borders: var(--color-gray-600);
     --tw-prose-invert-td-borders: var(--color-gray-700);
 
-    @apply prose-lg font-serif [&>p:first-of-type]:mt-0 prose-headings:font-serif prose-headings:font-normal prose-h1:text-4xl prose-h1:mb-8 prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-3 prose-h3:text-2xl prose-h3:mt-0 prose-h4:text-xl prose-h4:mb-6 prose-h4:mb-5 prose-h5:text-lg prose-h5:font-sans prose-h5:font-semibold prose-h5:uppercase prose-h5:mb-4 prose-h6:text-lg prose-h6:font-sans prose-h6:uppercase prose-h6:mb-2 prose-blockquote:border-l-primary prose-blockquote:not-italic prose-blockquote:font-normal prose-blockquote:py-1 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900 prose-th:font-sans prose-th:font-semibold prose-thead:border-gray-100 dark:prose-thead:border-b-gray-800 prose-tr:border-gray-100 dark:prose-tr:border-gray-800 prose-a:font-normal prose-a:hover:text-primary;
+    @apply prose-lg font-serif leading-7 [&>p:first-of-type]:mt-0 prose-headings:font-serif prose-headings:font-normal prose-h1:text-4xl prose-h1:mb-6 prose-h2:text-3xl prose-h2:font-medium prose-h2:mt-8 prose-h2:mb-3 prose-h3:text-2xl prose-h3:italic prose-h3:tracking-wide prose-h4:text-lg prose-h4:font-semibold prose-h4:mb-5 prose-h5:text-base prose-h5:font-sans prose-h5:font-semibold prose-h5:uppercase prose-h5:mb-4 prose-h6:text-base prose-h6:font-sans prose-h6:uppercase prose-h6:mb-2 prose-blockquote:border-l-primary prose-blockquote:not-italic prose-blockquote:font-normal prose-blockquote:py-1 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900 prose-th:font-sans prose-th:font-semibold prose-thead:border-gray-100 dark:prose-thead:border-b-gray-800 prose-tr:border-gray-100 dark:prose-tr:border-gray-800 prose-a:font-normal prose-a:hover:text-primary;
 }
 
 .internal-link {
@@ -144,7 +144,7 @@
   }
 
 pre {
-	@apply border border-gray-850 bg-black text-sm;
+	@apply border border-gray-850 bg-black;
 }
 
 .prose blockquote p::before,

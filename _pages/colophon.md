@@ -10,7 +10,7 @@ This website was first published in the fall of 2011 in Waco, Texas. It was buil
 Everything is open source and published on [GitHub](https://github.com/andrewstiefel/andrewstiefel.com) if you'd like to poke around.
 
 ## Design
-The theme is inspired by antique field guides and paper notebooks, designed to showcase text and code on digital screens. The color palette is loosely based on [Flexoki](https://stephango.com/flexoki) by [Steph Ango](https://stephango.com/), particularly for accent colors and code highlighting. The biggest difference is in the gray scale—I created a custom neutral range with less saturation in the backgrounds, which I find gentler on the eyes.
+The theme is inspired by antique field guides and paper notebooks, and designed to showcase text and code on digital screens. The color palette is loosely based on [Flexoki](https://stephango.com/flexoki) by [Steph Ango](https://stephango.com/), particularly for accent colors and code highlighting. The biggest difference is in the gray scale—I created a custom neutral range with less saturation in the backgrounds, which I find gentler on the eyes.
 
 ## Typography
 All fonts are self-hosted for privacy and performance. The body copy is set in Literata by TypeTogether. UI elements are in Inter by Rasmus Andersson.
