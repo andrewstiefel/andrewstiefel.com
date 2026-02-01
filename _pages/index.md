@@ -5,7 +5,7 @@ description: Andrew Stiefel writes and publishes a newsletter called Margin Note
 permalink: /
 ---
 
-Hey, I'm Andrew 👋
+Hey, I'm Andrew Stiefel 👋
 
 Welcome to my digital garden, a slowly growing collection of [notes](/notes/) and [essays](/essays/).
 
