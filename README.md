@@ -22,3 +22,5 @@ Optimized to have [a very low carbon footprint](https://digitalbeacon.co/report/
 
 ## License
 [MIT](https://github.com/andrewstiefel/andrewstiefel.com/blob/master/LICENSE.md)
+
+This is a test of git mirroring from codeberg > github
