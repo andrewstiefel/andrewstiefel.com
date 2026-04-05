@@ -1,9 +1,9 @@
 [build]
-  command = "npm install --prefix netlify/functions && bundle exec jekyll build"
+  command = "bundle exec jekyll build"
   publish = "_site/"
 
 [build.environment]
-  RUBY_VERSION = "3.3.5"
+  RUBY_VERSION = "4.0.2"
 
 [context.production.environment]
   JEKYLL_ENV = "production"
@@ -14,11 +14,6 @@
 [dev]
   command = "bundle exec jekyll serve"
   publish = "_site/"
-
-[functions]
-  directory = "netlify/functions/"
-  node_bundler = "esbuild"
-  external_node_modules = ["@1password/sdk"]
 
 [[redirects]]
   from = "https://andrew.st/*"
