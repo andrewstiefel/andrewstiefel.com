@@ -1,5 +1,4 @@
-FROM ruby:3.3.5 AS builder
-RUN apt-get update -qq && apt-get install -y build-essential nodejs curl
+FROM dhi.io/ruby:4-debian13-dev AS builder
 WORKDIR /srv/jekyll
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
