@@ -1,4 +1,4 @@
-FROM dhi.io/ruby:4-debian13-dev AS builder
+FROM ruby:4.0.2 AS builder
 WORKDIR /srv/jekyll
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
