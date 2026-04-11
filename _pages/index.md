@@ -5,7 +5,7 @@ description: Andrew Stiefel writes a newsletter called Margin Notes. This digita
 permalink: /
 ---
 
-Hey, I'm Andrew Stiefel 👋
+Hey, I'm Andrew 👋
 
 Welcome to my digital garden, a slowly growing collection of working [essays](/essays/), [guides](/guides/), and [notes](/notes/).
 
