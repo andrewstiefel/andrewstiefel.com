@@ -22,7 +22,7 @@ sleep 5
 # which triggers a fresh origin fetch and Perma-Cache fill.
 echo "Warming cache via sitemap..."
 SITEMAP_URL="https://${CDN_HOST}/sitemap.xml"
-URLS=$(curl -sf "$SITEMAP_URL" | grep -oP '(?<=<loc>)[^<]+') || true
+URLS=$(curl -sf "$SITEMAP_URL" | sed -n 's/.*<loc>\([^<]*\)<\/loc>.*/\1/p') || true
 
 if [ -z "$URLS" ]; then
   echo "No URLs found in sitemap, warming key paths instead"
