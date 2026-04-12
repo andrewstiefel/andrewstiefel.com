@@ -1,6 +1,12 @@
 #!/bin/sh
 set -e
 
+# docker exec doesn't inherit runtime env vars; source them from the
+# file written by entrypoint.sh at container startup.
+if [ -z "$BUNNY_API_KEY" ] && [ -f /etc/environment ]; then
+  . /etc/environment
+fi
+
 CDN_HOST="${CDN_HOST:-cdn.andrewstiefel.net}"
 
 if [ -z "$BUNNY_API_KEY" ] || [ -z "$BUNNY_PULLZONE_ID" ]; then

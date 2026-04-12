@@ -10,5 +10,7 @@ FROM nginx:alpine
 RUN apk add --no-cache curl
 COPY --from=builder /srv/jekyll/_site /usr/share/nginx/html
 COPY scripts/purge.sh /usr/local/bin/purge.sh
+COPY scripts/entrypoint.sh /entrypoint.sh
 EXPOSE 80
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
